@@ -1,0 +1,40 @@
+.contact .content {
+  overflow: hidden;
+  padding-bottom: 0;
+
+  .box {
+    position: relative;
+
+    .submit-container {
+      margin-top: -1em;
+      margin-bottom: -1em;
+
+      .contact-submit {
+        background-color: #464646;
+        font-size: 1.2rem;
+        border-radius: 12px;
+
+        &:hover {
+          background-color: #616161;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+main {
+  &.dark {
+    .contact-submit {
+      background-color: #a0a0a0;
+      font-size: 1.2rem;
+      color: #262727;
+
+      &:hover {
+        background-color: #ffffff;
+        font-size: 1.2rem;
+        color: #000;
+      }
+    }
+  }
+}

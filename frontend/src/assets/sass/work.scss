@@ -1,0 +1,18 @@
+.works .content {
+  .section-gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+main {
+  &.dark {
+    .works {
+      background-color: #121212;
+      color: #ffffff;
+    }
+  }
+}

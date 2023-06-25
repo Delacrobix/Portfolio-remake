@@ -36,27 +36,21 @@
   }
 }
 
-#language-selector {
+.language-selector {
   cursor: pointer;
-  padding: 7px;
-  font-size: 16px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  color: #1f1e1e;
-}
+  border-radius: 10px;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  color: black;
 
-#language-selector option {
-  font-size: 15px;
-  background-color: #fff;
-  color: #444;
-}
-
-#language-selector option:checked {
-  color: #000000;
+  option {
+    font-size: 0.9rem;
+    color: black;
+  }
 }
 
 //Dark mode
-main {
+body {
   &.dark {
     .switch-mobile-language {
       i:first-child {

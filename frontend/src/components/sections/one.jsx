@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from 'react';
-import TechImg from './techImg';
+import TechImg from '../techImg';
 
 const One = () => {
   const importAll = (r) => r.keys().map(r);
   const images = importAll(
-    require.context('../assets/images/techs', false, /\.(png|jpe?g|svg)$/)
+    require.context('../../assets/images/techs', false, /\.(png|jpe?g|svg)$/)
   );
 
   const techContainerRef = useRef(null);
@@ -54,7 +54,7 @@ const One = () => {
           <TechImg imageUrl={images[13]} techName={'Spring boot'} />
         </ul>
       </section>
-      <aside className=''>
+      <aside>
         <header id='skills-tittle' ref={skillsTittleRef}>
           <h2>Skills</h2>
         </header>

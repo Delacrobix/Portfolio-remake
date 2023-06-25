@@ -9,7 +9,7 @@ const SwitchMode = (props) => {
   const toggleMode = () => {
     setIsDayMode(!isDayMode);
 
-    const btnSwitch = document.querySelector('.switch');
+    const btnSwitch = document.querySelector(`#${idProp}`);
 
     document.body.classList.toggle('dark');
     btnSwitch.classList.toggle('active');
@@ -19,10 +19,10 @@ const SwitchMode = (props) => {
     <li>
       <div className={classProp} id={idProp} onClick={toggleMode}>
         <span>
-          <FontAwesomeIcon icon={isDayMode ? faSun : faMoon} />
+          <FontAwesomeIcon icon={isDayMode ? faMoon : faSun} />
         </span>
         <span>
-          <FontAwesomeIcon icon={isDayMode ? faSun : faMoon} />
+          <FontAwesomeIcon icon={isDayMode ? faMoon : faSun} />
         </span>
       </div>
     </li>

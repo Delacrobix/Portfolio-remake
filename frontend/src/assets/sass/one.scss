@@ -1,7 +1,4 @@
-/* One */
 .section-one {
-  // background: url('../images/backgrounds/1.jpg'),
-  //   url('../images/backgrounds/1.jpg');
   background-color: #cccccc;
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
@@ -38,7 +35,7 @@
   }
 }
 
-main {
+body {
   &.dark {
     .content.box.style2 {
       background-color: #121212;

@@ -1,22 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SwitchMode from './switchMode';
+import SwitchMode from '../switchMode';
+import SwitchLanguage from '../switchLanguage';
 
 const Header = () => {
-  /*
-   * Code for language selector
-   */
-  const languageSelector = document.getElementById('language-selector');
-
-  function languageChange(event) {
-    // let selectedOption = event.target.options[event.target.selectedIndex].value;
-    // if (selectedOption === 'es') {
-    //   window.location.href = '/';
-    // } else if (selectedOption === 'en') {
-    //   window.location.href = '/en';
-    // }
-  }
-
   return (
     <header id='header' className='header'>
       <h1>Jeffrey's website</h1>
@@ -39,14 +26,7 @@ const Header = () => {
             <Link to='#contact'>Contact</Link>
           </li>
           <li>
-            <select
-              id='language-selector'
-              className='language-selector'
-              onChange={(e) => languageChange}
-            >
-              <option value='en'>English</option>
-              <option value='es'>Español</option>
-            </select>
+            <SwitchLanguage />
           </li>
         </ul>
       </nav>

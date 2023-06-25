@@ -1,0 +1,6 @@
+{
+  "intro": {
+    "welcome": "Welcome to my site. I am a Fullstack developer"
+  },
+  "greeting": "¡Hola, {{name}}!"
+}

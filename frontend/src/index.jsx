@@ -6,8 +6,9 @@ import { HashRouter } from 'react-router-dom';
 
 //Styles
 import './assets/css/styles.css';
-//Bootstrap
-// import 'bootstrap/dist/css/bootstrap.css';
+
+//Language config
+import './config/languages.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

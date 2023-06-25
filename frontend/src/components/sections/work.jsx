@@ -1,50 +1,43 @@
 import React, { useEffect, useState, useRef } from 'react';
-import WorkCell from './workCell';
-import bingoImg from '../assets/images/prev/bingo.png';
-import galleryImg from '../assets/images/prev/mygallery.png';
-import contactBookImg from '../assets/images/prev/contact-book.png';
-import dicesGameImg from '../assets/images/prev/juego-dados.png';
+import WorkCell from '../workCell';
+import bingoImg from '../../assets/images/prev/bingo.png';
+import galleryImg from '../../assets/images/prev/mygallery.png';
+import contactBookImg from '../../assets/images/prev/contact-book.png';
+import dicesGameImg from '../../assets/images/prev/juego-dados.png';
 
 const Work = () => {
   const [imgs, setImgs] = useState([]);
   const workTitleRef = useRef(null);
-  let aux = [];
+  const aux = [];
 
   useEffect(() => {
-    // const imgs = document.querySelectorAll('.work-container');
-    // const imgs_container = document.querySelector('.section-gallery');
-    // const work_tittle = document.querySelector('#work-tittle');
+    if (imgs.length != 0) {
+      function scrollAnimation() {
+        const workTitle = workTitleRef.current;
+        let workTittleHeight = workTitle.getBoundingClientRect().top;
+        let lastImg;
 
-    function scrollAnimation() {
-      const workTitle = workTitleRef.current;
-
-      let workTittleHeight = workTitle.getBoundingClientRect().top;
-      let lastImg;
-
-      imgs.forEach((element) => {
-        element.style.opacity = 0;
-        lastImg = element;
-      });
-
-      let last_imgHeight = lastImg.getBoundingClientRect().top;
-
-      if (screen.height / 2 > workTittleHeight && last_imgHeight > 0) {
         imgs.forEach((element) => {
-          element.style.opacity = 1;
+          element.style.opacity = 0;
+          lastImg = element;
         });
-      }
-    }
 
-    window.addEventListener('scroll', scrollAnimation);
-  }, []);
+        let lastImgHeight = lastImg.getBoundingClientRect().top;
+
+        if (screen.height / 2 > workTittleHeight && lastImgHeight > 0) {
+          imgs.forEach((element) => {
+            element.style.opacity = 1;
+          });
+        }
+      }
+
+      window.addEventListener('scroll', scrollAnimation);
+    }
+  }, [imgs]);
 
   function childData(data) {
-    console.log('DATA: ', data);
     aux.push(data);
-    console.log('AUX: ', aux);
-
     setImgs(aux);
-    console.log('IMGS: ', imgs);
   }
 
   return (

@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Portfolio-remake/static/css/main.bed66d61.css",
+    "main.js": "/Portfolio-remake/static/js/main.1d09c742.js",
+    "static/js/787.cda612ba.chunk.js": "/Portfolio-remake/static/js/787.cda612ba.chunk.js",
+    "static/media/mygallery.png": "/Portfolio-remake/static/media/mygallery.b364ec21cade90df4f0f.png",
+    "static/media/react.png": "/Portfolio-remake/static/media/react.becbab0ab5d2271d2831.png",
+    "static/media/me.jpg": "/Portfolio-remake/static/media/me.136fe7cdd6d11eebdf00.jpg",
+    "static/media/slq-server4.png": "/Portfolio-remake/static/media/slq-server4.a85c9a37947d6be5c690.png",
+    "static/media/bingo.png": "/Portfolio-remake/static/media/bingo.e1df2d41f54abe582a7d.png",
+    "static/media/java.png": "/Portfolio-remake/static/media/java.c575909b35303e09777f.png",
+    "static/media/ecv.pdf": "/Portfolio-remake/static/media/ecv.1686a39bda4e90cd296f.pdf",
+    "static/media/sql-server.png": "/Portfolio-remake/static/media/sql-server.7112772e1796d0be9ed9.png",
+    "static/media/asp.png": "/Portfolio-remake/static/media/asp.51e6b46900fc2c78fe71.png",
+    "static/media/mongodb.png": "/Portfolio-remake/static/media/mongodb.2f81ed7ec1fd818da1b5.png",
+    "static/media/sql-server3.png": "/Portfolio-remake/static/media/sql-server3.52ff4882c529e1975825.png",
+    "static/media/net asp.png": "/Portfolio-remake/static/media/net asp.01f7eca4f6c5f12c9716.png",
+    "static/media/contact-book.png": "/Portfolio-remake/static/media/contact-book.49df24a0f50f13090324.png",
+    "static/media/sql-server2.png": "/Portfolio-remake/static/media/sql-server2.75c9ff342e375add9802.png",
+    "static/media/sass.png": "/Portfolio-remake/static/media/sass.672732e2ef4209142812.png",
+    "static/media/css3.png": "/Portfolio-remake/static/media/css3.1334cb45a7d5ad096543.png",
+    "static/media/3.gif": "/Portfolio-remake/static/media/3.30232874ddbaf9b2b3c8.gif",
+    "static/media/mysql.png": "/Portfolio-remake/static/media/mysql.cf1a78a5f42266d1d9a4.png",
+    "static/media/expressjs.png": "/Portfolio-remake/static/media/expressjs.548f1cfd65ae2d062126.png",
+    "static/media/springboot.png": "/Portfolio-remake/static/media/springboot.9463240a940247a1d9e9.png",
+    "static/media/juego-dados.png": "/Portfolio-remake/static/media/juego-dados.c80d9022ccaad498772a.png",
+    "index.html": "/Portfolio-remake/index.html",
+    "main.bed66d61.css.map": "/Portfolio-remake/static/css/main.bed66d61.css.map",
+    "main.1d09c742.js.map": "/Portfolio-remake/static/js/main.1d09c742.js.map",
+    "787.cda612ba.chunk.js.map": "/Portfolio-remake/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bed66d61.css",
+    "static/js/main.1d09c742.js"
+  ]
+}

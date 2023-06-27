@@ -63,5 +63,25 @@ body {
         display: none;
       }
     }
+
+    .language-selector {
+      cursor: pointer;
+      padding: 7px;
+      font-size: 16px;
+      border: 0.5px solid #202020;
+      border-radius: 5px;
+      background-color: #262727;
+      color: #d6d5d5;
+
+      option {
+        font-size: 15px;
+        background-color: #2c2c2c;
+        color: #d6d5d5;
+      }
+
+      option:checked {
+        color: #d6d5d5;
+      }
+    }
   }
 }

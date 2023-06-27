@@ -1,26 +1,10 @@
-import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import i18n from '../config/languages';
 
-const SwitchLanguage = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 768px)');
-
-    function handleResize(event) {
-      if (event.matches) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    }
-
-    mediaQuery.addEventListener('rezise', handleResize);
-    handleResize(mediaQuery);
-  }, []);
+const SwitchLanguage = (props) => {
+  const { isMobile } = props;
 
   function languageChange(event) {
     const value = event.target.value;

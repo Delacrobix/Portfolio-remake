@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, forwardRef } from 'react';
 import WorkCell from '../workCell';
 import bingoImg from '../../assets/images/prev/bingo.png';
 import galleryImg from '../../assets/images/prev/mygallery.png';
 import contactBookImg from '../../assets/images/prev/contact-book.png';
 import dicesGameImg from '../../assets/images/prev/juego-dados.png';
 
-const Work = () => {
+const Work = forwardRef((__, ref) => {
   const [imgs, setImgs] = useState([]);
   const workTitleRef = useRef(null);
   const aux = [];
@@ -41,7 +41,7 @@ const Work = () => {
   }
 
   return (
-    <section id='work' className='works'>
+    <section ref={ref} className='works'>
       <div className='content'>
         <header id='work-tittle' ref={workTitleRef}>
           <h2>My work</h2>
@@ -91,6 +91,6 @@ const Work = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Work;

@@ -31,7 +31,7 @@ submitButton.addEventListener('click', (e) => {
       },
     })
       .then((res) => res.json())
-      .then((response) => alert('Thanks for sending'))
-      .catch((error) => alert('Error. Please try again'));
+      .then(() => alert('Thanks for sending'))
+      .catch(() => alert('Error. Please try again'));
   }
 });

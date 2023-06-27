@@ -1,0 +1,60 @@
+.section-one {
+  padding: 20rem 1rem;
+
+  background-color: #cccccc;
+  background-size: 256px 256px, cover;
+  background-attachment: fixed, fixed;
+  background-position: top left, center center;
+
+  .tech-container {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    opacity: 0;
+    transition: 1s;
+
+    ul li {
+      margin: 0 0.625em;
+      text-align: center;
+      font-size: 1em;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+      padding: 1.56em 1.56em 1.56em 1.56em;
+
+      &:hover img {
+        transform: translateY(-9px) scale(1.1);
+      }
+
+      &:hover label {
+        color: #717374;
+        transform: translateX(-9px) scale(1.1);
+        text-align: center;
+      }
+    }
+  }
+}
+
+body {
+  &.dark {
+    .content.box.style2 {
+      background-color: #121212;
+      color: #cccccc;
+    }
+
+    .content.box.style2:hover {
+      background-color: #555963;
+      color: #ffffff;
+    }
+
+    .tech-container {
+      color: #121212;
+    }
+
+    .tech-container ul li:hover label {
+      color: #d6d5d5;
+    }
+  }
+}

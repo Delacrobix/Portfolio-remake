@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
-const Footer = () => {
+const Footer = forwardRef((__, ref) => {
   return (
-    <section id='contact' className='contact'>
+    <section className='contact' ref={ref}>
       <div className='content'>
         <header>
           <h2>Contact me.</h2>
@@ -51,6 +51,6 @@ const Footer = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Footer;

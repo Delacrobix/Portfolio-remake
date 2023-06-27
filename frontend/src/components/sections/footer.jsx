@@ -5,24 +5,16 @@ import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
-    <footer id='footer' className='footer'>
+    <footer className='footer'>
       <ul className='icons'>
         <li>
-          <Link
-            to='https://www.linkedin.com/in/jeffrey-rerin/'
-            target='_blank'
-            className='icon brands fa-linkedin-in'
-          >
+          <Link to='https://www.linkedin.com/in/jeffrey-rerin/' target='_blank'>
             <FontAwesomeIcon icon={faLinkedinIn} />
             <span className='label'>LinkedIn</span>
           </Link>
         </li>
         <li>
-          <Link
-            to='https://github.com/Delacrobix'
-            target='_blank'
-            className='icon brands fa-github'
-          >
+          <Link to='https://github.com/Delacrobix' target='_blank'>
             <FontAwesomeIcon icon={faGithub} />
             <span className='label'>Github</span>
           </Link>

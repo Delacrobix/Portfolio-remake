@@ -1,38 +1,70 @@
 .intro {
-  margin-top: 3rem;
-  background: url('../images//backgrounds/1.jpg'),
-    url('../images//backgrounds/1.jpg');
-  background-size: 30rem 30rem, cover;
-  background-attachment: fixed, fixed;
-  background-position: top left, bottom center;
-  background-repeat: repeat, no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background: url('../images//backgrounds/1.jpg');
+  background: url('../images/backgrounds/3.gif') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 1rem 1rem 2rem;
 
-  .content .profile-picture {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .image-container {
-      width: 18em;
-      height: 19em;
-      border-radius: 50%;
+  .content {
+    .profile-picture {
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100%;
+      width: 100%;
 
-      img {
-        width: 18em;
-        height: 18em;
-        border-radius: 50%;
+      .image-container {
+        img {
+          object-fit: cover;
+          border-radius: 50%;
+          height: 30rem;
+          width: 30rem;
+        }
       }
     }
-  }
 
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    header h2 {
+      margin-bottom: 0;
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 1rem;
+      text-align: center;
+    }
+
+    footer {
+      padding-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .down-section-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4.7rem;
+        width: 4.7rem;
+        border-radius: 50%;
+        border: 0.13rem solid rgba($color: #ffffff, $alpha: 0.4);
+
+        .icon {
+          color: rgba($color: #ffffff, $alpha: 0.3);
+          height: 5rem;
+          width: 5rem;
+          transition: 0.3s;
+
+          &:hover {
+            color: rgba($color: #ffffff, $alpha: 0.5);
+          }
+        }
+      }
+    }
   }
 }

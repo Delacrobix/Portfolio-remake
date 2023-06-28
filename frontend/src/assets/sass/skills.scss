@@ -1,54 +1,67 @@
-.section-one {
-  padding: 20rem 1rem;
-
-  background-color: #cccccc;
-  background-size: 256px 256px, cover;
-  background-attachment: fixed, fixed;
-  background-position: top left, center center;
+.skills {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
 
   .tech-container {
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    width: 72%;
     display: grid;
     grid-template-columns: repeat(3, 20%);
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     transition: 1s;
 
-    ul li {
-      margin: 0 0.625em;
-      text-align: center;
-      font-size: 1em;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-        sans-serif;
-      padding: 1.56em 1.56em 1.56em 1.56em;
+    ul {
+      list-style: none;
+    }
+  }
 
-      &:hover img {
-        transform: translateY(-9px) scale(1.1);
+  .skills-description-aside {
+    position: absolute;
+    right: 0;
+    margin-right: -30%;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: margin 0.5s, width 0.5s;
+
+    &:hover {
+      width: 31.5%;
+      transition: width 0.5s;
+
+      .skills-tittle-header {
+        transition: font-size 0.5s;
+        font-size: 1.7rem;
       }
 
-      &:hover label {
-        color: #717374;
-        transform: translateX(-9px) scale(1.1);
-        text-align: center;
+      .skills-description {
+        transition: font-size 0.5s;
+        font-size: 1.4rem;
       }
+    }
+
+    &.active {
+      margin-right: 0;
+    }
+
+    .skills-tittle-header {
+      transition: font-size 0.5s;
+      font-size: 1.5rem;
+    }
+
+    .skills-description {
+      transition: font-size 0.5s;
+      font-size: 1.2rem;
+      line-height: 1.7rem;
     }
   }
 }
 
 body {
   &.dark {
-    .content.box.style2 {
-      background-color: #121212;
-      color: #cccccc;
-    }
-
-    .content.box.style2:hover {
-      background-color: #555963;
-      color: #ffffff;
-    }
-
     .tech-container {
       color: #121212;
     }

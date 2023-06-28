@@ -1,4 +1,11 @@
 body {
   margin: 0;
   padding: 0;
+
+  .divisor-line-container {
+    padding: 0 25%;
+    .divisor-line {
+      border-top: 1.5px solid rgb(0, 0, 0, 0.3);
+    }
+  }
 }

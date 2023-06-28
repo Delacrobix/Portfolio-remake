@@ -19,17 +19,21 @@ const WorkCell = (props) => {
         <img src={imgSrc} alt='' />
       </div>
       <div className='layer'>
-        <h3>{projectName}</h3>
-        <p>{projectDescription}</p>
-        <div>
-          <Link to={repo} target='_blank'>
-            Repository
-          </Link>
+        <div className='text-container'>
+          <h3>{projectName}</h3>
+          <p>{projectDescription}</p>
         </div>
-        <div>
-          <Link to={appLink} target='_blank'>
-            Live app
-          </Link>
+        <div className='buttons-container'>
+          <div>
+            <Link to={repo} target='_blank'>
+              Repository
+            </Link>
+          </div>
+          <div>
+            <Link to={appLink} target='_blank'>
+              Live app
+            </Link>
+          </div>
         </div>
       </div>
     </figure>

@@ -3,9 +3,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // background: url('../images//backgrounds/1.jpg');
-  background: url('../images/backgrounds/3.gif') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../images/backgrounds/1.jpg');
+  // background: url('../images/backgrounds/3.gif') no-repeat center center fixed;
+  background-size: 30rem cover;
   background-attachment: fixed;
   padding: 1rem 1rem 2rem;
 
@@ -20,6 +20,7 @@
       .image-container {
         img {
           object-fit: cover;
+          object-position: top;
           border-radius: 50%;
           height: 30rem;
           width: 30rem;
@@ -49,10 +50,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 4.7rem;
-        width: 4.7rem;
+        height: 5rem;
+        width: 5rem;
         border-radius: 50%;
-        border: 0.13rem solid rgba($color: #ffffff, $alpha: 0.4);
+        border: 0.13rem solid rgba($color: #ffffff, $alpha: 0.5);
 
         .icon {
           color: rgba($color: #ffffff, $alpha: 0.3);

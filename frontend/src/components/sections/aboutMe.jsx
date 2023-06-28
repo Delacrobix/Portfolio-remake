@@ -35,9 +35,6 @@ const AboutMe = forwardRef((__, ref) => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    // return () => {
-    //   window.removeEventListener('scroll', handleScroll);
-    // };
   }, []);
 
   function openPDF() {

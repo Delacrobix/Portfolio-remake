@@ -43,15 +43,14 @@ const Work = forwardRef((__, ref) => {
   return (
     <section ref={ref} className='works'>
       <div className='content'>
-        <header id='work-tittle' ref={workTitleRef}>
+        <header className='work-tittle' ref={workTitleRef}>
           <h2>My work</h2>
           <p>Here is a part of my experience as software developer.</p>
         </header>
-
         <section className='section-gallery'>
           <WorkCell
             childData={childData}
-            projectName={'bingo'}
+            projectName={'Bingo'}
             projectDescription={
               'Bingo game, you can to play alone or with more players'
             }
@@ -61,7 +60,7 @@ const Work = forwardRef((__, ref) => {
           />
           <WorkCell
             childData={childData}
-            projectName={'my personal gallery'}
+            projectName={'My personal gallery'}
             projectDescription={
               'Here is some ones of my best photos that I have taken'
             }
@@ -71,7 +70,7 @@ const Work = forwardRef((__, ref) => {
           />
           <WorkCell
             childData={childData}
-            projectName={'contact book'}
+            projectName={'Contact book'}
             projectDescription={
               'This is a simple contact book, you can add, delete and edit contacts'
             }
@@ -81,7 +80,7 @@ const Work = forwardRef((__, ref) => {
           />
           <WorkCell
             childData={childData}
-            projectName={'dices game'}
+            projectName={'Dices game'}
             projectDescription={'Blabal'}
             imgSrc={dicesGameImg}
             repo={'https://github.com/Delacrobix/DicesGame'}

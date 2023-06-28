@@ -1,12 +1,26 @@
 .works {
-  padding-top: 4rem;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4rem;
 
   .content {
+    .work-tittle {
+      text-align: center;
+
+      h2 {
+        font-size: 1.7rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+
     .section-gallery {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(2, 350px);
+      grid-template-columns: repeat(2, 25%);
       justify-content: center;
       align-items: center;
     }

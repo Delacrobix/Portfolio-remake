@@ -1,14 +1,45 @@
-.tech-img-li {
-  .tech-img {
-    margin: 5px;
-    max-width: 4.5em;
-    max-height: 4.5em;
-    line-height: 7.5em;
-    transition: 0.3s;
+.tech-li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+
+    .tech-name {
+      transition: color 0.2s;
+      color: black;
+    }
+  }
+
+  .tech-img-container {
+    display: flex;
+    justify-content: center;
+    padding: 0.2rem;
+
+    .tech-img {
+      width: 5rem;
+      height: 5rem;
+      align-content: center;
+      object-fit: contain;
+    }
   }
 
   .tech-name {
-    transition: 0.3s;
-    margin-right: -1em;
+    transition: color 0.2s;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    font-size: 1rem;
+  }
+}
+
+body {
+  &.dark {
+    .tech-name:hover {
+      color: #d6d5d5;
+    }
   }
 }

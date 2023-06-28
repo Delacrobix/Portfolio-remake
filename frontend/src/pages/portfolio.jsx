@@ -31,8 +31,17 @@ const Portfolio = () => {
       <Header scrollTo={scrollTo} />
       <Intro scrollTo={scrollTo} ref={introRef} />
       <Work ref={workRef} />
+      <div className='divisor-line-container'>
+        <hr className='divisor-line' />
+      </div>
       <AboutMe ref={aboutMeRef} />
+      <div className='divisor-line-container'>
+        <hr className='divisor-line' />
+      </div>
       <Skills ref={skillsRef} />
+      <div className='divisor-line-container'>
+        <hr className='divisor-line' />
+      </div>
       <Contact ref={contactRef} />
       <Footer />
     </>

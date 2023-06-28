@@ -9,11 +9,13 @@ const Skills = forwardRef((__, ref) => {
 
   const techContainerRef = useRef(null);
   const skillsTittleRef = useRef(null);
+  const skillsTittleAsideRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
       const techContainer = techContainerRef.current;
       const skillsTittle = skillsTittleRef.current;
+      const skillsTittleAside = skillsTittleAsideRef.current;
 
       let skillsTittleHeight = skillsTittle.getBoundingClientRect().top;
       let techContainerHeight = techContainer.getBoundingClientRect().top;
@@ -24,7 +26,10 @@ const Skills = forwardRef((__, ref) => {
         window.innerHeight / 1.6 > skillsTittleHeight &&
         techContainerHeight > -100
       ) {
+        skillsTittleAside.classList.add('active');
         techContainer.style.opacity = 1;
+      } else {
+        skillsTittleAside.classList.remove('active');
       }
     };
 
@@ -32,7 +37,7 @@ const Skills = forwardRef((__, ref) => {
   }, []);
 
   return (
-    <section id='skills' className='section-one' ref={ref}>
+    <section className='skills' ref={ref}>
       <section className='tech-container' ref={techContainerRef}>
         <ul>
           <TechImg imageUrl={images[0]} techName={'.NET Core'} />
@@ -50,11 +55,11 @@ const Skills = forwardRef((__, ref) => {
           <TechImg imageUrl={images[13]} techName={'Spring boot'} />
         </ul>
       </section>
-      <aside>
-        <header id='skills-tittle' ref={skillsTittleRef}>
+      <aside className='skills-description-aside' ref={skillsTittleAsideRef}>
+        <header className='skills-tittle-header' ref={skillsTittleRef}>
           <h2>Skills</h2>
         </header>
-        <p>
+        <p className='skills-description'>
           These are the technologies that I have worked with. I have experience
           in developing applications with MVC architecture and modular
           applications. Additionally, I can build REST APIs and GraphQL APIs.

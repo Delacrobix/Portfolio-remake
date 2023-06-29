@@ -1,4 +1,5 @@
 .about-me {
+  font-family: $lora;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -18,7 +19,7 @@
     }
 
     &:hover {
-      padding: 0rem 36%;
+      padding: 0 36%;
 
       .about-me__title {
         margin-bottom: -2rem;
@@ -53,8 +54,7 @@
     }
 
     .cv-container {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-        sans-serif;
+      font-family: $gil-sans;
       visibility: hidden;
       opacity: 0;
       display: flex;
@@ -81,12 +81,16 @@
 //Night mode
 body {
   &.dark {
-    .two-container {
-      background-color: #262727;
-      color: #ffffff;
+    .about-me {
+      color: map-get($dark, mystic);
 
       .cv-container a {
-        color: #000000;
+        color: map-get($dark, mystic);
+        border: map-get($dark, mystic) solid 1px;
+
+        &:hover {
+          background-color: rgba(map-get($dark, mystic), $alpha: 0.15);
+        }
       }
     }
   }

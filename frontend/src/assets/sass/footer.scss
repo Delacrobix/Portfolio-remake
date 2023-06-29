@@ -1,7 +1,8 @@
 .footer {
+  font-family: $comfortaa-cursive;
   width: 100%;
   position: absolute;
-  background: transparentize(map-get($light, BlueBayoux), 0.2);
+  background: map-get($light, blueBayoux);
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -45,7 +46,12 @@
 body {
   &.dark {
     .footer {
-      background-color: #343d5b;
+      background: map-get($dark, blue-bayoux-dark);
+      color: map-get($dark, mystic);
+
+      a {
+        color: map-get($dark, mystic);
+      }
     }
   }
 }

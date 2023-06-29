@@ -1,6 +1,7 @@
 /*  Language button */
 .header {
-  background: transparentize(map-get($light, BlueBayoux), 0.2);
+  font-family: $rubik;
+  background: transparentize(map-get($light, blueBayoux), 0.2);
   position: fixed;
   z-index: 10000;
   width: 100%;
@@ -14,28 +15,28 @@
     cursor: default;
     position: fixed;
     padding-left: 1rem;
+    transition: color 0.3s;
   }
 
   nav {
     right: 1rem;
     position: absolute;
 
-    ul {
-      li {
-        padding: 0rem 0.7rem;
-        display: inline-block;
-        font-weight: bold;
+    li {
+      font-size: 1rem;
+      padding: 0rem 0.7rem;
+      display: inline-block;
+      font-weight: bold;
+
+      .header__link {
+        color: black;
         font-size: 1rem;
+        text-decoration: none;
+        padding: 0 0.6rem 0 0.6rem;
+        transition: color 0.3s;
 
-        a {
-          color: black;
-          text-decoration: none;
-          padding: 0 0.6rem 0 0.6rem;
-          transition: color 0.3s ease;
-
-          &:hover {
-            color: map-get($light, LinkWater);
-          }
+        &:hover {
+          color: map-get($dark, mystic);
         }
       }
     }
@@ -45,11 +46,17 @@
 //Darkmode
 body {
   &.dark {
-    background-color: #121212;
-
     .header {
-      background-color: #262727;
-      color: #ffffff;
+      color: map-get($dark, mystic);
+      background: transparentize(map-get($dark, blue-bayoux-dark), 0.2);
+
+      nav li .header__link {
+        color: map-get($dark, mystic);
+
+        &:hover {
+          color: map-get($light, LinkWater);
+        }
+      }
     }
   }
 }

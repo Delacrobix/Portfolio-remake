@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Intro from '../components/sections/intro';
 import Header from '../components/sections/header';
 import Footer from '../components/sections/footer';
@@ -8,11 +8,28 @@ import Contact from '../components/sections/contact';
 import AboutMe from '../components/sections/aboutMe';
 
 const Portfolio = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
   const contactRef = useRef(null);
   const skillsRef = useRef(null);
   const introRef = useRef(null);
   const workRef = useRef(null);
   const aboutMeRef = useRef(null);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+    function handleResize(event) {
+      if (event.matches) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    }
+
+    mediaQuery.addEventListener('change', handleResize);
+    handleResize(mediaQuery);
+  }, []);
 
   function scrollTo(section) {
     const refSwitch = {
@@ -28,8 +45,8 @@ const Portfolio = () => {
 
   return (
     <>
-      <Header scrollTo={scrollTo} />
-      <Intro scrollTo={scrollTo} ref={introRef} />
+      <Header scrollTo={scrollTo} isMobile={isMobile} />
+      <Intro scrollTo={scrollTo} ref={introRef} isMobile={isMobile} />
       <Work ref={workRef} />
       <div className='divisor-line-container'>
         <hr className='divisor-line' />

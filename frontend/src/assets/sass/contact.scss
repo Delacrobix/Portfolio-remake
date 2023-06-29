@@ -1,8 +1,9 @@
 .contact {
+  font-family: $comfortaa-cursive;
   background: url('../images/backgrounds/1.jpg');
   background-size: 30rem cover;
   background-attachment: fixed;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   position: relative;
@@ -29,16 +30,17 @@
       padding: 0rem 2.5rem;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
-      background-color: rgba($color: #ffffff, $alpha: 1);
-      border-top: 3px solid rgba($color: #000000, $alpha: 0.4);
-      border-left: 3px solid rgba($color: #000000, $alpha: 0.4);
-      border-right: 3px solid rgba($color: #000000, $alpha: 0.4);
+      background: transparentize(map-get($light, linen-light), 0.2);
+      border-top: 2px solid rgba($color: #000000, $alpha: 0.6);
+      border-left: 2px solid rgba($color: #000000, $alpha: 0.6);
+      border-right: 2px solid rgba($color: #000000, $alpha: 0.6);
       display: flex;
       flex-direction: column;
       align-items: center;
 
       input,
       textarea {
+        background: transparentize(map-get($light, linen-light), 0.2);
         padding: 0.5rem 0;
         min-width: 50%;
         border-radius: 7px;
@@ -99,6 +101,7 @@
       }
 
       .submit-container {
+        font-family: $gil-sans;
         padding-top: 2rem;
         padding-bottom: 4rem;
         font-size: 1rem;
@@ -122,15 +125,37 @@
 
 body {
   &.dark {
-    .contact-submit {
-      background-color: #a0a0a0;
-      font-size: 1.2rem;
-      color: #262727;
+    .contact {
+      color: map-get($dark, mystic);
 
-      &:hover {
-        background-color: #ffffff;
-        font-size: 1.2rem;
-        color: #000;
+      .header-contact {
+        color: map-get($dark, mystic);
+      }
+
+      .form-contact {
+        background-color: transparentize(map-get($dark, pickled-bluewood), 0.2);
+
+        input,
+        textarea {
+          background-color: transparentize(
+            map-get($dark, pickled-bluewood),
+            0.2
+          );
+
+          &::placeholder {
+            color: map-get($dark, mystic);
+          }
+        }
+      }
+
+      .contact-submit {
+        color: map-get($dark, mystic);
+        // border: rgba(map-get($dark, mystic), 1) solid 1px;
+
+        &:hover {
+          background-color: rgba(map-get($dark, mystic), $alpha: 0.15);
+          // border: rgba($color: map-get($dark, mystic), $alpha: 0.15) solid 1px;
+        }
       }
     }
   }

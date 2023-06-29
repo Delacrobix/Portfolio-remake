@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import SwitchMode from '../switchMode';
-import SwitchLanguage from '../switchLanguage';
 
-const Header = (props) => {
+const DropdownHeader = (props) => {
   const { scrollTo } = props;
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <header id='header' className='header'>
-      <h1 className='header__h1'>Jeffrey Rengifo Marin</h1>
-      <nav>
-        <ul>
-          <SwitchMode classProp={'switch-mode'} idProp={'switch'} />
+    <div className='dropdown-header'>
+      <button className='dropdown-header__toggle' onClick={toggleMenu}>
+        Menú
+      </button>
+      {isOpen && (
+        <ul className='dropdown-header__list'>
           <li>
             <Link className='header__link' onClick={() => scrollTo('intro')}>
               Intro
@@ -37,13 +41,10 @@ const Header = (props) => {
               Contact
             </Link>
           </li>
-          <li>
-            <SwitchLanguage />
-          </li>
         </ul>
-      </nav>
-    </header>
+      )}
+    </div>
   );
 };
 
-export default Header;
+export default DropdownHeader;

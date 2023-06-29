@@ -5,7 +5,7 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
-  transition: 0.6s;
+  transition: 0.5s;
 
   &:hover > .layer {
     opacity: 1;
@@ -52,11 +52,13 @@
 
       h3 {
         text-align: center;
-        padding: 2rem;
+        padding: 2rem 2rem 1rem;
         font-size: 1.5rem;
       }
 
       p {
+        padding-top: 0;
+        padding: 0 2rem;
         text-align: center;
         font-size: 1rem;
       }

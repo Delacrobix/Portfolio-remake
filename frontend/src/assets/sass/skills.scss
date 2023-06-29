@@ -19,6 +19,7 @@
   }
 
   .skills-description-aside {
+    font-family: $lora;
     position: absolute;
     right: 0;
     margin-right: -30%;
@@ -62,12 +63,8 @@
 
 body {
   &.dark {
-    .tech-container {
-      color: #121212;
-    }
-
-    .tech-container ul li:hover label {
-      color: #d6d5d5;
+    .skills {
+      color: map-get($dark, mystic);
     }
   }
 }

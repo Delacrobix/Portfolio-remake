@@ -1,10 +1,12 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLanguage } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import EnFlag from './svg/enFlag';
+import EsFlag from './svg/esFlag';
 import i18n from '../config/languages';
+import { useRef, useState } from 'react';
 
 const SwitchLanguage = (props) => {
+  const languageRef = useRef(null);
   const { isMobile } = props;
+  const [language, setLanguage] = useState('es');
 
   function languageChange(event) {
     const value = event.target.value;
@@ -18,31 +20,37 @@ const SwitchLanguage = (props) => {
     }
   }
 
-  function mobileLanguageChange(value) {
-    if (value === 'en') {
-      i18n.changeLanguage(value);
+  function mobileLanguageChange() {
+    const languageSpan = languageRef.current;
+
+    if (language === 'es') {
+      setLanguage('en');
+
+      languageSpan.classList.remove('es');
+      languageSpan.classList.add('en');
+
+      i18n.changeLanguage(language);
     } else {
-      i18n.changeLanguage(value);
+      setLanguage('es');
+
+      languageSpan.classList.add('es');
+      languageSpan.classList.remove('en');
+
+      i18n.changeLanguage(language);
     }
   }
 
   return isMobile ? (
-    <Link id='switch-mobile-language' className='switch-mobile-language'>
-      <FontAwesomeIcon
-        icon={faLanguage}
-        onClick={() => mobileLanguageChange('en')}
-      />
-      <FontAwesomeIcon
-        icon={faLanguage}
-        onClick={() => mobileLanguageChange('es')}
-      />
-    </Link>
-  ) : (
-    <select
-      id='language-selector'
-      className='language-selector'
-      onChange={languageChange}
+    <span
+      className='switch-mobile-language es'
+      onClick={mobileLanguageChange}
+      ref={languageRef}
     >
+      <EsFlag />
+      <EnFlag />
+    </span>
+  ) : (
+    <select className='language-selector' onChange={languageChange}>
       <option value='en'>English</option>
       <option value='es'>Español</option>
     </select>

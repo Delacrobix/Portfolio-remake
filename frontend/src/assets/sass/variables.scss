@@ -1,7 +1,29 @@
 //Colors light
 $light: (
-  Linen: #fcf8ec,
-  LinkWater: #d0e8f2,
-  BaliHai: #79a3b1,
-  BlueBayoux: #456268,
+  lzinkWater: #d0e8f2,
+  linen-light: #fcf8ec,
+  baliHai: #79a3b1,
+  blueBayoux: #456268,
 );
+
+$dark: (
+  pickled-bluewood: #27374d,
+  blue-bayoux-dark: #526d82,
+  gull-gray: #9db2bf,
+  mystic: #dde6ed,
+);
+
+//Fonts
+$comfortaa-cursive: 'Comfortaa', cursive;
+$josefin-sans: 'Josefin Sans', sans-serif;
+$nunito: 'Nunito', sans-serif;
+$poppins: 'Poppins', sans-serif;
+$quicksand: 'Quicksand', sans-serif;
+$raleway: 'Raleway', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$work-sans: 'Work Sans', sans-serif;
+$rubik: 'Rubik', sans-serif;
+$bacasime: 'Bacasime Antique', serif;
+$lora: 'Lora', serif;
+$roboto-mono: 'Roboto Mono', monospace;
+$gil-sans: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

@@ -1,10 +1,12 @@
 .works {
+  font-family: $comfortaa-cursive;
   height: 100vh;
   display: flex;
   align-items: center;
   padding-bottom: 4rem;
 
   .content {
+    // width: 100%;
     .work-tittle {
       text-align: center;
 
@@ -30,8 +32,7 @@
 body {
   &.dark {
     .works {
-      background-color: #121212;
-      color: #ffffff;
+      color: map-get($dark, mystic);
     }
   }
 }

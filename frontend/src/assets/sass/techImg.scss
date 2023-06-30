@@ -10,28 +10,30 @@
     transform: scale(1.05);
 
     .tech-name {
-      transition: color 0.2s;
+      transition: color 0.2s, opacity 0.2s;
       color: black;
+      opacity: 1;
     }
   }
 
   .tech-img-container {
     display: flex;
     justify-content: center;
-    padding: 0.2rem;
+    padding: 0.5rem;
 
     .tech-img {
-      width: 5rem;
-      height: 5rem;
       align-content: center;
       object-fit: contain;
+      height: 5rem;
+      width: 5rem;
     }
   }
 
   .tech-name {
-    transition: color 0.2s;
+    transition: color 0.2s, opacity 0.2s;
     color: rgba(0, 0, 0, 0.7);
     font-size: 1rem;
+    opacity: 0;
   }
 }
 

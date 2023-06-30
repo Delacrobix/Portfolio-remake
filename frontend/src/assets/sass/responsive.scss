@@ -44,26 +44,21 @@
   //About me
   .about-me {
     &__container {
-      margin-left: -37%;
-      width: 35%;
-      background-color: #fff;
-      // transition: 0.s;
+      margin-left: -42%;
+      width: 39%;
 
       &:hover {
-        padding: 0 36%;
+        padding: 0 30%;
 
         .about-me__title {
-          // margin-bottom: -2rem;
+          transform: translateX(30%);
           font-size: 1.7rem;
-          transition: font-size 0.2s, transform 0.2s, margin 0.2s;
         }
 
         .about-me__description {
-          // width: 110%;
+          width: 35rem;
           font-size: 1.2rem;
           line-height: 1.8rem;
-          // text-align: center;
-          // transition: font-size 0.1s, line-height 0.2s;
         }
       }
 
@@ -72,16 +67,72 @@
       }
 
       .about-me__description {
+        width: 35rem;
         font-size: 1.1rem;
         line-height: 1.7rem;
-        // transition: font-size 0.1s, line-height 0.2s;
+      }
+    }
+  }
+
+  //Skills
+  .skills {
+    .tech-container {
+      width: 68%;
+      margin-left: -1rem;
+    }
+
+    .skills-description-aside {
+      width: 29%;
+      margin-left: -1rem;
+
+      &:hover {
+        .skills-tittle-header {
+          font-size: 1.7rem;
+        }
+
+        .skills-description {
+          font-size: 1.2rem;
+        }
       }
 
-      .cv-container {
-        // display: none;
-        // visibility: visible;
-        // opacity: 1;
-        // transition: visibility 1s, opacity 1s;
+      .skills-tittle-header {
+        font-size: 1.4rem;
+      }
+      .skills-description {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  //Contact
+  .contact {
+    .container {
+      width: 50%;
+      .header-contact {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+
+      .form-contact {
+        padding: 0 1.5rem;
+
+        input,
+        textarea {
+          padding: 0.3rem 0;
+        }
+
+        .submit-container {
+          padding-bottom: 2rem;
+
+          .contact-submit {
+            padding: 1rem 2.5rem;
+          }
+        }
       }
     }
   }
@@ -246,10 +297,9 @@
 
 @media (max-width: 576px) {
   body {
-    font-size: 11px;
-
     //Header
     .header {
+      height: 2rem;
       height: 3rem;
       display: flex;
       justify-content: center;
@@ -261,45 +311,334 @@
 
     //Intro
     .intro {
-      .dropdown-header {
-        // display: inline-block;
+      .content {
+        margin-left: -2rem;
+
+        .profile-picture {
+          .image-container {
+            img {
+              height: 24rem;
+              width: 24rem;
+            }
+          }
+        }
+
+        header h2 {
+          margin-top: 1.5rem;
+          font-size: 2.5rem;
+        }
+
+        p {
+          margin: 1rem;
+          font-size: 1.2rem;
+        }
+
+        footer {
+          padding-top: 1rem;
+
+          li .switch-mode-mobile {
+            width: 5.6rem;
+            height: 5.6rem;
+          }
+        }
+
+        .switch-mobile-language {
+          border-radius: 50%;
+          padding: 0.2rem;
+        }
       }
     }
 
-    //One
-    // .section-one {
-    //   .tech-container ul {
-    //     margin-right: 2em;
-
-    //     .tech-img {
-    //       max-width: 3.5em;
-    //       max-height: 3.5em;
-    //       margin: 1.5em 1em 1.5em 1em;
-    //     }
-
-    //     .tech-name {
-    //       margin-top: -2em;
-    //       margin-right: -8.5em;
-    //     }
-    //   }
-    // }
-
-    //Two
-    // .section-two {
-    //   margin-bottom: -10em;
-    //   margin-top: -5em;
-    // }
-
     //Works
-    // .works {
-    //   .layer div {
-    //     padding-top: 8em;
-    //   }
-    // }
+    .works {
+      height: 100%;
+      padding: 0rem;
+
+      .content {
+        .work-tittle {
+          h2 {
+            font-size: 1.5rem;
+          }
+
+          p {
+            font-size: 1.2rem;
+          }
+        }
+
+        .section-gallery {
+          display: flex;
+          flex-direction: column;
+
+          .work-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+
+            .img-layer {
+              margin: 0 0.2rem;
+            }
+
+            .layer {
+              margin: 0;
+
+              .text-container {
+                p {
+                  padding: 0rem 2rem 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //About me
+    .about-me {
+      width: 100%;
+
+      &__container {
+        margin: 0;
+        opacity: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+
+        &.active {
+          opacity: 1;
+        }
+
+        &:hover {
+          width: 100%;
+          padding: 0;
+
+          .about-me__title {
+            margin: 0;
+            font-size: 1.5rem;
+            transform: translateX(0%);
+          }
+
+          .about-me__description {
+            width: 100%;
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+          }
+        }
+
+        .about-me__title {
+          text-align: center;
+          font-size: 1.5rem;
+        }
+
+        .about-me__description {
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          padding: 0rem;
+          font-size: 1.1rem;
+          line-height: 1.5rem;
+        }
+
+        .cv-container {
+          padding-top: 1rem;
+          visibility: visible;
+          opacity: 1;
+          transition: visibility 1s, opacity 1s;
+        }
+      }
+    }
+  }
+
+  //Skills
+  .skills {
+    height: 100%;
+    margin: 4rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .tech-container {
+      margin: 0 0 0 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+
+      ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+        .tech-li {
+          .tech-img-container {
+            .tech-img {
+              height: 4rem;
+              width: 4rem;
+            }
+          }
+
+          .tech-name {
+            font-size: 0.8rem;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .skills-description-aside {
+      order: -1;
+      position: static;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+
+      &:hover {
+        width: 100%;
+
+        .skills-tittle-header {
+          transition: font-size 0.5s;
+          font-size: 1.5rem;
+        }
+
+        .skills-description {
+          font-size: 1.1rem;
+          line-height: 1.5rem;
+        }
+      }
+
+      .skills-tittle-header {
+        text-align: center;
+        transition: font-size 0.5s;
+        font-size: 1.5rem;
+      }
+
+      .skills-description {
+        padding: 0rem 1rem;
+        text-align: center;
+        transition: font-size 0.5s;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  //Contact
+  .contact {
+    .container {
+      width: 95%;
+
+      .header-contact {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+
+      .form-contact {
+        padding: 0 1rem;
+
+        .text-input-container {
+          .input-container {
+            flex-direction: column;
+            padding: 0;
+
+            input {
+              width: 100%;
+              margin: 0.5rem 0;
+            }
+          }
+
+          .textarea-container {
+            padding: 0.5rem 0 0 0;
+            textarea {
+              height: 9rem;
+            }
+          }
+        }
+
+        .submit-container {
+          padding: 1.5rem 0 2rem 0;
+          .contact-submit {
+            padding: 1.5rem 6rem;
+          }
+        }
+      }
+    }
+  }
+
+  //Footer
+  .footer {
+    .icons-ul {
+      margin-left: -2rem;
+    }
+
+    .menu {
+      margin-left: -2rem;
+    }
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
+  body {
+    //Header
+    .header {
+      height: 2rem;
+    }
+
+    //Intro
+    .intro {
+      .content {
+        margin-left: -2rem;
+
+        .profile-picture {
+          .image-container {
+            margin-top: 7rem;
+
+            img {
+              height: 16rem;
+              width: 16rem;
+            }
+          }
+        }
+
+        header h2 {
+          margin-top: 0.5rem;
+          font-size: 2rem;
+        }
+
+        p {
+          margin: 0.5rem;
+          font-size: 0.9rem;
+        }
+
+        footer {
+          padding-top: 0.5rem;
+
+          li .switch-mode-mobile {
+            width: 5.1rem;
+            height: 5.1rem;
+          }
+        }
+
+        .switch-mobile-language {
+          border-radius: 50%;
+          padding: 0rem;
+
+          svg {
+            transform: scale(50%);
+          }
+        }
+      }
+    }
+  }
   //One
   // .section-one {
   //   .tech-container ul {

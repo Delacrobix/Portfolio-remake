@@ -50,8 +50,8 @@ const AboutMe = forwardRef((__, ref) => {
         <p className='about-me__description'>
           My name is Jeffrey Sneider Rengifo Marin but sometimes I sign as
           Jeffrey S. Rerín. I am Fullstack developer and actually I am studying
-          Software Engineering. I feel passion for solving problems, facilities
-          for the autodidact learning and for the team work.
+          problems, facilities for the autodidact learning and for the team
+          work.
         </p>
         <div className='cv-container'>
           <Link onClick={openPDF}>Watch CV</Link>

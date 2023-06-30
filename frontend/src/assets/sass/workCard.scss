@@ -1,0 +1,132 @@
+.work__cards .content .work-cards-container {
+  width: 64rem;
+  height: 36rem;
+  transition: 0.5s;
+  position: relative;
+
+  &:hover > .layer {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover .img-layer img {
+    filter: blur(2px);
+  }
+
+  .img-layer {
+    height: 100%;
+    width: 100%;
+
+    img {
+      border-radius: 15px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .layer {
+    font-family: $comfortaa-cursive;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.5s;
+    color: #ffffff;
+
+    .text-container {
+      height: 55%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: -0.08rem -0.08rem 0 #000, 1px -0.08rem 0 #000,
+          -0.08rem 0.08rem 0 #000, 0.08rem 0.08rem 0 #000;
+      }
+
+      p {
+        font-size: 1.3rem;
+        padding: 0;
+        text-align: center;
+        text-shadow: -0.05rem -0.05rem 0 #000000a6, 1px -0.05rem 0 #000000da,
+          -0.05rem 0.05rem 0 #585858, 0.05rem 0.05rem 0 #000000da;
+      }
+    }
+
+    .buttons-container {
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      div {
+        margin: 1rem;
+
+        a {
+          padding: 1.6rem 3.2rem;
+          color: white;
+          border: 1px solid white;
+          border-radius: 7px;
+          transition: color 0.25s, background 0.25s, font-weight 0.25s;
+          text-decoration: none;
+
+          &:hover {
+            background-color: rgba($color: #ffffff, $alpha: 0.3);
+            font-weight: bold;
+            color: #000;
+          }
+        }
+      }
+    }
+
+    .techs {
+      padding: 0;
+      margin: 0;
+      height: 20%;
+
+      &__ul {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .tech-li {
+          margin-right: 1rem;
+          padding: 0;
+          bottom: 0;
+
+          .tech-img-container {
+            padding: 0 0 0.2rem 0;
+
+            .tech-img {
+              border-radius: 10px;
+              padding: 0.5rem;
+              background-color: #ffffff13;
+              height: 3rem;
+              width: 3rem;
+            }
+          }
+
+          .tech-name {
+            color: #ffffff;
+            font-size: 0.7rem;
+            padding: 0 0 0.4rem 0;
+          }
+        }
+      }
+    }
+  }
+}

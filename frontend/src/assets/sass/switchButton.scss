@@ -1,0 +1,23 @@
+.switch-button {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  button {
+    padding: 1.1rem 3rem;
+    background: rgba($color: #000000, $alpha: 0);
+
+    transition: background 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      // background: rgba($color: #ffffff, $alpha: 0.3);
+      transition: background 0.5s;
+      background: rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+
+  // align-items: center;
+}

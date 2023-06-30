@@ -23,7 +23,28 @@
     }
   }
 
-  //Works
+  //works carousel
+  .work__cards {
+    padding: 0 0 5rem 0;
+    .content {
+      .work-cards__header {
+        margin: 0 0 -3rem 0;
+      }
+
+      //WorkCard component
+      .work-cards-container {
+        width: 56rem;
+        height: 31.5rem;
+      }
+
+      //Arrows to move carousel
+      .css-1qzevvg {
+        margin: -1rem 0 0 0;
+      }
+    }
+  }
+
+  //Works grid
   .works {
     .content .section-gallery {
       grid-template-columns: repeat(2, 30%);

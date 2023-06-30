@@ -1,0 +1,44 @@
+.work__cards {
+  height: 100vh;
+
+  .content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    .work-cards__header {
+      font-family: $comfortaa-cursive;
+      bottom: 0;
+      margin: 0 0 -10rem 0;
+      text-align: center;
+
+      h2 {
+        font-size: 1.7rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+
+    //Arrows to move carousel
+    .css-1qzevvg {
+      z-index: 1000;
+      margin: -7rem 0 7rem 0;
+
+      img {
+        cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+          transform: scale(1.2);
+          transition: 0.4s;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef, forwardRef } from 'react';
-import WorkCell from '../workCell';
+import WorkCard from '../workCard';
 import bingoImg from '../../assets/images/prev/bingo.png';
 import galleryImg from '../../assets/images/prev/mygallery.png';
 import contactBookImg from '../../assets/images/prev/contact-book.png';
@@ -12,28 +12,31 @@ const Work = forwardRef((__, ref) => {
 
   useEffect(() => {
     if (imgs.length != 0) {
-      function scrollAnimation() {
-        const workTitle = workTitleRef.current;
-        let workTittleHeight = workTitle.getBoundingClientRect().top;
-        let lastImg;
-
-        imgs.forEach((element) => {
-          element.style.opacity = 0;
-          lastImg = element;
-        });
-
-        let lastImgHeight = lastImg.getBoundingClientRect().top;
-
-        if (screen.height / 2 > workTittleHeight && lastImgHeight > 0) {
-          imgs.forEach((element) => {
-            element.style.opacity = 1;
-          });
-        }
-      }
-
       window.addEventListener('scroll', scrollAnimation);
     }
   }, [imgs]);
+
+  function scrollAnimation() {
+    const workTitle = workTitleRef.current;
+
+    if (workTitle) {
+      let workTittleHeight = workTitle.getBoundingClientRect().top;
+      let lastImg;
+
+      imgs.forEach((element) => {
+        element.style.opacity = 0;
+        lastImg = element;
+      });
+
+      let lastImgHeight = lastImg.getBoundingClientRect().top;
+
+      if (screen.height / 2 > workTittleHeight && lastImgHeight > 0) {
+        imgs.forEach((element) => {
+          element.style.opacity = 1;
+        });
+      }
+    }
+  }
 
   function childData(data) {
     aux.push(data);
@@ -48,7 +51,8 @@ const Work = forwardRef((__, ref) => {
           <p>Here is a part of my experience as software developer.</p>
         </header>
         <section className='section-gallery'>
-          <WorkCell
+          <WorkCard
+            techs={['React', 'NodeJS', 'MongoDB']}
             childData={childData}
             projectName={'Bingo'}
             projectDescription={
@@ -58,7 +62,8 @@ const Work = forwardRef((__, ref) => {
             repo={'https://github.com/Delacrobix/Juego-virtual-Bingo-'}
             appLink={'https://auth-module.up.railway.app/login'}
           />
-          <WorkCell
+          <WorkCard
+            techs={['React', 'NodeJS', 'MongoDB']}
             childData={childData}
             projectName={'My personal gallery'}
             projectDescription={
@@ -68,7 +73,8 @@ const Work = forwardRef((__, ref) => {
             repo={'https://github.com/Delacrobix/MyPersonalGallery'}
             appLink={'https://delacrobix.github'}
           />
-          <WorkCell
+          <WorkCard
+            techs={['React', 'NodeJS', 'MongoDB']}
             childData={childData}
             projectName={'Contact book'}
             projectDescription={
@@ -78,7 +84,8 @@ const Work = forwardRef((__, ref) => {
             repo={'https://github.com/Delacrobix/ContactBook'}
             appLink={'https://delacrobix.github'}
           />
-          <WorkCell
+          <WorkCard
+            techs={['React', 'NodeJS', 'MongoDB']}
             childData={childData}
             projectName={'Dices game'}
             projectDescription={'Blabal'}

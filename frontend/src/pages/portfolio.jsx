@@ -6,10 +6,12 @@ import Skills from '../components/sections/skills';
 import Work from '../components/sections/work';
 import Contact from '../components/sections/contact';
 import AboutMe from '../components/sections/aboutMe';
-import WorkCards from '../components/sections/workCards';
+import CarouselWorks from '../components/sections/carouselWorks';
+import SwitchButton from '../components/switchButton';
 
 const Portfolio = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [switchWork, setSwitchWork] = useState(true);
 
   const contactRef = useRef(null);
   const skillsRef = useRef(null);
@@ -32,6 +34,14 @@ const Portfolio = () => {
     handleResize(mediaQuery);
   }, []);
 
+  function switchWorkHandler() {
+    if (switchWork) {
+      setSwitchWork(false);
+    } else {
+      setSwitchWork(true);
+    }
+  }
+
   function scrollTo(section) {
     const refSwitch = {
       skills: skillsRef,
@@ -48,8 +58,12 @@ const Portfolio = () => {
     <>
       <Header scrollTo={scrollTo} isMobile={isMobile} />
       <Intro scrollTo={scrollTo} ref={introRef} isMobile={isMobile} />
-      {/* <WorkCards /> */}
-      <Work ref={workRef} />
+      <SwitchButton switchWorkHandler={switchWorkHandler} />
+      {switchWork ? (
+        <CarouselWorks switchWorkHandler={switchWorkHandler} />
+      ) : (
+        <Work ref={workRef} switchWorkHandler={switchWorkHandler} />
+      )}
       <div className='divisor-line-container'>
         <hr className='divisor-line' />
       </div>

@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef, forwardRef } from 'react';
-import WorkCard from '../workCard';
-import bingoImg from '../../assets/images/prev/bingo.png';
-import galleryImg from '../../assets/images/prev/mygallery.png';
-import contactBookImg from '../../assets/images/prev/contact-book.png';
-import dicesGameImg from '../../assets/images/prev/juego-dados.png';
+import WorkCard from '../components/workCard';
+import bingoSrc from '../assets/images/prev/bingo.png';
+import gallerySrc from '../assets/images/prev/mygallery.png';
+import bookSrc from '../assets/images/prev/contact-book.png';
+import dicesSrc from '../assets/images/prev/juego-dados.png';
 
 const Work = forwardRef((__, ref) => {
   const [imgs, setImgs] = useState([]);
@@ -52,46 +52,54 @@ const Work = forwardRef((__, ref) => {
         </header>
         <section className='section-gallery'>
           <WorkCard
-            techs={['React', 'NodeJS', 'MongoDB']}
             childData={childData}
-            projectName={'Bingo'}
-            projectDescription={
-              'Bingo game, you can to play alone or with more players'
-            }
-            imgSrc={bingoImg}
-            repo={'https://github.com/Delacrobix/Juego-virtual-Bingo-'}
-            appLink={'https://auth-module.up.railway.app/login'}
-          />
-          <WorkCard
-            techs={['React', 'NodeJS', 'MongoDB']}
-            childData={childData}
+            techList={['React', 'NodeJS', 'Redis', 'Sass', 'Dotnet', 'MongoDB']}
             projectName={'My personal gallery'}
             projectDescription={
               'Here is some ones of my best photos that I have taken'
             }
-            imgSrc={galleryImg}
+            imgSrc={gallerySrc}
             repo={'https://github.com/Delacrobix/MyPersonalGallery'}
             appLink={'https://delacrobix.github'}
           />
           <WorkCard
-            techs={['React', 'NodeJS', 'MongoDB']}
             childData={childData}
+            techList={['React', 'NodeJS', 'MySQL', 'Sass', 'GraphQL', 'JS']}
             projectName={'Contact book'}
             projectDescription={
               'This is a simple contact book, you can add, delete and edit contacts'
             }
-            imgSrc={contactBookImg}
+            imgSrc={bookSrc}
             repo={'https://github.com/Delacrobix/ContactBook'}
             appLink={'https://delacrobix.github'}
           />
           <WorkCard
-            techs={['React', 'NodeJS', 'MongoDB']}
             childData={childData}
+            techList={['Pug', 'NodeJS', 'MongoDB', 'Sass', 'JS', 'CSS']}
             projectName={'Dices game'}
             projectDescription={'Blabal'}
-            imgSrc={dicesGameImg}
+            imgSrc={dicesSrc}
             repo={'https://github.com/Delacrobix/DicesGame'}
             appLink={'https://delacrobix.github'}
+          />
+          <WorkCard
+            childData={childData}
+            techList={[
+              'Dotnet',
+              'JS',
+              'Pug',
+              'Sass',
+              'MySQL',
+              'NodeJS',
+              'MongoDB',
+            ]}
+            projectName={'Bingo'}
+            projectDescription={
+              'Bingo game, you can to play alone or with more players'
+            }
+            imgSrc={bingoSrc}
+            repo={'https://github.com/Delacrobix/Juego-virtual-Bingo-'}
+            appLink={'https://auth-module.up.railway.app/login'}
           />
         </section>
       </div>

@@ -19,14 +19,11 @@
   .tech-img-container {
     display: flex;
     justify-content: center;
-    padding: 0.5rem;
-
-    .tech-img {
-      align-content: center;
-      object-fit: contain;
-      height: 5rem;
-      width: 5rem;
-    }
+    align-items: center;
+    padding: 0rem;
+    margin: 0;
+    height: 5.5rem;
+    width: 5.5rem;
   }
 
   .tech-name {

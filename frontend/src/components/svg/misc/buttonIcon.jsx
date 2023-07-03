@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Button = () => {
+const ButtonIcon = () => {
   return (
     <svg
       version='1.0'
@@ -28,4 +28,4 @@ const Button = () => {
   );
 };
 
-export default Button;
+export default ButtonIcon;

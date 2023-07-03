@@ -1,18 +1,13 @@
 import Carousel from 'react-spring-3d-carousel';
 import { v4 as uuidv4 } from 'uuid';
-// import { config } from 'react-spring';
-import React, { useState } from 'react';
-import WorkCard from '../workCard';
-import bingoSrc from '../../assets/images/prev/bingo.png';
-import dicesSrc from '../../assets/images/prev/juego-dados.png';
-import bookSrc from '../../assets/images/prev/contact-book.png';
-import gallerySrc from '../../assets/images/prev/mygallery.png';
+import React, { forwardRef, useState } from 'react';
+import WorkCard from '../components/workCard';
+import bingoSrc from '../assets/images/prev/bingo.png';
+import dicesSrc from '../assets/images/prev/juego-dados.png';
+import bookSrc from '../assets/images/prev/contact-book.png';
+import gallerySrc from '../assets/images/prev/mygallery.png';
 
-// const getTouches = (evt) => {
-//   return evt.touches || evt.originalEvent.touches;
-// };
-
-const CarouselWorks = () => {
+const CarouselWorks = forwardRef((__, ref) => {
   const [state, setState] = useState({
     goToSlide: 0,
     goToSlideDelay: 500,
@@ -31,7 +26,15 @@ const CarouselWorks = () => {
       key: uuidv4(),
       content: (
         <WorkCard
-          techs={['React', 'NodeJS', 'MongoDB']}
+          techList={[
+            'Dotnet',
+            'JS',
+            'Pug',
+            'Sass',
+            'MySQL',
+            'NodeJS',
+            'MongoDB',
+          ]}
           projectName={'Bingo'}
           projectDescription={
             'Bingo game, you can to play alone or with more players'
@@ -46,12 +49,12 @@ const CarouselWorks = () => {
       key: uuidv4(),
       content: (
         <WorkCard
-          techs={['React', 'NodeJS', 'MongoDB']}
+          techList={['React', 'NodeJS', 'Redis', 'Sass', 'Dotnet', 'MongoDB']}
           projectName={'My personal gallery'}
           projectDescription={
             'Here is some ones of my best photos that I have taken'
           }
-          imgSrc={dicesSrc}
+          imgSrc={gallerySrc}
           repo={'https://github.com/Delacrobix/MyPersonalGallery'}
           appLink={'https://delacrobix.github'}
         />
@@ -61,7 +64,7 @@ const CarouselWorks = () => {
       key: uuidv4(),
       content: (
         <WorkCard
-          techs={['React', 'NodeJS', 'SQL Server']}
+          techList={['React', 'NodeJS', 'MySQL', 'Sass', 'GraphQL', 'JS']}
           projectName={'Contact book'}
           projectDescription={
             'This is a simple contact book, you can add, delete and edit contacts'
@@ -76,10 +79,10 @@ const CarouselWorks = () => {
       key: uuidv4(),
       content: (
         <WorkCard
-          techs={['React', 'NodeJS', 'MongoDB', 'Sass']}
+          techList={['Pug', 'NodeJS', 'MongoDB', 'Sass', 'JS', 'CSS']}
           projectName={'Dices game'}
           projectDescription={'Blabal'}
-          imgSrc={gallerySrc}
+          imgSrc={dicesSrc}
           repo={'https://github.com/Delacrobix/DicesGame'}
           appLink={'https://delacrobix.github'}
         />
@@ -93,7 +96,7 @@ const CarouselWorks = () => {
   });
 
   return (
-    <section className='work__cards'>
+    <section className='work__cards' ref={ref}>
       <div className='content'>
         <header className='work-cards__header'>
           <h2>My work</h2>
@@ -110,6 +113,6 @@ const CarouselWorks = () => {
       </div>
     </section>
   );
-};
+});
 
 export default CarouselWorks;

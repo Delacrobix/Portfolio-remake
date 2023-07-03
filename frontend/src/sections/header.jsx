@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SwitchMode from '../switchMode';
-import SwitchLanguage from '../switchLanguage';
+import SwitchMode from '../components/switchMode';
+import SwitchLanguage from '../components/switchLanguage';
 
 const Header = (props) => {
   const { scrollTo } = props;

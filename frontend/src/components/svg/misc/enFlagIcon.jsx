@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EnFlag = () => {
+const EnFlagIcon = () => {
   return (
     <svg
       className='en-svg'
@@ -206,4 +206,4 @@ const EnFlag = () => {
   );
 };
 
-export default EnFlag;
+export default EnFlagIcon;

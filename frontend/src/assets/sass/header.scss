@@ -47,14 +47,17 @@
 body {
   &.dark {
     .header {
-      color: map-get($dark, mystic);
       background: transparentize(map-get($dark, blue-bayoux-dark), 0.2);
+
+      h1 {
+        color: #000000;
+      }
 
       nav li .header__link {
         color: map-get($dark, mystic);
 
         &:hover {
-          color: map-get($light, LinkWater);
+          color: #000000;
         }
       }
     }

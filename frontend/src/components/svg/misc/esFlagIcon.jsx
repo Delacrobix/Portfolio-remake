@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EsFlag = () => {
+const EsFlagIcon = () => {
   return (
     <svg
       className='es-svg'
@@ -44,4 +44,4 @@ const EsFlag = () => {
   );
 };
 
-export default EsFlag;
+export default EsFlagIcon;

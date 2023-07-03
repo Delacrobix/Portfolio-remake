@@ -1,4 +1,5 @@
 .work__cards {
+  padding: 6rem 0 0 0;
   height: 100vh;
 
   .content {
@@ -37,6 +38,21 @@
         &:hover {
           transform: scale(1.2);
           transition: 0.4s;
+        }
+      }
+    }
+  }
+}
+
+body {
+  &.dark {
+    .work__cards {
+      .content {
+        .work-cards__header {
+          color: map-get($dark, mystic);
+        }
+        .css-1qzevvg img {
+          filter: invert(100%);
         }
       }
     }

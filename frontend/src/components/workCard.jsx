@@ -1,12 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
+import { svgTechsIcons } from './svg/svgExports';
 import TechImg from './techImg';
-import imgReact from '../assets/images/techs/react.png';
-import imgMongoDB from '../assets/images/techs/mongodb.png';
-import imgNodeJS from '../assets/images/techs/nodejs.png';
-import imgSass from '../assets/images/techs/sass.png';
-import imgSQLServer from '../assets/images/techs/slq-server4.png';
 
 const WorkCard = (props) => {
   const {
@@ -16,17 +12,24 @@ const WorkCard = (props) => {
     repo,
     appLink,
     childData,
-    techs,
+    techList,
   } = props;
   const [techArray, setTechArray] = useState([]);
   const workContainerRef = useRef(null);
 
   const imagesObj = {
-    React: imgReact,
-    MongoDB: imgMongoDB,
-    NodeJS: imgNodeJS,
-    Sass: imgSass,
-    'SQL Server': imgSQLServer,
+    React: svgTechsIcons.react,
+    MongoDB: svgTechsIcons.mongodb,
+    NodeJS: svgTechsIcons.nodejs,
+    Sass: svgTechsIcons.sass,
+    'SQL Server': svgTechsIcons.sqlServer,
+    Pug: svgTechsIcons.pug,
+    MySQL: svgTechsIcons.mysql,
+    Dotnet: svgTechsIcons.dotnet,
+    Redis: svgTechsIcons.redis,
+    JS: svgTechsIcons.js,
+    CSS: svgTechsIcons.css,
+    GraphQL: svgTechsIcons.graphql,
   };
 
   useEffect(() => {
@@ -38,18 +41,13 @@ const WorkCard = (props) => {
 
     const aux = [];
 
-    techs.forEach((element) => {
+    techList.forEach((element) => {
       aux.push(
-        <TechImg
-          imageUrl={imagesObj[element]}
-          techName={element}
-          key={uuidv4()}
-        />
+        <TechImg image={imagesObj[element]} techName={element} key={uuidv4()} />
       );
     });
 
     setTechArray(aux);
-    // console.log('Tech Array: ', techArray);
   }, []);
 
   return (

@@ -34,6 +34,7 @@
     top: 0;
     opacity: 0;
     background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -81,7 +82,7 @@
           text-decoration: none;
 
           &:hover {
-            background-color: rgba($color: #ffffff, $alpha: 0.3);
+            background: rgba($color: #ffffff, $alpha: 0.3);
             font-weight: bold;
             color: #000;
           }
@@ -110,14 +111,8 @@
 
           .tech-img-container {
             padding: 0 0 0.2rem 0;
-
-            .tech-img {
-              border-radius: 10px;
-              padding: 0.5rem;
-              background-color: #ffffff13;
-              height: 3rem;
-              width: 3rem;
-            }
+            height: 3rem;
+            width: 3rem;
           }
 
           .tech-name {

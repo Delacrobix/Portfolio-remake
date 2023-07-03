@@ -1,12 +1,8 @@
 import React, { useRef, useEffect, forwardRef } from 'react';
-import TechImg from '../techImg';
+import TechImg from '../components/techImg';
+import { svgTechsIcons } from '../components/svg/svgExports';
 
 const Skills = forwardRef((__, ref) => {
-  const importAll = (r) => r.keys().map(r);
-  const images = importAll(
-    require.context('../../assets/images/techs', false, /\.(png|jpe?g|svg)$/)
-  );
-
   const techContainerRef = useRef(null);
   const skillsTittleRef = useRef(null);
   const skillsTittleAsideRef = useRef(null);
@@ -40,19 +36,19 @@ const Skills = forwardRef((__, ref) => {
     <section className='skills' ref={ref}>
       <section className='tech-container' ref={techContainerRef}>
         <ul>
-          <TechImg imageUrl={images[0]} techName={'.NET Core'} />
-          <TechImg imageUrl={images[5]} techName={'Javascript'} />
-          <TechImg imageUrl={images[6]} techName={'Mongodb'} />
+          <TechImg image={svgTechsIcons.dotnet} techName={'.NET Core'} />
+          <TechImg image={svgTechsIcons.js} techName={'Javascript'} />
+          <TechImg image={svgTechsIcons.mongodb} techName={'Mongodb'} />
         </ul>
         <ul>
-          <TechImg imageUrl={images[12]} techName={'SQL Server'} />
-          <TechImg imageUrl={images[10]} techName={'React'} />
-          <TechImg imageUrl={images[11]} techName={'Sass'} />
+          <TechImg image={svgTechsIcons.sqlServer} techName={'SQL Server'} />
+          <TechImg image={svgTechsIcons.react} techName={'React'} />
+          <TechImg image={svgTechsIcons.sass} techName={'Sass'} />
         </ul>
         <ul>
-          <TechImg imageUrl={images[3]} techName={'Git'} />
-          <TechImg imageUrl={images[9]} techName={'NodeJS'} />
-          <TechImg imageUrl={images[13]} techName={'Spring boot'} />
+          <TechImg image={svgTechsIcons.git} techName={'Git'} />
+          <TechImg image={svgTechsIcons.nodejs} techName={'NodeJS'} />
+          <TechImg image={svgTechsIcons.docker} techName={'Docker'} />
         </ul>
       </section>
       <aside className='skills-description-aside' ref={skillsTittleAsideRef}>

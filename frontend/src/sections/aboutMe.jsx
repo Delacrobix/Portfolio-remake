@@ -1,6 +1,6 @@
 import React, { forwardRef, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import cv from '../../assets/files/cvs/ecv.pdf';
+import esCv from '../assets/files/cvs/ecv.pdf';
 
 const AboutMe = forwardRef((__, ref) => {
   const aboutMeContainerRef = useRef(null);
@@ -38,7 +38,7 @@ const AboutMe = forwardRef((__, ref) => {
   }, []);
 
   function openPDF() {
-    window.open(cv, '_blank');
+    window.open(esCv, '_blank');
   }
 
   return (

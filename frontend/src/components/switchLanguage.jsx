@@ -1,5 +1,4 @@
-import EnFlag from './svg/enFlag';
-import EsFlag from './svg/esFlag';
+import { svgLanguagesIcons } from './svg/svgExports';
 import i18n from '../config/languages';
 import { useRef, useState } from 'react';
 
@@ -26,33 +25,33 @@ const SwitchLanguage = (props) => {
     if (language === 'es') {
       setLanguage('en');
 
-      languageSpan.classList.remove('es');
-      languageSpan.classList.add('en');
+      languageSpan.classList.remove('en');
+      languageSpan.classList.add('es');
 
-      i18n.changeLanguage(language);
+      i18n.changeLanguage('en');
     } else {
       setLanguage('es');
 
-      languageSpan.classList.add('es');
-      languageSpan.classList.remove('en');
+      languageSpan.classList.add('en');
+      languageSpan.classList.remove('es');
 
-      i18n.changeLanguage(language);
+      i18n.changeLanguage('es');
     }
   }
 
   return isMobile ? (
     <span
-      className='switch-mobile-language es'
+      className='switch-mobile-language en'
       onClick={mobileLanguageChange}
       ref={languageRef}
     >
-      <EsFlag />
-      <EnFlag />
+      {svgLanguagesIcons.esFlag}
+      {svgLanguagesIcons.enFlag}
     </span>
   ) : (
     <select className='language-selector' onChange={languageChange}>
-      <option value='en'>English</option>
       <option value='es'>Español</option>
+      <option value='en'>English</option>
     </select>
   );
 };

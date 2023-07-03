@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Intro from '../components/sections/intro';
-import Header from '../components/sections/header';
-import Footer from '../components/sections/footer';
-import Skills from '../components/sections/skills';
-import Work from '../components/sections/work';
-import Contact from '../components/sections/contact';
-import AboutMe from '../components/sections/aboutMe';
-import CarouselWorks from '../components/sections/carouselWorks';
+import Intro from '../sections/intro';
+import Header from '../sections/header';
+import Footer from '../sections/footer';
+import Skills from '../sections/skills';
+import Work from '../sections/work';
+import Contact from '../sections/contact';
+import AboutMe from '../sections/aboutMe';
+import CarouselWorks from '../sections/carouselWorks';
 import SwitchButton from '../components/switchButton';
 
 const Portfolio = () => {
@@ -60,7 +60,7 @@ const Portfolio = () => {
       <Intro scrollTo={scrollTo} ref={introRef} isMobile={isMobile} />
       <SwitchButton switchWorkHandler={switchWorkHandler} />
       {switchWork ? (
-        <CarouselWorks switchWorkHandler={switchWorkHandler} />
+        <CarouselWorks ref={workRef} switchWorkHandler={switchWorkHandler} />
       ) : (
         <Work ref={workRef} switchWorkHandler={switchWorkHandler} />
       )}

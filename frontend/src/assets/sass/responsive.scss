@@ -25,21 +25,18 @@
 
   //works carousel
   .work__cards {
-    padding: 0 0 5rem 0;
-    .content {
-      .work-cards__header {
-        margin: 0 0 -3rem 0;
-      }
+    padding: 2rem 0 5rem 0;
 
+    .content {
       //WorkCard component
       .work-cards-container {
-        width: 56rem;
-        height: 31.5rem;
+        width: 48rem;
+        height: 27rem;
       }
 
       //Arrows to move carousel
       .css-1qzevvg {
-        margin: -1rem 0 0 0;
+        margin: -8rem 0 0 0;
       }
     }
   }
@@ -200,120 +197,9 @@
       }
     }
   }
-
-  // body {
-  // font-size: 14px;
-
-  //Skills
-  // .tech-container {
-  //   vertical-align: bottom;
-  //   align-items: center;
-  //   padding-left: 2%;
-
-  //   .tech-img-li {
-  //     font-size: 1.1em;
-
-  //     .tech-img {
-  //       max-width: 3.5em;
-  //       max-height: 3.5em;
-  //       margin: 0em 3em 1em 3em;
-  //     }
-
-  //     .tech-name {
-  //       margin-right: -7em;
-  //     }
-  //   }
-  // }
-
-  //Works
-  // .works {
-  //   .section-gallery .work-container {
-  //     width: 100%;
-
-  //     .layer div {
-  //       padding-top: 7em;
-
-  //       a {
-  //         padding: 1em 2em 1em 2em;
-  //       }
-  //     }
-  //   }
-  // }
-  // }
 }
 
 @media (max-width: 750px) {
-  //intro
-  // .intro {
-  //   .switch-mobile {
-  //     visibility: visible;
-  //     opacity: 1;
-  //     display: block;
-  //   }
-
-  //   .switch-mobile-language {
-  //     visibility: visible;
-  //     opacity: 1;
-  //     display: block;
-  //   }
-  // }
-
-  //One
-  // .section-one {
-  //   justify-content: center;
-  //   align-items: center;
-  //   display: grid;
-  //   grid-template-columns: repeat(1, 2fr);
-  //   grid-template-areas:
-  //     'aside'
-  //     'section';
-
-  //   .tech-container {
-  //     grid-area: section;
-
-  //     .tech-img-li {
-  //       font-size: 1em;
-  //       margin-right: 8em;
-  //       text-align: left;
-
-  //       .tech-img {
-  //         max-width: 6em;
-  //         max-height: 6em;
-  //       }
-
-  //       .tech-name {
-  //         margin-right: -8.5em;
-  //       }
-  //     }
-  //   }
-
-  //   aside {
-  //     grid-area: aside;
-  //   }
-  // }
-
-  //two
-  // .section-two {
-  //   .cv-container {
-  //     margin-top: 1rem;
-
-  //     a {
-  //       padding: 1rem;
-  //     }
-  //   }
-  // }
-
-  //Works
-  // .works {
-  //   .section-gallery {
-  //     grid-template-columns: repeat(1, 1fr);
-
-  //     .work-container {
-  //       padding: 0;
-  //       margin: 0;
-  //     }
-  //   }
-  // }
 }
 
 @media (max-width: 576px) {
@@ -370,7 +256,76 @@
       }
     }
 
-    //Works
+    //Works carousel
+    .work__cards {
+      .content {
+        .work-cards__header {
+          margin: 0 0 -9rem 0;
+        }
+
+        //Work cards
+        .work-cards-container {
+          width: 18rem;
+          height: 32rem;
+
+          .layer {
+            .text-container {
+              height: 50%;
+
+              h3 {
+                font-size: 1.5rem;
+              }
+
+              p {
+                margin: 3rem 0 0 0;
+                padding: 1rem;
+                font-size: 0.9rem;
+              }
+            }
+
+            .buttons-container {
+              div {
+                margin: 0.4rem;
+
+                a {
+                  padding: 1rem 1.4rem;
+                }
+              }
+            }
+
+            .techs {
+              height: 25%;
+
+              &__ul {
+                display: flex;
+                flex-wrap: wrap;
+                width: 65%;
+
+                .tech-li {
+                  margin-right: 0.2rem;
+
+                  .tech-img-container {
+                    padding: 0.2rem 0.2rem;
+                    height: 2.3rem;
+                    width: 2.3rem;
+                  }
+
+                  .tech-name {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .css-1qzevvg {
+          margin: -6rem 0 0 -1.5rem;
+        }
+      }
+    }
+
+    //Works grid
     .works {
       height: 100%;
       padding: 0rem;
@@ -497,10 +452,8 @@
 
         .tech-li {
           .tech-img-container {
-            .tech-img {
-              height: 4rem;
-              width: 4rem;
-            }
+            height: 4rem;
+            width: 4rem;
           }
 
           .tech-name {
@@ -660,32 +613,4 @@
       }
     }
   }
-  //One
-  // .section-one {
-  //   .tech-container ul {
-  //     margin-right: -1em;
-
-  //     .tech-img {
-  //       max-width: 3.2em;
-  //       max-height: 3.2em;
-  //       margin: 1em 0.5em 1em 0.5em;
-  //     }
-
-  //     .tech-name {
-  //       margin-top: -1em;
-  //       margin-right: -6em;
-  //     }
-  //   }
-  // }
-
-  // //Works
-  // .works {
-  //   .section-gallery .work-container {
-  //     width: 95%;
-
-  //     .layer div a {
-  //       padding: 0.2em 1.2em 0.2em 1.2em;
-  //     }
-  //   }
-  // }
 }

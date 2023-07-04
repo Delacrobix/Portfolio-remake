@@ -731,7 +731,7 @@ body.dark .language-selector option {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0rem;
+  padding: 0;
   margin: 0;
   height: 5.5rem;
   width: 5.5rem;
@@ -750,7 +750,7 @@ body.dark .tech-li .tech-name {
   color: rgba(221, 230, 237, 0.5);
 }
 
-.section-gallery .work-cards-container {
+.works .content .section-gallery .work-cards-container {
   margin: 0.2rem;
   position: relative;
   height: 100%;
@@ -758,24 +758,24 @@ body.dark .tech-li .tech-name {
   overflow: hidden;
   transition: 0.5s;
 }
-.section-gallery .work-cards-container:hover > .layer {
+.works .content .section-gallery .work-cards-container:hover > .layer {
   opacity: 1;
   visibility: visible;
 }
-.section-gallery .work-cards-container:hover .img-layer img {
+.works .content .section-gallery .work-cards-container:hover .img-layer img {
   filter: blur(4px);
 }
-.section-gallery .work-cards-container .img-layer {
+.works .content .section-gallery .work-cards-container .img-layer {
   margin: 0.2rem;
   height: 100%;
   width: 100%;
 }
-.section-gallery .work-cards-container .img-layer img {
+.works .content .section-gallery .work-cards-container .img-layer img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.section-gallery .work-cards-container .layer {
+.works .content .section-gallery .work-cards-container .layer {
   font-family: "Comfortaa", cursive;
   margin: 0.2rem;
   position: absolute;
@@ -791,49 +791,49 @@ body.dark .tech-li .tech-name {
   transition: all 0.5s ease-out;
   color: #ffffff;
 }
-.section-gallery .work-cards-container .layer .text-container {
+.works .content .section-gallery .work-cards-container .layer .text-container {
   height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.section-gallery .work-cards-container .layer .text-container h3 {
+.works .content .section-gallery .work-cards-container .layer .text-container h3 {
   text-align: center;
   font-size: 1.3rem;
 }
-.section-gallery .work-cards-container .layer .text-container p {
+.works .content .section-gallery .work-cards-container .layer .text-container p {
   padding-top: 0;
   text-align: center;
   font-size: 0.9rem;
 }
-.section-gallery .work-cards-container .layer .buttons-container {
+.works .content .section-gallery .work-cards-container .layer .buttons-container {
   height: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.section-gallery .work-cards-container .layer .buttons-container div {
+.works .content .section-gallery .work-cards-container .layer .buttons-container div {
   margin: 1rem;
 }
-.section-gallery .work-cards-container .layer .buttons-container div a {
-  padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+.works .content .section-gallery .work-cards-container .layer .buttons-container div a {
+  padding: 0.8rem 1.6rem;
   color: white;
   border: 1px solid white;
   border-radius: 7px;
   transition: all 0.25s ease-in;
   text-decoration: none;
 }
-.section-gallery .work-cards-container .layer .buttons-container div a:hover {
+.works .content .section-gallery .work-cards-container .layer .buttons-container div a:hover {
   background-color: rgba(255, 255, 255, 0.3);
   color: #000;
 }
-.section-gallery .work-cards-container .layer .techs {
+.works .content .section-gallery .work-cards-container .layer .techs {
   height: 25%;
   padding: 0;
   margin: 0;
 }
-.section-gallery .work-cards-container .layer .techs__ul {
+.works .content .section-gallery .work-cards-container .layer .techs__ul {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -842,17 +842,20 @@ body.dark .tech-li .tech-name {
   align-items: center;
   justify-content: center;
 }
-.section-gallery .work-cards-container .layer .techs__ul .tech-li {
-  margin-right: 0.3rem;
+.works .content .section-gallery .work-cards-container .layer .techs__ul .tech-li {
+  margin: 0 0.3rem 0 0;
   padding: 0;
   bottom: 0;
 }
-.section-gallery .work-cards-container .layer .techs__ul .tech-li .tech-img-container {
+.works .content .section-gallery .work-cards-container .layer .techs__ul .tech-li .tech-img-container {
   padding: 0.5rem 0.2rem;
   height: 2rem;
   width: 2rem;
 }
-.section-gallery .work-cards-container .layer .techs__ul .tech-li .tech-name {
+.works .content .section-gallery .work-cards-container .layer .techs__ul .tech-li .tech-img-container svg {
+  height: 100%;
+}
+.works .content .section-gallery .work-cards-container .layer .techs__ul .tech-li .tech-name {
   display: none;
 }
 
@@ -959,6 +962,9 @@ body.dark .tech-li .tech-name {
   height: 3rem;
   width: 3rem;
 }
+.work__cards .content .work-cards-container .layer .techs__ul .tech-li .tech-img-container svg {
+  height: 100%;
+}
 .work__cards .content .work-cards-container .layer .techs__ul .tech-li .tech-name {
   color: #ffffff;
   font-size: 0.7rem;
@@ -966,128 +972,128 @@ body.dark .tech-li .tech-name {
 }
 
 @media (max-width: 1400px) {
-  .header {
+  body .header {
     height: 3.5rem;
   }
-  .header nav li .header__link {
+  body .header nav li .header__link {
     font-size: 0.9rem;
   }
-  .intro .content .profile-picture .image-container {
+  body .intro .content .profile-picture .image-container {
     margin-top: 2rem;
   }
-  .intro .content .profile-picture .image-container img {
+  body .intro .content .profile-picture .image-container img {
     height: 24rem;
     width: 24rem;
   }
-  .work__cards {
+  body .work__cards {
     padding: 2rem 0 5rem 0;
   }
-  .work__cards .content .work-cards-container {
+  body .work__cards .content .work-cards-container {
     width: 48rem;
     height: 27rem;
   }
-  .work__cards .content .css-1qzevvg {
+  body .work__cards .content .css-1qzevvg {
     margin: -8rem 0 0 0;
   }
-  .works .content .section-gallery {
+  body .works .content .section-gallery {
     grid-template-columns: repeat(2, 30%);
   }
-  .works .content .section-gallery .work-container .layer .text-container h3 {
+  body .works .content .section-gallery .work-container .layer .text-container h3 {
     font-size: 1.2rem;
   }
-  .works .content .section-gallery .work-container .layer .text-container p {
+  body .works .content .section-gallery .work-container .layer .text-container p {
     font-size: 0.8rem;
   }
-  .about-me__container {
+  body .about-me__container {
     margin-left: -42%;
     width: 39%;
   }
-  .about-me__container:hover {
+  body .about-me__container:hover {
     padding: 0 30%;
   }
-  .about-me__container:hover .about-me__title {
+  body .about-me__container:hover .about-me__title {
     transform: translateX(30%);
     font-size: 1.7rem;
   }
-  .about-me__container:hover .about-me__description {
+  body .about-me__container:hover .about-me__description {
     width: 35rem;
     font-size: 1.2rem;
     line-height: 1.8rem;
   }
-  .about-me__container .about-me__title {
+  body .about-me__container .about-me__title {
     font-size: 1.4rem;
   }
-  .about-me__container .about-me__description {
+  body .about-me__container .about-me__description {
     width: 35rem;
     font-size: 1.1rem;
     line-height: 1.7rem;
   }
-  .skills .tech-container {
+  body .skills .tech-container {
     width: 68%;
     margin-left: -1rem;
   }
-  .skills .skills-description-aside {
+  body .skills .skills-description-aside {
     width: 29%;
     margin-left: -1rem;
   }
-  .skills .skills-description-aside:hover .skills-tittle-header {
+  body .skills .skills-description-aside:hover .skills-tittle-header {
     font-size: 1.7rem;
   }
-  .skills .skills-description-aside:hover .skills-description {
+  body .skills .skills-description-aside:hover .skills-description {
     font-size: 1.2rem;
   }
-  .skills .skills-description-aside .skills-tittle-header {
+  body .skills .skills-description-aside .skills-tittle-header {
     font-size: 1.4rem;
   }
-  .skills .skills-description-aside .skills-description {
+  body .skills .skills-description-aside .skills-description {
     font-size: 1.1rem;
   }
-  .contact .container {
+  body .contact .container {
     width: 50%;
   }
-  .contact .container .header-contact h2 {
+  body .contact .container .header-contact h2 {
     font-size: 1.5rem;
   }
-  .contact .container .header-contact p {
+  body .contact .container .header-contact p {
     font-size: 1.2rem;
   }
-  .contact .container .form-contact {
+  body .contact .container .form-contact {
     padding: 0 1.5rem;
   }
-  .contact .container .form-contact input,
-  .contact .container .form-contact textarea {
+  body .contact .container .form-contact input,
+  body .contact .container .form-contact textarea {
     padding: 0.3rem 0;
   }
-  .contact .container .form-contact .submit-container {
+  body .contact .container .form-contact .submit-container {
     padding-bottom: 2rem;
   }
-  .contact .container .form-contact .submit-container .contact-submit {
+  body .contact .container .form-contact .submit-container .contact-submit {
     padding: 1rem 2.5rem;
   }
 }
 @media (max-width: 992px) {
-  .header {
+  body .header {
     height: 4rem;
   }
-  .header__h1 {
+  body .header__h1 {
     font-size: 1.2rem;
   }
-  .header nav ul .switch-mode {
+  body .header nav ul .switch-mode {
     display: none;
   }
-  .header nav ul .language-selector {
+  body .header nav ul .language-selector {
     display: none;
   }
-  .header nav ul li .header__link {
+  body .header nav ul li .header__link {
     font-size: 0.9rem;
   }
-  .intro .content footer .switch-mobile-language {
+  body .intro .content footer .switch-mobile-language {
     display: block;
   }
-  .intro .content footer .switch-mode-mobile {
+  body .intro .content footer .switch-mode-mobile {
     display: flex;
   }
-  .intro .content footer .down-section-link {
+  body .intro .content footer .down-section-link {
     display: none;
   }
 }
@@ -1105,8 +1111,8 @@ body.dark .tech-li .tech-name {
     margin-left: -2rem;
   }
   body .intro .content .profile-picture .image-container img {
-    height: 24rem;
-    width: 24rem;
+    height: 22rem;
+    width: 22rem;
   }
   body .intro .content header h2 {
     margin-top: 1.5rem;
@@ -1127,8 +1133,21 @@ body.dark .tech-li .tech-name {
     border-radius: 50%;
     padding: 0.2rem;
   }
+  body .switch-button {
+    margin: 0;
+    padding: 2rem 0 0 0;
+  }
   body .work__cards .content .work-cards__header {
-    margin: 0 0 -9rem 0;
+    margin: 3rem 0 -10rem 0;
+  }
+  body .work__cards .content .work-cards__header h2 {
+    font-size: 1.6rem;
+  }
+  body .work__cards .content .work-cards__header p {
+    font-size: 1.25rem;
+  }
+  body .work__cards .content .css-1qzevvg {
+    margin: -9rem 0 0 -1rem;
   }
   body .work__cards .content .work-cards-container {
     width: 18rem;
@@ -1169,9 +1188,6 @@ body.dark .tech-li .tech-name {
   }
   body .work__cards .content .work-cards-container .layer .techs__ul .tech-li .tech-name {
     display: none;
-  }
-  body .work__cards .content .css-1qzevvg {
-    margin: -6rem 0 0 -1.5rem;
   }
   body .works {
     height: 100%;
@@ -1247,7 +1263,7 @@ body.dark .tech-li .tech-name {
     opacity: 1;
     transition: visibility 1s, opacity 1s;
   }
-  .skills {
+  body .skills {
     height: 100%;
     margin: 4rem 0;
     flex-direction: column;
@@ -1255,13 +1271,13 @@ body.dark .tech-li .tech-name {
     justify-content: center;
     width: 100%;
   }
-  .skills .tech-container {
+  body .skills .tech-container {
     margin: 0 0 0 0;
     width: 100%;
     height: 100%;
     display: flex;
   }
-  .skills .tech-container ul {
+  body .skills .tech-container ul {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1271,104 +1287,148 @@ body.dark .tech-li .tech-name {
     margin: 0;
     padding: 0;
   }
-  .skills .tech-container ul .tech-li .tech-img-container {
+  body .skills .tech-container ul .tech-li .tech-img-container {
     height: 4rem;
     width: 4rem;
   }
-  .skills .tech-container ul .tech-li .tech-name {
+  body .skills .tech-container ul .tech-li .tech-name {
     font-size: 0.8rem;
     opacity: 1;
   }
-  .skills .skills-description-aside {
+  body .skills .skills-description-aside {
     order: -1;
     position: static;
     margin: 0;
     height: 100%;
     width: 100%;
   }
-  .skills .skills-description-aside:hover {
+  body .skills .skills-description-aside:hover {
     width: 100%;
   }
-  .skills .skills-description-aside:hover .skills-tittle-header {
+  body .skills .skills-description-aside:hover .skills-tittle-header {
     transition: font-size 0.5s;
     font-size: 1.5rem;
   }
-  .skills .skills-description-aside:hover .skills-description {
+  body .skills .skills-description-aside:hover .skills-description {
     font-size: 1.1rem;
     line-height: 1.5rem;
   }
-  .skills .skills-description-aside .skills-tittle-header {
+  body .skills .skills-description-aside .skills-tittle-header {
     text-align: center;
     transition: font-size 0.5s;
     font-size: 1.5rem;
   }
-  .skills .skills-description-aside .skills-description {
+  body .skills .skills-description-aside .skills-description {
     padding: 0rem 1rem;
     text-align: center;
     transition: font-size 0.5s;
     font-size: 1.1rem;
     line-height: 1.5rem;
   }
-  .contact .container {
+  body .contact .container {
     width: 95%;
   }
-  .contact .container .header-contact h2 {
+  body .contact .container .header-contact h2 {
     font-size: 1.5rem;
   }
-  .contact .container .header-contact p {
+  body .contact .container .header-contact p {
     font-size: 1.1rem;
   }
-  .contact .container .form-contact {
+  body .contact .container .form-contact {
     padding: 0 1rem;
   }
-  .contact .container .form-contact .text-input-container .input-container {
+  body .contact .container .form-contact .text-input-container .input-container {
     flex-direction: column;
     padding: 0;
   }
-  .contact .container .form-contact .text-input-container .input-container input {
+  body .contact .container .form-contact .text-input-container .input-container input {
     width: 100%;
     margin: 0.5rem 0;
   }
-  .contact .container .form-contact .text-input-container .textarea-container {
+  body .contact .container .form-contact .text-input-container .textarea-container {
     padding: 0.5rem 0 0 0;
   }
-  .contact .container .form-contact .text-input-container .textarea-container textarea {
+  body .contact .container .form-contact .text-input-container .textarea-container textarea {
     height: 9rem;
   }
-  .contact .container .form-contact .submit-container {
+  body .contact .container .form-contact .submit-container {
     padding: 1.5rem 0 2rem 0;
   }
-  .contact .container .form-contact .submit-container .contact-submit {
+  body .contact .container .form-contact .submit-container .contact-submit {
     padding: 1.5rem 6rem;
   }
-  .footer .icons-ul {
+  body .footer .icons-ul {
     margin-left: -2rem;
   }
-  .footer .menu {
+  body .footer .menu {
     margin-left: -2rem;
   }
 }
-@media (max-width: 330px) {
-  body .header {
-    height: 2rem;
+@media (max-width: 414px) {
+  body .work__cards .content .work-cards__header {
+    margin: 3rem 0 -8rem 0;
   }
+  body .work__cards .content .css-1qzevvg {
+    margin: -6.5rem 0 0 -1.5rem;
+  }
+}
+@media (max-width: 375px) {
   body .intro .content {
     margin-left: -2rem;
   }
   body .intro .content .profile-picture .image-container {
-    margin-top: 7rem;
+    margin-top: 5rem;
+  }
+  body .switch-button {
+    padding: 2rem 0 0 0;
+  }
+  body .work__cards .content .work-cards__header {
+    margin: 0;
+    padding: 0;
+  }
+  body .work__cards .content .work-cards-container {
+    width: 15.75rem;
+    height: 28rem;
+  }
+  body .work__cards .content .work-cards-container .layer .buttons-container div {
+    margin: 0;
+    font-size: 0.9rem;
+    padding: 0.3rem;
+  }
+  body .work__cards .content .work-cards-container .layer .buttons-container div a {
+    padding: 1rem 1.2rem;
+  }
+  body .work__cards .content .work-cards-container .layer .techs__ul {
+    width: 75%;
+  }
+  body .work__cards .content .work-cards-container .layer .techs__ul .tech-li .tech-img-container {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+  body .work__cards .content .css-1qzevvg {
+    margin: 0 0 0 -2rem;
+    padding: 0;
+  }
+}
+@media (max-width: 321px) {
+  body .header {
+    height: 2rem;
+  }
+  body .intro .content .profile-picture .image-container {
+    margin-top: 4rem;
   }
   body .intro .content .profile-picture .image-container img {
     height: 16rem;
     width: 16rem;
   }
   body .intro .content header h2 {
-    margin-top: 0.5rem;
-    font-size: 2rem;
+    margin-top: 0.3rem;
+    font-size: 1.8rem;
   }
   body .intro .content p {
-    margin: 0.5rem;
-    font-size: 0.9rem;
+    padding: 1rem;
+    margin: 0.3rem;
+    font-size: 1.1rem;
   }
   body .intro .content footer {
     padding-top: 0.5rem;
@@ -1383,6 +1443,101 @@ body.dark .tech-li .tech-name {
   }
   body .intro .content .switch-mobile-language svg {
     transform: scale(50%);
+  }
+  body .switch-button {
+    padding: 0 0 6rem 0;
+  }
+  body .work__cards .content .work-cards__header h2 {
+    font-size: 1.3rem;
+  }
+  body .work__cards .content .work-cards__header p {
+    font-size: 1rem;
+  }
+  body .work__cards .content .work-cards-container {
+    width: 13.5rem;
+    height: 24rem;
+  }
+  body .work__cards .content .work-cards-container .layer .text-container h3 {
+    padding: 3rem 0 2rem 0;
+    margin: 0;
+  }
+  body .work__cards .content .work-cards-container .layer .text-container p {
+    margin: 0;
+    padding: 0;
+  }
+  body .work__cards .content .work-cards-container .layer .buttons-container div {
+    margin: 0;
+    font-size: 0.7rem;
+    padding: 0.2rem;
+  }
+  body .work__cards .content .work-cards-container .layer .buttons-container div a {
+    padding: 1rem 1.2rem;
+  }
+  body .work__cards .content .work-cards-container .layer .techs__ul {
+    width: 85%;
+  }
+  body .work__cards .content .work-cards-container .layer .techs__ul .tech-li .tech-img-container {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+  body .work__cards .content .css-1qzevvg {
+    margin: 0 0 0 -3rem;
+    padding: 1rem 0 0 0;
+  }
+  body .works .content .section-gallery .work-cards-container .layer .text-container {
+    padding: 0 0.5rem;
+  }
+  body .works .content .section-gallery .work-cards-container .layer .text-container h3 {
+    font-size: 1.15rem;
+  }
+  body .works .content .section-gallery .work-cards-container .layer .text-container p {
+    font-size: 0.8rem;
+  }
+  body .works .content .section-gallery .work-cards-container .layer .buttons-container div {
+    font-size: 0.9rem;
+    margin: 0.3rem;
+  }
+  body .works .content .section-gallery .work-cards-container .layer .buttons-container div a {
+    padding: 0.7rem 1.3rem;
+  }
+  body .works .content .section-gallery .work-cards-container .layer .techs__ul .tech-li {
+    margin: 0 0.2rem 0 0;
+  }
+  body .works .content .section-gallery .work-cards-container .layer .techs__ul .tech-li .tech-img-container {
+    padding: 0.2rem 0.1rem;
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+  body .about-me__container:hover .about-me__title {
+    font-size: 1.3rem;
+  }
+  body .about-me__container:hover .about-me__description {
+    font-size: 1.05rem;
+  }
+  body .about-me__container .about-me__title {
+    font-size: 1.3rem;
+  }
+  body .about-me__container .about-me__description {
+    font-size: 1.05rem;
+  }
+  body .skills .tech-container ul .tech-li {
+    padding: 1rem;
+  }
+  body .skills .tech-container ul .tech-li .tech-img-container {
+    height: 3rem;
+    width: 3rem;
+  }
+  body .skills .skills-description-aside:hover .skills-tittle-header {
+    font-size: 1.3rem;
+  }
+  body .skills .skills-description-aside:hover .skills-description {
+    font-size: 1.05rem;
+  }
+  body .skills .skills-description-aside .skills-tittle-header {
+    font-size: 1.3rem;
+  }
+  body .skills .skills-description-aside .skills-description {
+    font-size: 1.05rem;
   }
 }
 

@@ -1,119 +1,130 @@
-.section-gallery .work-cards-container {
-  margin: 0.2rem;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  transition: 0.5s;
+.works {
+  .content {
+    .section-gallery {
+      .work-cards-container {
+        margin: 0.2rem;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.5s;
 
-  &:hover > .layer {
-    opacity: 1;
-    visibility: visible;
-  }
+        &:hover > .layer {
+          opacity: 1;
+          visibility: visible;
+        }
 
-  &:hover .img-layer img {
-    filter: blur(4px);
-  }
+        &:hover .img-layer img {
+          filter: blur(4px);
+        }
 
-  .img-layer {
-    margin: 0.2rem;
-    height: 100%;
-    width: 100%;
+        .img-layer {
+          margin: 0.2rem;
+          height: 100%;
+          width: 100%;
 
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .layer {
-    font-family: $comfortaa-cursive;
-    margin: 0.2rem;
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    visibility: hidden;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: all 0.5s ease-out;
-    color: #ffffff;
-
-    .text-container {
-      height: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      h3 {
-        text-align: center;
-        font-size: 1.3rem;
-      }
-
-      p {
-        padding-top: 0;
-        text-align: center;
-        font-size: 0.9rem;
-      }
-    }
-
-    .buttons-container {
-      height: 25%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      div {
-        margin: 1rem;
-
-        a {
-          padding: 0.8rem 1.6rem 0.8rem 1.6rem;
-          color: white;
-          border: 1px solid white;
-          border-radius: 7px;
-          transition: all 0.25s ease-in;
-          text-decoration: none;
-
-          &:hover {
-            background-color: rgba($color: #ffffff, $alpha: 0.3);
-            color: #000;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
           }
         }
-      }
-    }
 
-    .techs {
-      height: 25%;
-      padding: 0;
-      margin: 0;
+        .layer {
+          font-family: $comfortaa-cursive;
+          margin: 0.2rem;
+          position: absolute;
+          top: 0;
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.6);
+          visibility: hidden;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          transition: all 0.5s ease-out;
+          color: #ffffff;
 
-      &__ul {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+          .text-container {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-        .tech-li {
-          margin-right: 0.3rem;
-          padding: 0;
-          bottom: 0;
+            h3 {
+              text-align: center;
+              font-size: 1.3rem;
+            }
 
-          .tech-img-container {
-            padding: 0.5rem 0.2rem;
-            height: 2rem;
-            width: 2rem;
+            p {
+              padding-top: 0;
+              text-align: center;
+              font-size: 0.9rem;
+            }
           }
 
-          .tech-name {
-            display: none;
+          .buttons-container {
+            height: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div {
+              margin: 1rem;
+
+              a {
+                padding: 0.8rem 1.6rem;
+                color: white;
+                border: 1px solid white;
+                border-radius: 7px;
+                transition: all 0.25s ease-in;
+                text-decoration: none;
+
+                &:hover {
+                  background-color: rgba($color: #ffffff, $alpha: 0.3);
+                  color: #000;
+                }
+              }
+            }
+          }
+
+          .techs {
+            height: 25%;
+            padding: 0;
+            margin: 0;
+
+            &__ul {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              margin: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              //Tech img
+              .tech-li {
+                margin: 0 0.3rem 0 0;
+                padding: 0;
+                bottom: 0;
+
+                .tech-img-container {
+                  padding: 0.5rem 0.2rem;
+                  height: 2rem;
+                  width: 2rem;
+
+                  svg {
+                    height: 100%;
+                  }
+                }
+
+                .tech-name {
+                  display: none;
+                }
+              }
+            }
           }
         }
       }

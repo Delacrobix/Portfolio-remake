@@ -17,6 +17,9 @@ import PugIcon from './techs/pugIcon';
 import RedisIcon from './techs/redisIcon';
 import GraphQLIcon from './techs/graphQLIcon';
 import MysqlIcon from './techs/mysqlIcon';
+import EmailIcon from './social/emailIcon';
+import LinkedInIcon from './social/linkedinIcon';
+import TelegramIcon from './social/telegramIcon';
 
 export const svgTechsIcons = {
   docker: <DockerIcon />,
@@ -40,6 +43,12 @@ export const svgTechsIcons = {
 export const svgLanguagesIcons = {
   enFlag: <EnFlagIcon />,
   esFlag: <EsFlagIcon />,
+};
+
+export const svgSocialIcons = {
+  email: <EmailIcon />,
+  linkedin: <LinkedInIcon />,
+  telegram: <TelegramIcon />,
 };
 
 export const svgIcons = { button: <ButtonIcon /> };

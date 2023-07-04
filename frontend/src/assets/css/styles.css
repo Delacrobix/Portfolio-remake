@@ -72,6 +72,22 @@ body.dark .header nav li .header__link:hover {
   color: #000000;
 }
 
+.copied {
+  width: 100%;
+  left: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.copied p {
+  font-size: 1.3rem;
+  width: 30%;
+  border-radius: 7px;
+  padding: 0.1rem 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1098039216);
+  text-align: center;
+}
+
 .footer {
   font-family: "Comfortaa", cursive;
   width: 100%;
@@ -471,6 +487,71 @@ body.dark .switch-button button:hover {
 
 body.dark .works {
   color: #dde6ed;
+}
+
+.contact-section {
+  font-family: "Comfortaa", cursive;
+  height: 80vh;
+}
+.contact-section__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-section__container .contact__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 4rem 0;
+}
+.contact-section__container .contact__header h2 {
+  font-size: 2rem;
+}
+.contact-section__container .contact__header p {
+  font-size: 1.5rem;
+}
+.contact-section__container .contact-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-section__container .contact-icons-container .icon-container {
+  height: 100%;
+  padding: 3rem;
+}
+.contact-section__container .contact-icons-container .icon-container .linkedin,
+.contact-section__container .contact-icons-container .icon-container .email,
+.contact-section__container .contact-icons-container .icon-container .telegram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+.contact-section__container .contact-icons-container .icon-container .linkedin:hover,
+.contact-section__container .contact-icons-container .icon-container .email:hover,
+.contact-section__container .contact-icons-container .icon-container .telegram:hover {
+  transform: scale(1.08);
+  transition: transform 0.4s, opacity 0.4s;
+}
+.contact-section__container .contact-icons-container .icon-container .linkedin:hover label,
+.contact-section__container .contact-icons-container .icon-container .email:hover label,
+.contact-section__container .contact-icons-container .icon-container .telegram:hover label {
+  opacity: 1;
+}
+.contact-section__container .contact-icons-container .icon-container .linkedin svg,
+.contact-section__container .contact-icons-container .icon-container .email svg,
+.contact-section__container .contact-icons-container .icon-container .telegram svg {
+  height: 100px;
+  width: 100px;
+}
+.contact-section__container .contact-icons-container .icon-container .linkedin label,
+.contact-section__container .contact-icons-container .icon-container .email label,
+.contact-section__container .contact-icons-container .icon-container .telegram label {
+  transition: opacity 0.4s;
+  opacity: 0;
+  text-align: center;
 }
 
 .contact {

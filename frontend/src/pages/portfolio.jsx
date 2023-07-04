@@ -7,6 +7,7 @@ import Work from '../sections/work';
 import Contact from '../sections/contact';
 import AboutMe from '../sections/aboutMe';
 import CarouselWorks from '../sections/carouselWorks';
+import ContactSection from '../sections/contactSection';
 import SwitchButton from '../components/switchButton';
 
 const Portfolio = () => {
@@ -75,7 +76,8 @@ const Portfolio = () => {
       <div className='divisor-line-container'>
         <hr className='divisor-line' />
       </div>
-      <Contact ref={contactRef} />
+      {/* <Contact ref={contactRef} /> */}
+      <ContactSection ref={contactRef} />
       <Footer />
     </>
   );

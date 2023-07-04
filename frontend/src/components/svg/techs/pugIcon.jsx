@@ -105,7 +105,7 @@ const PugIcon = () => {
         ry='1.5'
       />
       <circle cx='37.2' cy='58.1' r='8.8' />
-      <circle class='st4' style={svgStyles.st3} cx='39.5' cy='54.2' r='2.3' />
+      <circle style={svgStyles.st4} cx='39.5' cy='54.2' r='2.3' />
       <path
         style={svgStyles.st9}
         d='M67.5 58.2c0-.1-2.3 1-2.9 1.1-.6-.1-2.9-1.2-2.9-1.1h5.8z'

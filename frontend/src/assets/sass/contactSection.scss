@@ -1,0 +1,67 @@
+.contact-section {
+  font-family: $comfortaa-cursive;
+  height: 80vh;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .contact__header {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 4rem 0;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    .contact-icons-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .icon-container {
+        height: 100%;
+        padding: 3rem;
+
+        .linkedin,
+        .email,
+        .telegram {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          cursor: pointer;
+          transition: transform 0.4s;
+
+          &:hover {
+            transform: scale(1.08);
+            transition: transform 0.4s, opacity 0.4s;
+
+            label {
+              opacity: 1;
+            }
+          }
+
+          svg {
+            height: 100px;
+            width: 100px;
+          }
+
+          label {
+            transition: opacity 0.4s;
+            opacity: 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

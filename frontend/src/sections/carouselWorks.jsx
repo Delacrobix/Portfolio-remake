@@ -6,8 +6,10 @@ import bingoSrc from '../assets/images/prev/bingo.png';
 import dicesSrc from '../assets/images/prev/juego-dados.png';
 import bookSrc from '../assets/images/prev/contact-book.png';
 import gallerySrc from '../assets/images/prev/mygallery.png';
+import { useTranslation } from 'react-i18next';
 
 const CarouselWorks = forwardRef((__, ref) => {
+  const { t } = useTranslation();
   const [state, setState] = useState({
     goToSlide: 0,
     goToSlideDelay: 500,
@@ -35,10 +37,8 @@ const CarouselWorks = forwardRef((__, ref) => {
             'NodeJS',
             'MongoDB',
           ]}
-          projectName={'Bingo'}
-          projectDescription={
-            'Bingo game, you can to play alone or with more players'
-          }
+          projectName={t('works.cards.work-card-1.title')}
+          projectDescription={t('works.cards.work-card-1.description')}
           imgSrc={bingoSrc}
           repo={'https://github.com/Delacrobix/Juego-virtual-Bingo-'}
           appLink={'https://auth-module.up.railway.app/login'}
@@ -50,10 +50,8 @@ const CarouselWorks = forwardRef((__, ref) => {
       content: (
         <WorkCard
           techList={['React', 'NodeJS', 'Redis', 'Sass', 'Dotnet', 'MongoDB']}
-          projectName={'My personal gallery'}
-          projectDescription={
-            'Here is some ones of my best photos that I have taken'
-          }
+          projectName={t('works.cards.work-card-2.title')}
+          projectDescription={t('works.cards.work-card-2.description')}
           imgSrc={gallerySrc}
           repo={'https://github.com/Delacrobix/MyPersonalGallery'}
           appLink={'https://delacrobix.github'}
@@ -65,10 +63,8 @@ const CarouselWorks = forwardRef((__, ref) => {
       content: (
         <WorkCard
           techList={['React', 'NodeJS', 'MySQL', 'Sass', 'GraphQL', 'JS']}
-          projectName={'Contact book'}
-          projectDescription={
-            'This is a simple contact book, you can add, delete and edit contacts'
-          }
+          projectName={t('works.cards.work-card-3.title')}
+          projectDescription={t('works.cards.work-card-3.description')}
           imgSrc={bookSrc}
           repo={'https://github.com/Delacrobix/ContactBook'}
           appLink={'https://delacrobix.github'}
@@ -80,8 +76,8 @@ const CarouselWorks = forwardRef((__, ref) => {
       content: (
         <WorkCard
           techList={['Pug', 'NodeJS', 'MongoDB', 'Sass', 'JS', 'CSS']}
-          projectName={'Dices game'}
-          projectDescription={'Blabal'}
+          projectName={t('works.cards.work-card-4.title')}
+          projectDescription={t('works.cards.work-card-4.description')}
           imgSrc={dicesSrc}
           repo={'https://github.com/Delacrobix/DicesGame'}
           appLink={'https://delacrobix.github'}

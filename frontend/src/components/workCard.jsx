@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import { svgTechsIcons } from './svg/svgExports';
 import TechImg from './techImg';
+import { useTranslation } from 'react-i18next';
 
 const WorkCard = (props) => {
+  const { t } = useTranslation();
   const {
     imgSrc,
     projectName,
@@ -63,12 +65,12 @@ const WorkCard = (props) => {
         <div className='buttons-container'>
           <div>
             <Link to={repo} target='_blank'>
-              Repository
+              {t('works.buttons.button-1')}
             </Link>
           </div>
           <div>
             <Link to={appLink} target='_blank'>
-              Live app
+              {t('works.buttons.button-2')}
             </Link>
           </div>
         </div>

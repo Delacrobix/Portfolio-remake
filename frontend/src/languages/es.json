@@ -1,5 +1,54 @@
 {
+  "header": {
+    "nav-link-1": "Inicio",
+    "nav-link-2": "Mi Trabajo",
+    "nav-link-3": "Quien Soy",
+    "nav-link-4": "Habilidades",
+    "nav-link-5": "Contacto"
+  },
   "intro": {
-    "welcome": "Bienvenido a mi web, soy un Fullstack developer"
-  }
+    "welcome": "Bienvenido! Soy desarrollador Full Stack"
+  },
+  "switch-bottom": "Switch view",
+  "works": {
+    "title": "My work",
+    "description": "Here is a part of my experience as software developer",
+    "cards": {
+      "work-card-1": {
+        "title": "Bingo",
+        "description": "You can to play alone or with more players"
+      },
+      "work-card-2": {
+        "title": "Personal gallery",
+        "description": "Here is some ones of my best photos that I have taken"
+      },
+      "work-card-3": {
+        "title": "Contact book",
+        "description": "This is a simple contact book, you can add, delete and edit contacts"
+      },
+      "work-card-4": {
+        "title": "Dices game",
+        "description": "A simple game with 1 dice"
+      }
+    },
+    "buttons": {
+      "button-1": "Repository",
+      "button-2": "Live app"
+    }
+  },
+  "about-me": {
+    "title": "Who am I",
+    "description": "My name is Jeffrey Sneider Rengifo Marin but sometimes I sign as Jeffrey S. Rerín. I am Fullstack developer and actually I am studying problems, facilities for the autodidact learning and for the team work",
+    "cv-button": "Watch CV"
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "These are the technologies that I have worked with. I have experience in developing applications with MVC architecture and modular applications. Additionally, I can build REST APIs and GraphQL APIs"
+  },
+  "contact": {
+    "title": "Contact me",
+    "description": "Send me a message if you are interested",
+    "copied": "Email is now in your clipboard!"
+  },
+  "footer": ""
 }

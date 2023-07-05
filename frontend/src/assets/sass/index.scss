@@ -4,23 +4,27 @@
 @import './body.scss';
 
 // Components
-@import './header.scss';
-@import './copied.scss';
-@import './dropdownHeader.scss';
-@import './footer.scss';
-@import './intro.scss';
-@import './aboutMe.scss';
-@import './skills.scss';
-@import './carouselWorks.scss';
-@import './switchButton.scss';
-@import './work.scss';
-@import './contactSection.scss';
-@import './contact.scss';
-@import './switchMode.scss';
-@import './switchLanguage.scss';
-@import './techImg.scss';
-@import './workCell.scss';
-@import './workCard.scss';
+@import './components/copied.scss';
+@import './components/dropdownHeader.scss';
+@import './components/switchButton.scss';
+@import './components/switchMode.scss';
+@import './components/workCell.scss';
+@import './components/switchLanguage.scss';
+@import './components/workCard.scss';
+@import './components/techImg.scss';
+
+//Sections
+@import './sections/header.scss';
+@import './sections/intro.scss';
+@import './sections/carouselWorks.scss';
+@import './sections/work.scss';
+@import './sections/aboutMe.scss';
+@import './sections/skills.scss';
+@import './sections/contact.scss';
+@import './sections/contactSection.scss';
+@import './sections/footer.scss';
 
 //Responsive
-@import './responsive.scss';
+@import './responsive/desktop.scss';
+@import './responsive/tablet.scss';
+@import './responsive/mobile.scss';

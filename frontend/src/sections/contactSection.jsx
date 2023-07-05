@@ -1,8 +1,10 @@
 import React, { forwardRef, useState } from 'react';
 import { svgSocialIcons } from '../components/svg/svgExports';
 import Copied from '../components/copied';
+import { useTranslation } from 'react-i18next';
 
 const ContactSection = forwardRef((__, ref) => {
+  const { t } = useTranslation();
   const [copied, setCopied] = useState();
 
   const TELEGRAM = process.env.REACT_APP_TELEGRAM;
@@ -29,8 +31,13 @@ const ContactSection = forwardRef((__, ref) => {
     <section className='contact-section' ref={ref}>
       <div className='contact-section__container'>
         <header className='contact__header'>
-          <h2>Contact me</h2>
-          <p>Send me a message if you are interested ;D</p>
+          <h2>{t('contact.title')}</h2>
+          <p>
+            {t('contact.description')}{' '}
+            <span role='img' aria-label='Cara sonriente'>
+              &#x1F60A;
+            </span>
+          </p>
         </header>
         <div className='contact-icons-container'>
           <div className='icon-container '>

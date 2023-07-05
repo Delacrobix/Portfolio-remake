@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef, forwardRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import WorkCard from '../components/workCard';
 import bingoSrc from '../assets/images/prev/bingo.png';
 import gallerySrc from '../assets/images/prev/mygallery.png';
@@ -7,6 +8,7 @@ import dicesSrc from '../assets/images/prev/juego-dados.png';
 
 const Work = forwardRef((__, ref) => {
   const [imgs, setImgs] = useState([]);
+  const { t } = useTranslation();
   const workTitleRef = useRef(null);
   const aux = [];
 
@@ -47,17 +49,15 @@ const Work = forwardRef((__, ref) => {
     <section ref={ref} className='works'>
       <div className='content'>
         <header className='work-tittle' ref={workTitleRef}>
-          <h2>My work</h2>
-          <p>Here is a part of my experience as software developer.</p>
+          <h2>{t('works.title')}</h2>
+          <p>{t('works.description')}</p>
         </header>
         <section className='section-gallery'>
           <WorkCard
             childData={childData}
             techList={['React', 'NodeJS', 'Redis', 'Sass', 'Dotnet', 'MongoDB']}
-            projectName={'My personal gallery'}
-            projectDescription={
-              'Here is some ones of my best photos that I have taken'
-            }
+            projectName={t('works.cards.work-card-1.title')}
+            projectDescription={t('works.cards.work-card-1.description')}
             imgSrc={gallerySrc}
             repo={'https://github.com/Delacrobix/MyPersonalGallery'}
             appLink={'https://delacrobix.github'}
@@ -65,10 +65,8 @@ const Work = forwardRef((__, ref) => {
           <WorkCard
             childData={childData}
             techList={['React', 'NodeJS', 'MySQL', 'Sass', 'GraphQL', 'JS']}
-            projectName={'Contact book'}
-            projectDescription={
-              'This is a simple contact book, you can add, delete and edit contacts'
-            }
+            projectName={t('works.cards.work-card-2.title')}
+            projectDescription={t('works.cards.work-card-2.description')}
             imgSrc={bookSrc}
             repo={'https://github.com/Delacrobix/ContactBook'}
             appLink={'https://delacrobix.github'}
@@ -76,8 +74,8 @@ const Work = forwardRef((__, ref) => {
           <WorkCard
             childData={childData}
             techList={['Pug', 'NodeJS', 'MongoDB', 'Sass', 'JS', 'CSS']}
-            projectName={'Dices game'}
-            projectDescription={'Blabal'}
+            projectName={t('works.cards.work-card-3.title')}
+            projectDescription={t('works.cards.work-card-3.description')}
             imgSrc={dicesSrc}
             repo={'https://github.com/Delacrobix/DicesGame'}
             appLink={'https://delacrobix.github'}
@@ -93,10 +91,8 @@ const Work = forwardRef((__, ref) => {
               'NodeJS',
               'MongoDB',
             ]}
-            projectName={'Bingo'}
-            projectDescription={
-              'Bingo game, you can to play alone or with more players'
-            }
+            projectName={t('works.cards.work-card-4.title')}
+            projectDescription={t('works.cards.work-card-4.description')}
             imgSrc={bingoSrc}
             repo={'https://github.com/Delacrobix/Juego-virtual-Bingo-'}
             appLink={'https://auth-module.up.railway.app/login'}

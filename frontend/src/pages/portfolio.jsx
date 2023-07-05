@@ -49,7 +49,7 @@ const Portfolio = () => {
       contact: contactRef,
       intro: introRef,
       work: workRef,
-      two: aboutMeRef,
+      aboutMe: aboutMeRef,
     };
 
     refSwitch[section].current.scrollIntoView({ behavior: 'smooth' });

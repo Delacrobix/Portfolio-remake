@@ -1,8 +1,10 @@
 import React, { useRef, useEffect, forwardRef } from 'react';
 import TechImg from '../components/techImg';
 import { svgTechsIcons } from '../components/svg/svgExports';
+import { useTranslation } from 'react-i18next';
 
 const Skills = forwardRef((__, ref) => {
+  const { t } = useTranslation();
   const techContainerRef = useRef(null);
   const skillsTittleRef = useRef(null);
   const skillsTittleAsideRef = useRef(null);
@@ -53,13 +55,9 @@ const Skills = forwardRef((__, ref) => {
       </section>
       <aside className='skills-description-aside' ref={skillsTittleAsideRef}>
         <header className='skills-tittle-header' ref={skillsTittleRef}>
-          <h2>Skills</h2>
+          <h2>{t('skills.title')}</h2>
         </header>
-        <p className='skills-description'>
-          These are the technologies that I have worked with. I have experience
-          in developing applications with MVC architecture and modular
-          applications. Additionally, I can build REST APIs and GraphQL APIs.
-        </p>
+        <p className='skills-description'>{t('skills.description')}</p>
       </aside>
     </section>
   );

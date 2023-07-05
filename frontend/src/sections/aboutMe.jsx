@@ -1,8 +1,10 @@
 import React, { forwardRef, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import esCv from '../assets/files/cvs/ecv.pdf';
 
 const AboutMe = forwardRef((__, ref) => {
+  const { t } = useTranslation();
   const aboutMeContainerRef = useRef(null);
   const titleRef = useRef(null);
 
@@ -45,16 +47,11 @@ const AboutMe = forwardRef((__, ref) => {
     <section ref={ref} className='about-me'>
       <div className='about-me__container' ref={aboutMeContainerRef}>
         <header className='about-me__title'>
-          <h2 ref={titleRef}>Who I Am?</h2>
+          <h2 ref={titleRef}>{t('about-me.title')}</h2>
         </header>
-        <p className='about-me__description'>
-          My name is Jeffrey Sneider Rengifo Marin but sometimes I sign as
-          Jeffrey S. Rerín. I am Fullstack developer and actually I am studying
-          problems, facilities for the autodidact learning and for the team
-          work.
-        </p>
+        <p className='about-me__description'>{t('about-me.description')}</p>
         <div className='cv-container'>
-          <Link onClick={openPDF}>Watch CV</Link>
+          <Link onClick={openPDF}>{t('about-me.cv-button')}</Link>
         </div>
       </div>
     </section>

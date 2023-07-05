@@ -1,0 +1,168 @@
+@media (max-width: 1400px) {
+  body {
+    //Header
+    .header {
+      height: 3.5rem;
+
+      nav li .header__link {
+        font-size: 0.9rem;
+      }
+    }
+
+    //Intro
+    .intro {
+      .content {
+        .profile-picture {
+          .image-container {
+            margin-top: 2rem;
+
+            img {
+              height: 24rem;
+              width: 24rem;
+            }
+          }
+        }
+      }
+    }
+
+    //works carousel
+    .work__cards {
+      padding: 2rem 0 5rem 0;
+
+      .content {
+        //WorkCard component
+        .work-cards-container {
+          width: 48rem;
+          height: 27rem;
+        }
+
+        //Arrows to move carousel
+        .css-1qzevvg {
+          margin: -8rem 0 0 0;
+        }
+      }
+    }
+
+    //Works grid
+    .works {
+      .content {
+        .section-gallery {
+          grid-template-columns: repeat(2, 30%);
+
+          //Work cell
+          .work-container {
+            .layer {
+              .text-container {
+                h3 {
+                  font-size: 1.2rem;
+                }
+
+                p {
+                  font-size: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //About me
+    .about-me {
+      &__container {
+        margin-left: -42%;
+        width: 39%;
+
+        &:hover {
+          padding: 0 30%;
+
+          .about-me__title {
+            transform: translateX(30%);
+            font-size: 1.7rem;
+          }
+
+          .about-me__description {
+            width: 35rem;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+          }
+        }
+
+        .about-me__title {
+          font-size: 1.4rem;
+        }
+
+        .about-me__description {
+          width: 35rem;
+          font-size: 1.1rem;
+          line-height: 1.7rem;
+        }
+      }
+    }
+
+    //Skills
+    .skills {
+      .tech-container {
+        width: 68%;
+        margin-left: -1rem;
+      }
+
+      .skills-description-aside {
+        width: 29%;
+        margin-left: -1rem;
+
+        &:hover {
+          .skills-tittle-header {
+            font-size: 1.7rem;
+          }
+
+          .skills-description {
+            font-size: 1.2rem;
+          }
+        }
+
+        .skills-tittle-header {
+          font-size: 1.4rem;
+        }
+
+        .skills-description {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    //Contact
+    .contact {
+      .container {
+        width: 50%;
+
+        .header-contact {
+          h2 {
+            font-size: 1.5rem;
+          }
+
+          p {
+            font-size: 1.2rem;
+          }
+        }
+
+        .form-contact {
+          padding: 0 1.5rem;
+
+          input,
+          textarea {
+            padding: 0.3rem 0;
+          }
+
+          .submit-container {
+            padding-bottom: 2rem;
+
+            .contact-submit {
+              padding: 1rem 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

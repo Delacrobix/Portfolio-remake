@@ -1438,6 +1438,38 @@ body.dark .tech-li .tech-name {
   body .contact .container .form-contact .submit-container .contact-submit {
     padding: 1.5rem 6rem;
   }
+  body .contact-section {
+    height: 100%;
+  }
+  body .contact-section__container {
+    padding: 1.8rem 0;
+  }
+  body .contact-section__container .contact__header {
+    padding: 0;
+  }
+  body .contact-section__container .contact-icons-container {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  body .contact-section__container .contact-icons-container .icon-container {
+    padding: 1rem;
+    margin: 0;
+  }
+  body .contact-section__container .contact-icons-container .icon-container .linkedin:hover,
+  body .contact-section__container .contact-icons-container .icon-container .email:hover,
+  body .contact-section__container .contact-icons-container .icon-container .telegram:hover {
+    transform: scale(1.05);
+  }
+  body .contact-section__container .contact-icons-container .icon-container .linkedin svg,
+  body .contact-section__container .contact-icons-container .icon-container .email svg,
+  body .contact-section__container .contact-icons-container .icon-container .telegram svg {
+    height: 120px;
+    width: 120px;
+  }
+  body .contact-section__container .contact-icons-container .icon-container .copied p {
+    font-size: 1rem;
+    width: 100%;
+  }
   body .footer .icons-ul {
     margin-left: -2rem;
   }
@@ -1526,7 +1558,7 @@ body.dark .tech-li .tech-name {
     transform: scale(50%);
   }
   body .switch-button {
-    padding: 0 0 6rem 0;
+    padding: 1rem 0 0 0;
   }
   body .work__cards .content .work-cards__header h2 {
     font-size: 1.3rem;

@@ -585,6 +585,50 @@
       }
     }
 
+    //Contact section
+    .contact-section {
+      height: 100%;
+      &__container {
+        padding: 1.8rem 0;
+        .contact__header {
+          padding: 0;
+        }
+
+        .contact-icons-container {
+          flex-wrap: wrap;
+          width: 100%;
+
+          .icon-container {
+            padding: 1rem;
+            margin: 0;
+
+            .linkedin,
+            .email,
+            .telegram {
+              &:hover {
+                transform: scale(1.05);
+              }
+
+              svg {
+                height: 120px;
+                width: 120px;
+              }
+            }
+
+            .copied {
+              // padding: 1rem;
+
+              p {
+                font-size: 1rem;
+                width: 100%;
+                // padding: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
     //Footer
     .footer {
       .icons-ul {
@@ -744,7 +788,7 @@
 
     //Switch-button
     .switch-button {
-      padding: 0 0 6rem 0;
+      padding: 1rem 0 0 0;
     }
 
     //Works carousel

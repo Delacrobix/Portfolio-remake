@@ -183,5 +183,21 @@
         }
       }
     }
+
+    //Footer
+    .footer {
+      .icons-ul {
+        padding: 4rem 0 0 0;
+        font-size: 1.6rem;
+
+        li {
+          padding: 0 0 1rem 0;
+        }
+      }
+
+      .menu {
+        font-size: 1.9rem;
+      }
+    }
   }
 }

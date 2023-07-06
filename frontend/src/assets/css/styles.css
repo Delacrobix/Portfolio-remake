@@ -1016,10 +1016,10 @@ body.dark .contact .form-contact .submit-container .contact-submit:hover {
 .footer .icons-ul {
   font-size: 1.2rem;
   list-style: none;
-  padding-top: 5rem;
+  padding: 5rem 0 0 0;
 }
 .footer .icons-ul li {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0 0 0.5rem 0;
 }
 .footer .icons-ul li a {
   text-decoration: none;
@@ -1275,6 +1275,16 @@ body.dark .footer a:hover {
   }
   body .skills .skills-description-aside:hover .skills-description {
     font-size: 1.15rem;
+  }
+  body .footer .icons-ul {
+    padding: 4rem 0 0 0;
+    font-size: 1.6rem;
+  }
+  body .footer .icons-ul li {
+    padding: 0 0 1rem 0;
+  }
+  body .footer .menu {
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 576px) {

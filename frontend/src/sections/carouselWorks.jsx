@@ -1,4 +1,4 @@
-import Carousel from 'react-spring-3d-carousel';
+import Carousel, { slidesToShowPlugin } from 'react-spring-3d-carousel';
 import { v4 as uuidv4 } from 'uuid';
 import React, { forwardRef, useState } from 'react';
 import WorkCard from '../components/workCard';
@@ -20,7 +20,7 @@ const CarouselWorks = forwardRef((__, ref) => {
       friction: 25,
     },
     showNavigation: true,
-    enableSwipe: false,
+    enableSwipe: true,
   });
 
   const slides = [
@@ -87,9 +87,23 @@ const CarouselWorks = forwardRef((__, ref) => {
   ].map((slide, index) => {
     return {
       ...slide,
-      onClick: () => setState({ goToSlide: index, showNavigation: true }),
+      onClick: () => {
+        setState({ goToSlide: index, showNavigation: true });
+      },
     };
   });
+
+  const offsetFn = (offsetFromRadius) => {
+    if (offsetFromRadius === 0) {
+      return {
+        pointerEvents: 'auto',
+      };
+    } else {
+      return {
+        pointerEvents: 'none',
+      };
+    }
+  };
 
   return (
     <section className='work__cards' ref={ref}>
@@ -99,12 +113,14 @@ const CarouselWorks = forwardRef((__, ref) => {
           <p>Here is a part of my experience as software developer</p>
         </header>
         <Carousel
+          plugins={[slidesToShowPlugin]}
           slides={slides}
           goToSlide={state.goToSlide}
           goToSlideDelay={state.goToSlideDelay}
           offsetRadius={state.offsetRadius}
           showNavigation={state.showNavigation}
           animationConfig={state.animationConfig}
+          offsetFn={offsetFn}
         />
       </div>
     </section>

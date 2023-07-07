@@ -15,7 +15,7 @@
     padding: 5rem 0 0 0;
 
     li {
-      padding-bottom: 0 0 0.5rem 0;
+      padding: 0 0 0.5rem 0;
 
       a {
         text-decoration: none;
@@ -56,6 +56,10 @@ body {
         &:hover {
           color: #000000;
         }
+      }
+
+      .menu {
+        color: #000000;
       }
     }
   }

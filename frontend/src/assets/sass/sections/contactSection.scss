@@ -1,5 +1,6 @@
 .contact-section {
   font-family: $comfortaa-cursive;
+  width: 100%;
   height: 80vh;
 
   &__container {
@@ -63,5 +64,11 @@
         }
       }
     }
+  }
+}
+
+body {
+  &.dark {
+    color: map-get($dark, mystic);
   }
 }

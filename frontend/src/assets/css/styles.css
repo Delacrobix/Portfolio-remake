@@ -7,6 +7,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
   background: #fcf8ec;
 }
 body .divisor-line-container {
@@ -323,6 +325,7 @@ body.dark .language-selector option {
   color: #ffffff;
 }
 .work__cards .content .work-cards-container .layer .text-container {
+  padding: 0 2rem;
   height: 55%;
   display: flex;
   flex-direction: column;
@@ -777,29 +780,30 @@ body.dark .about-me .cv-container a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: margin 0.5s, width 0.5s;
+  transition: margin 0.5s, width 0.5s, transform 0.5s;
+  overflow: hidden;
 }
 .skills .skills-description-aside:hover {
-  width: 31.5%;
-  transition: width 0.5s;
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
 .skills .skills-description-aside:hover .skills-tittle-header {
-  transition: font-size 0.5s;
-  font-size: 1.7rem;
+  transition: font-size 0.15s;
+  font-size: 1.6rem;
 }
 .skills .skills-description-aside:hover .skills-description {
-  transition: font-size 0.5s;
-  font-size: 1.4rem;
+  transition: font-size 0.15s;
+  font-size: 1.3rem;
 }
 .skills .skills-description-aside.active {
-  margin-right: 0;
+  margin-right: 2rem;
 }
 .skills .skills-description-aside .skills-tittle-header {
-  transition: font-size 0.5s;
+  transition: font-size 0.15s;
   font-size: 1.5rem;
 }
 .skills .skills-description-aside .skills-description {
-  transition: font-size 0.5s;
+  transition: font-size 0.15s;
   font-size: 1.2rem;
   line-height: 1.7rem;
 }
@@ -939,6 +943,7 @@ body.dark .contact .form-contact .submit-container .contact-submit:hover {
 
 .contact-section {
   font-family: "Comfortaa", cursive;
+  width: 100%;
   height: 80vh;
 }
 .contact-section__container {
@@ -1002,6 +1007,10 @@ body.dark .contact .form-contact .submit-container .contact-submit:hover {
   text-align: center;
 }
 
+body.dark {
+  color: #dde6ed;
+}
+
 .footer {
   font-family: "Comfortaa", cursive;
   width: 100%;
@@ -1019,7 +1028,7 @@ body.dark .contact .form-contact .submit-container .contact-submit:hover {
   padding: 5rem 0 0 0;
 }
 .footer .icons-ul li {
-  padding-bottom: 0 0 0.5rem 0;
+  padding: 0 0 0.5rem 0;
 }
 .footer .icons-ul li a {
   text-decoration: none;
@@ -1049,6 +1058,9 @@ body.dark .footer a {
   color: #dde6ed;
 }
 body.dark .footer a:hover {
+  color: #000000;
+}
+body.dark .footer .menu {
   color: #000000;
 }
 
@@ -1192,6 +1204,10 @@ body.dark .footer a:hover {
     margin: 0;
     padding: 0;
   }
+  body .work__cards .content .work-cards-container .layer .text-container h3 {
+    padding: 1rem 0;
+    margin: 0;
+  }
   body .work__cards .content .css-1qzevvg {
     margin: -15rem 0 0 0;
   }
@@ -1261,20 +1277,25 @@ body.dark .footer a:hover {
     width: 35%;
     margin-right: -36%;
   }
+  body .skills .skills-description-aside.active {
+    margin: 0;
+    padding: 0 0.5rem 0 0;
+  }
   body .skills .skills-description-aside .skills-tittle-header {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
   }
   body .skills .skills-description-aside .skills-description {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
   }
   body .skills .skills-description-aside:hover {
     width: 35%;
+    transform: scale(1.05);
   }
   body .skills .skills-description-aside:hover .skills-tittle-header {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
   }
   body .skills .skills-description-aside:hover .skills-description {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
   }
   body .footer .icons-ul {
     padding: 4rem 0 0 0;
@@ -1344,6 +1365,7 @@ body.dark .footer a:hover {
     height: 32rem;
   }
   body .work__cards .content .work-cards-container .layer .text-container {
+    padding: 0 0.15rem;
     height: 50%;
   }
   body .work__cards .content .work-cards-container .layer .text-container h3 {
@@ -1433,8 +1455,9 @@ body.dark .footer a:hover {
     padding: 0.7rem 1.1rem;
   }
   body .skills {
+    overflow-y: hidden;
     height: 100%;
-    margin: 4rem 0;
+    padding: 3rem 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1472,6 +1495,7 @@ body.dark .footer a:hover {
     width: 100%;
   }
   body .skills .skills-description-aside:hover {
+    transform: scale(1);
     width: 100%;
   }
   body .skills .skills-description-aside:hover .skills-tittle-header {

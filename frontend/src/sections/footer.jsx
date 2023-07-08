@@ -34,8 +34,8 @@ const Footer = () => {
           </Link>
         </li>
       </ul>
-      <ul className='menu'>
-        <li> Jeffrey S. Rerín</li>
+      <ul className='sign'>
+        <li>Jeffrey S. Rerín</li>
       </ul>
     </footer>
   );

@@ -109,8 +109,8 @@ const CarouselWorks = forwardRef((__, ref) => {
     <section className='work__cards' ref={ref}>
       <div className='content'>
         <header className='work-cards__header'>
-          <h2>My work</h2>
-          <p>Here is a part of my experience as software developer</p>
+          <h2>{t('works.title')}</h2>
+          <p>{t('works.description')}</p>
         </header>
         <Carousel
           plugins={[slidesToShowPlugin]}

@@ -4,7 +4,6 @@ import Header from '../sections/header';
 import Footer from '../sections/footer';
 import Skills from '../sections/skills';
 import Work from '../sections/work';
-import Contact from '../sections/contact';
 import AboutMe from '../sections/aboutMe';
 import CarouselWorks from '../sections/carouselWorks';
 import ContactSection from '../sections/contactSection';
@@ -76,7 +75,6 @@ const Portfolio = () => {
       <div className='divisor-line-container'>
         <hr className='divisor-line' />
       </div>
-      {/* <Contact ref={contactRef} /> */}
       <ContactSection ref={contactRef} />
       <Footer />
     </>

@@ -1,8 +1,8 @@
 .footer {
+  background: map-get($light, blueBayoux);
   font-family: $comfortaa-cursive;
   width: 100%;
   position: absolute;
-  background: map-get($light, blueBayoux);
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -38,10 +38,14 @@
     }
   }
 
-  .menu {
-    font-size: 1.5rem;
+  .sign {
+    padding: 2rem 0 1rem 0;
+    margin: 0;
     list-style: none;
-    padding-top: 2rem;
+
+    li {
+      font-size: 1.5rem;
+    }
   }
 }
 

@@ -2,7 +2,7 @@
   "header": {
     "nav-link-1": "Inicio",
     "nav-link-2": "Mi Trabajo",
-    "nav-link-3": "Quien Soy",
+    "nav-link-3": "Quién Soy",
     "nav-link-4": "Habilidades",
     "nav-link-5": "Contacto"
   },
@@ -12,23 +12,23 @@
   "switch-bottom": "Cambiar vista",
   "works": {
     "title": "Mi trabajo",
-    "description": "Aquí se evidencia una parte de mi experiencia como desarrollador de software",
+    "description": "Aquí se evidencia una parte de mi experiencia como desarrollador de software.",
     "cards": {
       "work-card-1": {
         "title": "Bingo",
-        "description": "Puedes jugar con amigos en modo online o puedes jugar tu solo, la diversion esta garantizada"
+        "description": "Puedes jugar con amigos en modo online o puedes jugar tu solo, la diversion esta garantizada."
       },
       "work-card-2": {
         "title": "Galería personal",
-        "description": "Esta aplicación muestra algunas de las mejores fotografías que he tomado con mi cámara en uno de mis hobbies favoritos"
+        "description": "Esta aplicación muestra algunas de las mejores fotografías que he tomado con mi cámara en uno de mis hobbies favoritos."
       },
       "work-card-3": {
         "title": "Libreta de contactos",
-        "description": "Puedes guardar tus contactos en esta aplicación, deja el tuyo para saber que te gustó"
+        "description": "Puedes guardar tus contactos en esta aplicación, deja el tuyo para saber que te gustó."
       },
       "work-card-4": {
         "title": "Juego de dados",
-        "description": "Un simple juego de dados"
+        "description": "Un simple juego de dados."
       }
     },
     "buttons": {
@@ -37,18 +37,18 @@
     }
   },
   "about-me": {
-    "title": "¿Quien soy?",
-    "description": "Mi nombre es Jeffrey Sneider Rengifo Marin aunque suelo firmar como Jeffrey S. Rerín. Soy desarrollador Fullstack y actualmente estoy estudiando Ingeniería de Sistemas. Desarrollo excelentes experiencias con las mejores practicas, me apasiona la resolución de problemas y tengo facilidad para el crecimiento autodidacta",
+    "title": "¿Quién soy?",
+    "description": "Mi nombre es Jeffrey Sneider Rengifo Marín aunque suelo firmar como Jeffrey S. Rerín. Soy desarrollador Fullstack y actualmente estoy estudiando Ingeniería de Sistemas. Desarrollo excelentes experiencias con las mejores practicas, me apasiona la resolución de problemas y tengo facilidad para el crecimiento autodidacta.",
     "cv-button": "Ver hoja de vida"
   },
   "skills": {
     "title": "Habilidades",
-    "description": "Estas son algunas de las tecnologías y herramientas con las que he trabajado. Tengo experiencia en el desarrollo de experiencias de usuario y de aplicaciones con arquitectura MVC y modulares, también en el desarrollo de API REST y GraphQL APIs"
+    "description": "Estas son algunas de las tecnologías y herramientas con las que he trabajado. Tengo experiencia en el desarrollo de experiencias de usuario y de aplicaciones con arquitectura MVC y modulares, también en el desarrollo de API REST y GraphQL APIs."
   },
   "contact": {
     "title": "Contacto",
-    "description": "¿Te interesa mi perfil?, conversemos!",
-    "copied": "Mi correo esta en tu portapapeles!"
+    "description": "¿Te interesa mi perfil?, ¡conversemos!",
+    "copied": "Mi correo esta en tu portapapeles."
   },
   "footer": ""
 }

@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio-remake/static/css/main.38d58b52.css",
-    "main.js": "/Portfolio-remake/static/js/main.02649e8a.js",
+    "main.css": "/Portfolio-remake/static/css/main.65f75f08.css",
+    "main.js": "/Portfolio-remake/static/js/main.c0a26755.js",
     "static/js/787.cda612ba.chunk.js": "/Portfolio-remake/static/js/787.cda612ba.chunk.js",
-    "static/media/mygallery.png": "/Portfolio-remake/static/media/mygallery.b364ec21cade90df4f0f.png",
+    "static/media/mygallery.png": "/Portfolio-remake/static/media/mygallery.23e57766c4415d09fad9.png",
     "static/media/me.jpg": "/Portfolio-remake/static/media/me.136fe7cdd6d11eebdf00.jpg",
     "static/media/bingo.png": "/Portfolio-remake/static/media/bingo.e1df2d41f54abe582a7d.png",
     "static/media/ecv.pdf": "/Portfolio-remake/static/media/ecv.1686a39bda4e90cd296f.pdf",
-    "static/media/contact-book.png": "/Portfolio-remake/static/media/contact-book.49df24a0f50f13090324.png",
+    "static/media/contact-book.png": "/Portfolio-remake/static/media/contact-book.8c0486cb6f4acb6b00bb.png",
     "static/media/1.jpg": "/Portfolio-remake/static/media/1.0a8fa1759cd32d2e2afc.jpg",
-    "static/media/juego-dados.png": "/Portfolio-remake/static/media/juego-dados.c80d9022ccaad498772a.png",
+    "static/media/juego-dados.png": "/Portfolio-remake/static/media/juego-dados.22576f4d7a68b319b541.png",
     "index.html": "/Portfolio-remake/index.html",
-    "main.38d58b52.css.map": "/Portfolio-remake/static/css/main.38d58b52.css.map",
-    "main.02649e8a.js.map": "/Portfolio-remake/static/js/main.02649e8a.js.map",
+    "main.65f75f08.css.map": "/Portfolio-remake/static/css/main.65f75f08.css.map",
+    "main.c0a26755.js.map": "/Portfolio-remake/static/js/main.c0a26755.js.map",
     "787.cda612ba.chunk.js.map": "/Portfolio-remake/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38d58b52.css",
-    "static/js/main.02649e8a.js"
+    "static/css/main.65f75f08.css",
+    "static/js/main.c0a26755.js"
   ]
 }

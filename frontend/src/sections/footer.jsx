@@ -22,15 +22,15 @@ const Footer = () => {
           </Link>
         </li>
         <li>
-          <Link to={GITHUB} target='_blank'>
-            <FontAwesomeIcon icon={faGithub} className='icon' />
-            <span className='label'>Github</span>
-          </Link>
-        </li>
-        <li>
           <Link to={TELEGRAM} target='_blank'>
             <FontAwesomeIcon icon={faTelegram} className='icon' />
             <span className='label'>Telegram</span>
+          </Link>
+        </li>
+        <li>
+          <Link to={GITHUB} target='_blank'>
+            <FontAwesomeIcon icon={faGithub} className='icon' />
+            <span className='label'>Github</span>
           </Link>
         </li>
       </ul>

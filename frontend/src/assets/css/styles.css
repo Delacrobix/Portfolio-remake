@@ -697,10 +697,10 @@ body.dark .works {
   padding: 0 36%;
 }
 .about-me__container:hover .about-me__title {
-  margin-bottom: -2rem;
+  margin: 0 0 -2rem 0;
   font-size: 2rem;
-  transform: translateX(25%);
-  transition: font-size 0.6s, transform 0.6s, margin 0.6s;
+  text-align: center;
+  transition: font-size 0.6s, margin 0.6s;
 }
 .about-me__container:hover .about-me__description {
   font-size: 1.5rem;
@@ -714,10 +714,10 @@ body.dark .works {
   transition: visibility 1s, opacity 1s;
 }
 .about-me__container .about-me__title {
-  font-size: 1.5rem;
-  transition: font-size 0.4s, transform 0.6s;
+  transition: font-size 0.4s;
 }
 .about-me__container .about-me__description {
+  font-size: 1.5rem;
   font-size: 1.2rem;
   line-height: 1.7rem;
   transition: line-height 0.4s;
@@ -725,9 +725,9 @@ body.dark .works {
 .about-me__container .cv-container {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   visibility: hidden;
-  opacity: 0;
   display: flex;
   justify-content: center;
+  opacity: 0;
   transition: 0.5s;
 }
 .about-me__container .cv-container a {
@@ -980,7 +980,6 @@ body.dark .footer .menu {
     padding: 0 30%;
   }
   body .about-me__container:hover .about-me__title {
-    transform: translateX(30%);
     font-size: 1.7rem;
   }
   body .about-me__container:hover .about-me__description {
@@ -989,12 +988,16 @@ body.dark .footer .menu {
     line-height: 1.8rem;
   }
   body .about-me__container .about-me__title {
+    width: 35rem;
     font-size: 1.4rem;
   }
   body .about-me__container .about-me__description {
     width: 35rem;
     font-size: 1.1rem;
     line-height: 1.7rem;
+  }
+  body .about-me__container .cv-container {
+    width: 35rem;
   }
   body .skills .tech-container {
     width: 68%;
@@ -1092,7 +1095,7 @@ body.dark .footer .menu {
   body .about-me {
     height: 80vh;
     padding: 0 3rem;
-    width: 85%;
+    width: 88%;
   }
   body .about-me__container {
     margin: 0;
@@ -1109,16 +1112,21 @@ body.dark .footer .menu {
     padding: 0;
   }
   body .about-me__container:hover .about-me__title {
-    margin: 0;
+    margin: 0 0 -1rem 0;
+    width: 100%;
     font-size: 2rem;
-    transform: translateX(0%);
   }
   body .about-me__container:hover .about-me__description {
     width: 100%;
     font-size: 1.6rem;
     line-height: 2.2rem;
   }
+  body .about-me__container:hover .cv-container {
+    width: 100%;
+  }
   body .about-me__container .about-me__title {
+    width: 100%;
+    margin: 0;
     text-align: center;
     font-size: 2rem;
   }
@@ -1130,6 +1138,7 @@ body.dark .footer .menu {
     line-height: 2.2rem;
   }
   body .about-me__container .cv-container {
+    width: 100%;
     padding-top: 1.5rem;
     visibility: visible;
     opacity: 1;
@@ -1638,6 +1647,48 @@ body.dark .footer .menu {
   }
   body .skills .skills-description-aside .skills-description {
     font-size: 1.05rem;
+  }
+}
+@media (max-height: 850px) {
+  html {
+    font-size: 15px;
+  }
+  body .works {
+    padding: 6rem 0;
+  }
+  body .works .content .section-gallery {
+    grid-template-columns: repeat(2, 35%);
+  }
+  body .skills .tech-container {
+    grid-template-columns: repeat(3, 22%);
+  }
+}
+@media (max-height: 790px) {
+  html {
+    font-size: 14px;
+  }
+  body .works {
+    padding: 3rem 0;
+  }
+  body .works .content .section-gallery {
+    grid-template-columns: repeat(2, 40%);
+  }
+  body .skills .tech-container {
+    grid-template-columns: repeat(3, 27%);
+  }
+}
+@media (max-height: 620px) {
+  html {
+    font-size: 12px;
+  }
+  body .works {
+    padding: 3rem 0;
+  }
+  body .works .content .section-gallery {
+    grid-template-columns: repeat(2, 40%);
+  }
+  body .skills .tech-container {
+    grid-template-columns: repeat(3, 27%);
   }
 }
 

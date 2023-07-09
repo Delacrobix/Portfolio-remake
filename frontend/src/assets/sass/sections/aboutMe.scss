@@ -22,10 +22,10 @@
       padding: 0 36%;
 
       .about-me__title {
-        margin-bottom: -2rem;
+        margin: 0 0 -2rem 0;
         font-size: 2rem;
-        transform: translateX(25%);
-        transition: font-size 0.6s, transform 0.6s, margin 0.6s;
+        text-align: center;
+        transition: font-size 0.6s, margin 0.6s;
       }
 
       .about-me__description {
@@ -43,11 +43,11 @@
     }
 
     .about-me__title {
-      font-size: 1.5rem;
-      transition: font-size 0.4s, transform 0.6s;
+      transition: font-size 0.4s;
     }
 
     .about-me__description {
+      font-size: 1.5rem;
       font-size: 1.2rem;
       line-height: 1.7rem;
       transition: line-height 0.4s;
@@ -56,9 +56,9 @@
     .cv-container {
       font-family: $gil-sans;
       visibility: hidden;
-      opacity: 0;
       display: flex;
       justify-content: center;
+      opacity: 0;
       transition: 0.5s;
 
       a {

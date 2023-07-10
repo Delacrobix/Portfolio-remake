@@ -52,10 +52,32 @@
 
 @media (max-height: 620px) {
   html {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   body {
+    //Intro
+    .intro {
+      height: 100%;
+
+      .content {
+        .profile-picture {
+          .image-container {
+            margin: 4rem 0 0 0;
+          }
+        }
+
+        footer {
+          li {
+            .switch-mode-mobile {
+              width: 6.7rem;
+              height: 6.7rem;
+            }
+          }
+        }
+      }
+    }
+
     //Works grid
     .works {
       padding: 3rem 0;
@@ -67,10 +89,27 @@
       }
     }
 
+    //Work carrousel
+    .work__cards {
+      width: 100%;
+      height: 150vh;
+
+      .content {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
     //Skills
     .skills {
       .tech-container {
         grid-template-columns: repeat(3, 27%);
+
+        ul {
+          .tech-li {
+            padding: 1rem;
+          }
+        }
       }
     }
   }

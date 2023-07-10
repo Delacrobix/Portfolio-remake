@@ -2,65 +2,22 @@
   font-family: $comfortaa-cursive;
   width: 100%;
   height: 100vh;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background: url('../images/backgrounds/1.jpg');
   background-size: 30rem cover;
   background-attachment: fixed;
-  padding: 1rem 1rem 2rem;
-
-  .dropdown-header {
-    top: 0;
-    left: 0;
-    position: absolute;
-    display: none;
-    width: 100%;
-
-    &__toggle {
-      text-align: left;
-      background: transparentize(map-get($light, blueBayoux), 0.2);
-      border: none;
-      width: 4rem;
-      padding: 0.5rem 5.9rem 0.5rem 0.1rem;
-      cursor: pointer;
-      font-size: 1.2rem;
-    }
-
-    &__list {
-      font-size: 0.8rem;
-      top: 100%;
-      left: 0;
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: transparentize(map-get($light, blueBayoux), 0.2);
-      list-style: none;
-      width: 6rem;
-      padding: 0;
-      margin: 0;
-
-      li {
-        width: 100%;
-        text-align: center;
-        padding: 1rem 0;
-        border-top: 0.13rem solid rgba($color: #ffffff, $alpha: 0.5);
-
-        a {
-          margin: 0;
-          padding: 0;
-          text-decoration: none;
-        }
-
-        &:hover {
-          background-color: #f0f0f0;
-        }
-      }
-    }
-  }
 
   .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     .profile-picture {
       height: 100%;
       width: 100%;

@@ -1,4 +1,8 @@
 @media (max-width: 576px) {
+  html {
+    font-size: 16px;
+  }
+
   body {
     //Header
     .header {
@@ -15,7 +19,7 @@
     //Intro
     .intro {
       .content {
-        margin-left: -2rem;
+        // margin-left: -2rem;
 
         .profile-picture {
           .image-container {
@@ -421,7 +425,7 @@
     //intro
     .intro {
       .content {
-        margin-left: -2rem;
+        // margin-left: -2rem;
 
         .profile-picture {
           .image-container {
@@ -488,6 +492,10 @@
 }
 
 @media (max-width: 321px) {
+  html {
+    font-size: 15px;
+  }
+
   body {
     //Header
     .header {
@@ -526,8 +534,8 @@
 
           li {
             .switch-mode-mobile {
-              width: 5.1rem;
-              height: 5.1rem;
+              width: 5.5rem;
+              height: 5.5rem;
             }
           }
         }
@@ -688,7 +696,6 @@
     //Skills
     .skills {
       .tech-container {
-        // padding: 1rem;
         ul {
           .tech-li {
             padding: 1rem;

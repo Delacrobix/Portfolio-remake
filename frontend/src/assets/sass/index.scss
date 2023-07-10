@@ -5,7 +5,6 @@
 
 // Components
 @import './components/copied.scss';
-@import './components/dropdownHeader.scss';
 @import './components/switchButton.scss';
 @import './components/switchMode.scss';
 @import './components/workCell.scss';
@@ -25,6 +24,6 @@
 
 //Responsive
 @import './responsive/desktop.scss';
+@import './responsive/height.scss';
 @import './responsive/tablet.scss';
 @import './responsive/mobile.scss';
-@import './responsive/height.scss';

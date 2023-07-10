@@ -3,11 +3,11 @@ import React from 'react';
 const EnFlagIcon = () => {
   return (
     <svg
+      width='80px'
+      height='80px'
       className='en-svg'
       xmlns='http://www.w3.org/2000/svg'
       version='1.1'
-      width='80px'
-      height='80px'
       xmlnsXlink='http://www.w3.org/1999/xlink'
     >
       <g>

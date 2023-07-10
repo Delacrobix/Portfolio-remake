@@ -1,6 +1,7 @@
 .about-me {
   font-family: $lora;
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
 
@@ -85,8 +86,8 @@ body {
       color: map-get($dark, mystic);
 
       .cv-container a {
-        color: map-get($dark, mystic);
         border: map-get($dark, mystic) solid 1px;
+        color: map-get($dark, mystic);
 
         &:hover {
           background-color: rgba(map-get($dark, mystic), $alpha: 0.15);

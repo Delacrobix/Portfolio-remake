@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next';
 import profilePicture from '../assets/images/profile/me.jpg';
 import SwitchMode from '../components/switchMode';
 import SwitchLanguage from '../components/switchLanguage';
-import DropdownHeader from '../components/dropdownHeader';
 
 const Intro = forwardRef((props, ref) => {
   const { scrollTo } = props;
@@ -14,7 +13,6 @@ const Intro = forwardRef((props, ref) => {
 
   return (
     <section ref={ref} className='intro'>
-      <DropdownHeader scrollTo={scrollTo} />
       <div className='content'>
         <div className='profile-picture'>
           <div className='image-container'>

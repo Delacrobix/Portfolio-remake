@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-remake/static/css/main.d95260ab.css",
-    "main.js": "/Portfolio-remake/static/js/main.e87a3e26.js",
+    "main.js": "/Portfolio-remake/static/js/main.b1292398.js",
     "static/js/787.cda612ba.chunk.js": "/Portfolio-remake/static/js/787.cda612ba.chunk.js",
     "static/media/mygallery.png": "/Portfolio-remake/static/media/mygallery.23e57766c4415d09fad9.png",
     "static/media/me.jpg": "/Portfolio-remake/static/media/me.136fe7cdd6d11eebdf00.jpg",
@@ -12,11 +12,11 @@
     "static/media/juego-dados.png": "/Portfolio-remake/static/media/juego-dados.22576f4d7a68b319b541.png",
     "index.html": "/Portfolio-remake/index.html",
     "main.d95260ab.css.map": "/Portfolio-remake/static/css/main.d95260ab.css.map",
-    "main.e87a3e26.js.map": "/Portfolio-remake/static/js/main.e87a3e26.js.map",
+    "main.b1292398.js.map": "/Portfolio-remake/static/js/main.b1292398.js.map",
     "787.cda612ba.chunk.js.map": "/Portfolio-remake/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d95260ab.css",
-    "static/js/main.e87a3e26.js"
+    "static/js/main.b1292398.js"
   ]
 }

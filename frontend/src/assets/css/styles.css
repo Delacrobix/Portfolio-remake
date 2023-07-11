@@ -499,11 +499,12 @@ body.dark .header nav li .header__link:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/backgrounds/1.jpg");
-  background-size: 30rem cover;
+  background: url("../images/backgrounds/10.jpg");
+  background-size: cover;
   background-attachment: fixed;
 }
 .intro .content {
+  color: #dde6ed;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -531,10 +532,11 @@ body.dark .header nav li .header__link:hover {
   margin-top: 1rem;
   margin-bottom: 0;
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .intro .content p {
-  font-size: 1.2rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
   margin: 1rem;
   text-align: center;
 }

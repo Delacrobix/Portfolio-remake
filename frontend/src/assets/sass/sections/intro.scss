@@ -7,11 +7,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../images/backgrounds/1.jpg');
-  background-size: 30rem cover;
+  background: url('../images/backgrounds/10.jpg');
+  background-size: cover;
   background-attachment: fixed;
 
   .content {
+    color: map-get($dark, mystic);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -42,11 +43,12 @@
       margin-top: 1rem;
       margin-bottom: 0;
       text-align: center;
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
 
     p {
-      font-size: 1.2rem;
+      font-weight: bolder;
+      font-size: 1.5rem;
       margin: 1rem;
       text-align: center;
     }

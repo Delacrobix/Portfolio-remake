@@ -54,7 +54,7 @@ const CarouselWorks = forwardRef((__, ref) => {
           projectDescription={t('works.cards.work-card-2.description')}
           imgSrc={gallerySrc}
           repo={'https://github.com/Delacrobix/MyPersonalGallery'}
-          appLink={'https://delacrobix.github'}
+          appLink={'https://delacrobix.github.io/MyPersonalGallery/#/home'}
         />
       ),
     },
@@ -66,8 +66,8 @@ const CarouselWorks = forwardRef((__, ref) => {
           projectName={t('works.cards.work-card-3.title')}
           projectDescription={t('works.cards.work-card-3.description')}
           imgSrc={bookSrc}
-          repo={'https://github.com/Delacrobix/ContactBook'}
-          appLink={'https://delacrobix.github'}
+          repo={'https://github.com/Delacrobix/contact-book-nodejs'}
+          appLink={'https://delacrobix.github.io/contact-book-nodejs/#/home'}
         />
       ),
     },
@@ -79,8 +79,8 @@ const CarouselWorks = forwardRef((__, ref) => {
           projectName={t('works.cards.work-card-4.title')}
           projectDescription={t('works.cards.work-card-4.description')}
           imgSrc={dicesSrc}
-          repo={'https://github.com/Delacrobix/DicesGame'}
-          appLink={'https://delacrobix.github'}
+          repo={'https://github.com/Delacrobix/juego-dados'}
+          appLink={'https://delx-dicesgame-ag7izwz66-delacrobix.vercel.app'}
         />
       ),
     },

@@ -56,29 +56,29 @@ const Work = forwardRef((__, ref) => {
           <WorkCard
             childData={childData}
             techList={['React', 'NodeJS', 'Redis', 'Sass', 'Dotnet', 'MongoDB']}
-            projectName={t('works.cards.work-card-1.title')}
-            projectDescription={t('works.cards.work-card-1.description')}
+            projectName={t('works.cards.work-card-2.title')}
+            projectDescription={t('works.cards.work-card-2.description')}
             imgSrc={gallerySrc}
             repo={'https://github.com/Delacrobix/MyPersonalGallery'}
-            appLink={'https://delacrobix.github'}
+            appLink={'https://delacrobix.github.io/MyPersonalGallery/#/home'}
           />
           <WorkCard
             childData={childData}
             techList={['React', 'NodeJS', 'MySQL', 'Sass', 'GraphQL', 'JS']}
-            projectName={t('works.cards.work-card-2.title')}
-            projectDescription={t('works.cards.work-card-2.description')}
+            projectName={t('works.cards.work-card-3.title')}
+            projectDescription={t('works.cards.work-card-3.description')}
             imgSrc={bookSrc}
-            repo={'https://github.com/Delacrobix/ContactBook'}
-            appLink={'https://delacrobix.github'}
+            repo={'https://github.com/Delacrobix/contact-book-nodejs'}
+            appLink={'https://delacrobix.github.io/contact-book-nodejs/#/home'}
           />
           <WorkCard
             childData={childData}
             techList={['Pug', 'NodeJS', 'MongoDB', 'Sass', 'JS', 'CSS']}
-            projectName={t('works.cards.work-card-3.title')}
-            projectDescription={t('works.cards.work-card-3.description')}
+            projectName={t('works.cards.work-card-4.title')}
+            projectDescription={t('works.cards.work-card-4.description')}
             imgSrc={dicesSrc}
-            repo={'https://github.com/Delacrobix/DicesGame'}
-            appLink={'https://delacrobix.github'}
+            repo={'https://github.com/Delacrobix/juego-dados'}
+            appLink={'https://delx-dicesgame-ag7izwz66-delacrobix.vercel.app'}
           />
           <WorkCard
             childData={childData}
@@ -91,8 +91,8 @@ const Work = forwardRef((__, ref) => {
               'NodeJS',
               'MongoDB',
             ]}
-            projectName={t('works.cards.work-card-4.title')}
-            projectDescription={t('works.cards.work-card-4.description')}
+            projectName={t('works.cards.work-card-1.title')}
+            projectDescription={t('works.cards.work-card-1.description')}
             imgSrc={bingoSrc}
             repo={'https://github.com/Delacrobix/Juego-virtual-Bingo-'}
             appLink={'https://auth-module.up.railway.app/login'}

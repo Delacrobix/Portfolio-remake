@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.9388914b.css",
-    "main.js": "/static/js/main.4173b936.js",
+    "main.css": "/static/css/main.51e1b3cf.css",
+    "main.js": "/static/js/main.72663b80.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/10.jpg": "/static/media/10.19b03a69679f78f98f13.jpg",
-    "static/media/mygallery.png": "/static/media/mygallery.23e57766c4415d09fad9.png",
+    "static/media/mygallery.png": "/static/media/mygallery.843980ccbc564bdac8e3.png",
     "static/media/me.jpg": "/static/media/me.136fe7cdd6d11eebdf00.jpg",
-    "static/media/bingo.png": "/static/media/bingo.e1df2d41f54abe582a7d.png",
+    "static/media/bingo.png": "/static/media/bingo.7b65f471bd19dcecd145.png",
     "static/media/ecv.pdf": "/static/media/ecv.1686a39bda4e90cd296f.pdf",
     "static/media/contact-book.png": "/static/media/contact-book.8c0486cb6f4acb6b00bb.png",
     "static/media/juego-dados.png": "/static/media/juego-dados.22576f4d7a68b319b541.png",
     "index.html": "/index.html",
-    "main.9388914b.css.map": "/static/css/main.9388914b.css.map",
-    "main.4173b936.js.map": "/static/js/main.4173b936.js.map",
+    "main.51e1b3cf.css.map": "/static/css/main.51e1b3cf.css.map",
+    "main.72663b80.js.map": "/static/js/main.72663b80.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9388914b.css",
-    "static/js/main.4173b936.js"
+    "static/css/main.51e1b3cf.css",
+    "static/js/main.72663b80.js"
   ]
 }

@@ -468,7 +468,9 @@ body.dark .tech-li .tech-name {
 }
 .header nav li .header__link {
   color: black;
-  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 0.05rem 0.05rem 0.05rem rgba(221, 230, 237, 0.3);
+  font-size: 1.02rem;
   text-decoration: none;
   padding: 0 0.6rem 0 0.6rem;
   transition: color 0.3s;
@@ -530,11 +532,16 @@ body.dark .header nav li .header__link:hover {
 }
 .intro .content header h2 {
   margin-top: 1rem;
+  backdrop-filter: blur(2px);
   margin-bottom: 0;
+  text-shadow: 0.1rem 0.1rem 0.2rem #322464;
   text-align: center;
   font-size: 3.5rem;
 }
 .intro .content p {
+  padding: 0.5rem;
+  backdrop-filter: blur(2px);
+  text-shadow: 0.1rem 0.1rem 0.2rem #322464;
   font-weight: bolder;
   font-size: 1.5rem;
   margin: 1rem;

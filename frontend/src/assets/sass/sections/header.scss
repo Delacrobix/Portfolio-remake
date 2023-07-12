@@ -29,7 +29,9 @@
 
       .header__link {
         color: black;
-        font-size: 1rem;
+        font-weight: bold;
+        text-shadow: 0.05rem 0.05rem 0.05rem rgba(map-get($dark, mystic), 0.3);
+        font-size: 1.02rem;
         text-decoration: none;
         padding: 0 0.6rem 0 0.6rem;
         transition: color 0.3s;

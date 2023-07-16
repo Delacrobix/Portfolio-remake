@@ -690,6 +690,7 @@ body.dark .works {
 }
 .about-me__container .about-me__title {
   transition: font-size 0.4s;
+  font-size: 1.2rem;
 }
 .about-me__container .about-me__description {
   font-size: 1.5rem;
@@ -1287,6 +1288,13 @@ body.dark .footer .menu {
     width: 18rem;
     height: 32rem;
   }
+  body .work__cards .content .work-cards-container .img-layer img {
+    filter: blur(2px);
+  }
+  body .work__cards .content .work-cards-container .layer {
+    opacity: 1;
+    visibility: visible;
+  }
   body .work__cards .content .work-cards-container .layer .text-container {
     padding: 0 0.15rem;
     height: 50%;
@@ -1562,6 +1570,9 @@ body.dark .footer .menu {
   body .header {
     height: 2rem;
   }
+  body .intro {
+    padding: 0 0 1rem 0;
+  }
   body .intro .content .profile-picture .image-container {
     margin-top: 4rem;
   }
@@ -1593,13 +1604,14 @@ body.dark .footer .menu {
     transform: scale(50%);
   }
   body .switch-button {
-    padding: 1rem 0 0 0;
+    padding: 1.5rem 0 0 0;
+    margin: 0 0 -5rem 0;
   }
-  body .work__cards .content .work-cards__header h2 {
-    font-size: 1.3rem;
+  body .work__cards {
+    padding: 0;
   }
-  body .work__cards .content .work-cards__header p {
-    font-size: 1rem;
+  body .work__cards .content .work-cards__header {
+    margin: 0 0 -12rem;
   }
   body .work__cards .content .work-cards-container {
     width: 13.5rem;
@@ -1629,8 +1641,11 @@ body.dark .footer .menu {
     width: 2.2rem;
   }
   body .work__cards .content .css-1qzevvg {
-    margin: 0 0 0 -3rem;
-    padding: 1rem 0 0 0;
+    margin: -12rem 0 0 -2.5rem;
+    padding: 0;
+  }
+  body .works {
+    padding: 5rem 0 0 0;
   }
   body .works .content .section-gallery .work-cards-container .layer .text-container {
     padding: 0 0.5rem;

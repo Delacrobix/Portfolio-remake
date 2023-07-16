@@ -19,8 +19,6 @@
     //Intro
     .intro {
       .content {
-        // margin-left: -2rem;
-
         .profile-picture {
           .image-container {
             img {
@@ -88,7 +86,16 @@
           width: 18rem;
           height: 32rem;
 
+          .img-layer {
+            img {
+              filter: blur(2px);
+            }
+          }
+
           .layer {
+            opacity: 1;
+            visibility: visible;
+
             .text-container {
               padding: 0 0.15rem;
               height: 50%;
@@ -504,6 +511,7 @@
 
     //Intro
     .intro {
+      padding: 0 0 1rem 0;
       .content {
         .profile-picture {
           .image-container {
@@ -553,20 +561,17 @@
 
     //Switch-button
     .switch-button {
-      padding: 1rem 0 0 0;
+      padding: 1.5rem 0 0 0;
+      margin: 0 0 -5rem 0;
     }
 
     //Works carousel
     .work__cards {
+      padding: 0;
+
       .content {
         .work-cards__header {
-          h2 {
-            font-size: 1.3rem;
-          }
-
-          p {
-            font-size: 1rem;
-          }
+          margin: 0 0 -12rem;
         }
 
         //WorkCard component
@@ -615,14 +620,16 @@
         }
 
         .css-1qzevvg {
-          margin: 0 0 0 -3rem;
-          padding: 1rem 0 0 0;
+          margin: -12rem 0 0 -2.5rem;
+          padding: 0;
         }
       }
     }
 
     //Work grid
     .works {
+      padding: 5rem 0 0 0;
+
       .content {
         .section-gallery {
           .work-cards-container {

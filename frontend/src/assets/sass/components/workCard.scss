@@ -1,7 +1,6 @@
 .work__cards .content .work-cards-container {
   width: 64rem;
   height: 36rem;
-  transition: 0.5s;
   position: relative;
 
   &:hover > .layer {
@@ -38,8 +37,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: opacity 0.5s;
     color: #ffffff;
+    transition: 0.3s;
 
     .text-container {
       padding: 0 2rem;
@@ -83,9 +82,7 @@
           text-decoration: none;
 
           &:hover {
-            background: rgba($color: #ffffff, $alpha: 0.3);
-            font-weight: bold;
-            color: #000;
+            background: rgba($color: #ffffff, $alpha: 0.18);
           }
         }
       }

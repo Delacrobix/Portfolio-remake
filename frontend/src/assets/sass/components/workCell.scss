@@ -7,7 +7,6 @@
         height: 100%;
         width: 100%;
         overflow: hidden;
-        transition: 0.5s;
 
         &:hover > .layer {
           opacity: 1;
@@ -43,7 +42,7 @@
           justify-content: center;
           align-items: center;
           text-align: center;
-          transition: all 0.5s ease-out;
+          transition: 0.5s;
           color: #ffffff;
 
           .text-container {
@@ -84,8 +83,7 @@
                 text-decoration: none;
 
                 &:hover {
-                  background-color: rgba($color: #ffffff, $alpha: 0.3);
-                  color: #000;
+                  background-color: rgba($color: #ffffff, $alpha: 0.18);
                 }
               }
             }

@@ -137,7 +137,6 @@ body.dark .switch-button button:hover {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  transition: 0.5s;
 }
 .works .content .section-gallery .work-cards-container:hover > .layer {
   opacity: 1;
@@ -169,7 +168,7 @@ body.dark .switch-button button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition: all 0.5s ease-out;
+  transition: 0.5s;
   color: #ffffff;
 }
 .works .content .section-gallery .work-cards-container .layer .text-container {
@@ -207,8 +206,7 @@ body.dark .switch-button button:hover {
   text-decoration: none;
 }
 .works .content .section-gallery .work-cards-container .layer .buttons-container div a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: #000;
+  background-color: rgba(255, 255, 255, 0.18);
 }
 .works .content .section-gallery .work-cards-container .layer .techs {
   height: 25%;
@@ -289,7 +287,6 @@ body.dark .language-selector option {
 .work__cards .content .work-cards-container {
   width: 64rem;
   height: 36rem;
-  transition: 0.5s;
   position: relative;
 }
 .work__cards .content .work-cards-container:hover > .layer {
@@ -322,8 +319,8 @@ body.dark .language-selector option {
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition: opacity 0.5s;
   color: #ffffff;
+  transition: 0.3s;
 }
 .work__cards .content .work-cards-container .layer .text-container {
   padding: 0 2rem;
@@ -362,9 +359,7 @@ body.dark .language-selector option {
   text-decoration: none;
 }
 .work__cards .content .work-cards-container .layer .buttons-container div a:hover {
-  background: rgba(255, 255, 255, 0.3);
-  font-weight: bold;
-  color: #000;
+  background: rgba(255, 255, 255, 0.18);
 }
 .work__cards .content .work-cards-container .layer .techs {
   padding: 0;
@@ -715,8 +710,8 @@ body.dark .works {
   border-radius: 7px;
 }
 .about-me__container .cv-container a:hover {
-  transition: 0.6s;
-  background-color: rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  background-color: rgba(121, 163, 177, 0.5);
 }
 
 body.dark .about-me {
@@ -727,7 +722,7 @@ body.dark .about-me .cv-container a {
   color: #dde6ed;
 }
 body.dark .about-me .cv-container a:hover {
-  background-color: rgba(221, 230, 237, 0.15);
+  background-color: rgba(221, 230, 237, 0.12);
 }
 
 .skills {

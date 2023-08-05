@@ -4,7 +4,7 @@ import WorkCard from '../components/workCard';
 import bingoSrc from '../assets/images/prev/bingo.png';
 import gallerySrc from '../assets/images/prev/mygallery.png';
 import bookSrc from '../assets/images/prev/contact-book.png';
-import dicesSrc from '../assets/images/prev/juego-dados.png';
+import chordSrc from '../assets/images/prev/chord-generator.png';
 
 const Work = forwardRef((__, ref) => {
   const [imgs, setImgs] = useState([]);
@@ -55,6 +55,24 @@ const Work = forwardRef((__, ref) => {
         <section className='section-gallery'>
           <WorkCard
             childData={childData}
+            techList={[
+              'React',
+              'GraphQL',
+              'MongoDB',
+              'SQL Server',
+              'NodeJS',
+              'Sass',
+              'Dotnet',
+              'Redis',
+            ]}
+            projectName={t('works.cards.work-card-4.title')}
+            projectDescription={t('works.cards.work-card-4.description')}
+            imgSrc={chordSrc}
+            repo={'https://github.com/Delacrobix/Song-maker'}
+            appLink={'https://song-maker-front.netlify.app/#/create-song/tone'}
+          />
+          <WorkCard
+            childData={childData}
             techList={['React', 'NodeJS', 'Redis', 'Sass', 'Dotnet', 'MongoDB']}
             projectName={t('works.cards.work-card-2.title')}
             projectDescription={t('works.cards.work-card-2.description')}
@@ -71,7 +89,7 @@ const Work = forwardRef((__, ref) => {
             repo={'https://github.com/Delacrobix/contact-book-nodejs'}
             appLink={'https://delacrobix.github.io/contact-book-nodejs/#/home'}
           />
-          <WorkCard
+          {/* <WorkCard
             childData={childData}
             techList={['Pug', 'NodeJS', 'MongoDB', 'Sass', 'JS', 'CSS']}
             projectName={t('works.cards.work-card-4.title')}
@@ -79,7 +97,7 @@ const Work = forwardRef((__, ref) => {
             imgSrc={dicesSrc}
             repo={'https://github.com/Delacrobix/juego-dados'}
             appLink={'https://delx-dicesgame-ag7izwz66-delacrobix.vercel.app'}
-          />
+          /> */}
           <WorkCard
             childData={childData}
             techList={[

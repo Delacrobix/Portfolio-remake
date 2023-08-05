@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import React, { forwardRef, useState } from 'react';
 import WorkCard from '../components/workCard';
 import bingoSrc from '../assets/images/prev/bingo.png';
-import dicesSrc from '../assets/images/prev/juego-dados.png';
+import chordSrc from '../assets/images/prev/chord-generator.png';
 import bookSrc from '../assets/images/prev/contact-book.png';
 import gallerySrc from '../assets/images/prev/mygallery.png';
 import { useTranslation } from 'react-i18next';
@@ -24,6 +24,41 @@ const CarouselWorks = forwardRef((__, ref) => {
   });
 
   const slides = [
+    {
+      key: uuidv4(),
+      content: (
+        <WorkCard
+          techList={[
+            'React',
+            'GraphQL',
+            'MongoDB',
+            'SQL Server',
+            'NodeJS',
+            'Sass',
+            'Dotnet',
+            'Redis',
+          ]}
+          projectName={t('works.cards.work-card-4.title')}
+          projectDescription={t('works.cards.work-card-4.description')}
+          imgSrc={chordSrc}
+          repo={'https://github.com/Delacrobix/Song-maker'}
+          appLink={'https://song-maker-front.netlify.app/#/create-song/tone'}
+        />
+      ),
+    },
+    // {
+    //   key: uuidv4(),
+    //   content: (
+    //     <WorkCard
+    //       techList={['Pug', 'NodeJS', 'MongoDB', 'Sass', 'JS', 'CSS']}
+    //       projectName={t('works.cards.work-card-4.title')}
+    //       projectDescription={t('works.cards.work-card-4.description')}
+    //       imgSrc={dicesSrc}
+    //       repo={'https://github.com/Delacrobix/juego-dados'}
+    //       appLink={'https://delx-dicesgame-ag7izwz66-delacrobix.vercel.app'}
+    //     />
+    //   ),
+    // },
     {
       key: uuidv4(),
       content: (
@@ -68,19 +103,6 @@ const CarouselWorks = forwardRef((__, ref) => {
           imgSrc={bookSrc}
           repo={'https://github.com/Delacrobix/contact-book-nodejs'}
           appLink={'https://delacrobix.github.io/contact-book-nodejs/#/home'}
-        />
-      ),
-    },
-    {
-      key: uuidv4(),
-      content: (
-        <WorkCard
-          techList={['Pug', 'NodeJS', 'MongoDB', 'Sass', 'JS', 'CSS']}
-          projectName={t('works.cards.work-card-4.title')}
-          projectDescription={t('works.cards.work-card-4.description')}
-          imgSrc={dicesSrc}
-          repo={'https://github.com/Delacrobix/juego-dados'}
-          appLink={'https://delx-dicesgame-ag7izwz66-delacrobix.vercel.app'}
         />
       ),
     },

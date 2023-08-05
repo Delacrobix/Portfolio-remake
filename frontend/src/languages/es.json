@@ -27,8 +27,8 @@
         "description": "Puedes guardar tus contactos en esta aplicación, deja el tuyo para saber que te gustó."
       },
       "work-card-4": {
-        "title": "Juego de dados",
-        "description": "Un simple juego de dados."
+        "title": "Generador de acordes",
+        "description": "Permite generar, guardar y compartir progresiones armónicas funcionales mediante el uso de la API de OpenAI."
       }
     },
     "buttons": {

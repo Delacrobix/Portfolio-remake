@@ -27,8 +27,8 @@
         "description": "You can save contacts here. If you like it, add one."
       },
       "work-card-4": {
-        "title": "Dices game",
-        "description": "A simple dices game."
+        "title": "Chords generator",
+        "description": "Allow us to generate, save and share functionally harmonic progressions using the OpenAI API."
       }
     },
     "buttons": {

@@ -1,12 +1,19 @@
 import React, { forwardRef, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import esCv from '../assets/files/cvs/ecv.pdf';
+import enCv from '../assets/files/cvs/ecv.pdf';
+import esCv from '../assets/files/cvs/scv.pdf';
+import { useState } from 'react';
 
 const AboutMe = forwardRef((__, ref) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState(i18n.language);
   const aboutMeContainerRef = useRef(null);
   const titleRef = useRef(null);
+
+  useEffect(() => {
+    setLanguage(i18n.language);
+  }, [i18n.language]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,7 +47,11 @@ const AboutMe = forwardRef((__, ref) => {
   }, []);
 
   function openPDF() {
-    window.open(esCv, '_blank');
+    if (language === 'es') {
+      window.open(esCv, '_blank');
+    } else {
+      window.open(enCv, '_blank');
+    }
   }
 
   return (

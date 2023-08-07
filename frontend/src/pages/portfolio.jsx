@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { I18nextProvider } from 'react-i18next';
 import Intro from '../sections/intro';
 import Header from '../sections/header';
 import Footer from '../sections/footer';
@@ -8,6 +9,7 @@ import AboutMe from '../sections/aboutMe';
 import CarouselWorks from '../sections/carouselWorks';
 import ContactSection from '../sections/contactSection';
 import SwitchButton from '../components/switchButton';
+import i18n from '../config/languages';
 
 const Portfolio = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -67,7 +69,9 @@ const Portfolio = () => {
       <div className='divisor-line-container'>
         <hr className='divisor-line' />
       </div>
-      <AboutMe ref={aboutMeRef} />
+      <I18nextProvider i18n={i18n}>
+        <AboutMe ref={aboutMeRef} />
+      </I18nextProvider>
       <div className='divisor-line-container'>
         <hr className='divisor-line' />
       </div>

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9bba02c8.css",
-    "main.js": "/static/js/main.594ea5df.js",
+    "main.js": "/static/js/main.973e2c21.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/mygallery.png": "/static/media/mygallery.843980ccbc564bdac8e3.png",
     "static/media/10.jpg": "/static/media/10.24781b89fa219b1b93cd.jpg",
@@ -13,11 +13,11 @@
     "static/media/chord-generator.png": "/static/media/chord-generator.2a7435c6712783c2fbba.png",
     "index.html": "/index.html",
     "main.9bba02c8.css.map": "/static/css/main.9bba02c8.css.map",
-    "main.594ea5df.js.map": "/static/js/main.594ea5df.js.map",
+    "main.973e2c21.js.map": "/static/js/main.973e2c21.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9bba02c8.css",
-    "static/js/main.594ea5df.js"
+    "static/js/main.973e2c21.js"
   ]
 }

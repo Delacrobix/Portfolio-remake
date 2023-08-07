@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, forwardRef } from 'react';
+import React, { forwardRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import WorkCard from '../components/workCard';
 import bingoSrc from '../assets/images/prev/bingo.png';
@@ -7,54 +7,17 @@ import bookSrc from '../assets/images/prev/contact-book.png';
 import chordSrc from '../assets/images/prev/chord-generator.png';
 
 const Work = forwardRef((__, ref) => {
-  const [imgs, setImgs] = useState([]);
   const { t } = useTranslation();
-  const workTitleRef = useRef(null);
-  const aux = [];
-
-  useEffect(() => {
-    if (imgs.length != 0) {
-      window.addEventListener('scroll', scrollAnimation);
-    }
-  }, [imgs]);
-
-  function scrollAnimation() {
-    const workTitle = workTitleRef.current;
-
-    if (workTitle) {
-      let workTittleHeight = workTitle.getBoundingClientRect().top;
-      let lastImg;
-
-      imgs.forEach((element) => {
-        element.style.opacity = 0;
-        lastImg = element;
-      });
-
-      let lastImgHeight = lastImg.getBoundingClientRect().top;
-
-      if (screen.height / 2 > workTittleHeight && lastImgHeight > 0) {
-        imgs.forEach((element) => {
-          element.style.opacity = 1;
-        });
-      }
-    }
-  }
-
-  function childData(data) {
-    aux.push(data);
-    setImgs(aux);
-  }
 
   return (
     <section ref={ref} className='works'>
       <div className='content'>
-        <header className='work-tittle' ref={workTitleRef}>
+        <header className='work-tittle'>
           <h2>{t('works.title')}</h2>
           <p>{t('works.description')}</p>
         </header>
         <section className='section-gallery'>
           <WorkCard
-            childData={childData}
             techList={[
               'React',
               'GraphQL',
@@ -72,7 +35,6 @@ const Work = forwardRef((__, ref) => {
             appLink={'https://song-maker-front.netlify.app/#/create-song/tone'}
           />
           <WorkCard
-            childData={childData}
             techList={['React', 'NodeJS', 'Redis', 'Sass', 'Dotnet', 'MongoDB']}
             projectName={t('works.cards.work-card-2.title')}
             projectDescription={t('works.cards.work-card-2.description')}
@@ -81,7 +43,6 @@ const Work = forwardRef((__, ref) => {
             appLink={'https://delacrobix.github.io/MyPersonalGallery/#/home'}
           />
           <WorkCard
-            childData={childData}
             techList={['React', 'NodeJS', 'MySQL', 'Sass', 'GraphQL', 'JS']}
             projectName={t('works.cards.work-card-3.title')}
             projectDescription={t('works.cards.work-card-3.description')}
@@ -99,7 +60,6 @@ const Work = forwardRef((__, ref) => {
             appLink={'https://delx-dicesgame-ag7izwz66-delacrobix.vercel.app'}
           /> */}
           <WorkCard
-            childData={childData}
             techList={[
               'Dotnet',
               'JS',

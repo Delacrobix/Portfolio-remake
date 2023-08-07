@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.9bba02c8.css",
-    "main.js": "/static/js/main.7acb1ae6.js",
+    "main.js": "/static/js/main.594ea5df.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/mygallery.png": "/static/media/mygallery.843980ccbc564bdac8e3.png",
     "static/media/10.jpg": "/static/media/10.24781b89fa219b1b93cd.jpg",
     "static/media/me.jpg": "/static/media/me.136fe7cdd6d11eebdf00.jpg",
     "static/media/bingo.png": "/static/media/bingo.7b65f471bd19dcecd145.png",
-    "static/media/ecv.pdf": "/static/media/ecv.1686a39bda4e90cd296f.pdf",
+    "static/media/scv.pdf": "/static/media/scv.ac0f0e338c34ec93a41f.pdf",
+    "static/media/ecv.pdf": "/static/media/ecv.7f2533cfc9f4c92d26a1.pdf",
     "static/media/contact-book.png": "/static/media/contact-book.8c0486cb6f4acb6b00bb.png",
     "static/media/chord-generator.png": "/static/media/chord-generator.2a7435c6712783c2fbba.png",
     "index.html": "/index.html",
     "main.9bba02c8.css.map": "/static/css/main.9bba02c8.css.map",
-    "main.7acb1ae6.js.map": "/static/js/main.7acb1ae6.js.map",
+    "main.594ea5df.js.map": "/static/js/main.594ea5df.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9bba02c8.css",
-    "static/js/main.7acb1ae6.js"
+    "static/js/main.594ea5df.js"
   ]
 }

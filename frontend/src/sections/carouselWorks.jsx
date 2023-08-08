@@ -42,7 +42,7 @@ const CarouselWorks = forwardRef((__, ref) => {
           projectDescription={t('works.cards.work-card-4.description')}
           imgSrc={chordSrc}
           repo={'https://github.com/Delacrobix/Song-maker'}
-          appLink={'https://song-maker-front.netlify.app/#/create-song/tone'}
+          appLink={'https://chordgenerator.site/#/create-song/tone'}
         />
       ),
     },

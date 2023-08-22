@@ -534,13 +534,43 @@ body.dark .header nav li .header__link:hover {
   font-size: 3.5rem;
 }
 .intro .content p {
-  padding: 0.5rem;
   backdrop-filter: blur(2px);
   text-shadow: 0.1rem 0.1rem 0.2rem #322464;
   font-weight: bolder;
   font-size: 1.5rem;
   margin: 1rem;
   text-align: center;
+}
+.intro .content .social-media-container {
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+.intro .content .social-media-container .intro-icon {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0.6rem;
+  transition: visibility 0.2s;
+}
+.intro .content .social-media-container .intro-icon svg {
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+.intro .content .social-media-container .intro-icon span {
+  visibility: hidden;
+  opacity: 0;
+  font-size: 0.7rem;
+  transition: opacity 0.3s;
+}
+.intro .content .social-media-container .intro-icon:hover {
+  transform: scale(1.05);
+}
+.intro .content .social-media-container .intro-icon:hover span {
+  visibility: visible;
+  opacity: 1;
 }
 .intro .content footer {
   padding-top: 1rem;
@@ -678,11 +708,6 @@ body.dark .works {
   text-align: center;
   transition: font-size 0.1s, line-height 0.4s;
 }
-.about-me__container:hover .cv-container {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 1s, opacity 1s;
-}
 .about-me__container .about-me__title {
   transition: font-size 0.4s;
   font-size: 1.2rem;
@@ -693,36 +718,9 @@ body.dark .works {
   line-height: 1.7rem;
   transition: line-height 0.4s;
 }
-.about-me__container .cv-container {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
-  opacity: 0;
-  transition: 0.5s;
-}
-.about-me__container .cv-container a {
-  color: black;
-  text-decoration: none;
-  font-size: 1rem;
-  padding: 0.7rem 1.1rem;
-  border: black solid 1px;
-  border-radius: 7px;
-}
-.about-me__container .cv-container a:hover {
-  transition: 0.5s;
-  background-color: rgba(121, 163, 177, 0.5);
-}
 
 body.dark .about-me {
   color: #dde6ed;
-}
-body.dark .about-me .cv-container a {
-  border: #dde6ed solid 1px;
-  color: #dde6ed;
-}
-body.dark .about-me .cv-container a:hover {
-  background-color: rgba(221, 230, 237, 0.12);
 }
 
 .skills {
@@ -968,9 +966,6 @@ body.dark .footer .menu {
     font-size: 1.1rem;
     line-height: 1.7rem;
   }
-  body .about-me__container .cv-container {
-    width: 35rem;
-  }
   body .skills .tech-container {
     width: 68%;
     margin-left: -1rem;
@@ -1156,9 +1151,6 @@ body.dark .footer .menu {
     font-size: 1.6rem;
     line-height: 2.2rem;
   }
-  body .about-me__container:hover .cv-container {
-    width: 100%;
-  }
   body .about-me__container .about-me__title {
     width: 100%;
     margin: 0;
@@ -1171,16 +1163,6 @@ body.dark .footer .menu {
     margin: 0;
     font-size: 1.6rem;
     line-height: 2.2rem;
-  }
-  body .about-me__container .cv-container {
-    width: 100%;
-    padding-top: 1.5rem;
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 1s, opacity 1s;
-  }
-  body .about-me__container .cv-container a {
-    padding: 1.2rem 1.9rem;
   }
   body .skills {
     height: 80vh;
@@ -1373,12 +1355,6 @@ body.dark .footer .menu {
   body .about-me__container .about-me__description {
     font-size: 1.1rem;
     line-height: 1.5rem;
-  }
-  body .about-me__container .cv-container {
-    padding-top: 1rem;
-  }
-  body .about-me__container .cv-container a {
-    padding: 0.7rem 1.1rem;
   }
   body .skills {
     overflow-y: hidden;

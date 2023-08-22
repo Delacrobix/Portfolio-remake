@@ -42,10 +42,10 @@ const CarouselWorks = forwardRef((__, ref) => {
           projectDescription={t('works.cards.work-card-4.description')}
           imgSrc={chordSrc}
           repo={'https://github.com/Delacrobix/Song-maker'}
-          appLink={'https://chordgenerator.site/#/create-song/tone'}
+          appLink={'https://chordgenerator.site/#/tone-selector'}
         />
       ),
-    },
+    }, 
     // {
     //   key: uuidv4(),
     //   content: (

@@ -49,13 +49,49 @@
     }
 
     p {
-      padding: 0.5rem;
       backdrop-filter: blur(2px);
       text-shadow: 0.1rem 0.1rem 0.2rem rgba(#322464, 1);
       font-weight: bolder;
       font-size: 1.5rem;
       margin: 1rem;
       text-align: center;
+    }
+
+    .social-media-container {
+      display: flex;
+      align-items: center;
+      align-items: center;
+
+      .intro-icon {
+        display: flex;
+        align-items: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 0.6rem;
+        transition: visibility 0.2s;
+
+        svg {
+          height: 3rem;
+          width: 3rem;
+          cursor: pointer;
+        }
+
+        span {
+          visibility: hidden;
+          opacity: 0;
+          font-size: 0.7rem;
+          transition: opacity 0.3s;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+
+          span {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
     }
 
     footer {

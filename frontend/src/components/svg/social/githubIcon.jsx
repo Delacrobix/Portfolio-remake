@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GithubIcon2 = () => {
+const GithubIcon = () => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -32,4 +32,4 @@ const GithubIcon2 = () => {
   );
 };
 
-export default GithubIcon2;
+export default GithubIcon;

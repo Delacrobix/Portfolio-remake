@@ -1,19 +1,11 @@
 import React, { forwardRef, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
-import enCv from '../assets/files/cvs/ecv.pdf';
-import esCv from '../assets/files/cvs/scv.pdf';
-import { useState } from 'react';
 
 const AboutMe = forwardRef((__, ref) => {
-  const { t, i18n } = useTranslation();
-  const [language, setLanguage] = useState(i18n.language);
+  const { t } = useTranslation();
+
   const aboutMeContainerRef = useRef(null);
   const titleRef = useRef(null);
-
-  useEffect(() => {
-    setLanguage(i18n.language);
-  }, [i18n.language]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,14 +38,6 @@ const AboutMe = forwardRef((__, ref) => {
     window.addEventListener('scroll', handleScroll);
   }, []);
 
-  function openPDF() {
-    if (language === 'es') {
-      window.open(esCv, '_blank');
-    } else {
-      window.open(enCv, '_blank');
-    }
-  }
-
   return (
     <section ref={ref} className='about-me'>
       <div className='about-me__container' ref={aboutMeContainerRef}>
@@ -61,9 +45,6 @@ const AboutMe = forwardRef((__, ref) => {
           <h2 ref={titleRef}>{t('about-me.title')}</h2>
         </header>
         <p className='about-me__description'>{t('about-me.description')}</p>
-        <div className='cv-container'>
-          <Link onClick={openPDF}>{t('about-me.cv-button')}</Link>
-        </div>
       </div>
     </section>
   );

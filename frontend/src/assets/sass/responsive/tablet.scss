@@ -122,10 +122,6 @@
             font-size: 1.6rem;
             line-height: 2.2rem;
           }
-
-          .cv-container {
-            width: 100%;
-          }
         }
 
         .about-me__title {
@@ -141,18 +137,6 @@
           margin: 0;
           font-size: 1.6rem;
           line-height: 2.2rem;
-        }
-
-        .cv-container {
-          width: 100%;
-          padding-top: 1.5rem;
-          visibility: visible;
-          opacity: 1;
-          transition: visibility 1s, opacity 1s;
-
-          a {
-            padding: 1.2rem 1.9rem;
-          }
         }
       }
     }

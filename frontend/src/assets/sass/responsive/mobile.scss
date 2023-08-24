@@ -22,8 +22,8 @@
         .profile-picture {
           .image-container {
             img {
-              height: 22rem;
-              width: 22rem;
+              height: 21rem;
+              width: 21rem;
             }
           }
         }
@@ -56,103 +56,97 @@
       }
     }
 
-    //Switch button
-    .switch-button {
-      margin: 0;
-      padding: 2rem 0 0 0;
-    }
-
     //Works carousel
-    .work__cards {
-      .content {
-        .work-cards__header {
-          margin: 3rem 0 -10rem 0;
+    // .work__cards {
+    //   .content {
+    //     .work-cards__header {
+    //       margin: 3rem 0 -10rem 0;
 
-          h2 {
-            font-size: 1.6rem;
-          }
+    //       h2 {
+    //         font-size: 1.6rem;
+    //       }
 
-          p {
-            font-size: 1.25rem;
-          }
-        }
+    //       p {
+    //         font-size: 1.25rem;
+    //       }
+    //     }
 
-        .css-1qzevvg {
-          margin: -9rem 0 0 -1rem;
-        }
+    //     .css-1qzevvg {
+    //       margin: -9rem 0 0 -1rem;
+    //     }
 
-        //Work cards
-        .work-cards-container {
-          width: 18rem;
-          height: 32rem;
+    //     //Work cards
+    //     .work-cards-container {
+    //       width: 18rem;
+    //       height: 32rem;
 
-          .img-layer {
-            img {
-              filter: blur(2px);
-            }
-          }
+    //       .img-layer {
+    //         img {
+    //           filter: blur(2px);
+    //         }
+    //       }
 
-          .layer {
-            opacity: 1;
-            visibility: visible;
+    //       .layer {
+    //         opacity: 1;
+    //         visibility: visible;
 
-            .text-container {
-              padding: 0 0.15rem;
-              height: 50%;
+    //         .text-container {
+    //           padding: 0 0.15rem;
+    //           height: 50%;
 
-              h3 {
-                font-size: 1.5rem;
-              }
+    //           h3 {
+    //             font-size: 1.5rem;
+    //           }
 
-              p {
-                margin: 3rem 0 0 0;
-                padding: 1rem;
-                font-size: 0.9rem;
-              }
-            }
+    //           p {
+    //             margin: 3rem 0 0 0;
+    //             padding: 1rem;
+    //             font-size: 0.9rem;
+    //           }
+    //         }
 
-            .buttons-container {
-              div {
-                margin: 0.4rem;
+    //         .buttons-container {
+    //           div {
+    //             margin: 0.4rem;
 
-                a {
-                  padding: 1rem 1.4rem;
-                }
-              }
-            }
+    //             a {
+    //               padding: 1rem 1.4rem;
+    //             }
+    //           }
+    //         }
 
-            .techs {
-              height: 25%;
+    //         .techs {
+    //           height: 25%;
 
-              &__ul {
-                display: flex;
-                flex-wrap: wrap;
-                width: 65%;
+    //           &__ul {
+    //             display: flex;
+    //             flex-wrap: wrap;
+    //             width: 65%;
 
-                .tech-li {
-                  margin-right: 0.2rem;
+    //             .tech-li {
+    //               margin-right: 0.2rem;
 
-                  .tech-img-container {
-                    padding: 0.2rem 0.2rem;
-                    height: 2.3rem;
-                    width: 2.3rem;
-                  }
+    //               .tech-img-container {
+    //                 padding: 0.2rem 0.2rem;
+    //                 height: 2.3rem;
+    //                 width: 2.3rem;
+    //               }
 
-                  .tech-name {
-                    display: none;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+    //               .tech-name {
+    //                 display: none;
+    //               }
+    //             }
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
 
     //Works grid
     .works {
       height: 100%;
-      padding: 0rem;
+      padding: 0;
 
       .content {
         .work-tittle {
@@ -169,22 +163,30 @@
           display: flex;
           flex-direction: column;
 
-          .work-container {
+          .work-cards-container {
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0;
 
             .img-layer {
-              margin: 0 0.2rem;
+              margin: 0;
             }
 
             .layer {
               margin: 0;
 
               .text-container {
+                padding: 0.2rem 0;
+
+                h3 {
+                  padding: 0.9rem 0 0 0;
+                  margin: 0;
+                  font-size: 1.2rem;
+                }
+
                 p {
-                  padding: 0rem 2rem 1rem;
+                  padding: 0.2rem 0;
                 }
               }
             }
@@ -405,88 +407,69 @@
 @media (max-width: 414px) {
   body {
     //Works carousel
-    .work__cards {
-      .content {
-        .work-cards__header {
-          margin: 3rem 0 -8rem 0;
-        }
+    // .work__cards {
+    //   .content {
+    //     .work-cards__header {
+    //       margin: 3rem 0 -8rem 0;
+    //     }
 
-        .css-1qzevvg {
-          margin: -6.5rem 0 0 -1.5rem;
-        }
-      }
-    }
+    //     .css-1qzevvg {
+    //       margin: -6.5rem 0 0 -1.5rem;
+    //     }
+    //   }
+    // }
   }
 }
 
 @media (max-width: 375px) {
   body {
-    //intro
-    .intro {
-      .content {
-        // margin-left: -2rem;
-
-        .profile-picture {
-          .image-container {
-            margin-top: 5rem;
-          }
-        }
-      }
-    }
-
-    //Switch-button
-    .switch-button {
-      padding: 2rem 0 0 0;
-    }
-
     //Works carousel
-    .work__cards {
-      .content {
-        // padding: 1rem;
-        .work-cards__header {
-          margin: 0;
-          padding: 0;
-        }
+    // .work__cards {
+    //   .content {
+    //     .work-cards__header {
+    //       margin: 0;
+    //       padding: 0;
+    //     }
 
-        //WorkCard component
-        .work-cards-container {
-          width: 15.75rem;
-          height: 28rem;
+    //     //WorkCard component
+    //     .work-cards-container {
+    //       width: 15.75rem;
+    //       height: 28rem;
 
-          .layer {
-            .buttons-container {
-              div {
-                margin: 0;
-                font-size: 0.9rem;
-                padding: 0.3rem;
+    //       .layer {
+    //         .buttons-container {
+    //           div {
+    //             margin: 0;
+    //             font-size: 0.9rem;
+    //             padding: 0.3rem;
 
-                a {
-                  padding: 1rem 1.2rem;
-                }
-              }
-            }
+    //             a {
+    //               padding: 1rem 1.2rem;
+    //             }
+    //           }
+    //         }
 
-            .techs {
-              &__ul {
-                width: 75%;
+    //         .techs {
+    //           &__ul {
+    //             width: 75%;
 
-                .tech-li {
-                  .tech-img-container {
-                    height: 2.25rem;
-                    width: 2.25rem;
-                  }
-                }
-              }
-            }
-          }
-        }
+    //             .tech-li {
+    //               .tech-img-container {
+    //                 height: 2.25rem;
+    //                 width: 2.25rem;
+    //               }
+    //             }
+    //           }
+    //         }
+    //       }
+    //     }
 
-        .css-1qzevvg {
-          margin: 0 0 0 -2rem;
-          padding: 0;
-        }
-      }
-    }
+    //     .css-1qzevvg {
+    //       margin: 0 0 0 -2rem;
+    //       padding: 0;
+    //     }
+    //   }
+    // }
   }
 }
 
@@ -507,11 +490,9 @@
       .content {
         .profile-picture {
           .image-container {
-            margin-top: 4rem;
-
             img {
-              height: 16rem;
-              width: 16rem;
+              height: 19rem;
+              width: 19rem;
             }
           }
         }
@@ -551,84 +532,74 @@
       }
     }
 
-    //Switch-button
-    .switch-button {
-      padding: 1.5rem 0 0 0;
-      margin: 0 0 -5rem 0;
-    }
-
     //Works carousel
-    .work__cards {
-      padding: 0;
+    // .work__cards {
+    //   padding: 0;
 
-      .content {
-        .work-cards__header {
-          margin: 0 0 -12rem;
-        }
+    //   .content {
+    //     .work-cards__header {
+    //       margin: 0 0 -12rem;
+    //     }
 
-        //WorkCard component
-        .work-cards-container {
-          width: 13.5rem;
-          height: 24rem;
+    //     //WorkCard component
+    //     .work-cards-container {
+    //       width: 13.5rem;
+    //       height: 24rem;
 
-          .layer {
-            .text-container {
-              h3 {
-                padding: 3rem 0 2rem 0;
-                margin: 0;
-              }
+    //       .layer {
+    //         .text-container {
+    //           h3 {
+    //             padding: 3rem 0 2rem 0;
+    //             margin: 0;
+    //           }
 
-              p {
-                margin: 0;
-                padding: 0;
-              }
-            }
+    //           p {
+    //             margin: 0;
+    //             padding: 0;
+    //           }
+    //         }
 
-            .buttons-container {
-              div {
-                margin: 0;
-                font-size: 0.7rem;
-                padding: 0.2rem;
+    //         .buttons-container {
+    //           div {
+    //             margin: 0;
+    //             font-size: 0.7rem;
+    //             padding: 0.2rem;
 
-                a {
-                  padding: 1rem 1.2rem;
-                }
-              }
-            }
+    //             a {
+    //               padding: 1rem 1.2rem;
+    //             }
+    //           }
+    //         }
 
-            .techs {
-              &__ul {
-                width: 85%;
+    //         .techs {
+    //           &__ul {
+    //             width: 85%;
 
-                .tech-li {
-                  .tech-img-container {
-                    height: 2.2rem;
-                    width: 2.2rem;
-                  }
-                }
-              }
-            }
-          }
-        }
+    //             .tech-li {
+    //               .tech-img-container {
+    //                 height: 2.2rem;
+    //                 width: 2.2rem;
+    //               }
+    //             }
+    //           }
+    //         }
+    //       }
+    //     }
 
-        .css-1qzevvg {
-          margin: -12rem 0 0 -2.5rem;
-          padding: 0;
-        }
-      }
-    }
+    //     .css-1qzevvg {
+    //       margin: -12rem 0 0 -2.5rem;
+    //       padding: 0;
+    //     }
+    //   }
+    // }
 
     //Work grid
     .works {
-      padding: 5rem 0 0 0;
-
       .content {
         .section-gallery {
           .work-cards-container {
             .layer {
               .text-container {
-                padding: 0 0.5rem;
-
                 h3 {
                   font-size: 1.15rem;
                 }

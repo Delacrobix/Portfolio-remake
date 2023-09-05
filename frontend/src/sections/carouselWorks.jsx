@@ -45,7 +45,7 @@ const CarouselWorks = forwardRef((__, ref) => {
           appLink={'https://chordgenerator.site/#/tone-selector'}
         />
       ),
-    }, 
+    },
     // {
     //   key: uuidv4(),
     //   content: (
@@ -115,7 +115,7 @@ const CarouselWorks = forwardRef((__, ref) => {
     };
   });
 
-  const offsetFn = (offsetFromRadius) => {
+  function offsetFn(offsetFromRadius) {
     if (offsetFromRadius === 0) {
       return {
         pointerEvents: 'auto',
@@ -125,7 +125,7 @@ const CarouselWorks = forwardRef((__, ref) => {
         pointerEvents: 'none',
       };
     }
-  };
+  }
 
   return (
     <section className='work__cards' ref={ref}>

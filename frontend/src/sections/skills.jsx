@@ -10,7 +10,7 @@ const Skills = forwardRef((__, ref) => {
   const skillsTittleAsideRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
+    function handleScroll() {
       const techContainer = techContainerRef.current;
       const skillsTittle = skillsTittleRef.current;
       const skillsTittleAside = skillsTittleAsideRef.current;
@@ -29,7 +29,7 @@ const Skills = forwardRef((__, ref) => {
       } else {
         skillsTittleAside.classList.remove('active');
       }
-    };
+    }
 
     window.addEventListener('scroll', handleScroll);
   }, []);

@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { forwardRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import { svgTechsIcons } from './svg/svgExports';
 import TechImg from './techImg';
 import { useTranslation } from 'react-i18next';
 
-const WorkCard = (props) => {
+const WorkCard = forwardRef((props, ref) => {
   const { t } = useTranslation();
   const { imgSrc, projectName, projectDescription, repo, appLink, techList } =
     props;
@@ -41,9 +41,9 @@ const WorkCard = (props) => {
   return (
     <figure className='work-cards-container'>
       <div className='img-layer'>
-        <img src={imgSrc} alt='' />
+        <img className='img-layer-img' src={imgSrc} alt='' />
       </div>
-      <div className='layer'>
+      <div className='layer' ref={ref}>
         <div className='text-container'>
           <h3>{projectName}</h3>
           <p>{projectDescription}</p>
@@ -70,6 +70,6 @@ const WorkCard = (props) => {
       </div>
     </figure>
   );
-};
+});
 
 export default WorkCard;

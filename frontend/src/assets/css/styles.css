@@ -1085,7 +1085,7 @@ body.dark .footer .menu {
     margin: -15rem 0 0 0;
   }
   body .works .content .section-gallery {
-    grid-template-columns: repeat(2, 48%);
+    grid-template-columns: repeat(1, 95%);
   }
   body .about-me {
     height: 80vh;
@@ -1174,6 +1174,11 @@ body.dark .footer .menu {
     font-size: 1.9rem;
   }
 }
+@media (max-width: 750px) {
+  body .header nav ul {
+    display: none;
+  }
+}
 @media (max-width: 576px) {
   html {
     font-size: 16px;
@@ -1183,9 +1188,6 @@ body.dark .footer .menu {
     height: 3rem;
     display: flex;
     justify-content: center;
-  }
-  body .header nav ul {
-    display: none;
   }
   body .intro .content .profile-picture .image-container img {
     height: 21rem;

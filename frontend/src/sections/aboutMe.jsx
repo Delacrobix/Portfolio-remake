@@ -8,7 +8,7 @@ const AboutMe = forwardRef((__, ref) => {
   const titleRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
+    function handleScroll() {
       const scrollPosition = window.scrollY;
       const aboutMeContainer = aboutMeContainerRef.current;
       const title = titleRef.current;
@@ -33,7 +33,7 @@ const AboutMe = forwardRef((__, ref) => {
           aboutMeContainer.classList.remove('active');
         }
       }
-    };
+    }
 
     window.addEventListener('scroll', handleScroll);
   }, []);

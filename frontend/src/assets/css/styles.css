@@ -369,7 +369,6 @@ body.dark .language-selector option {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
   transition: 0.2s;
 }
 .tech-li:hover {
@@ -384,15 +383,10 @@ body.dark .language-selector option {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 0;
-  height: 5.5rem;
-  width: 5.5rem;
 }
 .tech-li .tech-name {
   transition: color 0.2s, opacity 0.2s;
   color: rgba(0, 0, 0, 0.7);
-  font-size: 1rem;
   opacity: 0;
 }
 

@@ -6,6 +6,7 @@ import { HashRouter } from 'react-router-dom';
 
 //Styles
 import './assets/css/styles.css';
+import './assets/css/tailwind.css';
 
 //Language config
 import './config/languages.js';

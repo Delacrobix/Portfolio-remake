@@ -67,7 +67,7 @@ const Work = forwardRef((__, ref) => {
           <h2>{t('works.title')}</h2>
           <p>{t('works.description')}</p>
         </header>
-        <section className='section-gallery'>
+        {/* <section className='section-gallery'>
           <WorkCard
             ref={card1Ref}
             techList={[
@@ -121,7 +121,7 @@ const Work = forwardRef((__, ref) => {
             repo={'https://github.com/Delacrobix/Juego-virtual-Bingo-'}
             appLink={'https://auth-module.up.railway.app/login'}
           />
-        </section>
+        </section> */}
       </div>
     </section>
   );

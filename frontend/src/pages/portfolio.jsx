@@ -9,6 +9,7 @@ import AboutMe from '../sections/aboutMe';
 import CarouselWorks from '../sections/carouselWorks';
 import ContactSection from '../sections/contactSection';
 import i18n from '../config/languages';
+import WorksCascade from '../sections/worksCascade';
 
 const Portfolio = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -50,7 +51,8 @@ const Portfolio = () => {
     <>
       <Header scrollTo={scrollTo} isMobile={isMobile} />
       <Intro scrollTo={scrollTo} ref={introRef} isMobile={isMobile} />
-      {isMobile ? <Work ref={workRef} /> : <CarouselWorks ref={workRef} />}
+      {/* {isMobile ? <Work ref={workRef} /> : <CarouselWorks ref={workRef} />} */}
+      {isMobile ? <Work ref={workRef} /> : <WorksCascade ref={workRef} />}
       <div className='divisor-line-container'>
         <hr className='divisor-line' />
       </div>

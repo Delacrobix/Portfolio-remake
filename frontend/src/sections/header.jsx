@@ -9,9 +9,9 @@ const Header = (props) => {
   const { t } = useTranslation();
 
   return (
-    <header id='header' className='header'>
-      <h1 className='header__h1'>Jeffrey Rengifo Marin</h1>
-      <nav>
+    <header id='header' className='header font-rubik'>
+      <h1 className='header__h1  font-bold text-3xl'>Jeffrey Rerín</h1>
+      <nav className=' uppercase text-white'>
         <ul>
           <SwitchMode classProp={'switch-mode'} idProp={'switch'} />
           <li>

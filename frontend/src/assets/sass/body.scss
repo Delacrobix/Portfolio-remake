@@ -18,5 +18,11 @@ body {
 
   &.dark {
     background: map-get($dark, pickled-bluewood);
+
+    .divisor-line-container {
+      .divisor-line {
+        border-top: 1.5px solid rgba(255, 255, 255, 0.404);
+      }
+    }
   }
 }

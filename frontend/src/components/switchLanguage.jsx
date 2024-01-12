@@ -49,9 +49,9 @@ const SwitchLanguage = (props) => {
       {svgLanguagesIcons.enFlag}
     </span>
   ) : (
-    <select className='language-selector' onChange={languageChange}>
-      <option value='es'>Español</option>
+    <select className='language-selector font-bold' onChange={languageChange}>
       <option value='en'>English</option>
+      <option value='es'>Español</option>
     </select>
   );
 };

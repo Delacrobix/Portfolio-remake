@@ -20,6 +20,9 @@ body .divisor-line-container .divisor-line {
 body.dark {
   background: #27374d;
 }
+body.dark .divisor-line-container .divisor-line {
+  border-top: 1.5px solid rgba(255, 255, 255, 0.404);
+}
 
 .copied {
   width: 100%;
@@ -398,7 +401,6 @@ body.dark .tech-li .tech-name {
 }
 
 .header {
-  font-family: "Rubik", sans-serif;
   background: rgba(69, 98, 104, 0.8);
   position: fixed;
   z-index: 10000;
@@ -420,35 +422,27 @@ body.dark .tech-li .tech-name {
   position: absolute;
 }
 .header nav li {
-  font-size: 1rem;
   padding: 0rem 0.7rem;
   display: inline-block;
-  font-weight: bold;
 }
 .header nav li .header__link {
-  color: black;
-  font-weight: bold;
-  text-shadow: 0.05rem 0.05rem 0.05rem rgba(221, 230, 237, 0.3);
   font-size: 1.02rem;
   text-decoration: none;
   padding: 0 0.6rem 0 0.6rem;
-  transition: color 0.3s;
+  transition: color 0.15s;
 }
 .header nav li .header__link:hover {
-  color: #dde6ed;
+  color: #abbac2;
 }
 
 body.dark .header {
   background: rgba(82, 109, 130, 0.8);
 }
-body.dark .header h1 {
-  color: #000000;
-}
 body.dark .header nav li .header__link {
   color: #dde6ed;
 }
 body.dark .header nav li .header__link:hover {
-  color: #000000;
+  color: #9dbad4;
 }
 
 .intro {

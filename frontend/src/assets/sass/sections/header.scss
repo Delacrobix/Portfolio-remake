@@ -1,5 +1,4 @@
 .header {
-  font-family: $rubik;
   background: transparentize(map-get($light, blueBayoux), 0.2);
   position: fixed;
   z-index: 10000;
@@ -22,22 +21,17 @@
     position: absolute;
 
     li {
-      font-size: 1rem;
       padding: 0rem 0.7rem;
       display: inline-block;
-      font-weight: bold;
 
       .header__link {
-        color: black;
-        font-weight: bold;
-        text-shadow: 0.05rem 0.05rem 0.05rem rgba(map-get($dark, mystic), 0.3);
         font-size: 1.02rem;
         text-decoration: none;
         padding: 0 0.6rem 0 0.6rem;
-        transition: color 0.3s;
+        transition: color 0.15s;
 
         &:hover {
-          color: map-get($dark, mystic);
+          color: map-get($dark, mystic-darker);
         }
       }
     }
@@ -50,15 +44,11 @@ body {
     .header {
       background: transparentize(map-get($dark, blue-bayoux-dark), 0.2);
 
-      h1 {
-        color: #000000;
-      }
-
       nav li .header__link {
         color: map-get($dark, mystic);
 
         &:hover {
-          color: #000000;
+          color: #9dbad4;
         }
       }
     }

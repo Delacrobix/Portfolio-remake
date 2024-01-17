@@ -19,7 +19,7 @@ const AboutMe = forwardRef((__, ref) => {
         const windowHeight = window.innerHeight;
 
         if (
-          scrollPosition - scrollPosition * 0.25 >=
+          scrollPosition - scrollPosition * 0.1 >=
           targetPosition - windowHeight
         ) {
           aboutMeContainer.classList.add('active');
@@ -39,9 +39,9 @@ const AboutMe = forwardRef((__, ref) => {
   }, []);
 
   return (
-    <section ref={ref} className='about-me'>
+    <section ref={ref} className='about-me w-full'>
       <div className='about-me__container' ref={aboutMeContainerRef}>
-        <header className='about-me__title'>
+        <header className='about-me__title font-bold'>
           <h2 ref={titleRef}>{t('about-me.title')}</h2>
         </header>
         <p className='about-me__description'>{t('about-me.description')}</p>

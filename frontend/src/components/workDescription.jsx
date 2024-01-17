@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { svgTechsIcons } from './svg/svgExports';
 import TechImg from './techImg';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export default function WorkDescription(props) {
+  const { t } = useTranslation();
   const {
     imgSrc,
     projectName,
@@ -52,9 +55,31 @@ export default function WorkDescription(props) {
   }, []);
 
   const imgElement = (
-    <div className={`w-[55%] `} key={uuidv4()}>
-      <img className='' src={imgSrc} alt='' />
-    </div>
+    <figure className='work-cards-container w-[55%]'>
+      <div className='img-layer'>
+        <img
+          className={`img-layer-img ${
+            imgOnRight ? 'rounded-l-md' : 'rounded-r-md'
+          }`}
+          src={imgSrc}
+          alt=''
+        />
+      </div>
+      <div className={`layer ${imgOnRight ? 'rounded-l-md' : 'rounded-r-md'}`}>
+        <div className='buttons-container flex h-full'>
+          <div>
+            <Link to={repo} target='_blank'>
+              {t('works.buttons.button-1')}
+            </Link>
+          </div>
+          <div>
+            <Link to={appLink} target='_blank'>
+              {t('works.buttons.button-2')}
+            </Link>
+          </div>
+        </div>
+      </div>
+    </figure>
   );
   const descriptionElement = (
     <div

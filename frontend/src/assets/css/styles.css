@@ -257,29 +257,28 @@ body.dark .language-selector option {
   background: #27374d;
 }
 
-.work__cards .content .work-cards-container {
+.work-cards-container {
   width: 64rem;
   height: 36rem;
   position: relative;
 }
-.work__cards .content .work-cards-container:hover > .layer {
+.work-cards-container:hover > .layer {
   opacity: 1;
   visibility: visible;
 }
-.work__cards .content .work-cards-container:hover .img-layer img {
+.work-cards-container:hover .img-layer img {
   filter: blur(2px);
 }
-.work__cards .content .work-cards-container .img-layer {
+.work-cards-container .img-layer {
   height: 100%;
   width: 100%;
 }
-.work__cards .content .work-cards-container .img-layer img {
-  border-radius: 15px;
+.work-cards-container .img-layer img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.work__cards .content .work-cards-container .layer {
+.work-cards-container .layer {
   font-family: "Comfortaa", cursive;
   width: 100%;
   height: 100%;
@@ -287,43 +286,21 @@ body.dark .language-selector option {
   position: absolute;
   top: 0;
   opacity: 0;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.2);
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #ffffff;
   transition: 0.3s;
 }
-.work__cards .content .work-cards-container .layer .text-container {
-  padding: 0 2rem;
-  height: 55%;
-  display: flex;
-  flex-direction: column;
+.work-cards-container .layer .buttons-container {
   align-items: center;
   justify-content: center;
 }
-.work__cards .content .work-cards-container .layer .text-container h3 {
-  text-align: center;
-  font-size: 3rem;
-  text-shadow: -0.08rem -0.08rem 0 #000, 1px -0.08rem 0 #000, -0.08rem 0.08rem 0 #000, 0.08rem 0.08rem 0 #000;
-}
-.work__cards .content .work-cards-container .layer .text-container p {
-  font-size: 1.3rem;
-  padding: 0;
-  text-align: center;
-  text-shadow: -0.05rem -0.05rem 0 rgba(0, 0, 0, 0.6509803922), 1px -0.05rem 0 rgba(0, 0, 0, 0.8549019608), -0.05rem 0.05rem 0 #585858, 0.05rem 0.05rem 0 rgba(0, 0, 0, 0.8549019608);
-}
-.work__cards .content .work-cards-container .layer .buttons-container {
-  height: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.work__cards .content .work-cards-container .layer .buttons-container div {
+.work-cards-container .layer .buttons-container div {
   margin: 1rem;
 }
-.work__cards .content .work-cards-container .layer .buttons-container div a {
+.work-cards-container .layer .buttons-container div a {
   padding: 1.6rem 3.2rem;
   color: white;
   border: 1px solid white;
@@ -331,40 +308,8 @@ body.dark .language-selector option {
   transition: color 0.25s, background 0.25s, font-weight 0.25s;
   text-decoration: none;
 }
-.work__cards .content .work-cards-container .layer .buttons-container div a:hover {
+.work-cards-container .layer .buttons-container div a:hover {
   background: rgba(255, 255, 255, 0.18);
-}
-.work__cards .content .work-cards-container .layer .techs {
-  padding: 0;
-  margin: 0;
-  height: 20%;
-}
-.work__cards .content .work-cards-container .layer .techs__ul {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.work__cards .content .work-cards-container .layer .techs__ul .tech-li {
-  margin-right: 1rem;
-  padding: 0;
-  bottom: 0;
-}
-.work__cards .content .work-cards-container .layer .techs__ul .tech-li .tech-img-container {
-  padding: 0 0 0.2rem 0;
-  height: 3rem;
-  width: 3rem;
-}
-.work__cards .content .work-cards-container .layer .techs__ul .tech-li .tech-img-container svg {
-  height: 100%;
-}
-.work__cards .content .work-cards-container .layer .techs__ul .tech-li .tech-name {
-  color: #ffffff;
-  font-size: 0.7rem;
-  padding: 0 0 0.4rem 0;
 }
 
 .tech-li {
@@ -632,15 +577,14 @@ body.dark .works {
 .about-me {
   font-family: "Lora", serif;
   height: 100vh;
-  width: 100%;
   display: flex;
   align-items: center;
 }
 .about-me__container {
   margin-left: -30%;
-  padding: 0rem 1rem;
-  width: 28%;
-  transition: 0.5s;
+  padding: 20rem 65% 20rem 1rem;
+  width: 100%;
+  transition: 0.3s;
   height: 40rem;
   display: flex;
   flex-direction: column;
@@ -650,29 +594,29 @@ body.dark .works {
   margin-left: 0;
 }
 .about-me__container:hover {
-  padding: 0 36%;
+  padding: 25% 32%;
+  width: 100%;
 }
 .about-me__container:hover .about-me__title {
-  margin: 0 0 -2rem 0;
+  margin: 0 0 1rem 0;
   font-size: 2rem;
   text-align: center;
-  transition: font-size 0.6s, margin 0.6s;
+  transition: font-size 0.3s, margin 0.3s;
 }
 .about-me__container:hover .about-me__description {
   font-size: 1.5rem;
   line-height: 2rem;
   text-align: center;
-  transition: font-size 0.1s, line-height 0.4s;
+  transition: font-size 0.1s, line-height 0.3s;
 }
 .about-me__container .about-me__title {
-  transition: font-size 0.4s;
+  transition: font-size 0.2s;
   font-size: 1.2rem;
 }
 .about-me__container .about-me__description {
-  font-size: 1.5rem;
   font-size: 1.2rem;
   line-height: 1.7rem;
-  transition: line-height 0.4s;
+  transition: line-height 0.3s;
 }
 
 body.dark .about-me {
@@ -693,7 +637,7 @@ body.dark .about-me {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: 1s;
+  transition: 0.5s;
 }
 .skills .tech-container ul {
   list-style: none;
@@ -707,12 +651,12 @@ body.dark .about-me {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: margin 0.5s, width 0.5s, transform 0.5s;
+  transition: margin 0.3s, width 0.3s, transform 0.3s;
   overflow: hidden;
 }
 .skills .skills-description-aside:hover {
   transform: scale(1.1);
-  transition: transform 0.5s;
+  transition: transform 0.3s;
 }
 .skills .skills-description-aside:hover .skills-tittle-header {
   transition: font-size 0.15s;
@@ -900,10 +844,10 @@ body.dark .footer .menu {
   }
   body .about-me__container {
     margin-left: -42%;
-    width: 39%;
+    width: 100%;
   }
   body .about-me__container:hover {
-    padding: 0 30%;
+    padding: 25% 32%;
   }
   body .about-me__container:hover .about-me__title {
     font-size: 1.7rem;
@@ -1028,6 +972,18 @@ body.dark .footer .menu {
     padding: 1rem;
   }
 }
+@media (max-width: 1030px) {
+  .about-me {
+    height: 80vh;
+  }
+  .about-me__container.active {
+    opacity: 1;
+  }
+  .about-me__container:hover {
+    padding: 0% 0%;
+    margin-left: -7%;
+  }
+}
 @media (max-width: 992px) {
   body .header {
     height: 4rem;
@@ -1053,49 +1009,25 @@ body.dark .footer .menu {
   body .intro .content footer .down-section-link {
     display: none;
   }
-  body .work__cards {
-    margin: 0;
-  }
-  body .work__cards .content .work-cards__header {
-    margin: 0 0 -15rem 0;
-  }
-  body .work__cards .content .work-cards-container {
-    width: 40rem;
-    height: 23.5rem;
-    margin: 0;
-    padding: 0;
-  }
-  body .work__cards .content .work-cards-container .layer .text-container h3 {
-    padding: 1rem 0;
-    margin: 0;
-  }
-  body .work__cards .content .css-1qzevvg {
-    margin: -15rem 0 0 0;
-  }
-  body .works .content .section-gallery {
-    grid-template-columns: repeat(1, 95%);
-  }
   body .about-me {
     height: 80vh;
     padding: 0 3rem;
-    width: 88%;
   }
   body .about-me__container {
     margin: 0;
     opacity: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
   }
   body .about-me__container.active {
     opacity: 1;
   }
   body .about-me__container:hover {
+    margin-left: 0;
     width: 100%;
     padding: 0;
   }
   body .about-me__container:hover .about-me__title {
-    margin: 0 0 -1rem 0;
     width: 100%;
     font-size: 2rem;
   }

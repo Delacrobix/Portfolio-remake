@@ -1,4 +1,4 @@
-.work__cards .content .work-cards-container {
+.work-cards-container {
   width: 64rem;
   height: 36rem;
   position: relative;
@@ -17,7 +17,6 @@
     width: 100%;
 
     img {
-      border-radius: 15px;
       height: 100%;
       width: 100%;
       object-fit: cover;
@@ -32,41 +31,14 @@
     position: absolute;
     top: 0;
     opacity: 0;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.2);
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #ffffff;
     transition: 0.3s;
 
-    .text-container {
-      padding: 0 2rem;
-      height: 55%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      h3 {
-        text-align: center;
-        font-size: 3rem;
-        text-shadow: -0.08rem -0.08rem 0 #000, 1px -0.08rem 0 #000,
-          -0.08rem 0.08rem 0 #000, 0.08rem 0.08rem 0 #000;
-      }
-
-      p {
-        font-size: 1.3rem;
-        padding: 0;
-        text-align: center;
-        text-shadow: -0.05rem -0.05rem 0 #000000a6, 1px -0.05rem 0 #000000da,
-          -0.05rem 0.05rem 0 #585858, 0.05rem 0.05rem 0 #000000da;
-      }
-    }
-
     .buttons-container {
-      height: 25%;
-      display: flex;
       align-items: center;
       justify-content: center;
 
@@ -83,44 +55,6 @@
 
           &:hover {
             background: rgba($color: #ffffff, $alpha: 0.18);
-          }
-        }
-      }
-    }
-
-    .techs {
-      padding: 0;
-      margin: 0;
-      height: 20%;
-
-      &__ul {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .tech-li {
-          margin-right: 1rem;
-          padding: 0;
-          bottom: 0;
-
-          .tech-img-container {
-            padding: 0 0 0.2rem 0;
-            height: 3rem;
-            width: 3rem;
-
-            svg {
-              height: 100%;
-            }
-          }
-
-          .tech-name {
-            color: #ffffff;
-            font-size: 0.7rem;
-            padding: 0 0 0.4rem 0;
           }
         }
       }

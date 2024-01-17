@@ -1,3 +1,21 @@
+@media (max-width: 1030px) {
+  //About me
+  .about-me {
+    height: 80vh;
+
+    &__container {
+      &.active {
+        opacity: 1;
+      }
+
+      &:hover {
+        padding: 0% 0%;
+        margin-left: -7%;
+      }
+    }
+  }
+}
+
 @media (max-width: 992px) {
   body {
     //Header
@@ -45,69 +63,27 @@
       }
     }
 
-    //Carousel
-    .work__cards {
-      margin: 0;
-
-      .content {
-        .work-cards__header {
-          margin: 0 0 -15rem 0;
-        }
-
-        .work-cards-container {
-          width: 40rem;
-          height: 23.5rem;
-          margin: 0;
-          padding: 0;
-
-          .layer {
-            .text-container {
-              h3 {
-                padding: 1rem 0;
-                margin: 0;
-              }
-            }
-          }
-        }
-
-        .css-1qzevvg {
-          margin: -15rem 0 0 0;
-        }
-      }
-    }
-
-    //Work grid
-    .works {
-      .content {
-        .section-gallery {
-          grid-template-columns: repeat(1, 95%);
-        }
-      }
-    }
-
     //About me
     .about-me {
       height: 80vh;
       padding: 0 3rem;
-      width: 88%;
 
       &__container {
         margin: 0;
         opacity: 0;
         padding: 0;
         width: 100%;
-        height: 100%;
 
         &.active {
           opacity: 1;
         }
 
         &:hover {
+          margin-left: 0;
           width: 100%;
           padding: 0;
 
           .about-me__title {
-            margin: 0 0 -1rem 0;
             width: 100%;
             font-size: 2rem;
           }

@@ -52,27 +52,24 @@ function ContactComponent(__, ref) {
           {t("contact.description")} <span alt='smile-emoji'>&#x1F60A;</span>
         </p>
       </header>
-      <div className={`flex justify-center `}>
-        <div className='w-full'>
-          <ContactElement
-            icon={svgSocialIcons.telegram}
-            link={TELEGRAM}
-            content='@jeffrey_rerin'
-            handleCopy={handleCopy}
-          />
-          <ContactElement
-            icon={svgSocialIcons.linkedin}
-            link={LINKEDIN}
-            content='linkedin.com/in/jeffrey-rerin/'
-            handleCopy={handleCopy}
-          />
-          <ContactElement
-            icon={svgSocialIcons.email}
-            link={EMAIL}
-            content='jeffrey.rengifom@gmail.com'
-            handleCopy={handleCopy}
-          />
-        </div>
+      <div className={`mt-4 w-full justify-center`}>
+        <ContactElement
+          icon={svgSocialIcons.telegram}
+          link={TELEGRAM}
+          content='@jeffrey_rerin'
+          handleCopy={handleCopy}
+        />
+        <ContactElement
+          icon={svgSocialIcons.linkedin}
+          link={LINKEDIN}
+          content='linkedin.com/in/jeffrey-rerin/'
+          handleCopy={handleCopy}
+        />
+        <ContactElement
+          icon={svgSocialIcons.email}
+          content='jeffrey.rengifom@gmail.com'
+          handleCopy={handleCopy}
+        />
       </div>
     </section>
   );
@@ -83,15 +80,24 @@ export default React.forwardRef(ContactComponent);
 
 ContactElement.propTypes = {
   icon: PropTypes.node.isRequired,
-  link: PropTypes.string.isRequired,
+  link: PropTypes.string,
   content: PropTypes.string.isRequired,
   handleCopy: PropTypes.func.isRequired,
 };
 
 function ContactElement({ icon, link, content, handleCopy }) {
+  function handleRedirect(link) {
+    window.open(link, "_blank");
+  }
+
   return (
     <div className='flex gap-6 justify-center items-center'>
-      <div className=' w-24'>{icon}</div>
+      <button
+        className={`w-24 my-1`}
+        onClick={() => handleRedirect(link)}
+        disabled={!link}>
+        <span>{icon}</span>
+      </button>
       <div className=''>
         <Input
           isReadOnly
@@ -103,7 +109,7 @@ function ContactElement({ icon, link, content, handleCopy }) {
       </div>
       <button
         className='p-4 hover:scale-110 transition-all s'
-        onClick={() => handleCopy(link)}>
+        onClick={() => handleCopy(link || content)}>
         <FontAwesomeIcon className='text-3xl' icon={faCopy} />
       </button>
     </div>

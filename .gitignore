@@ -19,4 +19,4 @@ extras
 /frontend/yarn-error.log*
 /frontend/.vscode/
 
-/frontend/src/assets/css/styles.css
+/frontend/src/assets/css/styles.*

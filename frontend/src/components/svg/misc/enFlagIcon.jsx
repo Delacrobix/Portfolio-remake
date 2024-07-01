@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const EnFlagIcon = () => {
+export default function EnFlagIcon() {
   return (
     <svg
       width='80px'
@@ -8,8 +8,7 @@ const EnFlagIcon = () => {
       className='en-svg'
       xmlns='http://www.w3.org/2000/svg'
       version='1.1'
-      xmlnsXlink='http://www.w3.org/1999/xlink'
-    >
+      xmlnsXlink='http://www.w3.org/1999/xlink'>
       <g>
         <path
           fill='#a2b6cb'
@@ -204,6 +203,4 @@ const EnFlagIcon = () => {
       </g>
     </svg>
   );
-};
-
-export default EnFlagIcon;
+}

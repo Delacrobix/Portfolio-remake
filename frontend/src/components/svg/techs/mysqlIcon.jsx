@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const MysqlIcon = () => {
+export default function MysqlIcon() {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 48 48'
       width='240px'
-      height='240px'
-    >
+      height='240px'>
       <path
         fill='#00796b'
         d='M0.002,35.041h1.92v-7.085l2.667,6.057c0.329,0.755,0.779,1.022,1.662,1.022 s1.315-0.267,1.644-1.022l2.667-5.902v6.93h1.92v-7.258c0-0.697-0.277-1.035-0.849-1.209c-1.367-0.43-2.285-0.059-2.7,0.872 l-2.735,6.16l-2.649-6.16c-0.398-0.93-1.332-1.302-2.7-0.872C0.277,26.748,0,27.085,0,27.782v7.258H0.002z'
@@ -38,6 +37,4 @@ const MysqlIcon = () => {
       />
     </svg>
   );
-};
-
-export default MysqlIcon;
+}

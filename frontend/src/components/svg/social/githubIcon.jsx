@@ -1,13 +1,8 @@
-import React from 'react';
+import React from "react";
 
-const GithubIcon = () => {
+export default function GithubIcon() {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      viewBox='0 0 48 48'
-      width='240px'
-      height='240px'
-    >
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'>
       <path
         fill='#fff'
         d='M41,24c0,9.4-7.6,17-17,17S7,33.4,7,24S14.6,7,24,7S41,14.6,41,24z'
@@ -30,6 +25,4 @@ const GithubIcon = () => {
       />
     </svg>
   );
-};
-
-export default GithubIcon;
+}

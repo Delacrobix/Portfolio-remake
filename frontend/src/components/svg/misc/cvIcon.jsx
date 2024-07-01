@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
-const CVIcon = () => {
+export default function CVIcon() {
   return (
     <svg
       width='64'
       height='64'
       viewBox='0 0 64 64'
       fill='none'
-      xmlns='http://www.w3.org/2000/svg'
-    >
+      xmlns='http://www.w3.org/2000/svg'>
       <path
         d='M53.9 4H18.37L16.3 7L15.87 60.07H54.2L56.86 56.35V7.25L53.9 4ZM28.17 21H24.66L21.13 18.41L24.82 14.96L23.29 11.3L24.82 8.92L27.22 8.18L29.22 9.39L30 11.86L28.58 14.27L32.72 18.6L28.17 21Z'
         fill='#78B9EB'
@@ -51,6 +50,4 @@ const CVIcon = () => {
       />
     </svg>
   );
-};
-
-export default CVIcon;
+}

@@ -1,13 +1,8 @@
-import React from 'react';
+import React from "react";
 
-const EmailIcon = () => {
+export default function EmailIcon() {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      viewBox='0 0 48 48'
-      width='480px'
-      height='480px'
-    >
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'>
       <path
         fill='#e0e0e0'
         d='M5.5,40.5h37c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11v26C2,38.933,3.567,40.5,5.5,40.5z'
@@ -38,6 +33,4 @@ const EmailIcon = () => {
       />
     </svg>
   );
-};
-
-export default EmailIcon;
+}

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const EsFlagIcon = () => {
+export default function EsFlagIcon() {
   return (
     <svg
       className='es-svg'
@@ -8,8 +8,7 @@ const EsFlagIcon = () => {
       version='1.1'
       width='80px'
       height='80px'
-      xmlnsXlink='http://www.w3.org/1999/xlink'
-    >
+      xmlnsXlink='http://www.w3.org/1999/xlink'>
       <g>
         <path
           fill='#c64342'
@@ -42,6 +41,4 @@ const EsFlagIcon = () => {
       </g>
     </svg>
   );
-};
-
-export default EsFlagIcon;
+}

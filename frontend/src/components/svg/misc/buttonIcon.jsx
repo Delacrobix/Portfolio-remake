@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const ButtonIcon = () => {
+export default function ButtonIcon() {
   return (
     <svg
       version='1.0'
@@ -8,13 +8,11 @@ const ButtonIcon = () => {
       width='64.000000pt'
       height='64.000000pt'
       viewBox='0 0 64.000000 64.000000'
-      preserveAspectRatio='xMidYMid meet'
-    >
+      preserveAspectRatio='xMidYMid meet'>
       <g
         transform='translate(0.000000,64.000000) scale(0.100000,-0.100000)'
         fill='#000000'
-        stroke='none'
-      >
+        stroke='none'>
         <path
           d='M202 554 c-93 -46 -142 -127 -142 -234 0 -152 108 -260 260 -260 152
  0 260 108 260 260 0 153 -107 260 -261 260 -50 0 -77 -6 -117 -26z m128 -109
@@ -26,6 +24,4 @@ const ButtonIcon = () => {
       </g>
     </svg>
   );
-};
-
-export default ButtonIcon;
+}

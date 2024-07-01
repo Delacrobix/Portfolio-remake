@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
-const DotnetIcon = () => {
+export default function DotnetIcon() {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 48 48'
       width='240px'
       height='240px'
-      baseProfile='basic'
-    >
+      baseProfile='basic'>
       <path
         fill='#6a1b9a'
         d='M44,24c0,5.694-2.381,10.831-6.2,14.481l-0.006,0.006C34.2,41.9,29.344,44,24,44 C12.956,44,4,35.044,4,24c0-5.338,2.087-10.188,5.5-13.775c0.006-0.013,0.013-0.019,0.019-0.025C13.169,6.381,18.306,4,24,4 C35.044,4,44,12.956,44,24z'
@@ -51,6 +50,4 @@ const DotnetIcon = () => {
       />
     </svg>
   );
-};
-
-export default DotnetIcon;
+}

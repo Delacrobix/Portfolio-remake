@@ -1,27 +1,27 @@
-import React from 'react';
+import React from "react";
 
-const PugIcon = () => {
+export default function PugIcon() {
   const svgStyles = {
-    st0: { fill: '#c1272d' },
-    st1: { fill: '#efcca3' },
-    st2: { fill: '#ed1c24' },
-    st3: { fill: '#ccac8d' },
-    st4: { fill: '#fff' },
-    st5: { fill: '#ff931e' },
-    st6: { fill: '#ffb81e' },
-    st7: { fill: '#56332b' },
-    st8: { fill: '#442823' },
-    st9: { fill: '#7f4a41' },
-    st10: { fill: '#331712' },
-    st11: { fill: '#fc6' },
-    st12: { fill: '#ccc' },
-    st13: { fill: '#b3b3b3' },
-    st14: { fill: '#989898' },
-    st15: { fill: '#323232' },
-    st16: { fill: '#1e1e1e' },
-    st17: { fill: '#4c4c4c' },
-    st18: { fill: '#e6e6e6' },
-    st19: { fill: '#606060' },
+    st0: { fill: "#c1272d" },
+    st1: { fill: "#efcca3" },
+    st2: { fill: "#ed1c24" },
+    st3: { fill: "#ccac8d" },
+    st4: { fill: "#fff" },
+    st5: { fill: "#ff931e" },
+    st6: { fill: "#ffb81e" },
+    st7: { fill: "#56332b" },
+    st8: { fill: "#442823" },
+    st9: { fill: "#7f4a41" },
+    st10: { fill: "#331712" },
+    st11: { fill: "#fc6" },
+    st12: { fill: "#ccc" },
+    st13: { fill: "#b3b3b3" },
+    st14: { fill: "#989898" },
+    st15: { fill: "#323232" },
+    st16: { fill: "#1e1e1e" },
+    st17: { fill: "#4c4c4c" },
+    st18: { fill: "#e6e6e6" },
+    st19: { fill: "#606060" },
   };
 
   return (
@@ -30,8 +30,7 @@ const PugIcon = () => {
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 128 128'
       width='2500'
-      height='2500'
-    >
+      height='2500'>
       <path
         style={svgStyles.st1}
         d='M107.4 50.9c-.2-4.4.4-8.3-1.6-11.6-4.8-8.2-16.8-13-40.8-13v.7h-.5.5v-.7c-24 0-36.6 4.8-41.4 13.1-1.9 3.4-1.7 7.2-2 11.6-.2 3.5-1.8 7.2-1.1 11.2.8 5.2 1.1 10.4 1.9 15.2.6 3.9 6 7.2 6.5 10.9 1.4 10.2 12 14.9 36 14.9v.8h-.6.7v-.8c24 0 34.2-4.7 35.5-14.9.5-3.8 5.5-7 6.1-10.9.8-4.8 1.1-10 1.9-15.2.7-4-.9-7.8-1.1-11.3z'
@@ -154,6 +153,4 @@ const PugIcon = () => {
       </g>
     </svg>
   );
-};
-
-export default PugIcon;
+}

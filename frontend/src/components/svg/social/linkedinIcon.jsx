@@ -1,13 +1,8 @@
-import React from 'react';
+import React from "react";
 
-const LinkedInIcon = () => {
+export default function LinkedInIcon() {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      viewBox='0 0 48 48'
-      width='480px'
-      height='480px'
-    >
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'>
       <path
         fill='#0288D1'
         d='M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z'
@@ -18,6 +13,4 @@ const LinkedInIcon = () => {
       />
     </svg>
   );
-};
-
-export default LinkedInIcon;
+}

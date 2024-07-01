@@ -1,52 +1,49 @@
-import { svgLanguagesIcons } from './svg/svgExports';
-import i18n from '../config/languages';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
-const SwitchLanguage = (props) => {
+import { svgLanguagesIcons } from "./svg/svgExports";
+import i18n from "../config/languages";
+
+export default function ({ isMobile }) {
+  const [flagLanguage, setFlagLanguage] = useState("en");
   const languageRef = useRef(null);
-  const { isMobile } = props;
-  const [language, setLanguage] = useState('es');
+
+  useEffect(() => {
+    i18n.changeLanguage(flagLanguage);
+  }, []);
 
   function languageChange(event) {
     const value = event.target.value;
 
-    if (value === 'en') {
-      console.log(value);
-      i18n.changeLanguage(value);
-    } else {
-      console.log(value);
-      i18n.changeLanguage(value);
-    }
+    i18n.changeLanguage(value);
   }
 
   function mobileLanguageChange() {
     const languageSpan = languageRef.current;
 
-    if (language === 'es') {
-      setLanguage('en');
+    if (flagLanguage === "es") {
+      setFlagLanguage("en");
 
-      languageSpan.classList.remove('en');
-      languageSpan.classList.add('es');
+      languageSpan.classList.remove("en");
+      languageSpan.classList.add("es");
 
-      i18n.changeLanguage('en');
+      i18n.changeLanguage("en");
     } else {
-      setLanguage('es');
+      setFlagLanguage("es");
 
-      languageSpan.classList.add('en');
-      languageSpan.classList.remove('es');
+      languageSpan.classList.add("en");
+      languageSpan.classList.remove("es");
 
-      i18n.changeLanguage('es');
+      i18n.changeLanguage("es");
     }
   }
 
   return isMobile ? (
     <span
-      className='switch-mobile-language en'
+      className='switch-mobile-language es'
       onClick={mobileLanguageChange}
-      ref={languageRef}
-    >
-      {svgLanguagesIcons.esFlag}
+      ref={languageRef}>
       {svgLanguagesIcons.enFlag}
+      {svgLanguagesIcons.esFlag}
     </span>
   ) : (
     <select className='language-selector font-bold' onChange={languageChange}>
@@ -54,6 +51,4 @@ const SwitchLanguage = (props) => {
       <option value='es'>Español</option>
     </select>
   );
-};
-
-export default SwitchLanguage;
+}

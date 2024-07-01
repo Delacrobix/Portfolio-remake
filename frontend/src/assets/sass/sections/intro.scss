@@ -7,37 +7,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../images/backgrounds/10.jpg');
+  background: url("../images/backgrounds/10.jpg");
   background-size: cover;
   background-attachment: fixed;
 
   .content {
     color: map-get($dark, mystic);
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    .profile-picture {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .image-container {
-        margin: 3rem 0 0 0;
-
-        img {
-          object-fit: cover;
-          object-position: top;
-          border-radius: 50%;
-          height: 28rem;
-          width: 28rem;
-        }
-      }
-    }
 
     header h2 {
       margin-top: 1rem;

@@ -54,9 +54,6 @@
 
     //Works grid
     .works {
-      height: 100%;
-      padding: 0;
-
       .content {
         .work-tittle {
           h2 {
@@ -69,9 +66,6 @@
         }
 
         .section-gallery {
-          display: flex;
-          flex-direction: column;
-
           .work-cards-container {
             display: flex;
             align-items: center;
@@ -86,7 +80,7 @@
               margin: 0;
 
               .text-container {
-                padding: 0.2rem 0;
+                padding: 0.2rem 1rem;
 
                 h3 {
                   padding: 0.9rem 0 0 0;
@@ -96,6 +90,7 @@
 
                 p {
                   padding: 0.2rem 0;
+                  font-size: 0.8rem;
                 }
               }
             }
@@ -210,6 +205,7 @@
       }
     }
 
+    //TODO: probably this contact styles are not used
     //Contact
     .contact {
       .container {
@@ -380,11 +376,11 @@
             .layer {
               .text-container {
                 h3 {
-                  font-size: 1.15rem;
+                  font-size: 1.1rem;
                 }
 
                 p {
-                  font-size: 0.8rem;
+                  font-size: 0.7rem;
                 }
               }
 
@@ -394,7 +390,7 @@
                   margin: 0.3rem;
 
                   a {
-                    padding: 0.7rem 1.3rem;
+                    padding: 0.5rem 1rem;
                   }
                 }
               }

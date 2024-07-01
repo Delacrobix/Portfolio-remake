@@ -51,15 +51,16 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 0 0.5rem;
+            padding: 0 3rem;
 
             h3 {
               text-align: center;
               font-size: 1.3rem;
+              font-weight: bold;
             }
 
             p {
-              padding-top: 0;
+              padding-top: 1rem;
               text-align: center;
               font-size: 0.9rem;
             }
@@ -67,12 +68,13 @@
 
           .buttons-container {
             height: 25%;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
 
             div {
-              margin: 1rem;
+              margin: 1rem auto;
 
               a {
                 padding: 0.8rem 1.6rem;

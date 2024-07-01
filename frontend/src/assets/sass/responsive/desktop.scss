@@ -15,30 +15,7 @@
         .profile-picture {
           .image-container {
             margin-top: 2rem;
-
-            img {
-              height: 24rem;
-              width: 24rem;
-            }
           }
-        }
-      }
-    }
-
-    //works carousel
-    .work__cards {
-      padding: 2rem 0 5rem 0;
-
-      .content {
-        //WorkCard component
-        .work-cards-container {
-          width: 48rem;
-          height: 27rem;
-        }
-
-        //Arrows to move carousel
-        .css-1qzevvg {
-          margin: -8rem 0 0 0;
         }
       }
     }
@@ -47,8 +24,6 @@
     .works {
       .content {
         .section-gallery {
-          grid-template-columns: repeat(2, 30%);
-
           //Work cell
           .work-container {
             .layer {

@@ -1,17 +1,21 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
 
-const TechImg = (props) => {
-  const { image, techName, customStyles } = props;
-  const iconSize = customStyles ? customStyles.iconSize : '';
-  const iconSeparation = customStyles ? customStyles.iconSeparation : '';
-  const iconText = customStyles ? customStyles.iconText : '';
+TechImg.propTypes = {
+  image: PropTypes.element.isRequired,
+  techName: PropTypes.string,
+  customStyles: PropTypes.object,
+};
+
+export default function TechImg({ image, techName, customStyles }) {
+  const iconSize = customStyles ? customStyles?.iconSize : "";
+  const iconSeparation = customStyles ? customStyles?.iconSeparation : "";
+  const iconText = customStyles ? customStyles?.iconText : "";
 
   return (
-    <li className={`tech-li ${iconSeparation}`}>
+    <li className={`tech-li w-full ${iconSeparation}`}>
       <div className={`tech-img-container ${iconSize} `}>{image}</div>
       <label className={`tech-name ${iconText}`}>{techName}</label>
     </li>
   );
-};
-
-export default TechImg;
+}

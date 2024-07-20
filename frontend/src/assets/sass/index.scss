@@ -1,28 +1,25 @@
 // General
-@import './variables.scss';
-@import './fonts.scss';
-@import './body.scss';
+@import "./variables.scss";
+@import "./fonts.scss";
+@import "./body.scss";
 
 // Components
-@import './components/copied.scss';
-@import './components/switchMode.scss';
-@import './components/workCell.scss';
-@import './components/switchLanguage.scss';
-@import './components/workCard.scss';
-@import './components/techImg.scss';
+@import "./components/switchMode.scss";
+@import "./components/workCell.scss";
+@import "./components/switchLanguage.scss";
+@import "./components/workCard.scss";
+@import "./components/techImg.scss";
 
 //Sections
-@import './sections/header.scss';
-@import './sections/intro.scss';
-@import './sections/carouselWorks.scss';
-@import './sections/work.scss';
-@import './sections/aboutMe.scss';
-@import './sections/skills.scss';
-@import './sections/contactSection.scss';
-@import './sections/footer.scss';
+@import "./sections/header.scss";
+@import "./sections/intro.scss";
+@import "./sections/work.scss";
+@import "./sections/aboutMe.scss";
+@import "./sections/skills.scss";
+@import "./sections/footer.scss";
 
 //Responsive
-@import './responsive/desktop.scss';
-@import './responsive/height.scss';
-@import './responsive/tablet.scss';
-@import './responsive/mobile.scss';
+@import "./responsive/desktop.scss";
+@import "./responsive/height.scss";
+@import "./responsive/tablet.scss";
+@import "./responsive/mobile.scss";

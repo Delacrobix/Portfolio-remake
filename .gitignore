@@ -1,11 +1,10 @@
 #General
 .vscode
-TODO.md
-extras
 
 #Frontend React
 /frontend/node_modules/
 /frontend/.pnp
+/frontend/package-lock.json
 /frontend/.pnp.js
 /frontend/coverage
 /frontend/build/

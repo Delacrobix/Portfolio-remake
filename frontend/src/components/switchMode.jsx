@@ -1,9 +1,13 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
-import { useRef, useState } from 'react';
+import { useRef, useState } from "react";
+import PropTypes from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
-const SwitchMode = (props) => {
-  const { isMobile } = props;
+SwitchMode.propTypes = {
+  isMobile: PropTypes.bool,
+};
+
+export default function SwitchMode({ isMobile }) {
   const [isDayMode, setIsDayMode] = useState(true);
   const switchButtonRef = useRef(null);
 
@@ -12,34 +16,34 @@ const SwitchMode = (props) => {
 
     const btnSwitch = switchButtonRef.current;
 
-    document.body.classList.toggle('dark');
-    btnSwitch.classList.toggle('active');
+    document.body.classList.toggle("dark");
+    btnSwitch.classList.toggle("active");
   };
 
   return isMobile ? (
     <li>
-      <div
+      <button
         ref={switchButtonRef}
         className='switch-mode-mobile'
-        onClick={toggleMode}
-      >
+        onClick={toggleMode}>
         <span>
           <FontAwesomeIcon icon={isDayMode ? faMoon : faSun} />
         </span>
-      </div>
+      </button>
     </li>
   ) : (
     <li>
-      <div ref={switchButtonRef} className='switch-mode' onClick={toggleMode}>
+      <button
+        ref={switchButtonRef}
+        className='switch-mode'
+        onClick={toggleMode}>
         <span>
           <FontAwesomeIcon icon={isDayMode ? faMoon : faSun} />
         </span>
         <span>
           <FontAwesomeIcon icon={isDayMode ? faMoon : faSun} />
         </span>
-      </div>
+      </button>
     </li>
   );
-};
-
-export default SwitchMode;
+}

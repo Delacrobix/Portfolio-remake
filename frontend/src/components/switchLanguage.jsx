@@ -1,9 +1,14 @@
 import { useEffect, useRef, useState } from "react";
+import PropTypes from "prop-types";
 
 import { svgLanguagesIcons } from "./svg/svgExports";
 import i18n from "../config/languages";
 
-export default function ({ isMobile }) {
+SwitchLanguage.propTypes = {
+  isMobile: PropTypes.bool,
+};
+
+export default function SwitchLanguage({ isMobile }) {
   const [flagLanguage, setFlagLanguage] = useState("en");
   const languageRef = useRef(null);
 
@@ -38,13 +43,13 @@ export default function ({ isMobile }) {
   }
 
   return isMobile ? (
-    <span
+    <button
       className='switch-mobile-language es'
       onClick={mobileLanguageChange}
       ref={languageRef}>
       {svgLanguagesIcons.enFlag}
       {svgLanguagesIcons.esFlag}
-    </span>
+    </button>
   ) : (
     <select className='language-selector font-bold' onChange={languageChange}>
       <option value='en'>English</option>

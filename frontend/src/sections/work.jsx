@@ -2,7 +2,6 @@ import React, { forwardRef, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 import WorkCard from "../components/workCard";
-// import gallerySrc from "../assets/images/prev/mygallery.png";
 import chordSrc from "../assets/images/prev/chord-generator.png";
 import cssTailwindConverterSrc from "../assets/images/prev/desktop/css-tailwind-converter-home.png";
 import cvConverterSrc from "../assets/images/prev/desktop/cv-converter-result.png";
@@ -104,15 +103,6 @@ const Work = forwardRef((__, ref) => {
             repo={"https://github.com/Delacrobix/Song-maker"}
             appLink={"https://chordgenerator.site/#/tone-selector"}
           />
-          {/* <WorkCard
-            ref={card2Ref}
-            techList={["React", "NodeJS", "Redis", "Sass", "Dotnet", "MongoDB"]}
-            projectName={t("works.cards.work-card-2.title")}
-            projectDescription={t("works.cards.work-card-2.description")}
-            imgSrc={gallerySrc}
-            repo={"https://github.com/Delacrobix/MyPersonalGallery"}
-            appLink={"https://delacrobix.github.io/MyPersonalGallery/#/home"}
-          /> */}
         </section>
       </div>
     </section>

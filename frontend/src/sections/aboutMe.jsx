@@ -1,5 +1,5 @@
-import React, { forwardRef, useEffect, useRef } from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { forwardRef, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutMe = forwardRef((__, ref) => {
   const { t } = useTranslation();
@@ -22,29 +22,29 @@ const AboutMe = forwardRef((__, ref) => {
           scrollPosition - scrollPosition * 0.1 >=
           targetPosition - windowHeight
         ) {
-          aboutMeContainer.classList.add('active');
+          aboutMeContainer.classList.add("active");
         } else {
-          aboutMeContainer.classList.remove('active');
+          aboutMeContainer.classList.remove("active");
         }
 
         const titleTop = title.getBoundingClientRect().top;
 
         if (titleTop < windowHeight * 0.08) {
-          aboutMeContainer.classList.remove('active');
+          aboutMeContainer.classList.remove("active");
         }
       }
     }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <section ref={ref} className='about-me w-full'>
+    <section ref={ref} className='about-me w-full font-comfortaa'>
       <div className='about-me__container' ref={aboutMeContainerRef}>
         <header className='about-me__title font-bold'>
-          <h2 ref={titleRef}>{t('about-me.title')}</h2>
+          <h2 ref={titleRef}>{t("about-me.title")}</h2>
         </header>
-        <p className='about-me__description'>{t('about-me.description')}</p>
+        <p className='about-me__description'>{t("about-me.description")}</p>
       </div>
     </section>
   );

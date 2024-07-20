@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { svgTechsIcons } from "./svg/svgExports";
-import TechImg from "./techImg";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
+
+import { svgTechsIcons } from "./svg/svgExports";
+import TechImg from "./techImg";
 
 WorkDescription.propTypes = {
   imgSrc: PropTypes.string,
@@ -70,7 +71,9 @@ export default function WorkDescription(props) {
   }, []);
 
   const imgElement = (
-    <figure className='flex items-center work-cards-container w-[55%]'>
+    <figure
+      className='flex items-center work-cards-container w-[55%]'
+      key={uuidv4()}>
       <div className=''>
         <img
           alt='project-img'
@@ -96,7 +99,7 @@ export default function WorkDescription(props) {
         <div className='techs'>
           <ul className='techs__ul flex flex-wrap'>
             {techArray.map((element) => (
-              <li key={uuidv4} className='w-1/5'>
+              <li key={uuidv4()} className='w-1/5'>
                 {element}
               </li>
             ))}

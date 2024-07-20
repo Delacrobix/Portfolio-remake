@@ -1,21 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { HashRouter } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { HashRouter } from "react-router-dom";
+import { NextUIProvider } from "@nextui-org/react";
+import { Toaster } from "sonner";
 
-//Styles
-import './assets/css/styles.css';
-import './assets/css/tailwind.css';
+import reportWebVitals from "./reportWebVitals";
+import App from "./App";
 
-//Language config
-import './config/languages.js';
+// Styles
+import "./assets/css/styles.css";
+import "./assets/css/tailwind.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Internationalization config
+import "./config/languages.js";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <HashRouter>
     <React.StrictMode>
-      <App />
+      <NextUIProvider>
+        <Toaster />
+        <App />
+      </NextUIProvider>
     </React.StrictMode>
   </HashRouter>
 );

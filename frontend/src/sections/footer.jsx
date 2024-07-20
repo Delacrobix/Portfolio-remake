@@ -1,13 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedinIn,
   faGithub,
   faTelegram,
-} from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
 
-const Footer = () => {
+export default function Footer() {
   const LINKEDIN = process.env.REACT_APP_LINKEDIN;
   const GITHUB = process.env.REACT_APP_GITHUB;
   const TELEGRAM = process.env.REACT_APP_TELEGRAM;
@@ -39,6 +39,4 @@ const Footer = () => {
       </ul>
     </footer>
   );
-};
-
-export default Footer;
+}

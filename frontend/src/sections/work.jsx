@@ -1,11 +1,11 @@
-import React, { forwardRef, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import WorkCard from '../components/workCard';
-import bingoSrc from '../assets/images/prev/bingo.png';
-import gallerySrc from '../assets/images/prev/mygallery.png';
-import bookSrc from '../assets/images/prev/contact-book.png';
-import chordSrc from '../assets/images/prev/chord-generator.png';
-import { useRef } from 'react';
+import React, { forwardRef, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
+
+import WorkCard from "../components/workCard";
+// import gallerySrc from "../assets/images/prev/mygallery.png";
+import chordSrc from "../assets/images/prev/chord-generator.png";
+import cssTailwindConverterSrc from "../assets/images/prev/desktop/css-tailwind-converter-home.png";
+import cvConverterSrc from "../assets/images/prev/desktop/cv-converter-result.png";
 
 const Work = forwardRef((__, ref) => {
   const { t } = useTranslation();
@@ -30,7 +30,7 @@ const Work = forwardRef((__, ref) => {
       handleHover(card4);
     }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
   }, []);
 
   function handleHover(card) {
@@ -38,19 +38,19 @@ const Work = forwardRef((__, ref) => {
       const height = card.getBoundingClientRect().top;
 
       if (height < halfWindowHeight) {
-        changeLayerStyle(card, 'visible', '1');
+        changeLayerStyle(card, "visible", "1");
       }
 
       if (height < windowHeight * 0.1) {
-        changeLayerStyle(card, 'hidden', '0');
+        changeLayerStyle(card, "hidden", "0");
       }
 
       if (height < 0) {
-        changeLayerStyle(card, 'hidden', '0');
+        changeLayerStyle(card, "hidden", "0");
       }
 
       if (height > windowHeight * 0.7) {
-        changeLayerStyle(card, 'hidden', '0');
+        changeLayerStyle(card, "hidden", "0");
       }
     }
   }
@@ -61,67 +61,59 @@ const Work = forwardRef((__, ref) => {
   }
 
   return (
-    <section ref={ref} className='works'>
+    <section ref={ref} className='works py-32'>
       <div className='content'>
-        <header className='work-tittle'>
-          <h2>{t('works.title')}</h2>
-          <p>{t('works.description')}</p>
+        <header className='work-tittle py-4 font-comfortaa'>
+          <h2 className='font-bold'>{t("works.title")}</h2>
+          <p>{t("works.description")}</p>
         </header>
-        {/* <section className='section-gallery'>
+        <section className='section-gallery'>
           <WorkCard
-            ref={card1Ref}
-            techList={[
-              'React',
-              'GraphQL',
-              'MongoDB',
-              'SQL Server',
-              'NodeJS',
-              'Sass',
-              'Dotnet',
-              'Redis',
-            ]}
-            projectName={t('works.cards.work-card-4.title')}
-            projectDescription={t('works.cards.work-card-4.description')}
-            imgSrc={chordSrc}
-            repo={'https://github.com/Delacrobix/Song-maker'}
-            appLink={'https://chordgenerator.site/#/tone-selector'}
-          />
-          <WorkCard
-            ref={card2Ref}
-            techList={['React', 'NodeJS', 'Redis', 'Sass', 'Dotnet', 'MongoDB']}
-            projectName={t('works.cards.work-card-2.title')}
-            projectDescription={t('works.cards.work-card-2.description')}
-            imgSrc={gallerySrc}
-            repo={'https://github.com/Delacrobix/MyPersonalGallery'}
-            appLink={'https://delacrobix.github.io/MyPersonalGallery/#/home'}
+            ref={card4Ref}
+            techList={["Nest", "React", "NodeJS", "TailwindCSS", "Typescript"]}
+            projectName={t("works.cards.work-card-1.title")}
+            projectDescription={t("works.cards.work-card-1.description")}
+            imgSrc={cssTailwindConverterSrc}
+            repo={"https://github.com/Delacrobix/CSS-tailwind_converter"}
+            appLink={"https://css-tailwind-converter.pages.dev"}
           />
           <WorkCard
             ref={card3Ref}
-            techList={['React', 'NodeJS', 'MySQL', 'Sass', 'GraphQL', 'JS']}
-            projectName={t('works.cards.work-card-3.title')}
-            projectDescription={t('works.cards.work-card-3.description')}
-            imgSrc={bookSrc}
-            repo={'https://github.com/Delacrobix/contact-book-nodejs'}
-            appLink={'https://delacrobix.github.io/contact-book-nodejs/#/home'}
+            techList={["React", "NodeJS", "Nest", "Typescript", "Tailwind"]}
+            projectName={t("works.cards.work-card-3.title")}
+            projectDescription={t("works.cards.work-card-3.description")}
+            imgSrc={cvConverterSrc}
+            repo={"https://github.com/Delacrobix/CV-analyzer"}
+            appLink={"https://cv-analyzer-frontend.pages.dev"}
           />
           <WorkCard
-            ref={card4Ref}
+            ref={card1Ref}
             techList={[
-              'Dotnet',
-              'JS',
-              'Pug',
-              'Sass',
-              'MySQL',
-              'NodeJS',
-              'MongoDB',
+              "React",
+              "GraphQL",
+              "MongoDB",
+              "SQL Server",
+              "NodeJS",
+              "Sass",
+              "Dotnet",
+              "Redis",
             ]}
-            projectName={t('works.cards.work-card-1.title')}
-            projectDescription={t('works.cards.work-card-1.description')}
-            imgSrc={bingoSrc}
-            repo={'https://github.com/Delacrobix/Juego-virtual-Bingo-'}
-            appLink={'https://auth-module.up.railway.app/login'}
+            projectName={t("works.cards.work-card-4.title")}
+            projectDescription={t("works.cards.work-card-4.description")}
+            imgSrc={chordSrc}
+            repo={"https://github.com/Delacrobix/Song-maker"}
+            appLink={"https://chordgenerator.site/#/tone-selector"}
           />
-        </section> */}
+          {/* <WorkCard
+            ref={card2Ref}
+            techList={["React", "NodeJS", "Redis", "Sass", "Dotnet", "MongoDB"]}
+            projectName={t("works.cards.work-card-2.title")}
+            projectDescription={t("works.cards.work-card-2.description")}
+            imgSrc={gallerySrc}
+            repo={"https://github.com/Delacrobix/MyPersonalGallery"}
+            appLink={"https://delacrobix.github.io/MyPersonalGallery/#/home"}
+          /> */}
+        </section>
       </div>
     </section>
   );

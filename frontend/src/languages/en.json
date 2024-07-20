@@ -15,16 +15,16 @@
     "description": "Here is a part of my experience as software developer.",
     "cards": {
       "work-card-1": {
-        "title": "Bingo",
-        "description": "You can play with friends in multiplayer online mode or alone, the fun is guaranteed."
+        "title": "CSS-Tailwind converter",
+        "description": "This app allows you to convert your CSS code to Tailwind CSS code. It is very useful for those who are starting to use Tailwind CSS."
       },
       "work-card-2": {
         "title": "Personal gallery",
         "description": "This application shows some ones of my best photos that I have taken in one of my favorite hobbies."
       },
       "work-card-3": {
-        "title": "Contact book",
-        "description": "You can save contacts here. If you like it, add one."
+        "title": "CV analyzer",
+        "description": "Use this app to analyze your CV and get feedback on how to improve it. It uses the OpenAI API."
       },
       "work-card-4": {
         "title": "Chords generator",

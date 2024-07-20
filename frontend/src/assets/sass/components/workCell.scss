@@ -2,11 +2,9 @@
   .content {
     .section-gallery {
       .work-cards-container {
-        margin: 0.2rem;
         position: relative;
         height: 100%;
         width: 100%;
-        overflow: hidden;
 
         &:hover > .layer {
           opacity: 1;
@@ -46,7 +44,7 @@
           color: #ffffff;
 
           .text-container {
-            height: 50%;
+            height: 60%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -67,22 +65,11 @@
           }
 
           .buttons-container {
-            height: 25%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
             div {
-              margin: 1rem auto;
-
               a {
-                padding: 0.8rem 1.6rem;
                 color: white;
                 border: 1px solid white;
-                border-radius: 7px;
                 transition: all 0.25s ease-in;
-                text-decoration: none;
 
                 &:hover {
                   background-color: rgba($color: #ffffff, $alpha: 0.18);
@@ -100,25 +87,21 @@
               position: absolute;
               bottom: 0;
               right: 0;
-              margin: 0;
+              // margin: 0;
               display: flex;
               align-items: center;
               justify-content: center;
 
               //Tech img
               .tech-li {
-                margin: 0 0.3rem 0 0;
-                padding: 0;
-                bottom: 0;
+                // margin: 0 0.3rem 0 0;
+                // padding: 0;
+                // bottom: 0;
 
                 .tech-img-container {
-                  padding: 0.5rem 0.2rem;
-                  height: 2rem;
-                  width: 2rem;
-
-                  svg {
-                    height: 100%;
-                  }
+                  // padding: 0.5rem 0.2rem;
+                  // height: 2rem;
+                  // width: 2rem;
                 }
 
                 .tech-name {

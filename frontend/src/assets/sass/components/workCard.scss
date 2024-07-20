@@ -38,26 +38,26 @@
     color: #ffffff;
     transition: 0.3s;
 
-    .buttons-container {
-      align-items: center;
-      justify-content: center;
+    // .buttons-container {
+    //   // align-items: center;
+    //   // justify-content: center;
 
-      div {
-        margin: 1rem;
+    //   div {
+    //     // margin: 1rem;
 
-        a {
-          padding: 1.6rem 3.2rem;
-          color: white;
-          border: 1px solid white;
-          border-radius: 7px;
-          transition: color 0.25s, background 0.25s, font-weight 0.25s;
-          text-decoration: none;
+    //     a {
+    //       // padding: 1.6rem 3.2rem;
+    //       color: white;
+    //       border: 1px solid white;
+    //       // border-radius: 7px;
+    //       transition: color 0.25s, background 0.25s, font-weight 0.25s;
+    //       // text-decoration: none;
 
-          &:hover {
-            background: rgba($color: #ffffff, $alpha: 0.18);
-          }
-        }
-      }
-    }
+    //       &:hover {
+    //         background: rgba($color: #ffffff, $alpha: 0.18);
+    //       }
+    //     }
+    //   }
+    // }
   }
 }

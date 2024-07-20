@@ -2,11 +2,7 @@ import React from "react";
 
 export default function DockerIcon() {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      viewBox='0 0 48 48'
-      width='240px'
-      height='240px'>
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'>
       <path
         fill='#03A9F4'
         d='M40,20c0.391-1.735-0.092-3.78-2.5-6c-3.914,3.543-2.795,7.227-1.5,9c0,0-0.166,1-4,1S2,24,2,24S0.167,40,18,40c15.593,0,19.973-12.003,20.828-15.076C39.182,24.972,39.579,25.003,40,25c2.147-0.017,4.93-1.171,6-5.484C43.162,18.533,41.339,18.978,40,20z'

@@ -48,7 +48,7 @@ function ContactComponent(__, ref) {
         <h2 className='font-bold text-center text-2xl py-4'>
           {t("contact.title")}
         </h2>
-        <p className='py-2 text-center text-lg'>
+        <p className='py-2 px-1 text-center text-lg'>
           {t("contact.description")} <span alt='smile-emoji'>&#x1F60A;</span>
         </p>
       </header>

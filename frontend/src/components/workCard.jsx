@@ -19,6 +19,10 @@ const WorkCard = forwardRef(
     const imagesObj = {
       React: svgTechsIcons.react,
       MongoDB: svgTechsIcons.mongodb,
+      Nest: svgTechsIcons.nest,
+      Typescript: svgTechsIcons.typescript,
+      TailwindCSS: svgTechsIcons.tailwind,
+      GenAI: svgTechsIcons.genAI,
       NodeJS: svgTechsIcons.nodejs,
       Sass: svgTechsIcons.sass,
       "SQL Server": svgTechsIcons.sqlServer,

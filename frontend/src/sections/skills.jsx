@@ -54,8 +54,8 @@ const Skills = forwardRef((__, ref) => {
           {/* TODO: Change for Elasticsearch */}
           <TechImg
             customStyles={customStyles}
-            image={svgTechsIcons.dotnet}
-            techName={".NET Core"}
+            image={svgTechsIcons.elasticsearch}
+            techName={"Elasticsearch"}
           />
           <TechImg
             customStyles={customStyles}
@@ -64,22 +64,20 @@ const Skills = forwardRef((__, ref) => {
           />
         </ul>
         <ul>
-          {/* TODO: change for genAI */}
           <TechImg
             customStyles={customStyles}
-            image={svgTechsIcons.sqlServer}
-            techName={"SQL Server"}
+            image={svgTechsIcons.genAI}
+            techName={"GenAI"}
           />
           <TechImg
             customStyles={customStyles}
             image={svgTechsIcons.react}
             techName={"React"}
           />
-          {/* TODO: change for python */}
           <TechImg
             customStyles={customStyles}
-            image={svgTechsIcons.sass}
-            techName={"Sass"}
+            image={svgTechsIcons.python}
+            techName={"Python"}
           />
         </ul>
         <ul>
@@ -93,11 +91,10 @@ const Skills = forwardRef((__, ref) => {
             image={svgTechsIcons.mongodb}
             techName={"Mongodb"}
           />
-          {/* TODO: Change for typescript */}
           <TechImg
             customStyles={customStyles}
-            image={svgTechsIcons.js}
-            techName={"Javascript"}
+            image={svgTechsIcons.typescript}
+            techName={"Typescript"}
           />
         </ul>
       </section>

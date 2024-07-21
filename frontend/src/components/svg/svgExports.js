@@ -20,8 +20,20 @@ import EmailIcon from "./social/emailIcon";
 import LinkedInIcon from "./social/linkedinIcon";
 import TelegramIcon from "./social/telegramIcon";
 import CVIcon from "./misc/cvIcon";
+import TypescriptIcon from "./techs/typescriptIcon";
+import PythonIcon from "./techs/pythonIcon";
+import TailwindIcon from "./techs/tailwindIcon";
+import NestIcon from "./techs/nestIcon";
+import ElasticsearchIcon from "./techs/elasticsearchIcon";
+import GenAIIcon from "./techs/genAiIcon";
 
 export const svgTechsIcons = {
+  genAI: <GenAIIcon />,
+  elasticsearch: <ElasticsearchIcon />,
+  typescript: <TypescriptIcon />,
+  python: <PythonIcon />,
+  tailwind: <TailwindIcon />,
+  nest: <NestIcon />,
   docker: <DockerIcon />,
   dotnet: <DotnetIcon />,
   git: <GitIcon />,

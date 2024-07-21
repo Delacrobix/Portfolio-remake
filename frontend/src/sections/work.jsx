@@ -6,7 +6,7 @@ import chordSrc from "../assets/images/prev/chord-generator.png";
 import cssTailwindConverterSrc from "../assets/images/prev/desktop/css-tailwind-converter-home.png";
 import cvConverterSrc from "../assets/images/prev/desktop/cv-converter-result.png";
 
-const Work = forwardRef((__, ref) => {
+function WorkComponent(__, ref) {
   const { t } = useTranslation();
   const card1Ref = useRef(null);
   const card2Ref = useRef(null);
@@ -69,7 +69,14 @@ const Work = forwardRef((__, ref) => {
         <section className='section-gallery'>
           <WorkCard
             ref={card4Ref}
-            techList={["Nest", "React", "NodeJS", "TailwindCSS", "Typescript"]}
+            techList={[
+              "Nest",
+              "React",
+              "NodeJS",
+              "TailwindCSS",
+              "Typescript",
+              "GenAI",
+            ]}
             projectName={t("works.cards.work-card-1.title")}
             projectDescription={t("works.cards.work-card-1.description")}
             imgSrc={cssTailwindConverterSrc}
@@ -78,7 +85,14 @@ const Work = forwardRef((__, ref) => {
           />
           <WorkCard
             ref={card3Ref}
-            techList={["React", "NodeJS", "Nest", "Typescript", "Tailwind"]}
+            techList={[
+              "React",
+              "NodeJS",
+              "Nest",
+              "Typescript",
+              "TailwindCSS",
+              "GenAI",
+            ]}
             projectName={t("works.cards.work-card-3.title")}
             projectDescription={t("works.cards.work-card-3.description")}
             imgSrc={cvConverterSrc}
@@ -88,13 +102,12 @@ const Work = forwardRef((__, ref) => {
           <WorkCard
             ref={card1Ref}
             techList={[
+              "GenAI",
               "React",
               "GraphQL",
               "MongoDB",
               "SQL Server",
               "NodeJS",
-              "Sass",
-              "Dotnet",
               "Redis",
             ]}
             projectName={t("works.cards.work-card-4.title")}
@@ -107,6 +120,8 @@ const Work = forwardRef((__, ref) => {
       </div>
     </section>
   );
-});
+}
+
+const Work = forwardRef(WorkComponent);
 
 export default Work;

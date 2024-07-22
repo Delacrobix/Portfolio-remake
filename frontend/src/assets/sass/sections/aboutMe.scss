@@ -48,12 +48,3 @@
     }
   }
 }
-
-//Night mode
-body {
-  &.dark {
-    .about-me {
-      color: map-get($dark, mystic);
-    }
-  }
-}

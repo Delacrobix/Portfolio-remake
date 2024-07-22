@@ -37,20 +37,3 @@
     }
   }
 }
-
-//Darkmode
-body {
-  &.dark {
-    .header {
-      background: transparentize(map-get($dark, blue-bayoux-dark), 0.2);
-
-      nav li .header__link {
-        color: map-get($dark, mystic);
-
-        &:hover {
-          color: #9dbad4;
-        }
-      }
-    }
-  }
-}

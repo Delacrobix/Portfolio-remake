@@ -61,11 +61,3 @@
     }
   }
 }
-
-body {
-  &.dark {
-    .skills {
-      color: map-get($dark, mystic);
-    }
-  }
-}

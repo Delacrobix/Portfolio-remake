@@ -17,11 +17,43 @@ body {
   }
 
   &.dark {
+    color: map-get($dark, mystic);
     background: map-get($dark, pickled-bluewood);
+
+    .header {
+      background: transparentize(map-get($dark, blue-bayoux-dark), 0.2);
+
+      nav li .header__link {
+        &:hover {
+          color: rgb(164, 189, 212);
+        }
+      }
+    }
 
     .divisor-line-container {
       .divisor-line {
         border-top: 1.5px solid rgba(255, 255, 255, 0.404);
+      }
+    }
+
+    .work-cascade {
+      a {
+        border-color: map-get($dark, mystic);
+
+        &:hover {
+          background-color: #b7b8ff23;
+        }
+      }
+    }
+
+    .footer {
+      background: map-get($dark, blue-bayoux-dark);
+      color: map-get($dark, mystic);
+
+      li a {
+        &:hover {
+          color: #1f1f1f;
+        }
       }
     }
   }

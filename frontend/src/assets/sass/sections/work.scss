@@ -22,11 +22,3 @@
     }
   }
 }
-
-body {
-  &.dark {
-    .works {
-      color: map-get($dark, mystic);
-    }
-  }
-}

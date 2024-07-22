@@ -13,7 +13,7 @@ export default function Footer() {
   const TELEGRAM = process.env.REACT_APP_TELEGRAM;
 
   return (
-    <footer className='footer'>
+    <footer className='footer text-black'>
       <ul className='icons-ul'>
         <li>
           <Link to={LINKEDIN} target='_blank'>

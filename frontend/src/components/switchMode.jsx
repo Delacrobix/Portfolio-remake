@@ -11,14 +11,14 @@ export default function SwitchMode({ isMobile }) {
   const [isDayMode, setIsDayMode] = useState(true);
   const switchButtonRef = useRef(null);
 
-  const toggleMode = () => {
+  function toggleMode() {
     setIsDayMode(!isDayMode);
 
     const btnSwitch = switchButtonRef.current;
 
     document.body.classList.toggle("dark");
     btnSwitch.classList.toggle("active");
-  };
+  }
 
   return isMobile ? (
     <li>

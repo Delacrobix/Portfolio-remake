@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Input } from "@nextui-org/react";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
@@ -91,20 +91,20 @@ function ContactElement({ icon, link, content, handleCopy }) {
   }
 
   return (
-    <div className='flex gap-6 justify-center items-center'>
+    <div className='contact-section flex gap-6 justify-center items-center'>
       <button
         className={`w-24 my-1`}
         onClick={() => handleRedirect(link)}
         disabled={!link}>
         <span>{icon}</span>
       </button>
-      <div className=''>
+      <div>
         <Input
+          className='contact-input w-full'
           isReadOnly
           size='lg'
           variant='bordered'
           defaultValue={content}
-          className='w-full'
         />
       </div>
       <button

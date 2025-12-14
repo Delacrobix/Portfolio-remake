@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Input } from "@nextui-org/react";
+import React from "react";
+import { Input, Button } from "@nextui-org/react";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -85,33 +85,38 @@ ContactElement.propTypes = {
   handleCopy: PropTypes.func.isRequired,
 };
 
-function ContactElement({ icon, link, content, handleCopy }) {
-  function handleRedirect(link) {
-    window.open(link, "_blank");
-  }
+function handleRedirect(link) {
+  window.open(link, "_blank");
+}
 
+function ContactElement({ icon, link, content, handleCopy }) {
   return (
     <div className='contact-section flex gap-6 justify-center items-center'>
-      <button
+      <Button
         className={`w-24 my-1`}
-        onClick={() => handleRedirect(link)}
-        disabled={!link}>
+        onPress={() => handleRedirect(link)}
+        isDisabled={!link}
+        variant='light'
+        isIconOnly>
         <span>{icon}</span>
-      </button>
+      </Button>
       <div>
         <Input
           className='contact-input w-full'
           isReadOnly
           size='lg'
           variant='bordered'
-          defaultValue={content}
+          value={content}
+          color='primary'
         />
       </div>
-      <button
-        className='p-4 hover:scale-110 transition-all s'
-        onClick={() => handleCopy(link || content)}>
+      <Button
+        isIconOnly
+        variant='light'
+        onPress={() => handleCopy(link || content)}
+        className='hover:scale-110 transition-all'>
         <FontAwesomeIcon className='text-3xl' icon={faCopy} />
-      </button>
+      </Button>
     </div>
   );
 }

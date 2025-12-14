@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Link } from "react-router-dom";
+import { Button, Chip, Card, CardBody } from "@nextui-org/react";
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
-
-import { svgTechsIcons } from "./svg/svgExports";
-import TechImg from "./techImg";
 
 WorkDescription.propTypes = {
   imgSrc: PropTypes.string,
@@ -29,66 +27,24 @@ export default function WorkDescription(props) {
     imgOnRight,
   } = props;
 
-  const [techArray, setTechArray] = useState([]);
-  const imagesObj = {
-    React: svgTechsIcons.react,
-    MongoDB: svgTechsIcons.mongodb,
-    Nest: svgTechsIcons.nest,
-    Typescript: svgTechsIcons.typescript,
-    TailwindCSS: svgTechsIcons.tailwind,
-    GenAI: svgTechsIcons.genAI,
-    NodeJS: svgTechsIcons.nodejs,
-    Sass: svgTechsIcons.sass,
-    "SQL Server": svgTechsIcons.sqlServer,
-    Pug: svgTechsIcons.pug,
-    MySQL: svgTechsIcons.mysql,
-    Dotnet: svgTechsIcons.dotnet,
-    Redis: svgTechsIcons.redis,
-    JS: svgTechsIcons.js,
-    CSS: svgTechsIcons.css,
-    GraphQL: svgTechsIcons.graphql,
-  };
-
-  useEffect(() => {
-    const aux = [];
-
-    projectTechs.forEach((element) => {
-      if (!imagesObj[element]) {
-        return;
-      }
-
-      aux.push(
-        <TechImg
-          image={imagesObj[element]}
-          techName={element}
-          customStyles={{
-            iconSize: " w-8 h-8 lg:w-10 lg:h-10",
-            iconSeparation: "px-4 mt-4",
-            iconText: "text-xs",
-          }}
-          key={uuidv4()}
-        />
-      );
-    });
-
-    setTechArray(aux);
-  }, []);
-
   const imgElement = (
     <figure
       className='flex items-center work-cards-container w-[55%]'
       key={uuidv4()}>
-      <div className=''>
-        <img
-          alt='project-img'
-          className={`img-layer-img ${
-            imgOnRight ? "rounded-l-md" : "rounded-r-md"
-          }`}
-          src={imgSrc}
-        />
-      </div>
+      <Card className='w-full' isBlurred>
+        <CardBody className='p-0'>
+          <img
+            alt='project-img'
+            className={`img-layer-img w-full object-cover ${
+              imgOnRight ? "rounded-l-md" : "rounded-r-md"
+            }`}
+            src={imgSrc}
+          />
+        </CardBody>
+      </Card>
     </figure>
   );
+
   const descriptionElement = (
     <div
       className={`work-description font-comfortaa w-[45%] px-10 text-lg`}
@@ -99,24 +55,36 @@ export default function WorkDescription(props) {
       </div>
 
       <div className='pt-4'>
-        <h4 className=' text-xs'>Built with: </h4>
-        <div className='techs'>
-          <ul className='techs__ul flex flex-wrap'>
-            {techArray.map((element) => (
-              <li key={uuidv4()} className='w-1/5'>
-                {element}
-              </li>
+        <h4 className=' text-xs mb-3'>Built with: </h4>
+        <div className='flex flex-wrap gap-2'>
+          {projectTechs &&
+            projectTechs.map((tech) => (
+              <Chip key={uuidv4()} size='md' variant='flat' color='primary'>
+                {tech}
+              </Chip>
             ))}
-          </ul>
         </div>
       </div>
-      <div className={`w-full flex justify-center gap-4 mt-4 lg:gap-10 z-100`}>
-        <Link className={`${buttonStyles}`} to={repo} target='_blank'>
+
+      <div className={`w-full flex justify-center gap-4 mt-6 lg:gap-10 z-100`}>
+        <Button
+          as={Link}
+          to={repo}
+          target='_blank'
+          color='primary'
+          variant='bordered'
+          size='lg'>
           {t("works.buttons.button-1")}
-        </Link>
-        <Link className={`${buttonStyles}`} to={appLink} target='_blank'>
+        </Button>
+        <Button
+          as={Link}
+          to={appLink}
+          target='_blank'
+          color='primary'
+          variant='solid'
+          size='lg'>
           {t("works.buttons.button-2")}
-        </Link>
+        </Button>
       </div>
     </div>
   );
@@ -129,6 +97,3 @@ export default function WorkDescription(props) {
     </div>
   );
 }
-
-const buttonStyles =
-  "bg-transparent px-6 lg:px-8 py-3 lg:py-4 border border-black rounded-md cursor-pointer hover:bg-slate-200 transition-all duration-200 z-100";

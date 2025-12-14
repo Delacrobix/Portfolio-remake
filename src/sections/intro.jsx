@@ -1,7 +1,8 @@
-import React, { forwardRef, useEffect, useState } from "react";
+import React, { forwardRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { Avatar, Button, Link as NextUILink } from "@nextui-org/react";
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
 
@@ -11,22 +12,23 @@ import { svgSocialIcons, svgIcons } from "../components/svg/svgExports";
 import SwitchMode from "../components/switchMode";
 import SwitchLanguage from "../components/switchLanguage";
 
+function openPDF() {
+  window.open(cv, "_blank");
+}
+
 const Intro = forwardRef(({ scrollTo }, ref) => {
   const { t } = useTranslation();
-
-  function openPDF() {
-    window.open(cv, "_blank");
-  }
 
   return (
     <section ref={ref} className='intro'>
       <div className='content'>
         <div className='profile-picture flex justify-center items-center'>
           <div className='image-container flex justify-center mt-6'>
-            <img
-              className=' object-cover size-[50%] rounded-[50%]'
+            <Avatar
               src={profilePicture}
-              alt=''
+              className='w-48 h-48 text-large'
+              isBordered
+              color='primary'
             />
           </div>
         </div>
@@ -36,21 +38,29 @@ const Intro = forwardRef(({ scrollTo }, ref) => {
         <p>{t("intro.welcome")}</p>
         <div className='social-media-container'>
           <div className='intro-icon'>
-            <Link
-              to='https://www.linkedin.com/in/jeffrey-rerin/'
-              target='_blank'>
+            <NextUILink
+              href='https://www.linkedin.com/in/jeffrey-rerin/'
+              target='_blank'
+              isExternal
+              color='foreground'>
               {svgSocialIcons.linkedin}
-            </Link>
+            </NextUILink>
             <span>LinkedIn</span>
           </div>
           <div className='intro-icon'>
-            <Link to='https://github.com/Delacrobix' target='_blank'>
+            <NextUILink
+              href='https://github.com/Delacrobix'
+              target='_blank'
+              isExternal
+              color='foreground'>
               {svgSocialIcons.github}
-            </Link>
+            </NextUILink>
             <span>GitHub</span>
           </div>
           <div className='intro-icon'>
-            <Link onClick={openPDF}>{svgIcons.cv}</Link>
+            <Button isIconOnly variant='light' onPress={openPDF}>
+              {svgIcons.cv}
+            </Button>
             <span>CV</span>
           </div>
         </div>

@@ -1,15 +1,248 @@
 {
   "header": {
     "nav-link-1": "Inicio",
-    "nav-link-2": "Mi Trabajo",
-    "nav-link-3": "Quién Soy",
-    "nav-link-4": "Habilidades",
+    "nav-link-2": "Experiencia",
+    "nav-link-3": "Proyectos",
+    "nav-link-4": "Artículos",
     "nav-link-5": "Contacto"
   },
   "intro": {
     "welcome": "Desarrollador Full Stack"
   },
   "switch-bottom": "Cambiar vista",
+  "articles": {
+    "title": "Artículos & Blog",
+    "description": "Compartiendo conocimiento y perspectivas sobre desarrollo de software, mejores prácticas y tecnologías.",
+    "readButton": "Leer Artículo",
+    "list": [
+      {
+        "title": "Construyendo APIs Escalables con NestJS",
+        "description": "Aprende a crear APIs de nivel empresarial usando el framework NestJS con mejores prácticas y arquitectura limpia.",
+        "date": "Dic 2024",
+        "readTime": "8 min de lectura",
+        "tags": ["NestJS", "TypeScript", "Backend"],
+        "coverImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop",
+        "link": "#"
+      },
+      {
+        "title": "Consejos de Optimización en React",
+        "description": "Descubre técnicas prácticas para mejorar el rendimiento de tus aplicaciones React y la experiencia de usuario.",
+        "date": "Nov 2024",
+        "readTime": "6 min de lectura",
+        "tags": ["React", "Performance", "Frontend"],
+        "coverImage": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=400&fit=crop",
+        "link": "#"
+      },
+      {
+        "title": "Patrones de Arquitectura de Microservicios",
+        "description": "Entendiendo patrones comunes y desafíos al construir aplicaciones basadas en microservicios.",
+        "date": "Oct 2024",
+        "readTime": "10 min de lectura",
+        "tags": ["Arquitectura", "Microservicios", "DevOps"],
+        "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=400&fit=crop",
+        "link": "#"
+      }
+    ]
+  },
+  "awards": {
+    "title": "Premios & Hackatones",
+    "description": "Reconocimientos y logros en competencias de programación y eventos tecnológicos.",
+    "place": "Lugar",
+    "list": [
+      {
+        "event": "Global Hack Week 2024",
+        "organizer": "MLH (Major League Hacking)",
+        "position": "1st",
+        "description": "Desarrollé una herramienta de revisión de código con IA que ayuda a los desarrolladores a identificar bugs y sugerir mejoras.",
+        "technologies": ["Python", "OpenAI", "FastAPI", "Docker"],
+        "date": "Septiembre 2024"
+      },
+      {
+        "event": "Colombia DevFest Hackathon",
+        "organizer": "Google Developers",
+        "position": "2nd",
+        "description": "Creé una plataforma de colaboración en tiempo real para equipos remotos con videoconferencia y espacios de trabajo compartidos.",
+        "technologies": ["React", "WebRTC", "Node.js", "MongoDB"],
+        "date": "Junio 2024"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "description": "Soluciones enfocadas en entregar valor real y resolver problemas significativos.",
+    "problemLabel": "Problema",
+    "solutionLabel": "Solución",
+    "impactLabel": "Impacto",
+    "codeButton": "Ver Código",
+    "demoButton": "Demo en Vivo",
+    "list": [
+      {
+        "name": "Conversor CSS-Tailwind",
+        "tagline": "Convierte CSS a Tailwind CSS instantáneamente",
+        "problem": "Los desarrolladores pierden horas convirtiendo manualmente bases de código CSS existentes a Tailwind CSS, ralentizando proyectos de migración.",
+        "solution": "Una herramienta con IA que convierte automáticamente código CSS a clases de Tailwind CSS, manteniendo la fidelidad del diseño y reduciendo el tiempo de migración en un 80%.",
+        "impact": "500+ desarrolladores usándola mensualmente, ahorrando un promedio de 10 horas por proyecto",
+        "impactType": "productivity",
+        "tech": ["React", "NestJS", "OpenAI", "TypeScript", "Tailwind"],
+        "repo": "https://github.com/Delacrobix/CSS-tailwind_converter",
+        "demo": "https://css-tailwind-converter.pages.dev"
+      },
+      {
+        "name": "Analizador de CV",
+        "tagline": "Optimización de currículum con IA",
+        "problem": "Los buscadores de empleo luchan por optimizar sus currículums para sistemas ATS y requisitos específicos de trabajo, resultando en oportunidades perdidas.",
+        "solution": "Una herramienta inteligente de análisis de CV que proporciona retroalimentación personalizada, optimización de palabras clave y sugerencias de formato usando IA.",
+        "impact": "1000+ usuarios mejoraron sus currículums, 65% reportaron mejores tasas de entrevistas",
+        "impactType": "users",
+        "tech": ["React", "NestJS", "GenAI", "TypeScript", "Tailwind"],
+        "repo": "https://github.com/Delacrobix/CV-analyzer",
+        "demo": "https://cv-analyzer-frontend.pages.dev"
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "description": "Certificaciones profesionales y logros de aprendizaje continuo.",
+    "mainTitle": "Certificaciones Destacadas",
+    "secondaryTitle": "Certificaciones Adicionales",
+    "featured": "Destacada",
+    "expires": "Expira",
+    "viewButton": "Ver Certificado",
+    "main": [
+      {
+        "name": "AWS Certified Solutions Architect",
+        "issuer": "Amazon Web Services",
+        "date": "Ene 2024",
+        "expires": "Ene 2027",
+        "credentialId": "AWS-CSA-2024-001",
+        "skills": ["AWS", "Arquitectura Cloud", "DevOps"],
+        "link": "#"
+      },
+      {
+        "name": "Professional Scrum Master I",
+        "issuer": "Scrum.org",
+        "date": "Mar 2024",
+        "credentialId": "PSM-2024-12345",
+        "skills": ["Scrum", "Agile", "Gestión de Proyectos"],
+        "link": "#"
+      }
+    ],
+    "secondary": [
+      {
+        "name": "MongoDB Developer Certification",
+        "issuer": "MongoDB University",
+        "date": "Jun 2023",
+        "link": "#"
+      },
+      {
+        "name": "Docker Certified Associate",
+        "issuer": "Docker Inc.",
+        "date": "Sep 2023",
+        "link": "#"
+      },
+      {
+        "name": "JavaScript Algorithms",
+        "issuer": "freeCodeCamp",
+        "date": "Feb 2023",
+        "link": "#"
+      },
+      {
+        "name": "React - Guía Completa",
+        "issuer": "Udemy",
+        "date": "May 2022",
+        "link": "#"
+      },
+      {
+        "name": "Node.js Bootcamp",
+        "issuer": "Udemy",
+        "date": "Ago 2022",
+        "link": "#"
+      },
+      {
+        "name": "Git & GitHub Masterclass",
+        "issuer": "Coursera",
+        "date": "Ene 2022",
+        "link": "#"
+      }
+    ]
+  },
+  "tools": {
+    "title": "Herramientas Favoritas",
+    "description": "Las herramientas esenciales que uso diariamente para construir productos increíbles.",
+    "list": [
+      {
+        "name": "VS Code",
+        "category": "Editor de Código",
+        "icon": "💻"
+      },
+      {
+        "name": "Docker",
+        "category": "Contenedorización",
+        "icon": "🐳"
+      },
+      {
+        "name": "Git",
+        "category": "Control de Versiones",
+        "icon": "🔀"
+      },
+      {
+        "name": "Postman",
+        "category": "Testing de APIs",
+        "icon": "📮"
+      },
+      {
+        "name": "Figma",
+        "category": "Diseño",
+        "icon": "🎨"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "description": "Mi trayectoria profesional y el valor que he entregado en cada rol.",
+    "achievementsLabel": "Logros Clave",
+    "list": [
+      {
+        "position": "Senior Full Stack Developer",
+        "company": "Tech Solutions Inc.",
+        "period": "Ene 2023 - Presente",
+        "location": "Remoto",
+        "description": "Liderando el desarrollo de aplicaciones web empresariales, mentorizando desarrolladores junior y arquitectando soluciones escalables.",
+        "achievements": [
+          "Reduje el tiempo de carga de la aplicación en un 60% mediante optimización de rendimiento",
+          "Mentorizado 5 desarrolladores junior, mejorando la productividad del equipo en 40%",
+          "Lideré la migración a arquitectura de microservicios sirviendo 100k+ usuarios"
+        ],
+        "technologies": ["React", "NestJS", "PostgreSQL", "Docker", "AWS"]
+      },
+      {
+        "position": "Full Stack Developer",
+        "company": "StartupXYZ",
+        "period": "Jun 2021 - Dic 2022",
+        "location": "Colombia",
+        "description": "Desarrollé y mantuve aplicaciones full-stack, implementé pipelines CI/CD y colaboré con equipos multifuncionales.",
+        "achievements": [
+          "Construí MVP que adquirió los primeros 1000 usuarios en 3 meses",
+          "Implementé testing automatizado reduciendo bugs en un 70%",
+          "Diseñé y desarrollé APIs RESTful manejando 1M+ peticiones/día"
+        ],
+        "technologies": ["React", "Node.js", "MongoDB", "GraphQL", "Jest"]
+      },
+      {
+        "position": "Desarrollador Junior",
+        "company": "Agencia Digital",
+        "period": "Ene 2020 - May 2021",
+        "location": "Colombia",
+        "description": "Desarrollé aplicaciones web responsive, corregí bugs y contribuí a mejorar flujos de desarrollo.",
+        "achievements": [
+          "Entregué 15+ proyectos de clientes a tiempo y dentro del presupuesto",
+          "Mejoré la calidad del código mediante implementación de ESLint y Prettier",
+          "Colaboré con diseñadores para crear UIs pixel-perfect"
+        ],
+        "technologies": ["HTML", "CSS", "JavaScript", "React", "Sass"]
+      }
+    ]
+  },
   "works": {
     "title": "Mi trabajo",
     "description": "Aquí se evidencia una parte de mi experiencia como desarrollador de software.",

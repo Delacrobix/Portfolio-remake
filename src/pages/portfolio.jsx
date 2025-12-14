@@ -7,6 +7,12 @@ import Footer from "../sections/footer";
 import Skills from "../sections/skills";
 import Work from "../sections/work";
 import AboutMe from "../sections/aboutMe";
+import Experience from "../sections/experience";
+import Projects from "../sections/projects";
+import Articles from "../sections/articles";
+import Awards from "../sections/awards";
+import Certifications from "../sections/certifications";
+import Tools from "../sections/tools";
 import i18n from "../config/languages";
 import WorksCascade from "../sections/worksCascade";
 import Contact from "../sections/contact";
@@ -20,6 +26,12 @@ export default function Portfolio() {
   const introRef = useRef(null);
   const workRef = useRef(null);
   const aboutMeRef = useRef(null);
+  const experienceRef = useRef(null);
+  const projectsRef = useRef(null);
+  const articlesRef = useRef(null);
+  const awardsRef = useRef(null);
+  const certificationsRef = useRef(null);
+  const toolsRef = useRef(null);
 
   function scrollTo(section) {
     const refSwitch = {
@@ -28,6 +40,12 @@ export default function Portfolio() {
       intro: introRef,
       work: workRef,
       aboutMe: aboutMeRef,
+      experience: experienceRef,
+      projects: projectsRef,
+      articles: articlesRef,
+      awards: awardsRef,
+      certifications: certificationsRef,
+      tools: toolsRef,
     };
 
     refSwitch[section].current.scrollIntoView({ behavior: "smooth" });
@@ -37,20 +55,73 @@ export default function Portfolio() {
     <>
       <Header scrollTo={scrollTo} isMobile={isMobile} />
       <Intro scrollTo={scrollTo} ref={introRef} isMobile={isMobile} />
-      {isMobile ? <Work ref={workRef} /> : <WorksCascade ref={workRef} />}
+      
       <div className='divisor-line-container'>
         <hr className='divisor-line' />
       </div>
+      
+      <I18nextProvider i18n={i18n}>
+        <Experience ref={experienceRef} />
+      </I18nextProvider>
+      
+      <div className='divisor-line-container'>
+        <hr className='divisor-line' />
+      </div>
+      
+      <I18nextProvider i18n={i18n}>
+        <Projects ref={projectsRef} />
+      </I18nextProvider>
+      
+      <div className='divisor-line-container'>
+        <hr className='divisor-line' />
+      </div>
+      
+      <I18nextProvider i18n={i18n}>
+        <Awards ref={awardsRef} />
+      </I18nextProvider>
+      
+      <div className='divisor-line-container'>
+        <hr className='divisor-line' />
+      </div>
+      
+      <I18nextProvider i18n={i18n}>
+        <Articles ref={articlesRef} />
+      </I18nextProvider>
+      
+      <div className='divisor-line-container'>
+        <hr className='divisor-line' />
+      </div>
+      
+      <I18nextProvider i18n={i18n}>
+        <Certifications ref={certificationsRef} />
+      </I18nextProvider>
+      
+      <div className='divisor-line-container'>
+        <hr className='divisor-line' />
+      </div>
+      
+      <I18nextProvider i18n={i18n}>
+        <Tools ref={toolsRef} />
+      </I18nextProvider>
+
+      <div className='divisor-line-container'>
+        <hr className='divisor-line' />
+      </div>
+
       <I18nextProvider i18n={i18n}>
         <AboutMe ref={aboutMeRef} />
       </I18nextProvider>
+      
       <div className='divisor-line-container'>
         <hr className='divisor-line' />
       </div>
+      
       <Skills ref={skillsRef} />
+      
       <div className='divisor-line-container'>
         <hr className='divisor-line' />
       </div>
+      
       <Contact ref={contactRef} />
       <Footer />
     </>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@nextui-org/react';
 import SwitchMode from '../components/switchMode';
 import SwitchLanguage from '../components/switchLanguage';
 import { useTranslation } from 'react-i18next';
@@ -10,17 +10,12 @@ const Header = (props) => {
   const { t } = useTranslation();
 
   return (
-    <Navbar 
-      id='header' 
-      className='header font-rubik'
-      maxWidth="full"
-      isBordered
-    >
+    <Navbar id='header' className='header font-rubik' maxWidth='full' isBordered>
       <NavbarBrand>
         <h1 className='header__h1 font-bold text-3xl'>Jeffrey Rerín</h1>
       </NavbarBrand>
-      
-      <NavbarContent className='uppercase' justify="end">
+
+      <NavbarContent className='uppercase' justify='end'>
         <NavbarItem>
           <SwitchMode classProp={'switch-mode'} idProp={'switch'} />
         </NavbarItem>
@@ -30,17 +25,17 @@ const Header = (props) => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className='header__link' onClick={() => scrollTo('work')}>
+          <Link className='header__link' onClick={() => scrollTo('experience')}>
             {t('header.nav-link-2')}
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className='header__link' onClick={() => scrollTo('aboutMe')}>
+          <Link className='header__link' onClick={() => scrollTo('projects')}>
             {t('header.nav-link-3')}
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className='header__link' onClick={() => scrollTo('skills')}>
+          <Link className='header__link' onClick={() => scrollTo('articles')}>
             {t('header.nav-link-4')}
           </Link>
         </NavbarItem>
@@ -58,3 +53,4 @@ const Header = (props) => {
 };
 
 export default Header;
+

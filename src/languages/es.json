@@ -4,45 +4,31 @@
     "nav-link-2": "Experiencia",
     "nav-link-3": "Proyectos",
     "nav-link-4": "Artículos",
-    "nav-link-5": "Contacto"
+    "nav-link-5": "Videos",
+    "nav-link-6": "Contacto"
   },
   "intro": {
     "welcome": "Desarrollador Full Stack"
   },
   "switch-bottom": "Cambiar vista",
-  "articles": {
-    "title": "Artículos & Blog",
-    "description": "Compartiendo conocimiento y perspectivas sobre desarrollo de software, mejores prácticas y tecnologías.",
-    "readButton": "Leer Artículo",
+  "videos": {
+    "title": "Videos Técnicos",
+    "description": "Tutoriales en video y charlas técnicas sobre Elasticsearch, AI, y desarrollo de software.",
+    "watchButton": "Ver Video",
     "list": [
       {
-        "title": "Construyendo APIs Escalables con NestJS",
-        "description": "Aprende a crear APIs de nivel empresarial usando el framework NestJS con mejores prácticas y arquitectura limpia.",
-        "date": "Dic 2024",
-        "readTime": "8 min de lectura",
-        "tags": ["NestJS", "TypeScript", "Backend"],
-        "coverImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop",
-        "link": "#"
-      },
-      {
-        "title": "Consejos de Optimización en React",
-        "description": "Descubre técnicas prácticas para mejorar el rendimiento de tus aplicaciones React y la experiencia de usuario.",
-        "date": "Nov 2024",
-        "readTime": "6 min de lectura",
-        "tags": ["React", "Performance", "Frontend"],
-        "coverImage": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=400&fit=crop",
-        "link": "#"
-      },
-      {
-        "title": "Patrones de Arquitectura de Microservicios",
-        "description": "Entendiendo patrones comunes y desafíos al construir aplicaciones basadas en microservicios.",
-        "date": "Oct 2024",
-        "readTime": "10 min de lectura",
-        "tags": ["Arquitectura", "Microservicios", "DevOps"],
-        "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=400&fit=crop",
-        "link": "#"
+        "title": "Example Technical Video",
+        "description": "This is an example video description. Replace with your actual YouTube videos.",
+        "thumbnail": "https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg",
+        "link": "https://www.youtube.com/watch?v=VIDEO_ID",
+        "authors": ["Jeffrey Rengifo"]
       }
     ]
+  },
+  "articles": {
+    "title": "Artículos Técnicos",
+    "description": "Exploraciones profundas sobre Elasticsearch, integraciones de AI/GenAI, y desarrollo full-stack. Publicados en Elasticsearch Labs y otras plataformas técnicas.",
+    "readButton": "Leer Artículo"
   },
   "awards": {
     "title": "Premios & Hackatones",
@@ -110,59 +96,42 @@
     "viewButton": "Ver Certificado",
     "main": [
       {
-        "name": "AWS Certified Solutions Architect",
-        "issuer": "Amazon Web Services",
-        "date": "Ene 2024",
+        "name": "Elastic Certified Engineer",
+        "issuer": "Elastic",
+        "date": "Ene 2025",
         "expires": "Ene 2027",
-        "credentialId": "AWS-CSA-2024-001",
-        "skills": ["AWS", "Arquitectura Cloud", "DevOps"],
-        "link": "#"
-      },
-      {
-        "name": "Professional Scrum Master I",
-        "issuer": "Scrum.org",
-        "date": "Mar 2024",
-        "credentialId": "PSM-2024-12345",
-        "skills": ["Scrum", "Agile", "Gestión de Proyectos"],
-        "link": "#"
+        "credentialId": "2637cfce-e44b-499f-9fcc-85e36dc6574a",
+        "skills": [
+          "Elasticsearch",
+          "Gestión de Clusters",
+          "Indexación de Datos",
+          "Análisis de Consultas"
+        ],
+        "thumbnail": "https://pdf.ms.credential.net/v2/certificate/image?env=production&credential=1eujg28c&variant=medium",
+        "link": "https://www.credential.net/2637cfce-e44b-499f-9fcc-85e36dc6574a"
       }
     ],
     "secondary": [
       {
-        "name": "MongoDB Developer Certification",
-        "issuer": "MongoDB University",
-        "date": "Jun 2023",
-        "link": "#"
-      },
-      {
-        "name": "Docker Certified Associate",
-        "issuer": "Docker Inc.",
-        "date": "Sep 2023",
-        "link": "#"
-      },
-      {
-        "name": "JavaScript Algorithms",
-        "issuer": "freeCodeCamp",
-        "date": "Feb 2023",
-        "link": "#"
-      },
-      {
-        "name": "React - Guía Completa",
+        "name": "Elasticsearch para todos",
         "issuer": "Udemy",
-        "date": "May 2022",
-        "link": "#"
+        "date": "Oct 2023",
+        "thumbnail": "/certs/thumbnails/ElasticsearchParaTodos.jpg",
+        "link": "/certs/ElasticsearchParaTodos.pdf"
       },
       {
-        "name": "Node.js Bootcamp",
-        "issuer": "Udemy",
-        "date": "Ago 2022",
-        "link": "#"
+        "name": "Observability Engineer On Demand",
+        "issuer": "Elastic",
+        "date": "Dec 2025",
+        "thumbnail": "/certs/thumbnails/obsevabilityEngineerOnDemand.jpg",
+        "link": "/certs/obsevabilityEngineerOnDemand.pdf"
       },
       {
-        "name": "Git & GitHub Masterclass",
-        "issuer": "Coursera",
-        "date": "Ene 2022",
-        "link": "#"
+        "name": "Introduction to Painless",
+        "issuer": "Elastic",
+        "date": "Aug 2025",
+        "thumbnail": "/certs/thumbnails/introductionPainless.jpg",
+        "link": "/certs/introductionPainless.pdf"
       }
     ]
   },

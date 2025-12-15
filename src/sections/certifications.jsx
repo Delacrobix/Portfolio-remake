@@ -46,21 +46,31 @@ const Certifications = forwardRef((__, ref) => {
           </h3>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+        <div className='flex flex-wrap justify-center gap-6'>
           {Array.isArray(mainCertifications) &&
             mainCertifications.map((cert) => (
               <Card
                 key={uuidv4()}
-                className='hover:shadow-xl transition-all duration-300 border-2 border-success-200 dark:border-success-800'
+                className='hover:shadow-xl transition-all duration-300 border-2 border-success-200 dark:border-success-800 w-full md:w-[calc(50%-0.75rem)] max-w-2xl'
                 isBlurred>
                 <CardBody className='p-6'>
                   <div className='flex gap-4 items-start'>
-                    <div className='flex-shrink-0 w-20 h-20 bg-gradient-to-br from-success-100 to-success-200 dark:from-success-900/30 dark:to-success-800/30 rounded-xl flex items-center justify-center'>
-                      <FontAwesomeIcon
-                        icon={faCertificate}
-                        className='text-success text-3xl'
-                      />
-                    </div>
+                    {cert.thumbnail ? (
+                      <div className='flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden border-2 border-success-200 dark:border-success-800'>
+                        <img
+                          src={cert.thumbnail}
+                          alt={cert.name}
+                          className='w-full h-full object-cover'
+                        />
+                      </div>
+                    ) : (
+                      <div className='flex-shrink-0 w-20 h-20 bg-gradient-to-br from-success-100 to-success-200 dark:from-success-900/30 dark:to-success-800/30 rounded-xl flex items-center justify-center'>
+                        <FontAwesomeIcon
+                          icon={faCertificate}
+                          className='text-success text-3xl'
+                        />
+                      </div>
+                    )}
 
                     <div className='flex-grow'>
                       <div className='flex items-start justify-between mb-2'>
@@ -160,16 +170,25 @@ const Certifications = forwardRef((__, ref) => {
               <Card
                 key={uuidv4()}
                 className='hover:shadow-md transition-shadow'
-                isPressable
                 isBlurred>
                 <CardBody className='p-4'>
                   <div className='flex gap-3 items-start'>
-                    <div className='flex-shrink-0 w-12 h-12 bg-default-100 dark:bg-default-900/30 rounded-lg flex items-center justify-center'>
-                      <FontAwesomeIcon
-                        icon={faCertificate}
-                        className='text-default-600 text-lg'
-                      />
-                    </div>
+                    {cert.thumbnail ? (
+                      <div className='flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden border border-default-200 dark:border-default-800'>
+                        <img
+                          src={cert.thumbnail}
+                          alt={cert.name}
+                          className='w-full h-full object-cover'
+                        />
+                      </div>
+                    ) : (
+                      <div className='flex-shrink-0 w-12 h-12 bg-default-100 dark:bg-default-900/30 rounded-lg flex items-center justify-center'>
+                        <FontAwesomeIcon
+                          icon={faCertificate}
+                          className='text-default-600 text-lg'
+                        />
+                      </div>
+                    )}
 
                     <div className='flex-grow min-w-0'>
                       <h4 className='font-bold text-sm font-comfortaa mb-1 truncate'>
@@ -185,9 +204,10 @@ const Certifications = forwardRef((__, ref) => {
 
                       {cert.link && (
                         <Button
-                          as={Link}
+                          as='a'
                           href={cert.link}
                           target='_blank'
+                          rel='noopener noreferrer'
                           size='sm'
                           variant='flat'
                           color='default'

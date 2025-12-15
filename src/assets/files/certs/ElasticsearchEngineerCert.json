@@ -1,0 +1,53 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.3.json"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "OpenBadgeCredential"
+  ],
+  "id": "https://www.credential.net/2637cfce-e44b-499f-9fcc-85e36dc6574a",
+  "name": "Elastic Certified Engineer",
+  "description": "The Elastic Certified Engineer exam tests your knowledge and skills in building a complete Elasticsearch solution — including the ability to install, configure, and manage Elasticsearch clusters, index data into those clusters, and query and analyze the indexed data.\n\nThe Elastic Certification Program is designed for IT professionals who have experience building and deploying Elasticsearch solutions. Professionals become certified by completing challenging and relevant real-world tasks on a live Elastic Stack cluster in our hands-on, performance-based exams.",
+  "image": {
+    "id": "https://pdf.ms.credential.net/v2/certificate/image?env=production&credential=1eujg28c&variant=medium",
+    "type": "Image"
+  },
+  "issuer": {
+    "type": "Profile",
+    "id": "https://www.credential.net/issuer/34211",
+    "name": "Elastic",
+    "url": "https://www.elastic.co"
+  },
+  "validFrom": "2025-01-15T00:00:00Z",
+  "validUntil": "2027-01-15T00:00:00Z",
+  "credentialSubject": {
+    "type": "AchievementSubject",
+    "identifier": {
+      "type": "IdentityObject",
+      "hashed": true,
+      "identityHash": "sha256$0a4417463f7f2beae1c439b05e567bd5c6d4ac6088ec15e8ee59736493d4494f",
+      "identityType": "emailAddress",
+      "salt": "fcd26a6cc69cd7097def2f0ff21967c0"
+    },
+    "achievement": {
+      "id": "https://www.credential.net/group/158556",
+      "type": "Achievement",
+      "achievementType": "Achievement",
+      "name": "Elastic Certified Engineer",
+      "description": "The Elastic Certified Engineer exam tests your knowledge and skills in building a complete Elasticsearch solution — including the ability to install, configure, and manage Elasticsearch clusters, index data into those clusters, and query and analyze the indexed data.\n\nThe Elastic Certification Program is designed for IT professionals who have experience building and deploying Elasticsearch solutions. Professionals become certified by completing challenging and relevant real-world tasks on a live Elastic Stack cluster in our hands-on, performance-based exams.",
+      "criteria": {
+        "narrative": "https://elastic.co/training/certification"
+      }
+    }
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "cryptosuite": "eddsa-rdfc-2022",
+    "created": "2025-12-15T20:45:07Z",
+    "verificationMethod": "https://api.accredible.com/v1/verifiable_credential/public_keys/c753ab6c-c623-11f0-bb2e-e34856624686",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "z2ssDYucc4qAQbyYiqW1SLbyea7nXp18oXoWokKo7THXqZFxBY4NyWu4rcF9r3EWfRNgFEMnx1RCUYHCMek1cVbeA"
+  }
+}

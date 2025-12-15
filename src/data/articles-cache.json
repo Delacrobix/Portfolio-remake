@@ -1,0 +1,287 @@
+{
+  "en": [
+    {
+      "title": "Build a financial AI search workflow using LangGraph.js and Elasticsearch - Elasticsearch Labs",
+      "description": "Learn how to use LangGraph.js with Elasticsearch to build an AI-powered financial search workflow that turns natural language queries into dynamic, conditional filters for investment and market analysis.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/12b6057d84c6356267cd178a3c6c1a5c61123ece-2000x1256.png?rect=0,103,2000,1050&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/ai-agent-workflow-finance-langgraph-elasticsearch",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Using LangExtract and Elasticsearch - Elasticsearch Labs",
+      "description": "Learn to use LangExtract with Elasticsearch via an example. In this tutorial, we'll extract structured data from free-form text & store it as Elastic fields.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/f80cdec3afeb13ce09e19eac5f5067b07dbf49f9-1000x628.png?rect=0,52,1000,525&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/langextract-elasticsearch-tutorial-usage-example",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Using CrewAI with Elasticsearch - Elasticsearch Labs",
+      "description": "Learn how to create an Elasticsearch agent with CrewAI for your agent team and perform market research.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/8609df931737737a2e08f04c93d7069133c5d070-1600x914.jpg?rect=0,37,1600,840&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/using-crewai-with-elasticsearch",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "LlamaIndex and Elasticsearch Rerankers: Unbeatable simplicity - Elasticsearch Labs",
+      "description": "Learn about the Elasticsearch Reranker & LlamaIndex RankGPTs, how to use them, and how to transition to the Elastic semantic reranker.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/9375305a935dc1fb09b389994452aeab5a254f11-828x417.png?rect=17,0,794,417&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/elasticsearch-reranker-llamaindex-rankgpt",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Using AutoGen with Elasticsearch - Elasticsearch Labs",
+      "description": "Learn to create an Elasticsearch tool for your agents with AutoGen.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/a0a1eff1ac9e16a4f3535507675ed5e10c6a6299-1600x914.jpg?rect=0,37,1600,840&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/using-autogen-with-elasticsearch",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Improving Copilot capabilities using Elasticsearch - Elasticsearch Labs",
+      "description": "Discover how to use Elasticsearch with Microsoft 365 Copilot Chat and Copilot in Microsoft Teams.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/7d5d7f8ac452d2b3ea6a0e5cc08389fa58d802ae-1200x628.png?rect=2,0,1196,628&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/improve-microsoft-copilot-with-elasticsearch",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Elasticsearch in JavaScript the proper way, part I - Elasticsearch Labs",
+      "description": "Explaining how to create a production-ready Elasticsearch backend in JavaScript.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/72200540ed258779d87e53a72ea189f8a138540c-1600x901.png?rect=0,31,1600,840&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/how-to-use-elasticsearch-in-javascript-part-i",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Are synonyms important in RAG? - Elasticsearch Labs",
+      "description": "Exploring the functionality of Elasticsearch synonyms in a Retrieval Augmented Generation (RAG) application.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/a631acdeb867d80c3a404cd630148a1b95e26125-1200x628.png?rect=2,0,1196,628&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/synonyms-in-rag-genai",
+      "authors": ["Jeffrey Rengifo", "Tomás Murúa"]
+    },
+    {
+      "title": "ES|QL in JavaScript: Leveraging Apache Arrow helpers - Elasticsearch Labs",
+      "description": "Learn how to use ES|QL with JavaScript Apache Arrow client helpers.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/6f38e9d796ca83ee56517f4ef011ba9270776c12-720x420.png?rect=0,21,720,378&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/esql-javascript-apache-arrow-helpers",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Using FastAPI’s WebSockets and Elasticsearch to build a real-time app - Elasticsearch Labs",
+      "description": "Learn how to build a real-time application using FastAPI WebSockets and Elasticsearch.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/e069957f3b8d4f07923b92246f959a63dac463a6-1200x628.png?rect=2,0,1196,628&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/fastapi-websockets-elasticsearch",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Elastic Playground: Using Elastic connectors to chat with your data - Elasticsearch Labs",
+      "description": "Learn how to use Elastic connectors and Playground to chat with your data. We'll start by using connectors to search for information in different sources.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/ed423767d274aea1d6d884bcd92a2d8727065acc-1280x1280.png?rect=0,304,1280,672&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/playground-connectors-data-chat",
+      "authors": ["Jeffrey Rengifo", "Tomás Murúa"]
+    },
+    {
+      "title": "Ingesting data into Elasticsearch with BigQuery - Elasticsearch Labs",
+      "description": "Exploring the BigQuery and Elasticsearch integration. Follow this step-by-step tutorial to index and search BigQuery data in Elasticsearch using Python.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/acde500d233cb61d858daa218d6274a316a8a34e-1200x628.png?rect=2,0,1196,628&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/elasticsearch-bigquery-data-ingestion",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Using Ollama with the Inference API - Elasticsearch Labs",
+      "description": "Learn how to integrate Ollama with Elasticsearch using the Ollama API, which is compatible with the OpenAI API, making the integration easier.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/399b9ef527be633845fb6505b68132cc03bc9e09-1150x628.png?rect=0,12,1150,604&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/ollama-with-inference-api",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Building Elasticsearch APIs with FastAPI - Elasticsearch Labs",
+      "description": "Learn how to build an Elasticsearch API with FastAPI using Pydantic schemas and FastAPI background tasks, demonstrated with a practical example.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/b69493f165b9caabb676dd5cbc50270ab3105a8a-1200x628.png?rect=2,0,1196,628&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/elasticsearch-fastapi",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "AI-powered dashboards: From a vision to Kibana - Elasticsearch Labs",
+      "description": "Learn how to generate AI-powered dashboards. We’ll use an LLM to process an image and then turn it into a Kibana dashboard.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/eb60ceb2fbc3941745b21ae3357cbb6ea8fab18c-1443x811.png?rect=0,27,1443,758&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/ai-powered-dashboards",
+      "authors": ["Jeffrey Rengifo", "Tomás Murúa"]
+    },
+    {
+      "title": "Indexing OneLake data into Elasticsearch - Part II - Elasticsearch Labs",
+      "description": "Learn to index & search OneLake data into Elastic with a custom connector. We’ll show you how to create a OneLake Elasticsearch connector to sync data.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/f4a3a10d8de5e7048c2e83f5e20b56ab74adb478-1200x628.png?rect=2,0,1196,628&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/ingesting-data-with-onelake-part-ii",
+      "authors": ["Gustavo Llermaly", "Jeffrey Rengifo"]
+    },
+    {
+      "title": "Longer context ≠ better: Why RAG still matters - Elasticsearch Labs",
+      "description": "Comparing RAG with just sending everything to a long context model and letting the LLM analyze the context and answer a question.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/418d98e63811a297df4020c39eb716f289b0022c-720x420.jpg?rect=0,21,720,378&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/rag-vs-long-context-model-llm",
+      "authors": ["Jeffrey Rengifo", "Eduard Martin"]
+    },
+    {
+      "title": "Elasticsearch in JavaScript the proper way, part II - Elasticsearch Labs",
+      "description": "Reviewing production best practices and explaining how to run the Elasticsearch Node.js client in Serverless environments.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/70fb0ff949f6db9ac9b8a28ecb4329ab915ebf46-720x420.png?rect=0,21,720,378&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/how-to-use-elasticsearch-in-javascript-part-ii",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Using LlamaIndex Workflows with Elasticsearch - Elasticsearch Labs",
+      "description": "Learn how to create an Elasticsearch-based step for your LlamaIndex workflow.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/fb8501ff11232ac9b92b2017bb6b08ac25d107f7-1200x628.png?rect=2,0,1196,628&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/llamaindex-workflows-with-elasticsearch",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Exploring OpenAI CLIP alternatives - Elasticsearch Labs",
+      "description": "Learn about OpenAI’s CLIP, its configuration, and alternatives for image-to-image and text-to-image search like JinaCLIP & Cohere Image Embeddings V3.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/e07920a776a499b1fb361714cfefdf89a30e851e-1150x628.png?rect=0,12,1150,604&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/openai-clip-alternatives",
+      "authors": ["Jeffrey Rengifo", "Tomás Murúa"]
+    }
+  ],
+  "es": [
+    {
+      "title": "Build a financial AI search workflow using LangGraph.js and Elasticsearch - Elasticsearch Labs",
+      "description": "Learn how to use LangGraph.js with Elasticsearch to build an AI-powered financial search workflow that turns natural language queries into dynamic, conditional filters for investment and market analysis.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/12b6057d84c6356267cd178a3c6c1a5c61123ece-2000x1256.png?rect=0,103,2000,1050&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/ai-agent-workflow-finance-langgraph-elasticsearch",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Using LangExtract and Elasticsearch - Elasticsearch Labs",
+      "description": "Learn to use LangExtract with Elasticsearch via an example. In this tutorial, we'll extract structured data from free-form text & store it as Elastic fields.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/f80cdec3afeb13ce09e19eac5f5067b07dbf49f9-1000x628.png?rect=0,52,1000,525&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/langextract-elasticsearch-tutorial-usage-example",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Using CrewAI with Elasticsearch - Elasticsearch Labs",
+      "description": "Learn how to create an Elasticsearch agent with CrewAI for your agent team and perform market research.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/8609df931737737a2e08f04c93d7069133c5d070-1600x914.jpg?rect=0,37,1600,840&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/using-crewai-with-elasticsearch",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "LlamaIndex and Elasticsearch Rerankers: Unbeatable simplicity - Elasticsearch Labs",
+      "description": "Learn about the Elasticsearch Reranker & LlamaIndex RankGPTs, how to use them, and how to transition to the Elastic semantic reranker.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/9375305a935dc1fb09b389994452aeab5a254f11-828x417.png?rect=17,0,794,417&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/elasticsearch-reranker-llamaindex-rankgpt",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Using AutoGen with Elasticsearch - Elasticsearch Labs",
+      "description": "Learn to create an Elasticsearch tool for your agents with AutoGen.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/a0a1eff1ac9e16a4f3535507675ed5e10c6a6299-1600x914.jpg?rect=0,37,1600,840&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/using-autogen-with-elasticsearch",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Improving Copilot capabilities using Elasticsearch - Elasticsearch Labs",
+      "description": "Discover how to use Elasticsearch with Microsoft 365 Copilot Chat and Copilot in Microsoft Teams.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/7d5d7f8ac452d2b3ea6a0e5cc08389fa58d802ae-1200x628.png?rect=2,0,1196,628&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/improve-microsoft-copilot-with-elasticsearch",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Elasticsearch in JavaScript the proper way, part I - Elasticsearch Labs",
+      "description": "Explaining how to create a production-ready Elasticsearch backend in JavaScript.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/72200540ed258779d87e53a72ea189f8a138540c-1600x901.png?rect=0,31,1600,840&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/how-to-use-elasticsearch-in-javascript-part-i",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Are synonyms important in RAG? - Elasticsearch Labs",
+      "description": "Exploring the functionality of Elasticsearch synonyms in a Retrieval Augmented Generation (RAG) application.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/a631acdeb867d80c3a404cd630148a1b95e26125-1200x628.png?rect=2,0,1196,628&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/synonyms-in-rag-genai",
+      "authors": ["Jeffrey Rengifo", "Tomás Murúa"]
+    },
+    {
+      "title": "ES|QL in JavaScript: Leveraging Apache Arrow helpers - Elasticsearch Labs",
+      "description": "Learn how to use ES|QL with JavaScript Apache Arrow client helpers.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/6f38e9d796ca83ee56517f4ef011ba9270776c12-720x420.png?rect=0,21,720,378&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/esql-javascript-apache-arrow-helpers",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Using FastAPI’s WebSockets and Elasticsearch to build a real-time app - Elasticsearch Labs",
+      "description": "Learn how to build a real-time application using FastAPI WebSockets and Elasticsearch.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/e069957f3b8d4f07923b92246f959a63dac463a6-1200x628.png?rect=2,0,1196,628&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/fastapi-websockets-elasticsearch",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Elastic Playground: Using Elastic connectors to chat with your data - Elasticsearch Labs",
+      "description": "Learn how to use Elastic connectors and Playground to chat with your data. We'll start by using connectors to search for information in different sources.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/ed423767d274aea1d6d884bcd92a2d8727065acc-1280x1280.png?rect=0,304,1280,672&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/playground-connectors-data-chat",
+      "authors": ["Jeffrey Rengifo", "Tomás Murúa"]
+    },
+    {
+      "title": "Ingesting data into Elasticsearch with BigQuery - Elasticsearch Labs",
+      "description": "Exploring the BigQuery and Elasticsearch integration. Follow this step-by-step tutorial to index and search BigQuery data in Elasticsearch using Python.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/acde500d233cb61d858daa218d6274a316a8a34e-1200x628.png?rect=2,0,1196,628&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/elasticsearch-bigquery-data-ingestion",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Using Ollama with the Inference API - Elasticsearch Labs",
+      "description": "Learn how to integrate Ollama with Elasticsearch using the Ollama API, which is compatible with the OpenAI API, making the integration easier.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/399b9ef527be633845fb6505b68132cc03bc9e09-1150x628.png?rect=0,12,1150,604&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/ollama-with-inference-api",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Building Elasticsearch APIs with FastAPI - Elasticsearch Labs",
+      "description": "Learn how to build an Elasticsearch API with FastAPI using Pydantic schemas and FastAPI background tasks, demonstrated with a practical example.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/b69493f165b9caabb676dd5cbc50270ab3105a8a-1200x628.png?rect=2,0,1196,628&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/elasticsearch-fastapi",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "AI-powered dashboards: From a vision to Kibana - Elasticsearch Labs",
+      "description": "Learn how to generate AI-powered dashboards. We’ll use an LLM to process an image and then turn it into a Kibana dashboard.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/eb60ceb2fbc3941745b21ae3357cbb6ea8fab18c-1443x811.png?rect=0,27,1443,758&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/ai-powered-dashboards",
+      "authors": ["Jeffrey Rengifo", "Tomás Murúa"]
+    },
+    {
+      "title": "Indexing OneLake data into Elasticsearch - Part II - Elasticsearch Labs",
+      "description": "Learn to index & search OneLake data into Elastic with a custom connector. We’ll show you how to create a OneLake Elasticsearch connector to sync data.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/f4a3a10d8de5e7048c2e83f5e20b56ab74adb478-1200x628.png?rect=2,0,1196,628&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/ingesting-data-with-onelake-part-ii",
+      "authors": ["Gustavo Llermaly", "Jeffrey Rengifo"]
+    },
+    {
+      "title": "Longer context ≠ better: Why RAG still matters - Elasticsearch Labs",
+      "description": "Comparing RAG with just sending everything to a long context model and letting the LLM analyze the context and answer a question.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/418d98e63811a297df4020c39eb716f289b0022c-720x420.jpg?rect=0,21,720,378&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/rag-vs-long-context-model-llm",
+      "authors": ["Jeffrey Rengifo", "Eduard Martin"]
+    },
+    {
+      "title": "Elasticsearch in JavaScript the proper way, part II - Elasticsearch Labs",
+      "description": "Reviewing production best practices and explaining how to run the Elasticsearch Node.js client in Serverless environments.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/70fb0ff949f6db9ac9b8a28ecb4329ab915ebf46-720x420.png?rect=0,21,720,378&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/how-to-use-elasticsearch-in-javascript-part-ii",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Using LlamaIndex Workflows with Elasticsearch - Elasticsearch Labs",
+      "description": "Learn how to create an Elasticsearch-based step for your LlamaIndex workflow.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/fb8501ff11232ac9b92b2017bb6b08ac25d107f7-1200x628.png?rect=2,0,1196,628&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/llamaindex-workflows-with-elasticsearch",
+      "authors": ["Jeffrey Rengifo"]
+    },
+    {
+      "title": "Exploring OpenAI CLIP alternatives - Elasticsearch Labs",
+      "description": "Learn about OpenAI’s CLIP, its configuration, and alternatives for image-to-image and text-to-image search like JinaCLIP & Cohere Image Embeddings V3.",
+      "coverImage": "https://cdn.sanity.io/images/me0ej585/search-labs-import-testing/e07920a776a499b1fb361714cfefdf89a30e851e-1150x628.png?rect=0,12,1150,604&w=1200&h=630",
+      "link": "https://www.elastic.co/search-labs/blog/openai-clip-alternatives",
+      "authors": ["Jeffrey Rengifo", "Tomás Murúa"]
+    }
+  ],
+  "lastUpdated": "2025-01-15T00:00:00.000Z"
+}

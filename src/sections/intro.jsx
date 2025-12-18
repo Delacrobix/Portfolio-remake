@@ -4,7 +4,6 @@ import { faCircleArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { Avatar, Button, Link as NextUILink } from "@nextui-org/react";
 import { useTranslation } from "react-i18next";
-import PropTypes from "prop-types";
 
 import cv from "../assets/files/cvs/jeff-cv.pdf";
 import profilePicture from "../assets/images/profile/me.jpg";
@@ -66,7 +65,7 @@ const Intro = forwardRef(({ scrollTo }, ref) => {
         </div>
         <footer>
           <Link
-            onClick={() => scrollTo("work")}
+            onClick={() => scrollTo("aboutMe")}
             ref={ref}
             className='down-section-link'>
             <FontAwesomeIcon className='icon' icon={faCircleArrowDown} />
@@ -78,9 +77,5 @@ const Intro = forwardRef(({ scrollTo }, ref) => {
     </section>
   );
 });
-
-Intro.propTypes = {
-  scrollTo: PropTypes.func,
-};
 
 export default Intro;

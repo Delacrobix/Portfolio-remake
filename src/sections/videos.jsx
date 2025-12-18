@@ -14,7 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVideo, faUser, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 
-const VIDEOS_PER_PAGE = 6;
+const VIDEOS_PER_PAGE = 3;
 
 const Videos = forwardRef((__, ref) => {
   const { t } = useTranslation();

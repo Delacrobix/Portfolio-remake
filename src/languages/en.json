@@ -1,11 +1,15 @@
 {
   "header": {
     "nav-link-1": "Intro",
-    "nav-link-2": "Experience",
-    "nav-link-3": "Projects",
-    "nav-link-4": "Articles",
-    "nav-link-5": "Videos",
-    "nav-link-6": "Contact"
+    "nav-link-2": "About Me",
+    "nav-link-3": "Experience",
+    "nav-link-4": "Projects",
+    "nav-link-5": "Awards",
+    "nav-link-6": "Articles",
+    "nav-link-7": "Videos",
+    "nav-link-8": "Certifications",
+    "nav-link-9": "Tools",
+    "nav-link-10": "Contact"
   },
   "intro": {
     "welcome": "Fullstack developer"
@@ -17,39 +21,97 @@
     "watchButton": "Watch Video",
     "list": [
       {
-        "title": "Example Technical Video",
-        "description": "This is an example video description. Replace with your actual YouTube videos.",
-        "thumbnail": "https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg",
-        "link": "https://www.youtube.com/watch?v=VIDEO_ID",
+        "title": "How to build an Ollama RAG app using Elasticsearch with Go",
+        "description": "Step-by-step guide to building a Retrieval-Augmented Generation application with Ollama and Elasticsearch using the Go programming language.",
+        "thumbnail": "https://img.youtube.com/vi/ceou_5H6TUs/maxresdefault.jpg",
+        "link": "https://www.youtube.com/watch?v=ceou_5H6TUs",
+        "authors": ["Jeffrey Rengifo"]
+      },
+      {
+        "title": "How to Ingest Data into Elasticsearch via Kafka",
+        "description": "Learn the best practices for ingesting and streaming data from Apache Kafka into Elasticsearch for real-time analytics.",
+        "thumbnail": "https://img.youtube.com/vi/63tFL8YIifA/maxresdefault.jpg",
+        "link": "https://www.youtube.com/watch?v=63tFL8YIifA",
+        "authors": ["Jeffrey Rengifo"]
+      },
+      {
+        "title": "How to match CVs to jobs in Elasticsearch with semantic text & LLMs",
+        "description": "Learn how to build an intelligent CV-to-job matching system using Elasticsearch's semantic text capabilities and Large Language Models.",
+        "thumbnail": "https://img.youtube.com/vi/kPcpgEyr6fk/maxresdefault.jpg",
+        "link": "https://www.youtube.com/watch?v=kPcpgEyr6fk",
+        "authors": ["Jeffrey Rengifo"]
+      },
+      {
+        "title": "How to Use AutoGen Agents + Elasticsearch for Job Matching",
+        "description": "Discover how to leverage AutoGen agents with Elasticsearch to create an automated job matching system powered by AI.",
+        "thumbnail": "https://img.youtube.com/vi/AhNMOPKLLFg/maxresdefault.jpg",
+        "link": "https://www.youtube.com/watch?v=AhNMOPKLLFg",
+        "authors": ["Jeffrey Rengifo"]
+      },
+      {
+        "title": "Spring AI & Elasticsearch: How to build a RAG system in Java",
+        "description": "Build a powerful RAG (Retrieval-Augmented Generation) system using Spring AI framework and Elasticsearch in Java.",
+        "thumbnail": "https://img.youtube.com/vi/ms2xRO8B1YU/maxresdefault.jpg",
+        "link": "https://www.youtube.com/watch?v=ms2xRO8B1YU",
+        "authors": ["Jeffrey Rengifo"]
+      },
+      {
+        "title": "Ollama & Elasticsearch: How to use Ollama with the Inference API",
+        "description": "Explore how to integrate Ollama with Elasticsearch's Inference API to add AI capabilities to your search applications.",
+        "thumbnail": "https://img.youtube.com/vi/Iz7Ey3pVE7c/maxresdefault.jpg",
+        "link": "https://www.youtube.com/watch?v=Iz7Ey3pVE7c",
         "authors": ["Jeffrey Rengifo"]
       }
     ]
   },
   "articles": {
     "title": "Technical Articles",
-    "description": "Deep dives into Elasticsearch, AI/GenAI integrations, and full-stack development. Published on Elasticsearch Labs and other technical platforms.",
+    "description": "Deep dives into Elasticsearch, AI/GenAI integrations, and full-stack development. Published on Elasticsearch Labs.",
     "readButton": "Read Article"
   },
   "awards": {
     "title": "Awards & Hackathons",
     "description": "Recognition and achievements in coding competitions and tech events.",
     "place": "Place",
+    "relatedLinksLabel": "Related Links",
     "list": [
       {
-        "event": "Global Hack Week 2024",
-        "organizer": "MLH (Major League Hacking)",
-        "position": "1st",
-        "description": "Developed an AI-powered code review tool that helps developers identify bugs and suggest improvements.",
-        "technologies": ["Python", "OpenAI", "FastAPI", "Docker"],
-        "date": "September 2024"
+        "event": "Enterprise AI Hackathon - NYSE & Cohere",
+        "organizer": "New York Stock Exchange & Cohere",
+        "position": "2nd",
+        "description": "RAGenda: An AI-powered meeting companion that utilizes Cohere's connectors ecosystem to streamline and improve meeting management. Features personalized agendas, live chat, sentiment analysis, and detailed post-meeting reports.",
+        "technologies": ["Cohere", "RAG", "AI", "JavaScript"],
+        "date": "March 2024",
+        "team": "Team Kibernum",
+        "links": [
+          {
+            "label": "LinkedIn Announcement",
+            "url": "https://www.linkedin.com/posts/cohere-ai_were-excited-to-announce-the-top-three-of-activity-7167898070330920960-ULLU?utm_source=share&utm_medium=member_desktop&rcm=ACoAADlq3I0BpmqOv6PFNUih3AS6XtGX5p67g8w"
+          },
+          {
+            "label": "Kibernum Article",
+            "url": "https://www.kibernum.com/proyecto-de-inteligencia-artificial-de-kibernum-gana-segundo-lugar-en-hackathon-de-la-bolsa-de-valores-de-nueva-york-y-la-canadiense-cohere/"
+          },
+          {
+            "label": "Demo Video",
+            "url": "https://www.youtube.com/watch?v=mPaue4kQ6oI"
+          }
+        ]
       },
       {
-        "event": "Colombia DevFest Hackathon",
-        "organizer": "Google Developers",
-        "position": "2nd",
-        "description": "Created a real-time collaboration platform for remote teams with video conferencing and shared workspaces.",
-        "technologies": ["React", "WebRTC", "Node.js", "MongoDB"],
-        "date": "June 2024"
+        "event": "Gemini AI Hackathon",
+        "organizer": "lablab.ai",
+        "position": "3rd",
+        "description": "ContentCompass: Elevate Your Content with Precision - An innovative AI solution for content creation and optimization using Gemini AI.",
+        "technologies": ["Gemini AI", "Google AI", "Python"],
+        "date": "January 2024",
+        "team": "Team Llermaly",
+        "links": [
+          {
+            "label": "Project Page",
+            "url": "https://lablab.ai/event/gemini-ai-hackathon/llermaly/contentcompass-elevate-your-content-with-precision"
+          }
+        ]
       }
     ]
   },
@@ -67,7 +129,7 @@
         "tagline": "Convert CSS to Tailwind CSS instantly",
         "problem": "Developers waste hours manually converting existing CSS codebases to Tailwind CSS, slowing down migration projects.",
         "solution": "An AI-powered tool that automatically converts CSS code to Tailwind CSS classes, maintaining design fidelity and reducing migration time by 80%.",
-        "impact": "500+ developers using it monthly, saving an average of 10 hours per project",
+        "impact": "Accelerates CSS to Tailwind migration projects, maintains design fidelity during conversion, and reduces manual conversion errors with AI-powered precision.",
         "impactType": "productivity",
         "tech": ["React", "NestJS", "OpenAI", "TypeScript", "Tailwind"],
         "repo": "https://github.com/Delacrobix/CSS-tailwind_converter",
@@ -78,7 +140,7 @@
         "tagline": "AI-powered resume optimization",
         "problem": "Job seekers struggle to optimize their resumes for ATS systems and specific job requirements, resulting in missed opportunities.",
         "solution": "An intelligent CV analysis tool that provides personalized feedback, keyword optimization, and formatting suggestions using AI.",
-        "impact": "1000+ users improved their resumes, 65% reported better interview rates",
+        "impact": "Helps optimize CVs for ATS systems, provides personalized feedback, and suggests format improvements to better match job requirements.",
         "impactType": "users",
         "tech": ["React", "NestJS", "GenAI", "TypeScript", "Tailwind"],
         "repo": "https://github.com/Delacrobix/CV-analyzer",
@@ -137,32 +199,42 @@
   },
   "tools": {
     "title": "Favorite Tools",
-    "description": "The essential tools I use daily to build amazing products.",
+    "description": "The essential tools I use daily to build products.",
     "list": [
       {
-        "name": "VS Code",
-        "category": "Code Editor",
-        "icon": "💻"
-      },
-      {
-        "name": "Docker",
-        "category": "Containerization",
-        "icon": "🐳"
+        "name": "Elasticsearch",
+        "category": "Search & Analytics",
+        "svgKey": "elasticsearch",
+        "url": "https://www.elastic.co/elasticsearch"
       },
       {
         "name": "Git",
         "category": "Version Control",
-        "icon": "🔀"
+        "svgKey": "git",
+        "url": "https://git-scm.com/"
       },
       {
-        "name": "Postman",
-        "category": "API Testing",
-        "icon": "📮"
+        "name": "TypeScript",
+        "category": "Programming Language",
+        "svgKey": "typescript",
+        "url": "https://www.typescriptlang.org/"
       },
       {
-        "name": "Figma",
-        "category": "Design",
-        "icon": "🎨"
+        "name": "React",
+        "category": "Frontend Framework",
+        "svgKey": "react",
+        "url": "https://react.dev/"
+      },
+      {
+        "name": "Python",
+        "category": "Programming Language",
+        "svgKey": "python",
+        "url": "https://www.python.org/"
+      },
+      {
+        "name": "GenAI",
+        "category": "Artificial Intelligence",
+        "svgKey": "genAI"
       }
     ]
   },
@@ -172,43 +244,65 @@
     "achievementsLabel": "Key Achievements",
     "list": [
       {
-        "position": "Senior Full Stack Developer",
-        "company": "Tech Solutions Inc.",
-        "period": "Jan 2023 - Present",
-        "location": "Remote",
-        "description": "Leading the development of enterprise web applications, mentoring junior developers, and architecting scalable solutions.",
+        "position": "Technical Writer & Elastic Consultant",
+        "company": "Kibernum Elite Consulting Team",
+        "period": "Nov 2024 - Present",
+        "location": "Medellín, Colombia",
+        "description": "Technical writing, documentation, and consulting related to Elasticsearch. Specialized in search engine migrations and optimization.",
         "achievements": [
-          "Reduced application load time by 60% through performance optimization",
-          "Mentored 5 junior developers, improving team productivity by 40%",
-          "Led migration to microservices architecture serving 100k+ users"
+          "Created comprehensive technical documentation for Elasticsearch implementations",
+          "Led search engine migration projects improving query performance",
+          "Optimized Elasticsearch clusters for better scalability and efficiency",
+          "Provided consulting services for enterprise search solutions"
         ],
-        "technologies": ["React", "NestJS", "PostgreSQL", "Docker", "AWS"]
+        "technologies": [
+          "Elasticsearch",
+          "Kibana",
+          "Technical Writing",
+          "Search Optimization"
+        ]
       },
       {
-        "position": "Full Stack Developer",
-        "company": "StartupXYZ",
-        "period": "Jun 2021 - Dec 2022",
-        "location": "Colombia",
-        "description": "Developed and maintained full-stack applications, implemented CI/CD pipelines, and collaborated with cross-functional teams.",
+        "position": "Freelance Web Developer",
+        "company": "Multiple Clients",
+        "period": "Jan 2022 - Dec 2024",
+        "location": "Medellín, Colombia",
+        "description": "Building efficient solutions for enterprise problems using cutting-edge technologies. Working with Kibana and Elasticsearch to provide advanced solutions in search and data analysis. Developing Chrome extensions, AI services, web scraping systems, desktop applications, and implementing best programming practices and modern architectures.",
         "achievements": [
-          "Built MVP that acquired first 1000 users in 3 months",
-          "Implemented automated testing reducing bugs by 70%",
-          "Designed and developed RESTful APIs handling 1M+ requests/day"
+          "Implemented AI services that significantly increased efficiency and optimized costs",
+          "Developed Google Chrome extensions enhancing browser usability",
+          "Designed web scraping systems for automated data extraction",
+          "Deobfuscated JavaScript code to recover original source for clients",
+          "Built desktop applications using Electron and Tauri",
+          "Developed Chrome extensions for various clients",
+          "Built landing pages optimized for conversion",
+          "Implemented Elasticsearch and Kibana solutions for process optimization",
+          "Delivered results-oriented solutions across multiple industries",
+          "Built real-time applications using WebSocket technologies",
+          "Developed REST and GraphQL APIs",
+          "Implemented SEO strategies and responsive design",
+          "Created AI-powered applications",
+          "Worked with SQL and NoSQL databases, containerization with Docker"
         ],
-        "technologies": ["React", "Node.js", "MongoDB", "GraphQL", "Jest"]
-      },
-      {
-        "position": "Junior Developer",
-        "company": "Digital Agency",
-        "period": "Jan 2020 - May 2021",
-        "location": "Colombia",
-        "description": "Developed responsive web applications, fixed bugs, and contributed to improving development workflows.",
-        "achievements": [
-          "Delivered 15+ client projects on time and within budget",
-          "Improved code quality through implementation of ESLint and Prettier",
-          "Collaborated with designers to create pixel-perfect UIs"
-        ],
-        "technologies": ["HTML", "CSS", "JavaScript", "React", "Sass"]
+        "technologies": [
+          "React",
+          "Node.js",
+          "TypeScript",
+          "Elasticsearch",
+          "Kibana",
+          "AI/GenAI",
+          "Chrome Extensions",
+          "Electron",
+          "Tauri",
+          "Web Scraping",
+          "ASP.NET Core",
+          "Docker",
+          "MongoDB",
+          "MySQL",
+          "Redis",
+          "GraphQL",
+          "Socket.IO"
+        ]
       }
     ]
   },
@@ -240,7 +334,7 @@
   },
   "about-me": {
     "title": "Who am I",
-    "description": "My name is Jeffrey Sneider Rengifo Marin but sometimes I sign as Jeffrey S. Rerín. Actually I am studying software engineering. I build excellent experiences with the best practices. Passionate about solving problems and I have facility for self-taught learning.",
+    "description": "I'm Jeffrey Rengifo, a Technical Writer and Elastic Consultant specializing in Elasticsearch, GenAI, and full-stack development. I create technical content, build AI-powered solutions, and optimize search systems. Passionate about solving complex problems through innovative technology and delivering impactful results.",
     "cv-button": "Watch CV"
   },
   "skills": {

@@ -21,7 +21,7 @@ const Certifications = forwardRef((__, ref) => {
   return (
     <section
       ref={ref}
-      className='py-16 px-6 md:px-12 lg:px-24 min-h-screen flex flex-col justify-center bg-gradient-to-b from-default-100 to-transparent'>
+      className='py-16 px-6 md:px-12 lg:px-24 min-h-screen flex flex-col justify-center'>
       <header className='text-center mb-12'>
         <div className='flex justify-center items-center gap-3 mb-4'>
           <FontAwesomeIcon
@@ -94,12 +94,6 @@ const Certifications = forwardRef((__, ref) => {
                       <p className='text-success-700 dark:text-success-400 font-semibold text-sm mb-2'>
                         {cert.issuer}
                       </p>
-
-                      {cert.credentialId && (
-                        <p className='text-xs text-default-400 mb-3 font-mono bg-default-100 dark:bg-default-900/30 px-2 py-1 rounded inline-block'>
-                          ID: {cert.credentialId}
-                        </p>
-                      )}
 
                       <div className='flex items-center gap-2 mb-4'>
                         <FontAwesomeIcon

@@ -146,63 +146,71 @@ const Articles = forwardRef((__, ref) => {
 
       {!loading && (
         <>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8'>
-            {Array.isArray(currentArticles) &&
-              currentArticles.map((article) => (
-                <Card
-                  key={uuidv4()}
-                  className='transition-shadow duration-300'
-                  isBlurred>
-                  {/* Cover Image */}
-                  {article.coverImage && (
-                    <Image
-                      src={article.coverImage}
-                      alt={article.title}
-                      className='w-full h-48 object-cover'
-                      classNames={{
-                        wrapper: "w-full !max-w-full",
-                        img: "w-full h-full object-cover",
-                      }}
-                      radius='none'
-                    />
-                  )}
-
-                  <CardHeader className='flex-col items-start gap-2 pb-0'>
-                    <h3 className='font-bold text-xl font-comfortaa'>
-                      {article.title}
-                    </h3>
-                  </CardHeader>
-
-                  <CardBody className='py-4'>
-                    <p className='text-default-600 line-clamp-3 mb-3'>
-                      {article.description}
-                    </p>
-                    {article.authors && article.authors.length > 0 && (
-                      <div className='flex items-center gap-2 text-sm text-default-500 mt-auto'>
-                        <FontAwesomeIcon icon={faUser} className='text-xs' />
-                        <span>{article.authors.join(", ")}</span>
+          <div className='max-w-7xl 2xl:max-w-[1800px] mx-auto w-full'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 2xl:gap-6 mb-6'>
+              {Array.isArray(currentArticles) &&
+                currentArticles.map((article) => (
+                  <Card
+                    key={uuidv4()}
+                    className='transition-shadow duration-300'
+                    isBlurred>
+                    {/* Cover Image */}
+                    {article.coverImage && (
+                      <div className='w-full h-40 2xl:h-56 bg-default-100 overflow-hidden'>
+                        <Image
+                          src={article.coverImage}
+                          alt={article.title}
+                          classNames={{
+                            wrapper: "w-full h-full !max-w-full",
+                            img: "w-full h-full object-cover",
+                          }}
+                          radius='none'
+                        />
                       </div>
                     )}
-                  </CardBody>
 
-                  <CardFooter className='pt-0'>
-                    <Button
-                      as={Link}
-                      href={article.link}
-                      target='_blank'
-                      color='primary'
-                      variant='flat'
-                      size='sm'
-                      className='w-full'>
-                      {t("articles.readButton")}
-                    </Button>
-                  </CardFooter>
-                </Card>
-              ))}
+                    <CardHeader className='flex-col items-start gap-1 pb-0 pt-3 2xl:pt-5 px-4 2xl:px-6'>
+                      <h3 className='font-bold text-lg 2xl:text-2xl font-comfortaa line-clamp-2 leading-tight'>
+                        {article.title}
+                      </h3>
+                    </CardHeader>
+
+                    <CardBody className='py-2 2xl:py-4 px-4 2xl:px-6'>
+                      <p className='text-default-600 text-sm 2xl:text-lg line-clamp-2 mb-2 leading-snug'>
+                        {article.description}
+                      </p>
+                      {article.authors && article.authors.length > 0 && (
+                        <div className='flex items-center gap-2 text-sm 2xl:text-lg text-default-500 mt-2'>
+                          <FontAwesomeIcon
+                            icon={faUser}
+                            className='text-sm 2xl:text-lg'
+                          />
+                          <span className='text-sm 2xl:text-lg'>
+                            {article.authors.join(", ")}
+                          </span>
+                        </div>
+                      )}
+                    </CardBody>
+
+                    <CardFooter className='pt-0 pb-3 2xl:pb-5 px-4 2xl:px-6'>
+                      <Button
+                        as={Link}
+                        href={article.link}
+                        target='_blank'
+                        color='primary'
+                        variant='flat'
+                        size='sm'
+                        className='w-full text-sm 2xl:text-lg h-9 2xl:h-12 min-h-0'>
+                        {t("articles.readButton")}
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                ))}
+            </div>
           </div>
 
           {totalPages > 1 && (
-            <div className='flex justify-center mt-8'>
+            <div className='flex justify-center mt-0'>
               <Pagination
                 total={totalPages}
                 page={currentPage}

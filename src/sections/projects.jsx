@@ -25,11 +25,11 @@ const Projects = forwardRef((__, ref) => {
   const getImpactIcon = (type) => {
     switch (type) {
       case "productivity":
-        return <FontAwesomeIcon icon={faChartLine} className='text-success' />;
+        return <FontAwesomeIcon icon={faChartLine} className='text-primary' />;
       case "users":
         return <FontAwesomeIcon icon={faUsers} className='text-primary' />;
       default:
-        return <FontAwesomeIcon icon={faRocket} className='text-secondary' />;
+        return <FontAwesomeIcon icon={faRocket} className='text-primary' />;
     }
   };
 
@@ -89,16 +89,16 @@ const Projects = forwardRef((__, ref) => {
                   </div>
 
                   {project.impact && (
-                    <div className='bg-success-50 dark:bg-success-900/20 p-3 rounded-lg'>
+                    <div className='bg-default-100 dark:bg-default-50 p-3 rounded-lg border border-default-200 dark:border-default-800'>
                       <div className='flex items-start gap-2'>
                         <span className='text-lg'>
                           {getImpactIcon(project.impactType)}
                         </span>
                         <div>
-                          <h4 className='font-semibold text-sm mb-1 text-success-700 dark:text-success-400'>
+                          <h4 className='font-semibold text-sm mb-1 text-primary'>
                             📈 {t("projects.impactLabel")}
                           </h4>
-                          <p className='text-sm text-success-600 dark:text-success-300'>
+                          <p className='text-sm text-default-600 dark:text-default-400'>
                             {project.impact}
                           </p>
                         </div>

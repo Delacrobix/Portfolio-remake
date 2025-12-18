@@ -1,14 +1,26 @@
 import React, { forwardRef } from "react";
-import { Card, CardBody, Chip } from "@nextui-org/react";
+import { Card, CardBody } from "@nextui-org/react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faToolbox } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
+import { svgTechsIcons } from "../components/svg/svgExports";
 
 const Tools = forwardRef((__, ref) => {
   const { t } = useTranslation();
 
   const tools = t("tools.list", { returnObjects: true });
+
+  const getToolIcon = (svgKey, fallbackIcon) => {
+    if (svgKey && svgTechsIcons[svgKey]) {
+      return (
+        <div className='w-16 h-16 flex items-center justify-center'>
+          {svgTechsIcons[svgKey]}
+        </div>
+      );
+    }
+    return fallbackIcon;
+  };
 
   return (
     <section ref={ref} className='py-16 px-6 md:px-12 lg:px-24'>
@@ -27,32 +39,32 @@ const Tools = forwardRef((__, ref) => {
         </p>
       </header>
 
-      <div className='max-w-4xl mx-auto'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4'>
+      <div className='max-w-5xl mx-auto'>
+        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6'>
           {Array.isArray(tools) &&
-            tools.map((tool, index) => (
+            tools.map((tool) => (
               <Card
                 key={uuidv4()}
-                className='hover:scale-105 transition-transform duration-300'
-                isPressable
-                isBlurred>
-                <CardBody className='p-6 text-center'>
-                  <div className='mb-4 text-5xl flex justify-center items-center h-20'>
-                    {tool.icon}
+                className={
+                  tool.url
+                    ? "hover:scale-105 transition-transform duration-300"
+                    : ""
+                }
+                isPressable={!!tool.url}
+                isBlurred
+                onPress={() => {
+                  if (tool.url) {
+                    window.open(tool.url, "_blank", "noopener,noreferrer");
+                  }
+                }}>
+                <CardBody className='p-6 text-center flex flex-col items-center'>
+                  <div className='mb-4 flex justify-center items-center'>
+                    {getToolIcon(tool.svgKey, tool.icon)}
                   </div>
-                  <h3 className='font-bold text-lg font-comfortaa mb-2'>
+                  <h3 className='font-bold text-base font-comfortaa mb-1'>
                     {tool.name}
                   </h3>
-                  <p className='text-sm text-default-600 mb-3'>
-                    {tool.category}
-                  </p>
-                  <Chip
-                    size='sm'
-                    variant='flat'
-                    color='secondary'
-                    className='mx-auto'>
-                    #{index + 1}
-                  </Chip>
+                  <p className='text-xs text-default-600'>{tool.category}</p>
                 </CardBody>
               </Card>
             ))}

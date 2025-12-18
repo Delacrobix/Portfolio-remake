@@ -1,8 +1,13 @@
 import React, { forwardRef } from "react";
-import { Card, CardHeader, CardBody, Chip } from "@nextui-org/react";
+import { Card, CardBody, Chip, Button } from "@nextui-org/react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrophy, faMedal, faAward } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTrophy,
+  faMedal,
+  faAward,
+  faExternalLinkAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 
 const Awards = forwardRef((__, ref) => {
@@ -21,7 +26,7 @@ const Awards = forwardRef((__, ref) => {
         );
       case "2nd":
         return (
-          <FontAwesomeIcon icon={faMedal} className='text-gray-400 text-3xl' />
+          <FontAwesomeIcon icon={faMedal} className='text-slate-300 text-3xl' />
         );
       case "3rd":
         return (
@@ -34,10 +39,33 @@ const Awards = forwardRef((__, ref) => {
     }
   };
 
+  const getChipColor = (position) => {
+    switch (position) {
+      case "1st":
+        return "warning";
+      case "2nd":
+        return "default";
+      case "3rd":
+        return "warning";
+      default:
+        return "primary";
+    }
+  };
+
+  const getChipClassName = (position) => {
+    if (position === "2nd") {
+      return "bg-slate-100 dark:bg-slate-300 text-slate-500 dark:text-slate-800";
+    }
+    if (position === "3rd") {
+      return "bg-amber-200 dark:bg-amber-400 text-amber-700 dark:text-amber-900";
+    }
+    return "";
+  };
+
   return (
     <section
       ref={ref}
-      className='py-16 px-6 md:px-12 lg:px-24 min-h-screen flex flex-col justify-center bg-gradient-to-b from-transparent to-default-100'>
+      className='py-16 px-6 md:px-12 lg:px-24 min-h-screen flex flex-col justify-center'>
       <header className='text-center mb-12'>
         <div className='flex justify-center items-center gap-3 mb-4'>
           <FontAwesomeIcon icon={faTrophy} className='text-4xl text-warning' />
@@ -53,10 +81,7 @@ const Awards = forwardRef((__, ref) => {
       <div className='max-w-4xl mx-auto w-full space-y-6'>
         {Array.isArray(awards) &&
           awards.map((award) => (
-            <Card
-              key={uuidv4()}
-              className='hover:shadow-lg transition-shadow duration-300'
-              isBlurred>
+            <Card key={uuidv4()} isBlurred>
               <CardBody className='p-6'>
                 <div className='flex gap-6 items-start'>
                   <div className='flex-shrink-0'>
@@ -72,8 +97,17 @@ const Awards = forwardRef((__, ref) => {
                         <p className='text-default-500 text-sm'>
                           {award.organizer}
                         </p>
+                        {award.team && (
+                          <p className='text-default-400 text-xs mt-1'>
+                            {award.team}
+                          </p>
+                        )}
                       </div>
-                      <Chip color='warning' variant='flat' size='lg'>
+                      <Chip
+                        color={getChipColor(award.position)}
+                        variant='flat'
+                        size='lg'
+                        className={getChipClassName(award.position)}>
                         {award.position} {t("awards.place")}
                       </Chip>
                     </div>
@@ -89,7 +123,41 @@ const Awards = forwardRef((__, ref) => {
                         ))}
                     </div>
 
-                    <p className='text-sm text-default-400'>{award.date}</p>
+                    <p className='text-sm text-default-400 mb-3'>
+                      {award.date}
+                    </p>
+
+                    {award.links && award.links.length > 0 && (
+                      <div className='mt-4'>
+                        <p className='text-sm font-semibold font-comfortaa mb-2 text-default-700'>
+                          {t("awards.relatedLinksLabel")}:
+                        </p>
+                        <div className='flex flex-wrap gap-2'>
+                          {award.links.map((link) => (
+                            <Button
+                              key={uuidv4()}
+                              size='sm'
+                              color='primary'
+                              variant='flat'
+                              endContent={
+                                <FontAwesomeIcon
+                                  icon={faExternalLinkAlt}
+                                  className='text-xs'
+                                />
+                              }
+                              onPress={() =>
+                                window.open(
+                                  link.url,
+                                  "_blank",
+                                  "noopener,noreferrer"
+                                )
+                              }>
+                              {link.label}
+                            </Button>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </CardBody>

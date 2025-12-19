@@ -61,6 +61,20 @@
         "thumbnail": "https://img.youtube.com/vi/Iz7Ey3pVE7c/maxresdefault.jpg",
         "link": "https://www.youtube.com/watch?v=Iz7Ey3pVE7c",
         "authors": ["Jeffrey Rengifo"]
+      },
+      {
+        "title": "How to use LlamaIndex Workflows with Elasticsearch",
+        "description": "Learn how to integrate LlamaIndex Workflows with Elasticsearch to build powerful AI-powered search and retrieval applications.",
+        "thumbnail": "https://img.youtube.com/vi/bkjmCfHiF5E/maxresdefault.jpg",
+        "link": "https://www.youtube.com/watch?v=bkjmCfHiF5E",
+        "authors": ["Jeffrey Rengifo"]
+      },
+      {
+        "title": "How to Integrate Microsoft Copilot with Elasticsearch",
+        "description": "Discover how to integrate Microsoft Copilot with Elasticsearch to enhance your search capabilities with AI-powered assistance.",
+        "thumbnail": "https://img.youtube.com/vi/p-fYjoeoM5M/maxresdefault.jpg",
+        "link": "https://www.youtube.com/watch?v=p-fYjoeoM5M",
+        "authors": ["Jeffrey Rengifo"]
       }
     ]
   },

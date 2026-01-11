@@ -62,6 +62,8 @@ const Articles = forwardRef((__, ref) => {
     } catch (err) {
       console.error("Error fetching articles:", err);
       setError(err.message);
+
+      console.warn("Falling back to cached articles.");
       const cachedArticles =
         articlesCache[i18n.language] || articlesCache["en"] || [];
       const startIndex = (page - 1) * ARTICLES_PER_PAGE;
@@ -98,12 +100,6 @@ const Articles = forwardRef((__, ref) => {
       {loading && (
         <div className='flex justify-center items-center py-12'>
           <Spinner size='lg' color='primary' />
-        </div>
-      )}
-
-      {error && (
-        <div className='text-center py-6 text-warning'>
-          <p className='text-sm'>Using cached articles</p>
         </div>
       )}
 

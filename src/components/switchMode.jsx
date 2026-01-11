@@ -32,18 +32,13 @@ export default function SwitchMode({ isMobile }) {
       </button>
     </li>
   ) : (
-    <li>
-      <button
-        ref={switchButtonRef}
-        className='switch-mode'
-        onClick={toggleMode}>
-        <span>
-          <FontAwesomeIcon icon={isDayMode ? faMoon : faSun} />
-        </span>
-        <span>
-          <FontAwesomeIcon icon={isDayMode ? faMoon : faSun} />
-        </span>
-      </button>
-    </li>
+    <button ref={switchButtonRef} className='switch-mode' onClick={toggleMode}>
+      <span>
+        <FontAwesomeIcon icon={isDayMode ? faMoon : faSun} />
+      </span>
+      <span>
+        <FontAwesomeIcon icon={isDayMode ? faMoon : faSun} />
+      </span>
+    </button>
   );
 }

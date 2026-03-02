@@ -9,14 +9,14 @@ import {
   Image,
   Spinner,
   Pagination,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNewspaper, faUser } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 import articlesCache from "../data/articles-cache.json";
 
-const API_URL = process.env.REACT_APP_ARTICLES_API_URL || "";
+const API_URL = import.meta.env.VITE_ARTICLES_API_URL || "";
 
 const ARTICLES_PER_PAGE = 6;
 const ARTICLE_FIELDS = "title,description,coverImage,link,authors";

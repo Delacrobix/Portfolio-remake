@@ -1,10 +1,10 @@
 import React from "react";
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 import { svgSocialIcons } from "../components/svg/svgExports";
 
 export default function Footer() {
-  const LINKEDIN = process.env.REACT_APP_LINKEDIN;
-  const GITHUB = process.env.REACT_APP_GITHUB;
+  const LINKEDIN = import.meta.env.VITE_LINKEDIN;
+  const GITHUB = import.meta.env.VITE_GITHUB;
 
   const currentYear = new Date().getFullYear();
 

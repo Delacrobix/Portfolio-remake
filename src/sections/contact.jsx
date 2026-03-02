@@ -1,5 +1,5 @@
 import React from "react";
-import { Input, Button, Card, CardBody } from "@nextui-org/react";
+import { Input, Button, Card, CardBody } from "@heroui/react";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,8 +13,8 @@ function ContactComponent(__, ref) {
   const { t } = useTranslation();
   const toast = useToast();
 
-  const LINKEDIN = process.env.REACT_APP_LINKEDIN;
-  const EMAIL = process.env.REACT_APP_EMAIL;
+  const LINKEDIN = import.meta.env.VITE_LINKEDIN;
+  const EMAIL = import.meta.env.VITE_EMAIL;
 
   function handleCopy(content) {
     navigator.clipboard

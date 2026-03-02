@@ -1,8 +1,20 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss";
+@plugin '../../../hero.ts';
+@source '../../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
 
-/* ------ Fonts ------ */
-
-@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Lora&family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Josefin+Sans:wght@100&family=Nunito&family=Poppins:wght@100&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@100&family=Rubik:wght@300&family=Work+Sans:wght@100&display=swap');
+/* Custom fonts */
+@theme {
+  --font-bacasime: "Bacasime Antique", serif;
+  --font-lora: "Lora", serif;
+  --font-roboto-mono: "Roboto Mono", monospace;
+  --font-comfortaa: "Comfortaa", cursive;
+  --font-josefin: "Josefin Sans", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-quicksand: "Quicksand", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-rubik: "Rubik", sans-serif;
+  --font-work-sans: "Work Sans", sans-serif;
+}

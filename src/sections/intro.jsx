@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import { Avatar, Button, Link as NextUILink } from "@nextui-org/react";
+import { Avatar, Button, Link as NextUILink } from "@heroui/react";
 import { useTranslation } from "react-i18next";
 
 import cv from "../assets/files/cvs/jeff-cv.pdf";

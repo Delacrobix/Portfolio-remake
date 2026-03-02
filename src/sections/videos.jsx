@@ -8,7 +8,7 @@ import {
   Link,
   Image,
   Pagination,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVideo, faUser, faPlay } from "@fortawesome/free-solid-svg-icons";

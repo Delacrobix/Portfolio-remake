@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import { Card, CardBody, Chip, Button } from "@nextui-org/react";
+import { Card, CardBody, Chip, Button } from "@heroui/react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

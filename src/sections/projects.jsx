@@ -6,7 +6,7 @@ import {
   CardFooter,
   Button,
   Chip,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

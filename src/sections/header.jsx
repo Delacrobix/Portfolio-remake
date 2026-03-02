@@ -5,7 +5,7 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import SwitchMode from "../components/switchMode";
 import SwitchLanguage from "../components/switchLanguage";
 import { useTranslation } from "react-i18next";

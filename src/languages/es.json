@@ -185,6 +185,23 @@
         ],
         "thumbnail": "https://pdf.ms.credential.net/v2/certificate/image?env=production&credential=1eujg28c&variant=medium",
         "link": "https://www.credential.net/2637cfce-e44b-499f-9fcc-85e36dc6574a"
+      },
+      {
+        "name": "Elastic Certified Observability Engineer",
+        "issuer": "Elastic",
+        "date": "Feb 2026",
+        "expires": "Feb 2028",
+        "credentialId": "24db649b-da1b-41c8-ab99-a7ee969c8386",
+        "skills": [
+          "Observabilidad",
+          "APM",
+          "Métricas",
+          "Logs",
+          "Machine Learning",
+          "Kibana"
+        ],
+        "thumbnail": "https://pdf.ms.credential.net/v2/certificate/image?env=production&credential=yvgl41rz&variant=medium",
+        "link": "https://www.credential.net/24db649b-da1b-41c8-ab99-a7ee969c8386"
       }
     ],
     "secondary": [

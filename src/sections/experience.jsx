@@ -46,11 +46,16 @@ const Experience = forwardRef((__, ref) => {
                   className={`relative flex items-start ${
                     index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                   } flex-col gap-8`}>
-                  {/* Timeline dot */}
-                  <div
-                    className={`absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background z-10 ${
-                      index % 2 === 0 ? "md:translate-x-0" : "md:translate-x-0"
-                    }`}></div>
+                  {/* Timeline dot + start date */}
+                  <div className='absolute left-8 md:left-1/2 transform md:-translate-x-1/2 z-10'>
+                    <div className='w-4 h-4 bg-primary rounded-full border-4 border-background'></div>
+                    <span
+                      className={`absolute top-0 text-xs font-semibold text-primary whitespace-nowrap left-6 ${
+                        index % 2 !== 0 ? "md:left-auto md:right-6" : "md:left-6"
+                      }`}>
+                      {exp.period.split(" - ")[0]}
+                    </span>
+                  </div>
 
                   {/* Content */}
                   <div className='md:w-1/2 ml-16 md:ml-0'>

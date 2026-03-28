@@ -12,7 +12,7 @@
     "nav-link-10": "Contact"
   },
   "intro": {
-    "welcome": "Fullstack developer"
+    "welcome": "Software Engineer"
   },
   "switch-bottom": "Switch view",
   "videos": {
@@ -277,14 +277,16 @@
       {
         "position": "Technical Writer & Elastic Consultant",
         "company": "Kibernum Elite Consulting Team",
-        "period": "Nov 2024 - Present",
+        "period": "Sep 2024 - Present",
         "location": "Medellín, Colombia",
         "description": "Technical writing, documentation, and consulting related to Elasticsearch. Specialized in search engine migrations and optimization.",
         "achievements": [
           "Created comprehensive technical documentation for Elasticsearch implementations",
           "Led search engine migration projects improving query performance",
           "Optimized Elasticsearch clusters for better scalability and efficiency",
-          "Provided consulting services for enterprise search solutions"
+          "Provided consulting services for enterprise search solutions",
+          "Authored technical articles published on the official Elastic blog covering search, observability, and best practices",
+          "Recorded technical video tutorials demonstrating Elasticsearch features and real-world use cases"
         ],
         "technologies": [
           "Elasticsearch",

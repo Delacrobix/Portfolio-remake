@@ -1,4 +1,4 @@
-import React, { forwardRef, useState, useEffect } from "react";
+import { forwardRef, useState, useEffect } from "react";
 import {
   Card,
   CardHeader,
@@ -15,6 +15,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNewspaper, faUser } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 import articlesCache from "../data/articles-cache.json";
+import ElasticLeaderboard, {
+  SHOW_ELASTIC_RANK,
+} from "../components/ElasticLeaderboard";
 
 const API_URL = import.meta.env.VITE_ARTICLES_API_URL || "";
 
@@ -96,6 +99,8 @@ const Articles = forwardRef((__, ref) => {
           {t("articles.description")}
         </p>
       </header>
+
+      {SHOW_ELASTIC_RANK && <ElasticLeaderboard />}
 
       {loading && (
         <div className='flex justify-center items-center py-12'>

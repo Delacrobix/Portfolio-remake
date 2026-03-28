@@ -11,4 +11,4 @@ This project was build for show my experience like Fullstack Developer. Built wi
 
 ### <strong>AUTOR</strong>
 
-- LinkedIn - <a href="https://www.linkedin.com/in/jeffrey-rerin/">Jeffrey Rerín</a>
+- LinkedIn - <a href="https://www.linkedin.com/in/jeffrey-rerin/">Jeffrey Rengifo</a>

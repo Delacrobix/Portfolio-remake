@@ -43,7 +43,7 @@ export default function Footer() {
           {/* Copyright */}
           <div className='text-center'>
             <p className='text-sm text-default-500 font-comfortaa'>
-              © {currentYear} Jeffrey S. Rerín
+              © {currentYear} Jeffrey Rengifo
             </p>
           </div>
         </div>

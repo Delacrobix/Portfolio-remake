@@ -7,7 +7,6 @@ import { Toaster } from "sonner";
 import App from "./App";
 
 // Styles
-import "./assets/sass/index.scss";
 import "./assets/css/tailwind.css";
 
 // Internationalization config

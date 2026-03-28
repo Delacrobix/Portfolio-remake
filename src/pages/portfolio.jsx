@@ -1,10 +1,9 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { I18nextProvider } from "react-i18next";
 
 import Intro from "../sections/intro";
 import Header from "../sections/header";
 import Footer from "../sections/footer";
-// import Skills from "../sections/skills";
 import AboutMe from "../sections/aboutMe";
 import Experience from "../sections/experience";
 import Projects from "../sections/projects";
@@ -16,6 +15,14 @@ import Tools from "../sections/tools";
 import i18n from "../config/languages";
 import Contact from "../sections/contact";
 import useIsMobile from "../hooks/useIsMobile";
+
+function Divider() {
+  return (
+    <div className='px-[25%]'>
+      <hr className='border-t-[1.5px] border-black/30 dark:border-white/[0.404]' />
+    </div>
+  );
+}
 
 export default function Portfolio() {
   const isMobile = useIsMobile();
@@ -66,75 +73,50 @@ export default function Portfolio() {
         <AboutMe ref={aboutMeRef} />
       </I18nextProvider>
 
-      <div className='divisor-line-container'>
-        <hr className='divisor-line' />
-      </div>
+      <Divider />
 
       <I18nextProvider i18n={i18n}>
         <Experience ref={experienceRef} />
       </I18nextProvider>
 
-      <div className='divisor-line-container'>
-        <hr className='divisor-line' />
-      </div>
+      <Divider />
 
       <I18nextProvider i18n={i18n}>
         <Projects ref={projectsRef} />
       </I18nextProvider>
 
-      <div className='divisor-line-container'>
-        <hr className='divisor-line' />
-      </div>
+      <Divider />
 
       <I18nextProvider i18n={i18n}>
         <Awards ref={awardsRef} />
       </I18nextProvider>
 
-      <div className='divisor-line-container'>
-        <hr className='divisor-line' />
-      </div>
+      <Divider />
 
       <I18nextProvider i18n={i18n}>
         <Articles ref={articlesRef} />
       </I18nextProvider>
 
-      <div className='divisor-line-container'>
-        <hr className='divisor-line' />
-      </div>
+      <Divider />
 
       <I18nextProvider i18n={i18n}>
         <Videos ref={videosRef} />
       </I18nextProvider>
 
-      <div className='divisor-line-container'>
-        <hr className='divisor-line' />
-      </div>
+      <Divider />
 
       <I18nextProvider i18n={i18n}>
         <Certifications ref={certificationsRef} />
       </I18nextProvider>
 
-      <div className='divisor-line-container'>
-        <hr className='divisor-line' />
-      </div>
+      <Divider />
 
       <I18nextProvider i18n={i18n}>
         <Tools ref={toolsRef} />
       </I18nextProvider>
 
-      <div className='divisor-line-container'>
-        <hr className='divisor-line' />
-      </div>
-
-      <div className='divisor-line-container'>
-        <hr className='divisor-line' />
-      </div>
-
-      {/* <Skills ref={skillsRef} /> */}
-
-      <div className='divisor-line-container'>
-        <hr className='divisor-line' />
-      </div>
+      <Divider />
+      <Divider />
 
       <Contact ref={contactRef} />
       <Footer />

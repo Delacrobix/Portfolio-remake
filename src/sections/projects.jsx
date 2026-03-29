@@ -57,8 +57,7 @@ const Projects = forwardRef((__, ref) => {
           projects.map((project) => (
             <Card
               key={uuidv4()}
-              className='hover:shadow-2xl transition-all duration-300'
-              isBlurred>
+              className='hover:shadow-2xl transition-all duration-300'>
               <CardHeader className='flex-col items-start gap-3 pb-0'>
                 <div className='w-full'>
                   <h3 className='font-bold text-2xl font-comfortaa mb-2'>

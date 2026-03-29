@@ -1,4 +1,5 @@
 import { forwardRef, useState, useEffect } from "react";
+import usePerPage from "../hooks/usePerPage";
 import {
   Card,
   CardHeader,
@@ -21,11 +22,11 @@ import ElasticLeaderboard, {
 
 const API_URL = import.meta.env.VITE_ARTICLES_API_URL || "";
 
-const ARTICLES_PER_PAGE = 6;
 const ARTICLE_FIELDS = "title,description,coverImage,link,authors";
 
 const Articles = forwardRef((__, ref) => {
   const { t, i18n } = useTranslation();
+  const ARTICLES_PER_PAGE = usePerPage();
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -33,8 +34,12 @@ const Articles = forwardRef((__, ref) => {
   const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
+    setCurrentPage(1);
+  }, [ARTICLES_PER_PAGE]);
+
+  useEffect(() => {
     fetchArticles(currentPage);
-  }, [i18n.language, currentPage]);
+  }, [i18n.language, currentPage, ARTICLES_PER_PAGE]);
 
   const fetchArticles = async (page) => {
     try {
@@ -116,8 +121,7 @@ const Articles = forwardRef((__, ref) => {
                 articles.map((article) => (
                   <Card
                     key={uuidv4()}
-                    className='transition-shadow duration-300'
-                    isBlurred>
+                    className='transition-shadow duration-300'>
                     {/* Cover Image */}
                     {article.coverImage && (
                       <div className='w-full h-40 2xl:h-56 bg-default-100 overflow-hidden'>

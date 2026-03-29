@@ -111,7 +111,7 @@ function ContactElement({ icon, link, content, handleCopy }) {
   );
 
   return (
-    <Card className='w-full' isBlurred>
+    <Card className='w-full'>
       <CardBody className='flex flex-row items-center gap-4 p-4'>
         <div className='flex-shrink-0'>{IconWrapper}</div>
         <div className='flex-grow'>

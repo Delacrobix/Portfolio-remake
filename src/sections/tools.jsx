@@ -51,7 +51,6 @@ const Tools = forwardRef((__, ref) => {
                     : ""
                 }
                 isPressable={!!tool.url}
-                isBlurred
                 onPress={() => {
                   if (tool.url) {
                     window.open(tool.url, "_blank", "noopener,noreferrer");

@@ -81,7 +81,7 @@ const Awards = forwardRef((__, ref) => {
       <div className='max-w-4xl mx-auto w-full space-y-6'>
         {Array.isArray(awards) &&
           awards.map((award) => (
-            <Card key={uuidv4()} isBlurred>
+            <Card key={uuidv4()}>
               <CardBody className='p-6'>
                 <div className='flex gap-6 items-start'>
                   <div className='flex-shrink-0'>

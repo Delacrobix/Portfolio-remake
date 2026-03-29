@@ -51,8 +51,7 @@ const Certifications = forwardRef((__, ref) => {
             mainCertifications.map((cert) => (
               <Card
                 key={uuidv4()}
-                className='hover:shadow-xl transition-all duration-300 border-2 border-success-200 dark:border-success-800 w-full md:w-[calc(50%-0.75rem)] max-w-2xl'
-                isBlurred>
+                className='hover:shadow-xl transition-all duration-300 border-2 border-success-200 dark:border-success-800 w-full md:w-[calc(50%-0.75rem)] max-w-2xl'>
                 <CardBody className='p-6'>
                   <div className='flex gap-4 items-start'>
                     {cert.thumbnail ? (
@@ -130,7 +129,7 @@ const Certifications = forwardRef((__, ref) => {
                           target='_blank'
                           size='sm'
                           variant='solid'
-                          color='success'
+                          color='primary'
                           className='w-full'
                           endContent={
                             <FontAwesomeIcon
@@ -163,8 +162,7 @@ const Certifications = forwardRef((__, ref) => {
             secondaryCertifications.map((cert) => (
               <Card
                 key={uuidv4()}
-                className='hover:shadow-md transition-shadow'
-                isBlurred>
+                className='hover:shadow-md transition-shadow'>
                 <CardBody className='p-4'>
                   <div className='flex gap-3 items-start'>
                     {cert.thumbnail ? (
@@ -204,7 +202,7 @@ const Certifications = forwardRef((__, ref) => {
                           rel='noopener noreferrer'
                           size='sm'
                           variant='flat'
-                          color='default'
+                          color='primary'
                           className='w-full h-7 text-xs'>
                           {t("certifications.viewButton")}
                         </Button>

@@ -1,4 +1,5 @@
 import React, { forwardRef, useState } from "react";
+import usePerPage from "../hooks/usePerPage";
 import {
   Card,
   CardHeader,
@@ -14,10 +15,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVideo, faUser, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 
-const VIDEOS_PER_PAGE = 3;
-
 const Videos = forwardRef((__, ref) => {
   const { t } = useTranslation();
+  const VIDEOS_PER_PAGE = usePerPage();
   const [currentPage, setCurrentPage] = useState(1);
 
   const videos = t("videos.list", { returnObjects: true }) || [];
@@ -34,7 +34,7 @@ const Videos = forwardRef((__, ref) => {
       className='py-16 px-6 md:px-12 lg:px-24 min-h-screen flex flex-col justify-center'>
       <header className='text-center mb-12'>
         <div className='flex justify-center items-center gap-3 mb-4'>
-          <FontAwesomeIcon icon={faVideo} className='text-4xl text-danger' />
+          <FontAwesomeIcon icon={faVideo} className='text-4xl text-primary' />
           <h2 className='font-comfortaa font-bold text-4xl'>
             {t("videos.title")}
           </h2>
@@ -49,8 +49,7 @@ const Videos = forwardRef((__, ref) => {
           currentVideos.map((video) => (
             <Card
               key={uuidv4()}
-              className='transition-shadow duration-300 relative'
-              isBlurred>
+              className='transition-shadow duration-300 relative'>
               {/* Video Thumbnail */}
               {video.thumbnail && (
                 <div className='relative'>
@@ -66,7 +65,7 @@ const Videos = forwardRef((__, ref) => {
                   />
                   {/* Play Overlay */}
                   <div className='absolute inset-0 flex items-center justify-center bg-black/30 transition-opacity hover:bg-black/50'>
-                    <div className='w-16 h-16 rounded-full bg-danger flex items-center justify-center shadow-lg'>
+                    <div className='w-16 h-16 rounded-full bg-primary flex items-center justify-center shadow-lg'>
                       <FontAwesomeIcon
                         icon={faPlay}
                         className='text-white text-2xl ml-1'
@@ -99,7 +98,7 @@ const Videos = forwardRef((__, ref) => {
                   as={Link}
                   href={video.link}
                   target='_blank'
-                  color='danger'
+                  color='primary'
                   variant='flat'
                   size='sm'
                   className='w-full'
@@ -117,7 +116,7 @@ const Videos = forwardRef((__, ref) => {
             total={totalPages}
             page={currentPage}
             onChange={setCurrentPage}
-            color='danger'
+            color='primary'
             showControls
             showShadow
           />

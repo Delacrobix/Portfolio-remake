@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import { Card, CardBody, Chip } from "@heroui/react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,7 +36,7 @@ const Experience = forwardRef((__, ref) => {
       <div className='max-w-4xl mx-auto w-full'>
         <div className='relative'>
           {/* Timeline line */}
-          <div className='absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-primary-200 dark:bg-primary-800 transform md:-translate-x-1/2'></div>
+          <div className='absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-primary-200 dark:bg-primary-800 -translate-x-1/2'></div>
 
           <div className='space-y-12'>
             {Array.isArray(experiences) &&
@@ -46,12 +46,12 @@ const Experience = forwardRef((__, ref) => {
                   className={`relative flex items-start ${
                     index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                   } flex-col gap-8`}>
-                  {/* Timeline dot + start date */}
-                  <div className='absolute left-8 md:left-1/2 transform md:-translate-x-1/2 z-10'>
+                  {/* Timeline dot + start date (desktop only beside dot) */}
+                  <div className='absolute left-8 md:left-1/2 -translate-x-1/2 z-10'>
                     <div className='w-4 h-4 bg-primary rounded-full border-4 border-background'></div>
                     <span
-                      className={`absolute top-0 text-xs font-semibold text-primary whitespace-nowrap left-6 ${
-                        index % 2 !== 0 ? "md:left-auto md:right-6" : "md:left-6"
+                      className={`hidden md:block absolute top-0 text-xs font-semibold text-primary whitespace-nowrap ${
+                        index % 2 === 0 ? "md:left-6" : "md:left-auto md:right-6"
                       }`}>
                       {exp.period.split(" - ")[0]}
                     </span>
@@ -59,9 +59,12 @@ const Experience = forwardRef((__, ref) => {
 
                   {/* Content */}
                   <div className='md:w-1/2 ml-16 md:ml-0'>
+                    {/* Mobile: date label above card */}
+                    <span className='md:hidden text-xs font-semibold text-primary mb-1 block'>
+                      {exp.period.split(" - ")[0]}
+                    </span>
                     <Card
-                      className='hover:shadow-xl transition-shadow'
-                      isBlurred>
+                      className='hover:shadow-xl transition-shadow'>
                       <CardBody className='p-6'>
                         <div className='flex items-start gap-3 mb-4'>
                           <div className='flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center'>

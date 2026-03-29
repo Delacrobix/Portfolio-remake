@@ -9,8 +9,6 @@ import cv from "../assets/files/cvs/jeff-cv.pdf";
 import profilePicture from "../assets/images/profile/me.jpg";
 import bgImage from "../assets/images/backgrounds/10.jpg";
 import { svgSocialIcons, svgIcons } from "../components/svg/svgExports";
-import SwitchMode from "../components/switchMode";
-import SwitchLanguage from "../components/switchLanguage";
 
 function openPDF() {
   window.open(cv, "_blank");
@@ -51,7 +49,7 @@ const Intro = forwardRef(({ }, ref) => {
             color='warning'
             variant='flat'
             className='mb-4 font-comfortaa backdrop-blur-sm'>
-            #1 Elastic Search Labs Contributor
+            {t("about-me.chip")}
           </Chip>
         )}
         <div className='flex items-center'>
@@ -93,10 +91,6 @@ const Intro = forwardRef(({ }, ref) => {
             </span>
           </div>
         </div>
-        <footer className='pt-4 flex items-center justify-center list-none'>
-          <SwitchMode isMobile={true} />
-          <SwitchLanguage isMobile={true} />
-        </footer>
       </div>
     </section>
   );

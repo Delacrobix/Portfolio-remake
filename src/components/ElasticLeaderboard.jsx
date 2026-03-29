@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Card, CardBody, Chip, Spinner, Avatar } from "@heroui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrophy, faUser } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 import profilePicture from "../assets/images/profile/me.jpg";
 
 const API_URL = import.meta.env.VITE_ARTICLES_API_URL || "";
@@ -18,12 +19,13 @@ const PODIUM_SLOTS = [
 ];
 
 const PLATFORM_STYLES = {
-  1: "bg-warning-100 dark:bg-warning-900/30 border-t-2 border-warning-300 dark:border-warning-700",
-  2: "bg-default-100 dark:bg-default-800/40 border-t-2 border-default-300 dark:border-default-600",
-  3: "bg-default-50 dark:bg-default-900/20 border-t-2 border-default-200 dark:border-default-700",
+  1: "bg-[#3d2e00] border-t-2 border-[#f5b800]",
+  2: "bg-[#1e2535] border-t-2 border-[#8fa8c0]",
+  3: "bg-[#2a1a06] border-t-2 border-[#a0622a]",
 };
 
 export default function ElasticLeaderboard() {
+  const { t } = useTranslation();
   const [authors, setAuthors] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -58,18 +60,18 @@ export default function ElasticLeaderboard() {
       <div className='flex items-center justify-center gap-2 mb-8'>
         <FontAwesomeIcon icon={faTrophy} className='text-warning text-xl' />
         <h3 className='font-comfortaa font-bold text-xl'>
-          Top Elastic Search Labs Contributors
+          {t("leaderboard.title")}
         </h3>
       </div>
 
-      <div className='flex items-end justify-center gap-3 md:gap-6'>
+      <div className='flex items-end justify-center gap-2 md:gap-6'>
         {PODIUM_SLOTS.map(({ dataIndex, rank, medal, platformH }) => {
           const author = authors[dataIndex];
           if (!author) return null;
           const isMe = author.author === MY_AUTHOR;
 
           return (
-            <div key={rank} className='flex flex-col items-center w-32 md:w-40'>
+            <div key={rank} className='flex flex-col items-center w-28 md:w-40'>
               {/* Author card */}
               <Card
                 className={`w-full mb-0 transition-all duration-300 ${
@@ -104,7 +106,7 @@ export default function ElasticLeaderboard() {
                     size='sm'
                     color={isMe ? "primary" : "default"}
                     variant='flat'>
-                    {author.count} articles
+                    {author.count} {t("leaderboard.articles")}
                   </Chip>
                 </CardBody>
               </Card>

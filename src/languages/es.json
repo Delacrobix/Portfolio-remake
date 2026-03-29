@@ -80,7 +80,7 @@
   },
   "articles": {
     "title": "Artículos Técnicos",
-    "description": "Exploraciones profundas sobre Elasticsearch, integraciones de AI/GenAI, y desarrollo full-stack. Publicados en Elasticsearch Labs.",
+    "description": "Exploraciones profundas sobre Elasticsearch, integraciones de AI/GenAI, e ingeniería de software. Publicados en Elasticsearch Labs.",
     "readButton": "Leer Artículo"
   },
   "awards": {
@@ -367,8 +367,22 @@
   },
   "about-me": {
     "title": "¿Quién soy?",
-    "description": "Soy Jeffrey Rengifo, Technical Writer y Consultor Elastic especializado en Elasticsearch, GenAI y desarrollo full-stack. Creo contenido técnico, desarrollo soluciones impulsadas por IA y optimizo sistemas de búsqueda. Apasionado por resolver problemas complejos a través de tecnología innovadora y entregar resultados impactantes.",
-    "cv-button": "Ver hoja de vida"
+    "role": "Escritor Técnico",
+    "roleSecondary": "y Consultor Elastic",
+    "description": "Soy Jeffrey Rengifo, Technical Writer y Consultor Elastic especializado en Elasticsearch, GenAI e ingeniería de software. Creo contenido técnico, desarrollo soluciones impulsadas por IA y optimizo sistemas de búsqueda. Apasionado por resolver problemas complejos a través de tecnología innovadora y entregar resultados impactantes.",
+    "cv-button": "Ver hoja de vida",
+    "stats": {
+      "yearsCodingLabel": "Años programando",
+      "sweValue": "ISW",
+      "sweLabel": "Ingeniero de Software",
+      "searchLabsLabel": "Rank Search Labs",
+      "elasticExpertLabel": "Experto Elasticsearch"
+    },
+    "chip": "#1 Contribuidor Elastic Search Labs"
+  },
+  "leaderboard": {
+    "title": "Top Contribuidores Elastic Search Labs",
+    "articles": "artículos"
   },
   "skills": {
     "title": "Habilidades",

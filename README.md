@@ -1,14 +1,34 @@
-# Portfolio
+# Portfolio — Jeffrey Rengifo
 
-This project was build for show my experience like Fullstack Developer. Built with all my love.
+Personal portfolio built with React, Vite, HeroUI, and Tailwind CSS v4.
 
-### <strong>Built with:</strong>
+### Built with
 
-- React
-- SASS
-- i18n
-- JavaScript
+- React 19 + Vite 6
+- HeroUI v2 (formerly NextUI)
+- Tailwind CSS v4
+- i18next (EN / ES)
+- Framer Motion
+- FontAwesome
 
-### <strong>AUTOR</strong>
+### Author
 
-- LinkedIn - <a href="https://www.linkedin.com/in/jeffrey-rerin/">Jeffrey Rengifo</a>
+- LinkedIn: [Jeffrey Rengifo](https://www.linkedin.com/in/jeffrey-rerin/)
+- GitHub: [Delacrobix](https://github.com/Delacrobix)
+
+---
+
+## Feature flags
+
+These constants can be toggled to show/hide features without deleting code.
+
+| Flag | File | Default | Description |
+|------|------|---------|-------------|
+| `SHOW_ELASTIC_RANK` | `src/components/ElasticLeaderboard.jsx` | `true` | Shows the #1 Elastic Search Labs badge in Intro and the top-3 leaderboard in Articles |
+| `SHOW_PALETTE_SWITCHER` | `src/config/palettes.js` | `true` | Shows the color palette switcher in the TopBar and mobile drawer |
+
+## Commented-out sections
+
+| Section | File | Reason |
+|---------|------|--------|
+| Projects | `src/pages/portfolio.jsx` | Hidden until updated with current work. Re-enable by uncommenting the import and the JSX block. |

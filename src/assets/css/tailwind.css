@@ -19,18 +19,14 @@
   --font-work-sans: "Work Sans", sans-serif;
 }
 
-/* Body background — body can't be targeted by Tailwind's dark: variant */
 @layer base {
   body {
-    background-color: #fcf8ec;
+    background-color: hsl(var(--heroui-background));
+    color: hsl(var(--heroui-foreground));
     margin: 0;
     padding: 0;
     max-width: 100%;
     overflow-x: hidden;
-  }
-  body.dark {
-    color: #dde6ed;
-    background-color: #27374d;
   }
 
   /* Font scaling by viewport height */
@@ -39,28 +35,7 @@
   @media (max-height: 620px) { html { font-size: 13px; } }
 }
 
-/* Rules that require pseudo-elements, JS-toggled classes, or parent→child selectors */
 @layer components {
-  /* SwitchMode: ::after sliding knob — impossible with utility classes */
-  .switch-mode::after {
-    content: "";
-    border-radius: 20px;
-    width: 2.1rem;
-    height: 2.1rem;
-    background: white;
-    display: block;
-    position: absolute;
-    right: unset;
-    left: 0;
-  }
-  .switch-mode.active { background: rgb(161, 161, 161); color: black; }
-  .switch-mode.active span { color: black; }
-  .switch-mode.active::after { right: 0; left: unset; }
-
-  /* SwitchLanguage: JS-toggled class hides the opposite flag */
-  .switch-mobile-language.es .en-svg { display: none; }
-  .switch-mobile-language.en .es-svg { display: none; }
-
   /* Intro: height reset on very short viewports */
   @media (max-height: 620px) { .intro { height: 100%; } }
 }

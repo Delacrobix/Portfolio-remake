@@ -136,29 +136,18 @@
     "solutionLabel": "Solución",
     "impactLabel": "Impacto",
     "codeButton": "Ver Código",
-    "demoButton": "Demo en Vivo",
+    "demoButton": "Visitar App",
     "list": [
       {
-        "name": "Conversor CSS-Tailwind",
-        "tagline": "Convierte CSS a Tailwind CSS instantáneamente",
-        "problem": "Los desarrolladores pierden horas convirtiendo manualmente bases de código CSS existentes a Tailwind CSS, ralentizando proyectos de migración.",
-        "solution": "Una herramienta con IA que convierte automáticamente código CSS a clases de Tailwind CSS, manteniendo la fidelidad del diseño y reduciendo el tiempo de migración en un 80%.",
-        "impact": "Acelera proyectos de migración de CSS a Tailwind, mantiene la fidelidad del diseño durante la conversión y reduce errores de conversión manual con precisión impulsada por IA.",
-        "impactType": "productivity",
-        "tech": ["React", "NestJS", "OpenAI", "TypeScript", "Tailwind"],
-        "repo": "https://github.com/Delacrobix/CSS-tailwind_converter",
-        "demo": "https://css-tailwind-converter.pages.dev"
-      },
-      {
-        "name": "Analizador de CV",
-        "tagline": "Optimización de currículum con IA",
-        "problem": "Los buscadores de empleo luchan por optimizar sus currículums para sistemas ATS y requisitos específicos de trabajo, resultando en oportunidades perdidas.",
-        "solution": "Una herramienta inteligente de análisis de CV que proporciona retroalimentación personalizada, optimización de palabras clave y sugerencias de formato usando IA.",
-        "impact": "Ayuda a optimizar CVs para sistemas ATS, proporciona retroalimentación personalizada y sugiere mejoras de formato para coincidir mejor con los requisitos del trabajo.",
+        "name": "Dark Score",
+        "tagline": "Convierte tus partituras a modo oscuro",
+        "problem": "Las partituras blancas en tablets y pantallas causan fatiga visual en ambientes con poca luz, consumen más batería y brillan en el escenario.",
+        "solution": "Una app web que convierte partituras PDF e imágenes a modo oscuro para una lectura más cómoda en dispositivos modernos. Tus archivos nunca salen de tu dispositivo: todo el procesamiento se ejecuta localmente usando Web Workers.",
+        "impact": "Permite una lectura cómoda en tablets durante ensayos y presentaciones, reduce el brillo de la pantalla en el escenario y extiende la duración de la batería en dispositivos portátiles.",
         "impactType": "users",
-        "tech": ["React", "NestJS", "GenAI", "TypeScript", "Tailwind"],
-        "repo": "https://github.com/Delacrobix/CV-analyzer",
-        "demo": "https://cv-analyzer-frontend.pages.dev"
+        "tech": ["React", "TypeScript", "Procesamiento PDF", "Privacidad"],
+        "repo": "https://github.com/Delacrobix/dark-score",
+        "demo": "https://darkscore.app"
       }
     ]
   },

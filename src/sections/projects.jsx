@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import {
   Card,
   CardHeader,
@@ -52,7 +52,11 @@ const Projects = forwardRef((__, ref) => {
         </p>
       </header>
 
-      <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto'>
+      <div className={`grid gap-8 max-w-6xl mx-auto ${
+        Array.isArray(projects) && projects.length === 1
+          ? "grid-cols-1 max-w-2xl"
+          : "grid-cols-1 lg:grid-cols-2"
+      }`}>
         {Array.isArray(projects) &&
           projects.map((project) => (
             <Card

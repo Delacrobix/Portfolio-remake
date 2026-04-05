@@ -7,7 +7,7 @@ import DotNav from "../components/DotNav";
 import Footer from "../sections/footer";
 import AboutMe from "../sections/aboutMe";
 import Experience from "../sections/experience";
-// import Projects from "../sections/projects"; // hidden until updated with current work
+import Projects from "../sections/projects";
 import Articles from "../sections/articles";
 import Videos from "../sections/videos";
 import Awards from "../sections/awards";
@@ -91,12 +91,11 @@ export default function Portfolio() {
         <Experience ref={experienceRef} />
       </I18nextProvider>
 
-      {/* Projects section hidden until updated with current work
       <Divider />
+
       <I18nextProvider i18n={i18n}>
         <Projects ref={projectsRef} />
       </I18nextProvider>
-      */}
 
       <I18nextProvider i18n={i18n}>
         <Awards ref={awardsRef} />

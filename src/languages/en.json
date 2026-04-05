@@ -136,29 +136,18 @@
     "solutionLabel": "Solution",
     "impactLabel": "Impact",
     "codeButton": "View Code",
-    "demoButton": "Live Demo",
+    "demoButton": "Visit App",
     "list": [
       {
-        "name": "CSS-Tailwind Converter",
-        "tagline": "Convert CSS to Tailwind CSS instantly",
-        "problem": "Developers waste hours manually converting existing CSS codebases to Tailwind CSS, slowing down migration projects.",
-        "solution": "An AI-powered tool that automatically converts CSS code to Tailwind CSS classes, maintaining design fidelity and reducing migration time by 80%.",
-        "impact": "Accelerates CSS to Tailwind migration projects, maintains design fidelity during conversion, and reduces manual conversion errors with AI-powered precision.",
-        "impactType": "productivity",
-        "tech": ["React", "NestJS", "OpenAI", "TypeScript", "Tailwind"],
-        "repo": "https://github.com/Delacrobix/CSS-tailwind_converter",
-        "demo": "https://css-tailwind-converter.pages.dev"
-      },
-      {
-        "name": "CV Analyzer",
-        "tagline": "AI-powered resume optimization",
-        "problem": "Job seekers struggle to optimize their resumes for ATS systems and specific job requirements, resulting in missed opportunities.",
-        "solution": "An intelligent CV analysis tool that provides personalized feedback, keyword optimization, and formatting suggestions using AI.",
-        "impact": "Helps optimize CVs for ATS systems, provides personalized feedback, and suggests format improvements to better match job requirements.",
+        "name": "Dark Score",
+        "tagline": "Convert your sheet music to dark mode",
+        "problem": "Traditional white sheet music on tablets and screens causes eye strain in low-light environments, drains battery, and glows on stage.",
+        "solution": "A web app that converts sheet music PDFs and images to dark mode for a more comfortable reading experience on modern devices. Your files never leave your device: all processing runs locally using Web Workers.",
+        "impact": "Enables comfortable reading on tablets during rehearsals and performances, reduces screen brightness on stage, and extends battery life on portable devices.",
         "impactType": "users",
-        "tech": ["React", "NestJS", "GenAI", "TypeScript", "Tailwind"],
-        "repo": "https://github.com/Delacrobix/CV-analyzer",
-        "demo": "https://cv-analyzer-frontend.pages.dev"
+        "tech": ["React", "TypeScript", "PDF Processing", "Privacy-first"],
+        "repo": "https://github.com/Delacrobix/dark-score",
+        "demo": "https://darkscore.app"
       }
     ]
   },

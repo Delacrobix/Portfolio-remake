@@ -5,7 +5,7 @@ const SECTIONS = [
   { key: "intro", label: "header.nav-link-1" },
   { key: "aboutMe", label: "header.nav-link-2" },
   { key: "experience", label: "header.nav-link-3" },
-  // { key: "projects", label: "header.nav-link-4" }, // hidden until section is re-enabled
+  { key: "projects", label: "header.nav-link-4" },
   { key: "awards", label: "header.nav-link-5" },
   { key: "articles", label: "header.nav-link-6" },
   { key: "videos", label: "header.nav-link-7" },

@@ -6,10 +6,11 @@
     "nav-link-4": "Proyectos",
     "nav-link-5": "Premios",
     "nav-link-6": "Artículos",
-    "nav-link-7": "Videos",
-    "nav-link-8": "Certificaciones",
-    "nav-link-9": "Herramientas",
-    "nav-link-10": "Contacto"
+    "nav-link-7": "Observabilidad",
+    "nav-link-8": "Videos",
+    "nav-link-9": "Certificaciones",
+    "nav-link-10": "Herramientas",
+    "nav-link-11": "Contacto"
   },
   "intro": {
     "welcome": "Ingeniero de Software"
@@ -82,6 +83,12 @@
     "title": "Artículos Técnicos",
     "description": "Exploraciones profundas sobre Elasticsearch, integraciones de AI/GenAI, e ingeniería de software. Publicados en Elasticsearch Labs.",
     "readButton": "Leer Artículo"
+  },
+  "observabilityArticles": {
+    "title": "Artículos de Observabilidad",
+    "description": "Artículos técnicos sobre observabilidad, monitoreo y logging. Publicados en Elastic Observability Labs.",
+    "readButton": "Leer Artículo",
+    "errorMessage": "No se pudieron cargar los artículos en este momento."
   },
   "awards": {
     "title": "Premios & Hackatones",

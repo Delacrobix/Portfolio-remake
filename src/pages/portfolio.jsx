@@ -9,6 +9,7 @@ import AboutMe from "../sections/aboutMe";
 import Experience from "../sections/experience";
 import Projects from "../sections/projects";
 import Articles from "../sections/articles";
+import ObservabilityArticles from "../sections/observabilityArticles";
 import Videos from "../sections/videos";
 import Awards from "../sections/awards";
 import Certifications from "../sections/certifications";
@@ -33,6 +34,7 @@ export default function Portfolio() {
   const experienceRef = useRef(null);
   const projectsRef = useRef(null);
   const articlesRef = useRef(null);
+  const observabilityArticlesRef = useRef(null);
   const videosRef = useRef(null);
   const awardsRef = useRef(null);
   const certificationsRef = useRef(null);
@@ -53,6 +55,7 @@ export default function Portfolio() {
       experience: experienceRef,
       projects: projectsRef,
       articles: articlesRef,
+      observabilityArticles: observabilityArticlesRef,
       videos: videosRef,
       awards: awardsRef,
       certifications: certificationsRef,
@@ -69,6 +72,7 @@ export default function Portfolio() {
     projects: projectsRef,
     awards: awardsRef,
     articles: articlesRef,
+    observabilityArticles: observabilityArticlesRef,
     videos: videosRef,
     certifications: certificationsRef,
     tools: toolsRef,
@@ -105,6 +109,12 @@ export default function Portfolio() {
 
       <I18nextProvider i18n={i18n}>
         <Articles ref={articlesRef} />
+      </I18nextProvider>
+
+      <Divider />
+
+      <I18nextProvider i18n={i18n}>
+        <ObservabilityArticles ref={observabilityArticlesRef} />
       </I18nextProvider>
 
       <Divider />

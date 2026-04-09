@@ -11,10 +11,11 @@ const SECTIONS = [
   { key: "projects", label: "header.nav-link-4" },
   { key: "awards", label: "header.nav-link-5" },
   { key: "articles", label: "header.nav-link-6" },
-  { key: "videos", label: "header.nav-link-7" },
-  { key: "certifications", label: "header.nav-link-8" },
-  { key: "tools", label: "header.nav-link-9" },
-  { key: "contact", label: "header.nav-link-10" },
+  { key: "observabilityArticles", label: "header.nav-link-7" },
+  { key: "videos", label: "header.nav-link-8" },
+  { key: "certifications", label: "header.nav-link-9" },
+  { key: "tools", label: "header.nav-link-10" },
+  { key: "contact", label: "header.nav-link-11" },
 ];
 
 export default function TopBar({ scrollTo }) {

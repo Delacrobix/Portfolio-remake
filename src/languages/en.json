@@ -6,10 +6,11 @@
     "nav-link-4": "Projects",
     "nav-link-5": "Awards",
     "nav-link-6": "Articles",
-    "nav-link-7": "Videos",
-    "nav-link-8": "Certifications",
-    "nav-link-9": "Tools",
-    "nav-link-10": "Contact"
+    "nav-link-7": "Observability",
+    "nav-link-8": "Videos",
+    "nav-link-9": "Certifications",
+    "nav-link-10": "Tools",
+    "nav-link-11": "Contact"
   },
   "intro": {
     "welcome": "Software Engineer"
@@ -82,6 +83,12 @@
     "title": "Technical Articles",
     "description": "Deep dives into Elasticsearch, AI/GenAI integrations, and software engineering. Published on Elasticsearch Labs.",
     "readButton": "Read Article"
+  },
+  "observabilityArticles": {
+    "title": "Observability Articles",
+    "description": "Technical articles on observability, monitoring, and logging. Published on Elastic Observability Labs.",
+    "readButton": "Read Article",
+    "errorMessage": "Could not load articles at this time."
   },
   "awards": {
     "title": "Awards & Hackathons",

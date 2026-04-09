@@ -1,0 +1,189 @@
+import { forwardRef, useState, useEffect } from "react";
+import usePerPage from "../hooks/usePerPage";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Button,
+  Link,
+  Image,
+  Spinner,
+  Pagination,
+} from "@heroui/react";
+import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faUser } from "@fortawesome/free-solid-svg-icons";
+import { v4 as uuidv4 } from "uuid";
+
+const API_URL = import.meta.env.VITE_ARTICLES_API_URL || "";
+
+const ARTICLE_FIELDS = "title,description,coverImage,link,authors";
+
+const ObservabilityArticles = forwardRef((__, ref) => {
+  const { t, i18n } = useTranslation();
+  const ARTICLES_PER_PAGE = usePerPage();
+  const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [ARTICLES_PER_PAGE]);
+
+  useEffect(() => {
+    fetchArticles(currentPage);
+  }, [i18n.language, currentPage, ARTICLES_PER_PAGE]);
+
+  const fetchArticles = async (page) => {
+    try {
+      setLoading(true);
+      const url = `${API_URL}/obs/articles?size=${ARTICLES_PER_PAGE}&page=${page}&fields=${ARTICLE_FIELDS}`;
+
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error("API Response Error:", errorText);
+        throw new Error(
+          `HTTP error! status: ${response.status} - ${errorText}`
+        );
+      }
+
+      const data = await response.json();
+
+      if (!data.articles) {
+        throw new Error("Invalid response format from API");
+      }
+
+      setArticles(data.articles);
+      setTotalPages(data.total_pages || 1);
+      setError(null);
+    } catch (err) {
+      console.error("Error fetching observability articles:", err);
+      setError(err.message);
+      setArticles([]);
+      setTotalPages(1);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <section
+      ref={ref}
+      className='py-16 px-6 md:px-12 lg:px-24 min-h-screen flex flex-col justify-center'>
+      <header className='text-center mb-12'>
+        <div className='flex justify-center items-center gap-3 mb-4'>
+          <FontAwesomeIcon
+            icon={faEye}
+            className='text-4xl text-primary'
+          />
+          <h2 className='font-comfortaa font-bold text-4xl'>
+            {t("observabilityArticles.title")}
+          </h2>
+        </div>
+        <p className='font-comfortaa text-lg text-default-600 max-w-2xl mx-auto'>
+          {t("observabilityArticles.description")}
+        </p>
+      </header>
+
+      {loading && (
+        <div className='flex justify-center items-center py-12'>
+          <Spinner size='lg' color='primary' />
+        </div>
+      )}
+
+      {!loading && error && articles.length === 0 && (
+        <div className='text-center text-default-500 py-12'>
+          <p>{t("observabilityArticles.errorMessage")}</p>
+        </div>
+      )}
+
+      {!loading && (
+        <>
+          <div className='max-w-7xl 2xl:max-w-[1800px] mx-auto w-full'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 2xl:gap-6 mb-6'>
+              {Array.isArray(articles) &&
+                articles.map((article) => (
+                  <Card
+                    key={uuidv4()}
+                    className='transition-shadow duration-300'>
+                    {article.coverImage && (
+                      <div className='w-full h-40 2xl:h-56 bg-default-100 overflow-hidden'>
+                        <Image
+                          src={article.coverImage}
+                          alt={article.title}
+                          classNames={{
+                            wrapper: "w-full h-full !max-w-full",
+                            img: "w-full h-full object-cover",
+                          }}
+                          radius='none'
+                        />
+                      </div>
+                    )}
+
+                    <CardHeader className='flex-col items-start gap-1 pb-0 pt-3 2xl:pt-5 px-4 2xl:px-6'>
+                      <h3 className='font-bold text-lg 2xl:text-2xl font-comfortaa line-clamp-2 leading-tight'>
+                        {article.title}
+                      </h3>
+                    </CardHeader>
+
+                    <CardBody className='py-2 2xl:py-4 px-4 2xl:px-6'>
+                      <p className='text-default-600 text-sm 2xl:text-lg line-clamp-2 mb-2 leading-snug'>
+                        {article.description}
+                      </p>
+                      {article.authors && article.authors.length > 0 && (
+                        <div className='flex items-center gap-2 text-sm 2xl:text-lg text-default-500 mt-2'>
+                          <FontAwesomeIcon
+                            icon={faUser}
+                            className='text-sm 2xl:text-lg'
+                          />
+                          <span className='text-sm 2xl:text-lg'>
+                            {article.authors
+                              .flat()
+                              .map((a) => a.trim())
+                              .join(", ")}
+                          </span>
+                        </div>
+                      )}
+                    </CardBody>
+
+                    <CardFooter className='pt-0 pb-3 2xl:pb-5 px-4 2xl:px-6'>
+                      <Button
+                        as={Link}
+                        href={article.link}
+                        target='_blank'
+                        color='primary'
+                        variant='flat'
+                        size='sm'
+                        className='w-full text-sm 2xl:text-lg h-9 2xl:h-12 min-h-0'>
+                        {t("observabilityArticles.readButton")}
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                ))}
+            </div>
+          </div>
+
+          {totalPages > 1 && (
+            <div className='flex justify-center mt-0'>
+              <Pagination
+                total={totalPages}
+                page={currentPage}
+                onChange={setCurrentPage}
+                color='primary'
+                showControls
+                showShadow
+              />
+            </div>
+          )}
+        </>
+      )}
+    </section>
+  );
+});
+
+export default ObservabilityArticles;

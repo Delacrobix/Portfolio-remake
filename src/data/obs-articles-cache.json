@@ -1,0 +1,115 @@
+{
+  "en": [
+    {
+      "title": "OpenTelemetry Python to Elastic in 2 environment variables — Elastic Observability Labs",
+      "description": "OpenTelemetry Python instrumentation for Elastic Cloud: ship traces, metrics and logs from a Flask API using 2 environment variables. No collector needed.",
+      "coverImage": "https://www.elastic.co/observability-labs/assets/images/elastic-managed-otlp-endpoint-python/cover.png?62b712797495a8e4120fd607d4799523",
+      "link": "https://www.elastic.co/observability-labs/blog/elastic-managed-otlp-endpoint-python",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "MCP tools for Elastic Agent Builder — Elastic Observability Labs",
+      "description": "Build three MCP tools in Elastic Agent Builder that surface endpoint health, recent deploys and SLO burn rate, so developers never have to ping an SRE again.",
+      "coverImage": "https://www.elastic.co/observability-labs/assets/images/mcp-tools-elastic-agent-builder/header.png?be0f102dde63730020cb562a051dcb42",
+      "link": "https://www.elastic.co/observability-labs/blog/mcp-tools-elastic-agent-builder",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "ES|QL queries for debugging LLM latency, cost and GPU load — Elastic Observability Labs",
+      "description": "Use ES|QL to debug LLM latency spikes, token cost regressions and GPU saturation. Three query patterns against OpenTelemetry trace data in Elasticsearch.",
+      "coverImage": "https://www.elastic.co/observability-labs/assets/images/esql-llm-opentelemetry-debugging/header.png?1ccbbe3b77fa89d200232be304efa3a4",
+      "link": "https://www.elastic.co/observability-labs/blog/esql-llm-opentelemetry-debugging",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "How to trace MCP server tool calls with OpenTelemetry and Elastic APM — Elastic Observability Labs",
+      "description": "Add OpenTelemetry tracing to an MCP server, visualize tool call performance in Elastic APM, and query the trace data from Claude Desktop using the Agent Builder MCP.",
+      "coverImage": "https://www.elastic.co/observability-labs/assets/images/mcp-tracing-opentelemetry-elastic-apm/header_image.png?b33aa06d1b31bda077d3f35d8381b377",
+      "link": "https://www.elastic.co/observability-labs/blog/mcp-tracing-opentelemetry-elastic-apm",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Connecting Cursor to Production Logs via the Elastic MCP Server — Elastic Observability Labs",
+      "description": "Learn how to connect Cursor to your Elastic APM data using the Elastic Agent Builder MCP server, so you can debug production errors and make UI decisions backed by real usage data without leaving your editor.",
+      "coverImage": "https://www.elastic.co/observability-labs/assets/images/elastic-mcp-server-cursor-production-logs/header.png?0b3ca50abf2b631db30ed4f004b07d47",
+      "link": "https://www.elastic.co/observability-labs/blog/elastic-mcp-server-cursor-production-logs",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "How to cut Elasticsearch log storage costs with LogsDB — Elastic Observability Labs",
+      "description": "Learn how to enable LogsDB index mode in Elasticsearch and measure real storage savings. We compare a standard index against a LogsDB index using Apache logs and show how much storage you can reclaim.",
+      "coverImage": "https://www.elastic.co/observability-labs/assets/images/elasticsearch-logsdb-index-mode-storage-savings/header.png?475b7bead15d9db30f17e5e7138b0867",
+      "link": "https://www.elastic.co/observability-labs/blog/elasticsearch-logsdb-index-mode-storage-savings",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    }
+  ],
+  "es": [
+    {
+      "title": "OpenTelemetry Python to Elastic in 2 environment variables — Elastic Observability Labs",
+      "description": "OpenTelemetry Python instrumentation for Elastic Cloud: ship traces, metrics and logs from a Flask API using 2 environment variables. No collector needed.",
+      "coverImage": "https://www.elastic.co/observability-labs/assets/images/elastic-managed-otlp-endpoint-python/cover.png?62b712797495a8e4120fd607d4799523",
+      "link": "https://www.elastic.co/observability-labs/blog/elastic-managed-otlp-endpoint-python",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "MCP tools for Elastic Agent Builder — Elastic Observability Labs",
+      "description": "Build three MCP tools in Elastic Agent Builder that surface endpoint health, recent deploys and SLO burn rate, so developers never have to ping an SRE again.",
+      "coverImage": "https://www.elastic.co/observability-labs/assets/images/mcp-tools-elastic-agent-builder/header.png?be0f102dde63730020cb562a051dcb42",
+      "link": "https://www.elastic.co/observability-labs/blog/mcp-tools-elastic-agent-builder",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "ES|QL queries for debugging LLM latency, cost and GPU load — Elastic Observability Labs",
+      "description": "Use ES|QL to debug LLM latency spikes, token cost regressions and GPU saturation. Three query patterns against OpenTelemetry trace data in Elasticsearch.",
+      "coverImage": "https://www.elastic.co/observability-labs/assets/images/esql-llm-opentelemetry-debugging/header.png?1ccbbe3b77fa89d200232be304efa3a4",
+      "link": "https://www.elastic.co/observability-labs/blog/esql-llm-opentelemetry-debugging",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "How to trace MCP server tool calls with OpenTelemetry and Elastic APM — Elastic Observability Labs",
+      "description": "Add OpenTelemetry tracing to an MCP server, visualize tool call performance in Elastic APM, and query the trace data from Claude Desktop using the Agent Builder MCP.",
+      "coverImage": "https://www.elastic.co/observability-labs/assets/images/mcp-tracing-opentelemetry-elastic-apm/header_image.png?b33aa06d1b31bda077d3f35d8381b377",
+      "link": "https://www.elastic.co/observability-labs/blog/mcp-tracing-opentelemetry-elastic-apm",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Connecting Cursor to Production Logs via the Elastic MCP Server — Elastic Observability Labs",
+      "description": "Learn how to connect Cursor to your Elastic APM data using the Elastic Agent Builder MCP server, so you can debug production errors and make UI decisions backed by real usage data without leaving your editor.",
+      "coverImage": "https://www.elastic.co/observability-labs/assets/images/elastic-mcp-server-cursor-production-logs/header.png?0b3ca50abf2b631db30ed4f004b07d47",
+      "link": "https://www.elastic.co/observability-labs/blog/elastic-mcp-server-cursor-production-logs",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "How to cut Elasticsearch log storage costs with LogsDB — Elastic Observability Labs",
+      "description": "Learn how to enable LogsDB index mode in Elasticsearch and measure real storage savings. We compare a standard index against a LogsDB index using Apache logs and show how much storage you can reclaim.",
+      "coverImage": "https://www.elastic.co/observability-labs/assets/images/elasticsearch-logsdb-index-mode-storage-savings/header.png?475b7bead15d9db30f17e5e7138b0867",
+      "link": "https://www.elastic.co/observability-labs/blog/elasticsearch-logsdb-index-mode-storage-savings",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-06-15T00:00:00.000Z"
+}

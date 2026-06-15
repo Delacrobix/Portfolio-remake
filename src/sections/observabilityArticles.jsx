@@ -15,6 +15,7 @@ import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faUser } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
+import obsArticlesCache from "../data/obs-articles-cache.json";
 
 const API_URL = import.meta.env.VITE_ARTICLES_API_URL || "";
 
@@ -64,8 +65,17 @@ const ObservabilityArticles = forwardRef((__, ref) => {
     } catch (err) {
       console.error("Error fetching observability articles:", err);
       setError(err.message);
-      setArticles([]);
-      setTotalPages(1);
+
+      console.warn("Falling back to cached observability articles.");
+      const cachedArticles =
+        obsArticlesCache[i18n.language] || obsArticlesCache["en"] || [];
+      const startIndex = (page - 1) * ARTICLES_PER_PAGE;
+      const paginatedCache = cachedArticles.slice(
+        startIndex,
+        startIndex + ARTICLES_PER_PAGE
+      );
+      setArticles(paginatedCache);
+      setTotalPages(Math.ceil(cachedArticles.length / ARTICLES_PER_PAGE));
     } finally {
       setLoading(false);
     }

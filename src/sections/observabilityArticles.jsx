@@ -55,8 +55,12 @@ const ObservabilityArticles = forwardRef((__, ref) => {
 
       const data = await response.json();
 
-      if (!data.articles) {
+      if (!Array.isArray(data.articles)) {
         throw new Error("Invalid response format from API");
+      }
+
+      if (data.articles.length === 0) {
+        throw new Error("No observability articles returned by API");
       }
 
       setArticles(data.articles);

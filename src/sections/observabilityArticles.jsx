@@ -16,6 +16,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faUser } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 import obsArticlesCache from "../data/obs-articles-cache.json";
+import ObservabilityArticleCount, {
+  SHOW_OBSERVABILITY_ARTICLE_COUNT,
+} from "../components/ObservabilityArticleCount";
 
 const API_URL = import.meta.env.VITE_ARTICLES_API_URL || "";
 
@@ -29,6 +32,7 @@ const ObservabilityArticles = forwardRef((__, ref) => {
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+  const [totalArticles, setTotalArticles] = useState(0);
 
   useEffect(() => {
     setCurrentPage(1);
@@ -65,6 +69,9 @@ const ObservabilityArticles = forwardRef((__, ref) => {
 
       setArticles(data.articles);
       setTotalPages(data.total_pages || 1);
+      setTotalArticles(
+        Number.isFinite(data.total) ? data.total : data.articles.length
+      );
       setError(null);
     } catch (err) {
       console.error("Error fetching observability articles:", err);
@@ -80,6 +87,7 @@ const ObservabilityArticles = forwardRef((__, ref) => {
       );
       setArticles(paginatedCache);
       setTotalPages(Math.ceil(cachedArticles.length / ARTICLES_PER_PAGE));
+      setTotalArticles(cachedArticles.length);
     } finally {
       setLoading(false);
     }
@@ -103,6 +111,12 @@ const ObservabilityArticles = forwardRef((__, ref) => {
           {t("observabilityArticles.description")}
         </p>
       </header>
+
+      {!loading &&
+        SHOW_OBSERVABILITY_ARTICLE_COUNT &&
+        totalArticles > 0 && (
+          <ObservabilityArticleCount count={totalArticles} />
+        )}
 
       {loading && (
         <div className='flex justify-center items-center py-12'>

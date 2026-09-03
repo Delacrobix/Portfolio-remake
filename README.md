@@ -25,6 +25,7 @@ These constants can be toggled to show/hide features without deleting code.
 | Flag | File | Default | Description |
 |------|------|---------|-------------|
 | `SHOW_ELASTIC_RANK` | `src/components/ElasticLeaderboard.jsx` | `true` | Shows the #1 Elastic Search Labs badge in Intro and the top-3 leaderboard in Articles |
+| `SHOW_OBSERVABILITY_ARTICLE_COUNT` | `src/components/ObservabilityArticleCount.jsx` | `true` | Shows the total published Observability Labs articles above the article grid |
 | `SHOW_PALETTE_SWITCHER` | `src/config/palettes.js` | `true` | Shows the color palette switcher in the TopBar and mobile drawer |
 
 ## Commented-out sections

@@ -380,6 +380,11 @@
     "title": "Top Elastic Search Labs Contributors",
     "articles": "articles"
   },
+  "observabilityStats": {
+    "title": "Elastic Observability Labs Contributions",
+    "eyebrow": "Published Work",
+    "articles": "technical articles published"
+  },
   "skills": {
     "title": "Skills",
     "description": "Here are the technologies that I have worked with. I have experience developing applications with MVC architecture and modular applications. Additionally, building REST APIs and GraphQL APIs."

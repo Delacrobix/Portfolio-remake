@@ -380,6 +380,11 @@
     "title": "Top Contribuidores Elastic Search Labs",
     "articles": "artículos"
   },
+  "observabilityStats": {
+    "title": "Contribuciones a Elastic Observability Labs",
+    "eyebrow": "Trabajo Publicado",
+    "articles": "artículos técnicos publicados"
+  },
   "skills": {
     "title": "Habilidades",
     "description": "Estas son algunas de las tecnologías y herramientas con las que he trabajado. Tengo experiencia en el desarrollo de experiencias de usuario y de aplicaciones con arquitectura MVC y modulares, también en el desarrollo de API REST y GraphQL APIs."

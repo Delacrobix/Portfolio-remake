@@ -1,24 +1,32 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Apply dark mode + saved palette before CSS loads to prevent flash -->
-    <script src="/init-theme.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Jeffrey Rengifo - Portfolio" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Jeffrey Rengifo. Software and Elastic Stack engineer: search, observability and AI agents." />
     <link rel="manifest" href="/manifest.json" />
     <title>Jeffrey Rengifo</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Apply the saved theme before first paint. Light is the default. -->
+    <script>
+      try {
+        if (localStorage.getItem("theme") === "dark") {
+          document.documentElement.dataset.theme = "dark";
+          document.querySelector('meta[name="theme-color"]').content = "#11151b";
+        }
+      } catch (e) {}
+    </script>
+
+    <!-- The typeface is served from this site (src/assets/fonts); see the @font-face rules in tailwind.css. -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Lora&family=Roboto+Mono&display=swap"
-      rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Josefin+Sans:wght@100&family=Nunito&family=Poppins:wght@100&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@100&family=Rubik:wght@300&family=Work+Sans:wght@100&display=swap"
-      rel="stylesheet" />
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/hanken-grotesk-latin-KjBMhMia.woff2"
+      crossorigin />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -33,8 +41,8 @@
 
       gtag("config", "G-D5TM066D4P");
     </script>
-    <script type="module" crossorigin src="/assets/index-CSCacIKl.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BgClWwWr.css">
+    <script type="module" crossorigin src="/assets/index-DZxvxCvU.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Ch_hkev5.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

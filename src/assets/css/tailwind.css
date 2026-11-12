@@ -1,41 +1,193 @@
-@import "tailwindcss";
-@plugin '../../../hero.ts';
-@source '../../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
-@custom-variant dark (&:is(.dark *));
+/* Only scan the app: the repo also holds mockups and tooling that are not part of the site. */
+@import "tailwindcss" source(none);
+@source "../../**/*.{js,jsx}";
 
-/* Custom fonts */
+/* Hanken Grotesk, variable weight, served from this site. Licence: src/assets/fonts/OFL.txt */
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("../fonts/hanken-grotesk-latin.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("../fonts/hanken-grotesk-latin-ext.woff2") format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+    U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 @theme {
-  --font-bacasime: "Bacasime Antique", serif;
-  --font-lora: "Lora", serif;
-  --font-roboto-mono: "Roboto Mono", monospace;
-  --font-comfortaa: "Comfortaa", cursive;
-  --font-josefin: "Josefin Sans", sans-serif;
-  --font-nunito: "Nunito", sans-serif;
-  --font-poppins: "Poppins", sans-serif;
-  --font-quicksand: "Quicksand", sans-serif;
-  --font-raleway: "Raleway", sans-serif;
-  --font-roboto: "Roboto", sans-serif;
-  --font-rubik: "Rubik", sans-serif;
-  --font-work-sans: "Work Sans", sans-serif;
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --breakpoint-wide: 56.25rem;
+  /* Width at which the top bar has room for every section link. */
+  --breakpoint-nav: 66.25rem;
+
+  --color-paper: #ffffff;
+  --color-wash: #f4f6f8;
+  --color-ink: #14181f;
+  --color-ink-2: #4a5361;
+  --color-ink-3: #6b7482;
+  --color-ink-hover: #2a313c;
+  --color-rule: #dfe3e8;
+  --color-rule-2: #c5ccd5;
+  --color-brand: #1d4ed8;
+  --color-brand-wash: #eaf0fe;
+  --color-obs: #c2410c;
+  --color-hl: #fde58a;
+  /* Ground behind the portrait, whose own background is white. */
+  --color-photo-tile: #f4f6f8;
 }
 
 @layer base {
+  /* Secondary dark theme: the same tokens, re-valued. Set by src/lib/theme.js. */
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --color-paper: #11151b;
+    --color-wash: #171c24;
+    --color-ink: #e9ecf0;
+    --color-ink-2: #a7b0bd;
+    --color-ink-3: #8791a0;
+    --color-ink-hover: #ffffff;
+    --color-rule: #262d38;
+    --color-rule-2: #414c5c;
+    --color-brand: #8aabff;
+    --color-brand-wash: #1a2540;
+    --color-obs: #f0895a;
+    --color-hl: #5a4a08;
+    --color-photo-tile: #b4bcc8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   body {
-    background-color: hsl(var(--heroui-background));
-    color: hsl(var(--heroui-foreground));
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.125rem;
+    line-height: 1.55;
+    font-variant-numeric: tabular-nums;
+    -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
 
-  /* Font scaling by viewport height */
-  @media (max-height: 850px) { html { font-size: 15px; } }
-  @media (max-height: 790px) { html { font-size: 14px; } }
-  @media (max-height: 620px) { html { font-size: 13px; } }
+  ::selection {
+    background-color: var(--color-hl);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  a {
+    text-underline-offset: 4px;
+  }
+
+  mark {
+    background-color: var(--color-hl);
+    /* Always ink, so a match inside muted text keeps its contrast in both themes. */
+    color: var(--color-ink);
+    padding-inline: 2px;
+    border-radius: 2px;
+  }
+
+  input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+  }
 }
 
 @layer components {
-  /* Intro: height reset on very short viewports */
-  @media (max-height: 620px) { .intro { height: 100%; } }
+  /* Added by revealElement() to point at the item a search result led to. */
+  .flash {
+    animation: flash 2.2s ease-out;
+    border-radius: 6px;
+  }
+
+  .thin-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-rule-2) transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Keep the highlight, drop the fade. */
+  .flash {
+    animation-timing-function: step-end;
+  }
+}
+
+@keyframes flash {
+  0%,
+  35% {
+    background-color: var(--color-hl);
+    box-shadow: 0 0 0 14px var(--color-hl);
+  }
+  100% {
+    background-color: transparent;
+    box-shadow: 0 0 0 14px transparent;
+  }
+}
+
+/* Printing: the page becomes a paper curriculum. Always light, no tinted bands, smaller scale. */
+@media print {
+  :root,
+  :root[data-theme="dark"] {
+    color-scheme: light;
+    --color-paper: #ffffff;
+    --color-wash: #ffffff;
+    --color-ink: #14181f;
+    --color-ink-2: #4a5361;
+    --color-ink-3: #6b7482;
+    --color-ink-hover: #2a313c;
+    --color-rule: #dfe3e8;
+    --color-rule-2: #c5ccd5;
+    --color-brand: #1d4ed8;
+    --color-brand-wash: #ffffff;
+    --color-obs: #c2410c;
+    --color-hl: transparent;
+    --color-photo-tile: #f4f6f8;
+  }
+
+  @page {
+    margin: 14mm;
+  }
+
+  body {
+    zoom: 0.72;
+    print-color-adjust: exact;
+  }
+
+  article,
+  li,
+  figure {
+    break-inside: avoid;
+  }
+
+  h2,
+  h3 {
+    break-after: avoid;
+  }
 }

@@ -1,398 +1,329 @@
 {
-  "header": {
-    "nav-link-1": "Intro",
-    "nav-link-2": "About Me",
-    "nav-link-3": "Experience",
-    "nav-link-4": "Projects",
-    "nav-link-5": "Awards",
-    "nav-link-6": "Articles",
-    "nav-link-7": "Observability",
-    "nav-link-8": "Videos",
-    "nav-link-9": "Certifications",
-    "nav-link-10": "Tools",
-    "nav-link-11": "Contact"
+  "skip": "Skip to content",
+  "nav": {
+    "label": "Sections",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language",
+    "home": "Home",
+    "areas": "Areas of work",
+    "experience": "Experience",
+    "articles": "Articles",
+    "awards": "Awards",
+    "certifications": "Certifications",
+    "projects": "Projects",
+    "videos": "Videos",
+    "contact": "Contact",
+    "themeDark": "Switch to dark mode",
+    "themeLight": "Switch to light mode"
   },
   "intro": {
-    "welcome": "Software Engineer"
+    "role": "Software and Elastic Stack engineer. Medellín, Colombia.",
+    "lead": "I work on search, observability and AI agents. I write <articles>technical articles</articles> for Elastic's official blogs, record <videos>video tutorials</videos> and work on <projects>Elasticsearch projects</projects> for clients.",
+    "cv": "Résumé (PDF)",
+    "photoAlt": "Portrait of Jeffrey Rengifo",
+    "cvShort": "Résumé"
   },
-  "switch-bottom": "Switch view",
-  "videos": {
-    "title": "Technical Videos",
-    "description": "Video tutorials and technical talks about Elasticsearch, AI, and software development.",
-    "watchButton": "Watch Video",
+  "search": {
+    "label": "Search the whole site",
+    "placeholder": "Search, or / for commands",
+    "shortcut": "Press / to search",
+    "results": "Results",
+    "examplesLabel": "For example:",
+    "examples": [
+      "hackathon",
+      "MCP",
+      "certifications",
+      "migration",
+      "/profile"
+    ],
+    "goToSection": "Go to the {{section}} section",
+    "allArticles": "See all {{count}} matching articles",
+    "empty": "Nothing matches “{{query}}”. Try another word, such as “awards” or “Elasticsearch”.",
+    "commandsTitle": "Commands",
+    "noCommand": "There is no “{{query}}” command. Type / to see the list.",
+    "scopeHint": "Type what to search for after the command.",
+    "commands": {
+      "cv": {
+        "name": "cv",
+        "text": "Open the résumé in a new tab"
+      },
+      "linkedin": {
+        "name": "linkedin",
+        "text": "Open LinkedIn in a new tab"
+      },
+      "github": {
+        "name": "github",
+        "text": "Open GitHub in a new tab"
+      },
+      "email": {
+        "name": "email",
+        "text": "Copy the email address to the clipboard",
+        "done": "Email copied: {{email}}"
+      },
+      "profile": {
+        "name": "profile",
+        "text": "Copy the full profile as Markdown",
+        "done": "Profile copied as Markdown. Paste it into a document or an AI assistant."
+      },
+      "latest": {
+        "name": "latest",
+        "text": "Open the most recent article"
+      },
+      "random": {
+        "name": "random",
+        "text": "Open a random article"
+      },
+      "articles": {
+        "name": "articles",
+        "text": "Search only the articles",
+        "arg": "term"
+      },
+      "videos": {
+        "name": "videos",
+        "text": "Search only the videos",
+        "arg": "term"
+      },
+      "es": {
+        "name": "es",
+        "text": "View the site in Spanish"
+      },
+      "en": {
+        "name": "en",
+        "text": "View the site in English"
+      },
+      "dark": {
+        "name": "dark",
+        "text": "Switch to dark mode"
+      },
+      "light": {
+        "name": "light",
+        "text": "Switch to light mode"
+      }
+    },
+    "copyFailed": "Could not copy to the clipboard."
+  },
+  "areas": {
     "list": [
       {
-        "title": "How to build an Ollama RAG app using Elasticsearch with Go",
-        "description": "Step-by-step guide to building a Retrieval-Augmented Generation application with Ollama and Elasticsearch using the Go programming language.",
-        "thumbnail": "https://img.youtube.com/vi/ceou_5H6TUs/maxresdefault.jpg",
-        "link": "https://www.youtube.com/watch?v=ceou_5H6TUs",
-        "authors": ["Jeffrey Rengifo"]
+        "title": "AI agents and LLM applications",
+        "text": "RAG, MCP, LangChain, LangGraph and LLM evaluation."
       },
       {
-        "title": "How to Ingest Data into Elasticsearch via Kafka",
-        "description": "Learn the best practices for ingesting and streaming data from Apache Kafka into Elasticsearch for real-time analytics.",
-        "thumbnail": "https://img.youtube.com/vi/63tFL8YIifA/maxresdefault.jpg",
-        "link": "https://www.youtube.com/watch?v=63tFL8YIifA",
-        "authors": ["Jeffrey Rengifo"]
+        "title": "Search and observability with Elastic",
+        "text": "Elasticsearch, ES|QL, Elastic Observability, OpenTelemetry and search migrations."
       },
       {
-        "title": "How to match CVs to jobs in Elasticsearch with semantic text & LLMs",
-        "description": "Learn how to build an intelligent CV-to-job matching system using Elasticsearch's semantic text capabilities and Large Language Models.",
-        "thumbnail": "https://img.youtube.com/vi/kPcpgEyr6fk/maxresdefault.jpg",
-        "link": "https://www.youtube.com/watch?v=kPcpgEyr6fk",
-        "authors": ["Jeffrey Rengifo"]
+        "title": "Development",
+        "text": "Python, FastAPI and TypeScript, with React for interfaces."
+      }
+    ]
+  },
+  "experience": {
+    "list": [
+      {
+        "period": "Sep 2024 to present",
+        "position": "Elastic Stack engineer and technical writer",
+        "company": "Kibernum, Elite Consulting Team. Contractor.",
+        "bullets": [
+          "{{total}} technical articles with code on Elastic's official blogs: {{search}} on Search Labs since January 2025 and {{obs}} on Observability Labs since April 2026.",
+          "{{videos}} video tutorials on Elasticsearch and LLM applications.",
+          "More than 45 pull requests merged into Elastic's example repositories.",
+          "Elasticsearch consulting projects for US clients."
+        ],
+        "tags": [
+          "Elasticsearch",
+          "ES|QL",
+          "Elastic Observability",
+          "OpenTelemetry",
+          "AI agents",
+          "MCP"
+        ]
       },
       {
-        "title": "How to Use AutoGen Agents + Elasticsearch for Job Matching",
-        "description": "Discover how to leverage AutoGen agents with Elasticsearch to create an automated job matching system powered by AI.",
-        "thumbnail": "https://img.youtube.com/vi/AhNMOPKLLFg/maxresdefault.jpg",
-        "link": "https://www.youtube.com/watch?v=AhNMOPKLLFg",
-        "authors": ["Jeffrey Rengifo"]
-      },
-      {
-        "title": "Spring AI & Elasticsearch: How to build a RAG system in Java",
-        "description": "Build a powerful RAG (Retrieval-Augmented Generation) system using Spring AI framework and Elasticsearch in Java.",
-        "thumbnail": "https://img.youtube.com/vi/ms2xRO8B1YU/maxresdefault.jpg",
-        "link": "https://www.youtube.com/watch?v=ms2xRO8B1YU",
-        "authors": ["Jeffrey Rengifo"]
-      },
-      {
-        "title": "Ollama & Elasticsearch: How to use Ollama with the Inference API",
-        "description": "Explore how to integrate Ollama with Elasticsearch's Inference API to add AI capabilities to your search applications.",
-        "thumbnail": "https://img.youtube.com/vi/Iz7Ey3pVE7c/maxresdefault.jpg",
-        "link": "https://www.youtube.com/watch?v=Iz7Ey3pVE7c",
-        "authors": ["Jeffrey Rengifo"]
-      },
-      {
-        "title": "How to use LlamaIndex Workflows with Elasticsearch",
-        "description": "Learn how to integrate LlamaIndex Workflows with Elasticsearch to build powerful AI-powered search and retrieval applications.",
-        "thumbnail": "https://img.youtube.com/vi/bkjmCfHiF5E/maxresdefault.jpg",
-        "link": "https://www.youtube.com/watch?v=bkjmCfHiF5E",
-        "authors": ["Jeffrey Rengifo"]
-      },
-      {
-        "title": "How to Integrate Microsoft Copilot with Elasticsearch",
-        "description": "Discover how to integrate Microsoft Copilot with Elasticsearch to enhance your search capabilities with AI-powered assistance.",
-        "thumbnail": "https://img.youtube.com/vi/p-fYjoeoM5M/maxresdefault.jpg",
-        "link": "https://www.youtube.com/watch?v=p-fYjoeoM5M",
-        "authors": ["Jeffrey Rengifo"]
+        "period": "2022 to 2024",
+        "position": "Freelance web developer",
+        "company": "Several clients.",
+        "text": "Web applications, Chrome extensions, desktop applications, scraping systems, APIs and solutions with Elasticsearch and Kibana.",
+        "tags": [
+          "TypeScript",
+          "Python",
+          "Node.js",
+          "Elasticsearch",
+          "Kibana"
+        ]
       }
     ]
   },
   "articles": {
-    "title": "Technical Articles",
-    "description": "Deep dives into Elasticsearch, AI/GenAI integrations, and software engineering. Published on Elasticsearch Labs.",
-    "readButton": "Read Article"
-  },
-  "observabilityArticles": {
-    "title": "Observability Articles",
-    "description": "Technical articles on observability, monitoring, and logging. Published on Elastic Observability Labs.",
-    "readButton": "Read Article",
-    "errorMessage": "Could not load articles at this time."
+    "stats": {
+      "articles": "published articles",
+      "articlesNote": "{{search}} on Search Labs and {{obs}} on Observability Labs",
+      "views": "views on elastic.co",
+      "viewsNote": "More than {{average}} per article on average",
+      "rankValue": "No. {{rank}}",
+      "rank": "by articles published on Search Labs",
+      "rankNote": "Among all the blog's authors"
+    },
+    "podiumTitle": "Authors with the most articles on Elastic Search Labs",
+    "authorCount": "{{count}} articles",
+    "searchTitle": "Search the {{count}} articles",
+    "searchLabel": "Search the articles",
+    "searchPlaceholder": "Search by topic",
+    "count": "{{shown}} of {{total}}",
+    "filters": {
+      "label": "Filter articles",
+      "all": "All",
+      "search": "Search Labs",
+      "obs": "Observability Labs"
+    },
+    "showAll": "Show all {{count}}",
+    "showLess": "Show fewer",
+    "empty": "No article matches “{{query}}”. Try another word or remove the filter."
   },
   "awards": {
-    "title": "Awards & Hackathons",
-    "description": "Recognition and achievements in coding competitions and tech events.",
-    "place": "Place",
-    "relatedLinksLabel": "Related Links",
     "list": [
       {
-        "event": "Enterprise AI Hackathon - NYSE & Cohere",
-        "organizer": "New York Stock Exchange & Cohere",
-        "position": "2nd",
-        "description": "RAGenda: An AI-powered meeting companion that utilizes Cohere's connectors ecosystem to streamline and improve meeting management. Features personalized agendas, live chat, sentiment analysis, and detailed post-meeting reports.",
-        "technologies": ["Cohere", "RAG", "AI", "JavaScript"],
-        "date": "March 2024",
-        "team": "Team Kibernum",
+        "rank": "2nd",
+        "rankLabel": "place",
+        "event": "Enterprise AI Hackathon",
+        "meta": "New York Stock Exchange (NYSE) and Cohere. March 2024. Team Kibernum.",
+        "project": "RAGenda",
+        "description": "an AI meeting assistant built on Cohere's connectors: it prepares agendas, runs a live chat and writes reports afterwards.",
         "links": [
           {
-            "label": "LinkedIn Announcement",
+            "label": "Cohere announcement",
             "url": "https://www.linkedin.com/posts/cohere-ai_were-excited-to-announce-the-top-three-of-activity-7167898070330920960-ULLU?utm_source=share&utm_medium=member_desktop&rcm=ACoAADlq3I0BpmqOv6PFNUih3AS6XtGX5p67g8w"
           },
           {
-            "label": "Kibernum Article",
+            "label": "Kibernum article",
             "url": "https://www.kibernum.com/proyecto-de-inteligencia-artificial-de-kibernum-gana-segundo-lugar-en-hackathon-de-la-bolsa-de-valores-de-nueva-york-y-la-canadiense-cohere/"
           },
           {
-            "label": "Demo Video",
+            "label": "Demo video",
             "url": "https://www.youtube.com/watch?v=mPaue4kQ6oI"
           }
-        ]
+        ],
+        "placing": "Second place"
       },
       {
+        "rank": "3rd",
+        "rankLabel": "place",
         "event": "Gemini AI Hackathon",
-        "organizer": "lablab.ai",
-        "position": "3rd",
-        "description": "ContentCompass: Elevate Your Content with Precision - An innovative AI solution for content creation and optimization using Gemini AI.",
-        "technologies": ["Gemini AI", "Google AI", "Python"],
-        "date": "January 2024",
-        "team": "Team Llermaly",
+        "meta": "lablab.ai. January 2024. Team Llermaly.",
+        "project": "ContentCompass",
+        "description": "a content creation and optimization tool built with Gemini.",
         "links": [
           {
-            "label": "Project Page",
+            "label": "Project page",
             "url": "https://lablab.ai/event/gemini-ai-hackathon/llermaly/contentcompass-elevate-your-content-with-precision"
           }
-        ]
-      }
-    ]
-  },
-  "projects": {
-    "title": "Featured Projects",
-    "description": "Solutions focused on delivering real value and solving meaningful problems.",
-    "problemLabel": "Problem",
-    "solutionLabel": "Solution",
-    "impactLabel": "Impact",
-    "codeButton": "View Code",
-    "demoButton": "Visit App",
-    "list": [
-      {
-        "name": "Dark Score",
-        "tagline": "Convert your sheet music to dark mode",
-        "problem": "Traditional white sheet music on tablets and screens causes eye strain in low-light environments, drains battery, and glows on stage.",
-        "solution": "A web app that converts sheet music PDFs and images to dark mode for a more comfortable reading experience on modern devices. Your files never leave your device: all processing runs locally using Web Workers.",
-        "impact": "Enables comfortable reading on tablets during rehearsals and performances, reduces screen brightness on stage, and extends battery life on portable devices.",
-        "impactType": "users",
-        "tech": ["React", "TypeScript", "PDF Processing", "Privacy-first"],
-        "repo": "https://github.com/Delacrobix/dark-score",
-        "demo": "https://darkscore.app"
+        ],
+        "placing": "Third place"
       }
     ]
   },
   "certifications": {
-    "title": "Certifications",
-    "description": "Professional certifications and continuous learning achievements.",
-    "mainTitle": "Featured Certifications",
-    "secondaryTitle": "Additional Certifications",
-    "featured": "Featured",
-    "expires": "Expires",
-    "viewButton": "View Certificate",
+    "view": "View credential",
+    "coursesTitle": "Courses and training",
+    "viewCourse": "View certificate",
     "main": [
       {
-        "name": "Elastic Certified Engineer",
-        "issuer": "Elastic",
-        "date": "Jan 2025",
-        "expires": "Jan 2027",
-        "credentialId": "2637cfce-e44b-499f-9fcc-85e36dc6574a",
-        "skills": [
-          "Elasticsearch",
-          "Cluster Management",
-          "Data Indexing",
-          "Query Analysis"
-        ],
-        "thumbnail": "https://pdf.ms.credential.net/v2/certificate/image?env=production&credential=1eujg28c&variant=medium",
-        "link": "https://www.credential.net/2637cfce-e44b-499f-9fcc-85e36dc6574a"
-      },
-      {
         "name": "Elastic Certified Observability Engineer",
-        "issuer": "Elastic",
-        "date": "Feb 2026",
-        "expires": "Feb 2028",
-        "credentialId": "24db649b-da1b-41c8-ab99-a7ee969c8386",
-        "skills": [
-          "Observability",
-          "APM",
-          "Metrics",
-          "Logs",
-          "Machine Learning",
-          "Kibana"
-        ],
+        "meta": "Elastic. February 2026, valid until February 2028.",
         "thumbnail": "https://pdf.ms.credential.net/v2/certificate/image?env=production&credential=yvgl41rz&variant=medium",
         "link": "https://www.credential.net/24db649b-da1b-41c8-ab99-a7ee969c8386"
-      }
-    ],
-    "secondary": [
-      {
-        "name": "Elasticsearch para todos",
-        "issuer": "Udemy",
-        "date": "Oct 2023",
-        "thumbnail": "/certs/thumbnails/ElasticsearchParaTodos.jpg",
-        "link": "/certs/ElasticsearchParaTodos.pdf"
       },
       {
-        "name": "Observability Engineer On Demand",
-        "issuer": "Elastic",
-        "date": "Dec 2025",
+        "name": "Elastic Certified Engineer",
+        "meta": "Elastic. January 2025, valid until January 2027.",
+        "thumbnail": "https://pdf.ms.credential.net/v2/certificate/image?env=production&credential=1eujg28c&variant=medium",
+        "link": "https://www.credential.net/2637cfce-e44b-499f-9fcc-85e36dc6574a"
+      }
+    ],
+    "courses": [
+      {
+        "name": "Elastic Observability Engineer (On-Demand)",
+        "meta": "Elastic, December 2025",
         "thumbnail": "/certs/thumbnails/obsevabilityEngineerOnDemand.jpg",
         "link": "/certs/obsevabilityEngineerOnDemand.pdf"
       },
       {
         "name": "Introduction to Painless",
-        "issuer": "Elastic",
-        "date": "Aug 2025",
+        "meta": "Elastic, July 2025",
         "thumbnail": "/certs/thumbnails/introductionPainless.jpg",
         "link": "/certs/introductionPainless.pdf"
+      },
+      {
+        "name": "Elasticsearch para todos",
+        "meta": "Udemy, October 2023",
+        "thumbnail": "/certs/thumbnails/ElasticsearchParaTodos.jpg",
+        "link": "/certs/ElasticsearchParaTodos.pdf"
       }
     ]
   },
-  "tools": {
-    "title": "Favorite Tools",
-    "description": "The essential tools I use daily to build products.",
+  "projects": {
     "list": [
       {
-        "name": "Elasticsearch",
-        "category": "Search & Analytics",
-        "svgKey": "elasticsearch",
-        "url": "https://www.elastic.co/elasticsearch"
+        "period": "Oct 2026 to present",
+        "name": "Reference and SEO articles",
+        "client": "Elastic.",
+        "text": "“What is…?” articles and rewrites of pages on Elastic's site about observability, vector search and AI, written from SEO briefs and reviewed with their editorial team."
       },
       {
-        "name": "Git",
-        "category": "Version Control",
-        "svgKey": "git",
-        "url": "https://git-scm.com/"
-      },
-      {
-        "name": "TypeScript",
-        "category": "Programming Language",
-        "svgKey": "typescript",
-        "url": "https://www.typescriptlang.org/"
-      },
-      {
-        "name": "React",
-        "category": "Frontend Framework",
-        "svgKey": "react",
-        "url": "https://react.dev/"
-      },
-      {
-        "name": "Python",
-        "category": "Programming Language",
-        "svgKey": "python",
-        "url": "https://www.python.org/"
-      },
-      {
-        "name": "GenAI",
-        "category": "Artificial Intelligence",
-        "svgKey": "genAI"
-      }
-    ]
-  },
-  "experience": {
-    "title": "Work Experience",
-    "description": "My professional journey and the value I've delivered in each role.",
-    "achievementsLabel": "Key Achievements",
-    "list": [
-      {
-        "position": "Technical Writer & Elastic Consultant",
-        "company": "Kibernum Elite Consulting Team",
-        "period": "Sep 2024 - Present",
-        "location": "Medellín, Colombia",
-        "description": "Technical writing, documentation, and consulting related to Elasticsearch. Specialized in search engine migrations and optimization.",
-        "achievements": [
-          "Created comprehensive technical documentation for Elasticsearch implementations",
-          "Led search engine migration projects improving query performance",
-          "Optimized Elasticsearch clusters for better scalability and efficiency",
-          "Provided consulting services for enterprise search solutions",
-          "Authored technical articles published on the official Elastic blog covering search, observability, and best practices",
-          "Recorded technical video tutorials demonstrating Elasticsearch features and real-world use cases"
-        ],
-        "technologies": [
-          "Elasticsearch",
-          "Kibana",
-          "Technical Writing",
-          "Search Optimization"
+        "period": "Jun 2026 to present",
+        "name": "App Search to Elasticsearch 9 migration",
+        "client": "US health research center.",
+        "bullets": [
+          "Elasticsearch 9 cluster set up from scratch, with Open Web Crawler.",
+          "Ingest pipelines that reproduce the previous system's output.",
+          "TypeScript proxy with Search UI, lifecycle policies (ILM) and search analytics on OpenTelemetry."
         ]
       },
       {
-        "position": "Freelance Web Developer",
-        "company": "Multiple Clients",
-        "period": "Jan 2022 - Dec 2024",
-        "location": "Medellín, Colombia",
-        "description": "Building efficient solutions for enterprise problems using cutting-edge technologies. Working with Kibana and Elasticsearch to provide advanced solutions in search and data analysis. Developing Chrome extensions, AI services, web scraping systems, desktop applications, and implementing best programming practices and modern architectures.",
-        "achievements": [
-          "Implemented AI services that significantly increased efficiency and optimized costs",
-          "Developed Google Chrome extensions enhancing browser usability",
-          "Designed web scraping systems for automated data extraction",
-          "Deobfuscated JavaScript code to recover original source for clients",
-          "Built desktop applications using Electron and Tauri",
-          "Developed Chrome extensions for various clients",
-          "Built landing pages optimized for conversion",
-          "Implemented Elasticsearch and Kibana solutions for process optimization",
-          "Delivered results-oriented solutions across multiple industries",
-          "Built real-time applications using WebSocket technologies",
-          "Developed REST and GraphQL APIs",
-          "Implemented SEO strategies and responsive design",
-          "Created AI-powered applications",
-          "Worked with SQL and NoSQL databases, containerization with Docker"
-        ],
-        "technologies": [
-          "React",
-          "Node.js",
-          "TypeScript",
-          "Elasticsearch",
-          "Kibana",
-          "AI/GenAI",
-          "Chrome Extensions",
-          "Electron",
-          "Tauri",
-          "Web Scraping",
-          "ASP.NET Core",
-          "Docker",
-          "MongoDB",
-          "MySQL",
-          "Redis",
-          "GraphQL",
-          "Socket.IO"
-        ]
+        "period": "2025",
+        "name": "Painless documentation rewrite",
+        "client": "Elastic.",
+        "text": "Took part in rewriting the documentation for Painless, Elasticsearch's scripting language: tutorials, syntax and troubleshooting pages."
+      },
+      {
+        "period": "Nov 2024",
+        "name": "Swiftype to Elasticsearch migration",
+        "client": "US insurance brokerage.",
+        "text": "Migration advisory, with prototypes of a .NET proxy, Search UI and connector mappings."
       }
-    ]
-  },
-  "works": {
-    "title": "My work",
-    "description": "Here is a part of my experience as software developer.",
-    "cards": {
-      "work-card-1": {
-        "title": "CSS-Tailwind converter",
-        "description": "This app allows you to convert your CSS code to Tailwind CSS code. It is very useful for those who are starting to use Tailwind CSS."
+    ],
+    "productsTitle": "Own products",
+    "products": [
+      {
+        "id": "vatio",
+        "name": "Vatio",
+        "text": "Energy web app for Colombian households. FastAPI and React, with automated tests on every deploy."
       },
-      "work-card-2": {
-        "title": "Personal gallery",
-        "description": "This application shows some ones of my best photos that I have taken in one of my favorite hobbies."
-      },
-      "work-card-3": {
-        "title": "CV analyzer",
-        "description": "Use this app to analyze your CV and get feedback on how to improve it. It uses the OpenAI API."
-      },
-      "work-card-4": {
-        "title": "Chords generator",
-        "description": "Allow us to generate, save and share functionally harmonic progressions using the OpenAI API."
+      {
+        "id": "dark-score",
+        "name": "Dark Score",
+        "text": "Converts sheet music to dark mode in the browser, without uploading files.",
+        "url": "https://darkscore.app",
+        "repo": "https://github.com/Delacrobix/dark-score"
       }
-    },
-    "buttons": {
-      "button-1": "Watch code",
-      "button-2": "Live app"
-    }
+    ],
+    "liveApp": "Live app",
+    "repo": "Code on GitHub"
   },
-  "about-me": {
-    "title": "Who am I",
-    "role": "Technical Writer",
-    "roleSecondary": "& Elastic Consultant",
-    "description": "I'm Jeffrey Rengifo, a Technical Writer and Elastic Consultant specializing in Elasticsearch, GenAI, and software engineering. I create technical content, build AI-powered solutions, and optimize search systems. Passionate about solving complex problems through innovative technology and delivering impactful results.",
-    "cv-button": "Watch CV",
-    "stats": {
-      "yearsCodingLabel": "Years coding",
-      "sweValue": "SWE",
-      "sweLabel": "Software Engineer",
-      "searchLabsLabel": "Search Labs rank",
-      "elasticExpertLabel": "Elasticsearch expert"
-    },
-    "chip": "#1 Elastic Search Labs Contributor"
-  },
-  "leaderboard": {
-    "title": "Top Elastic Search Labs Contributors",
-    "articles": "articles"
-  },
-  "observabilityStats": {
-    "title": "Elastic Observability Labs Contributions",
-    "eyebrow": "Published Work",
-    "articles": "technical articles published"
-  },
-  "skills": {
-    "title": "Skills",
-    "description": "Here are the technologies that I have worked with. I have experience developing applications with MVC architecture and modular applications. Additionally, building REST APIs and GraphQL APIs."
+  "videos": {
+    "intro": "{{count}} video tutorials on Elasticsearch and LLM applications."
   },
   "contact": {
-    "title": "Contact",
-    "description": "Are you interested in my profile? Let's talk!",
-    "copied": "My email is now in your clipboard."
+    "text": "If you would like to write to me, these are the channels.",
+    "copy": "Copy email",
+    "copied": "Email copied",
+    "failed": "Could not copy. The email is {{email}}"
   },
-  "footer": ""
+  "profile": {
+    "links": "Links",
+    "latestArticles": "Most recent articles",
+    "site": "Site"
+  },
+  "footer": "Jeffrey Rengifo"
 }

@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-12T19:45:30Z",
+  "title": "Design System: Jeffrey Rengifo Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "brand": {
+        "role": "primary",
+        "displayName": "Cobalt",
+        "canonical": "#1d4ed8",
+        "tonalRamp": [
+          "#000036",
+          "#01007f",
+          "#0427b3",
+          "#2052dc",
+          "#4077ff",
+          "#7ba5ff",
+          "#b1cbff",
+          "#e7efff"
+        ],
+        "dark": "#8aabff"
+      },
+      "brand-wash": {
+        "role": "primary",
+        "displayName": "Cobalt Wash",
+        "canonical": "#eaf0fe",
+        "tonalRamp": [
+          "#080b14",
+          "#222630",
+          "#3e424d",
+          "#5e636f",
+          "#7e8390",
+          "#a2a8b5",
+          "#c5cad8",
+          "#e8eefc"
+        ],
+        "dark": "#1a2540"
+      },
+      "obs": {
+        "role": "secondary",
+        "displayName": "Rust",
+        "canonical": "#c2410c",
+        "tonalRamp": [
+          "#1c0300",
+          "#481100",
+          "#752100",
+          "#ab3500",
+          "#d65426",
+          "#ff7b51",
+          "#ffb69f",
+          "#ffe9e2"
+        ],
+        "dark": "#f0895a"
+      },
+      "hl": {
+        "role": "tertiary",
+        "displayName": "Highlighter Yellow",
+        "canonical": "#fde58a",
+        "tonalRamp": [
+          "#0f0b00",
+          "#2f2600",
+          "#4f4100",
+          "#766200",
+          "#998220",
+          "#bea74c",
+          "#e2ca6f",
+          "#ffefb1"
+        ],
+        "dark": "#5a4a08"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#262626",
+          "#424242",
+          "#636363",
+          "#838383",
+          "#a8a8a8",
+          "#cacaca",
+          "#eeeeee"
+        ],
+        "dark": "#11151b"
+      },
+      "wash": {
+        "role": "neutral",
+        "displayName": "Cool Grey Wash",
+        "canonical": "#f4f6f8",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#252728",
+          "#414244",
+          "#626365",
+          "#828385",
+          "#a6a8aa",
+          "#c9cbcd",
+          "#edeff1"
+        ],
+        "dark": "#171c24"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Near-Black Ink",
+        "canonical": "#14181f",
+        "tonalRamp": [
+          "#080b12",
+          "#22272e",
+          "#3e434b",
+          "#5e636c",
+          "#7e838d",
+          "#a2a8b2",
+          "#c5cbd5",
+          "#e9eff9"
+        ],
+        "dark": "#e9ecf0"
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Slate Ink",
+        "canonical": "#4a5361",
+        "tonalRamp": [
+          "#050b16",
+          "#1f2733",
+          "#3a4350",
+          "#5b6472",
+          "#7a8493",
+          "#9ea8b8",
+          "#c1cbdc",
+          "#e5efff"
+        ],
+        "dark": "#a7b0bd"
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#6b7482",
+        "tonalRamp": [
+          "#060b15",
+          "#1f2732",
+          "#3b4350",
+          "#5b6471",
+          "#7b8492",
+          "#9fa8b7",
+          "#c1cbdb",
+          "#e5efff"
+        ],
+        "dark": "#8791a0"
+      },
+      "ink-hover": {
+        "role": "neutral",
+        "displayName": "Ink Hover",
+        "canonical": "#2a313c",
+        "tonalRamp": [
+          "#060b14",
+          "#202731",
+          "#3b434e",
+          "#5c6470",
+          "#7b8491",
+          "#a0a8b6",
+          "#c2cbd9",
+          "#e6effe"
+        ],
+        "dark": "#ffffff"
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#dfe3e8",
+        "tonalRamp": [
+          "#090b0f",
+          "#24272a",
+          "#3f4347",
+          "#606468",
+          "#808388",
+          "#a4a8ad",
+          "#c7cbd0",
+          "#ebeff4"
+        ],
+        "dark": "#262d38"
+      },
+      "rule-2": {
+        "role": "neutral",
+        "displayName": "Control Grey",
+        "canonical": "#c5ccd5",
+        "tonalRamp": [
+          "#070b11",
+          "#22272e",
+          "#3d434a",
+          "#5e646c",
+          "#7d848c",
+          "#a2a8b1",
+          "#c4cbd4",
+          "#e8eff8"
+        ],
+        "dark": "#414c5c"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name in the intro. One per page."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "The three headline numbers in Articles, in cobalt. Award ranks use the same voice in ink at 64px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles in the left rail and podium position numbers."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Entry titles in Experience and Projects, including own products; certification names at 800."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "Area titles, article titles, sub-section headings, the podium caption."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "The intro paragraph and the contact sentence."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "The document default set on body; measures capped between 34em and 40em."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Counts, notes under figures, the example search terms, footer, nav links."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Button labels, video titles, entry dates (at 500)."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Language codes (uppercase) and the menu button."
+      }
+    },
+    "shadows": [
+      {
+        "name": "search-focus-ring",
+        "value": "0 0 0 4px var(--color-brand-wash)",
+        "purpose": "Zero-blur ring on a focused search field. Not elevation."
+      },
+      {
+        "name": "flash-halo",
+        "value": "0 0 0 14px var(--color-hl)",
+        "purpose": "Zero-blur halo of the 2.2s arrival flash; fades to transparent."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-duration",
+        "value": "150ms",
+        "purpose": "Every hover, focus and selection change (colour, border, opacity, focus ring)."
+      },
+      {
+        "name": "state-ease",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Tailwind's default curve, used by all state transitions."
+      },
+      {
+        "name": "flash",
+        "value": "flash 2.2s ease-out",
+        "purpose": "Points at the element a search result led to: holds highlighter yellow until 35%, then fades out."
+      },
+      {
+        "name": "flash-reduced-motion",
+        "value": "animation-timing-function: step-end",
+        "purpose": "Under prefers-reduced-motion the flash keeps the highlight for its full 2.2s and drops the fade."
+      },
+      {
+        "name": "scroll",
+        "value": "scroll-behavior: smooth",
+        "purpose": "Anchor navigation; falls back to auto under prefers-reduced-motion. scroll-padding-top is 6rem."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "40rem"
+      },
+      {
+        "name": "md",
+        "value": "48rem"
+      },
+      {
+        "name": "wide",
+        "value": "56.25rem"
+      },
+      {
+        "name": "nav",
+        "value": "66.25rem"
+      }
+    ],
+    "themes": [
+      {
+        "name": "light",
+        "default": true,
+        "selector": ":root",
+        "colors": {
+          "paper": "#ffffff",
+          "wash": "#f4f6f8",
+          "ink": "#14181f",
+          "ink-2": "#4a5361",
+          "ink-3": "#6b7482",
+          "ink-hover": "#2a313c",
+          "rule": "#dfe3e8",
+          "rule-2": "#c5ccd5",
+          "brand": "#1d4ed8",
+          "brand-wash": "#eaf0fe",
+          "obs": "#c2410c",
+          "hl": "#fde58a"
+        }
+      },
+      {
+        "name": "dark",
+        "default": false,
+        "selector": ":root[data-theme=\"dark\"]",
+        "colors": {
+          "paper": "#11151b",
+          "wash": "#171c24",
+          "ink": "#e9ecf0",
+          "ink-2": "#a7b0bd",
+          "ink-3": "#8791a0",
+          "ink-hover": "#ffffff",
+          "rule": "#262d38",
+          "rule-2": "#414c5c",
+          "brand": "#8aabff",
+          "brand-wash": "#1a2540",
+          "obs": "#f0895a",
+          "hl": "#5a4a08"
+        }
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ink-filled action, one per group: the résumé download in the intro and Copy email in Contact.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3v12M7 10l5 5 5-5M5 21h14\"/></svg>Résumé (PDF)</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 8px; height: 46px; padding: 0 18px; border: 1px solid; border-radius: 10px; font-family: var(--font-sans, 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif); font-size: 16.5px; font-weight: 600; text-decoration: none; cursor: pointer; transition: color .15s cubic-bezier(.4,0,.2,1), background-color .15s cubic-bezier(.4,0,.2,1), border-color .15s cubic-bezier(.4,0,.2,1); } .ds-btn svg { width: 17px; height: 17px; } .ds-btn:focus-visible { outline: 2px solid var(--color-brand, #1d4ed8); outline-offset: 3px; } .ds-btn-primary { background: var(--color-ink, #14181f); border-color: var(--color-ink, #14181f); color: var(--color-paper, #ffffff); } .ds-btn-primary:hover { background: var(--color-ink-hover, #2a313c); border-color: var(--color-ink-hover, #2a313c); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Paper button with a control-grey border for LinkedIn, GitHub and Show all.",
+      "html": "<a class=\"ds-btn ds-btn-secondary\" href=\"#\">LinkedIn</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 8px; height: 46px; padding: 0 18px; border: 1px solid; border-radius: 10px; font-family: var(--font-sans, 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif); font-size: 16.5px; font-weight: 600; text-decoration: none; cursor: pointer; transition: color .15s cubic-bezier(.4,0,.2,1), background-color .15s cubic-bezier(.4,0,.2,1), border-color .15s cubic-bezier(.4,0,.2,1); } .ds-btn svg { width: 17px; height: 17px; } .ds-btn:focus-visible { outline: 2px solid var(--color-brand, #1d4ed8); outline-offset: 3px; } .ds-btn-secondary { background: var(--color-paper, #ffffff); border-color: var(--color-rule-2, #c5ccd5); color: var(--color-ink, #14181f); } .ds-btn-secondary:hover { border-color: var(--color-ink, #14181f); }"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "The one heavy control: shared by the site search and the article search, with a trailing slot that holds the keyboard hint on the site search.",
+      "html": "<div class=\"ds-search\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"10.5\" cy=\"10.5\" r=\"6.5\"/><path d=\"M15.5 15.5 21 21\"/></svg><input class=\"ds-search-input\" type=\"search\" placeholder=\"Search, or / for commands\" aria-label=\"Search the whole site\"><kbd class=\"ds-search-kbd\">/</kbd></div>",
+      "css": ".ds-search { display: flex; align-items: center; height: 60px; max-width: 760px; padding: 0 18px; background: var(--color-paper, #ffffff); border: 1.5px solid var(--color-ink, #14181f); border-radius: 12px; font-family: var(--font-sans, 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif); transition: box-shadow .15s cubic-bezier(.4,0,.2,1); } .ds-search:focus-within { border-color: var(--color-brand, #1d4ed8); box-shadow: 0 0 0 4px var(--color-brand-wash, #eaf0fe); } .ds-search svg { flex: none; width: 22px; height: 22px; margin-right: 12px; color: var(--color-ink-2, #4a5361); } .ds-search-input { flex: 1; min-width: 0; border: 0; background: transparent; outline: none; font: inherit; font-size: 1.25rem; font-weight: 600; color: var(--color-ink, #14181f); caret-color: var(--color-brand, #1d4ed8); } .ds-search-input::placeholder { font-weight: 500; color: var(--color-ink-3, #6b7482); } .ds-search-input::-webkit-search-cancel-button { display: none; } .ds-search-kbd { margin-left: 12px; padding: 1px 8px; border: 1px solid var(--color-rule-2, #c5ccd5); border-radius: 6px; font-family: var(--font-sans, 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif); font-size: .875rem; font-weight: 600; color: var(--color-ink-2, #4a5361); }"
+    },
+    {
+      "name": "Search Results Panel",
+      "kind": "custom",
+      "refersTo": "search-panel",
+      "description": "The only overlay: a listbox under the site search, grouped by section, with matches marked in yellow. The first option is always preselected in cobalt wash; commands are one line each at desktop width.",
+      "html": "<div class=\"ds-panel\" role=\"listbox\" aria-label=\"Results\"><p class=\"ds-panel-group\">Awards <span>2</span></p><a class=\"ds-option\" role=\"option\" aria-selected=\"true\" href=\"#\"><b>Go to the Awards section</b></a><a class=\"ds-option\" role=\"option\" aria-selected=\"false\" href=\"#\"><b>Enterprise AI <mark class=\"ds-mark\">Hackathon</mark></b><span class=\"ds-option-text\">2nd place New York Stock Exchange (NYSE) and Cohere. March 2024.</span></a><a class=\"ds-option\" role=\"option\" aria-selected=\"false\" href=\"#\"><b>Gemini AI <mark class=\"ds-mark\">Hackathon</mark></b><span class=\"ds-option-text\">3rd place lablab.ai. January 2024.</span></a><p class=\"ds-panel-group\">Commands</p><button class=\"ds-option ds-option-cmd\" type=\"button\" role=\"option\" aria-selected=\"false\"><b>/dark</b><span class=\"ds-option-text\">Switch to dark mode</span></button><button class=\"ds-option ds-option-cmd\" type=\"button\" role=\"option\" aria-selected=\"false\"><b>/articles <i>term</i></b><span class=\"ds-option-text\">Search only the articles</span></button></div>",
+      "css": ".ds-panel { max-width: 760px; padding: 6px 0 8px; background: var(--color-paper, #ffffff); border: 1.5px solid var(--color-ink, #14181f); border-radius: 12px; font-family: var(--font-sans, 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif); color: var(--color-ink, #14181f); scrollbar-width: thin; scrollbar-color: var(--color-rule-2, #c5ccd5) transparent; } .ds-panel-group { display: flex; justify-content: space-between; margin: 0; padding: 12px 18px 4px; font-size: 14.5px; font-weight: 700; color: var(--color-ink-2, #4a5361); } .ds-panel-group span { font-weight: 500; } .ds-option { display: grid; gap: 2px 14px; padding: 9px 18px; color: inherit; text-decoration: none; cursor: pointer; } .ds-option:hover, .ds-option[aria-selected='true'] { background: var(--color-brand-wash, #eaf0fe); } .ds-option b { font-size: 17.5px; line-height: 1.3; font-weight: 700; } .ds-option-text { font-size: 15.5px; line-height: 1.4; color: var(--color-ink-2, #4a5361); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } .ds-option-cmd { width: 100%; grid-template-columns: 190px 1fr; align-items: baseline; padding: 7px 18px; border: 0; background: transparent; font: inherit; text-align: left; } .ds-option-cmd b { font-size: 17px; } .ds-option-cmd i { font-style: normal; font-weight: 500; color: var(--color-ink-2, #4a5361); } .ds-mark { background: var(--color-hl, #fde58a); color: inherit; padding-inline: 2px; border-radius: 2px; } .ds-option:focus-visible { outline: 2px solid var(--color-brand, #1d4ed8); outline-offset: 3px; }"
+    },
+    {
+      "name": "Filter Chips",
+      "kind": "chip",
+      "refersTo": "chip-filter",
+      "description": "Pill toggles that filter articles by blog and year; the selected chip is ink. 44px tall below 900px, 36px from there up.",
+      "html": "<div class=\"ds-chips\" role=\"group\" aria-label=\"Filter articles\"><button class=\"ds-chip\" type=\"button\" aria-pressed=\"true\">All</button><button class=\"ds-chip\" type=\"button\" aria-pressed=\"false\">Search Labs</button><button class=\"ds-chip\" type=\"button\" aria-pressed=\"false\">Observability Labs</button><button class=\"ds-chip\" type=\"button\" aria-pressed=\"false\">2026</button></div>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 8px; } .ds-chip { min-height: 44px; padding: 0 14px; background: var(--color-paper, #ffffff); border: 1px solid var(--color-rule-2, #c5ccd5); border-radius: 9999px; font-family: var(--font-sans, 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif); font-size: 15.5px; font-weight: 600; color: var(--color-ink-2, #4a5361); cursor: pointer; transition: color .15s cubic-bezier(.4,0,.2,1), background-color .15s cubic-bezier(.4,0,.2,1), border-color .15s cubic-bezier(.4,0,.2,1); } .ds-chip:hover { border-color: var(--color-ink, #14181f); color: var(--color-ink, #14181f); } .ds-chip[aria-pressed='true'] { background: var(--color-ink, #14181f); border-color: var(--color-ink, #14181f); color: var(--color-paper, #ffffff); } @media (min-width: 56.25rem) { .ds-chip { min-height: 36px; } } .ds-chip:focus-visible { outline: 2px solid var(--color-brand, #1d4ed8); outline-offset: 3px; }"
+    },
+    {
+      "name": "Top Bar",
+      "kind": "nav",
+      "refersTo": "top-bar",
+      "description": "Sticky 68px bar on solid paper: name, section links with scroll spy, the language switch and the theme switch. The current section is cobalt on cobalt wash.",
+      "html": "<header class=\"ds-bar\"><a class=\"ds-bar-name\" href=\"#\">Jeffrey Rengifo</a><div class=\"ds-bar-right\"><nav class=\"ds-nav\" aria-label=\"Sections\"><a class=\"ds-nav-link\" href=\"#\">Experience</a><a class=\"ds-nav-link\" href=\"#\" aria-current=\"true\">Articles</a><a class=\"ds-nav-link\" href=\"#\">Awards</a><a class=\"ds-nav-link\" href=\"#\">Contact</a></nav><div class=\"ds-lang\" role=\"group\" aria-label=\"Language\"><button class=\"ds-lang-btn\" type=\"button\" aria-pressed=\"false\">es</button><button class=\"ds-lang-btn\" type=\"button\" aria-pressed=\"true\">en</button></div><button class=\"ds-theme\" type=\"button\" aria-label=\"Switch to dark mode\" title=\"Switch to dark mode\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z\"/></svg></button></div></header>",
+      "css": ".ds-bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 68px; padding: 0 22px; background: var(--color-paper, #ffffff); border-bottom: 1px solid var(--color-rule, #dfe3e8); font-family: var(--font-sans, 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif); color: var(--color-ink, #14181f); } .ds-bar-name { font-size: 1.125rem; font-weight: 700; color: inherit; text-decoration: none; } .ds-bar-right { display: flex; align-items: center; gap: 12px; } .ds-nav { display: flex; align-items: center; gap: 2px; } .ds-nav-link { padding: 7px 12px; border-radius: 8px; font-size: 1rem; font-weight: 500; color: var(--color-ink-2, #4a5361); text-decoration: none; transition: color .15s cubic-bezier(.4,0,.2,1), background-color .15s cubic-bezier(.4,0,.2,1); } .ds-nav-link:hover { background: var(--color-wash, #f4f6f8); color: var(--color-ink, #14181f); } .ds-nav-link[aria-current='true'] { background: var(--color-brand-wash, #eaf0fe); color: var(--color-brand, #1d4ed8); font-weight: 600; } .ds-lang { display: flex; padding: 2px; border: 1px solid var(--color-rule-2, #c5ccd5); border-radius: 8px; } .ds-lang-btn { min-height: 40px; padding: 4px 10px; border: 0; border-radius: 6px; background: transparent; font-family: var(--font-sans, 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif); font-size: 15px; font-weight: 600; text-transform: uppercase; color: var(--color-ink-2, #4a5361); cursor: pointer; transition: color .15s cubic-bezier(.4,0,.2,1), background-color .15s cubic-bezier(.4,0,.2,1); } .ds-lang-btn:hover { color: var(--color-ink, #14181f); } .ds-lang-btn[aria-pressed='true'] { background: var(--color-ink, #14181f); color: var(--color-paper, #ffffff); } .ds-theme { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid var(--color-rule-2, #c5ccd5); border-radius: 8px; background: transparent; color: var(--color-ink-2, #4a5361); cursor: pointer; transition: color .15s cubic-bezier(.4,0,.2,1), border-color .15s cubic-bezier(.4,0,.2,1); } .ds-theme svg { width: 18px; height: 18px; } .ds-theme:hover { border-color: var(--color-ink, #14181f); color: var(--color-ink, #14181f); } .ds-bar a:focus-visible { outline: 2px solid var(--color-brand, #1d4ed8); outline-offset: 3px; } .ds-lang-btn:focus-visible { outline: 2px solid var(--color-brand, #1d4ed8); outline-offset: 3px; } .ds-theme:focus-visible { outline: 2px solid var(--color-brand, #1d4ed8); outline-offset: 3px; }"
+    },
+    {
+      "name": "Dated Entry",
+      "kind": "custom",
+      "refersTo": "tag",
+      "description": "The résumé row used by Experience, Projects and own products: a 150px column for the date or product image, detail beside it, hairline between entries, tags or text links below.",
+      "html": "<div class=\"ds-entries\"><article class=\"ds-entry\"><div class=\"ds-entry-aside\">Sep 2024 to present</div><div><h3 class=\"ds-entry-title\">Elastic technical consultant and technical writer</h3><p class=\"ds-entry-meta\">Kibernum, Elite Consulting Team. Contractor.</p><ul class=\"ds-entry-list\"><li>Search migrations for US clients.</li><li>Video tutorials on Elasticsearch and LLM applications.</li></ul><ul class=\"ds-tags\"><li class=\"ds-tag\">Elasticsearch</li><li class=\"ds-tag\">ES|QL</li><li class=\"ds-tag\">OpenTelemetry</li></ul></div></article><article class=\"ds-entry\"><div class=\"ds-entry-aside\"><span class=\"ds-entry-image\"></span></div><div><h3 class=\"ds-entry-title\">Dark Score</h3><p class=\"ds-entry-meta ds-entry-text\">Converts sheet music to dark mode in the browser, without uploading files.</p><p class=\"ds-entry-links\"><a class=\"ds-link\" href=\"#\">Live app</a><a class=\"ds-link\" href=\"#\">Code on GitHub</a></p></div></article></div>",
+      "css": ".ds-entry { display: grid; grid-template-columns: 150px 1fr; gap: 28px; padding: 26px 0; border-top: 1px solid var(--color-rule, #dfe3e8); font-family: var(--font-sans, 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif); font-size: 1.125rem; line-height: 1.55; color: var(--color-ink, #14181f); font-variant-numeric: tabular-nums; } .ds-entry-aside { padding-top: 4px; font-size: 16.5px; font-weight: 500; color: var(--color-ink-2, #4a5361); } .ds-entry-title { margin: 0; font-size: 22px; line-height: 1.3; font-weight: 700; letter-spacing: -0.01em; } .ds-entry:first-child { border-top: 0; padding-top: 0; } .ds-entry-image { display: block; width: 150px; aspect-ratio: 40 / 21; border-radius: 6px; background: var(--color-rule, #dfe3e8); } .ds-entry-meta { margin: 2px 0 0; color: var(--color-ink-2, #4a5361); } .ds-entry-text { margin-top: 4px; max-width: 40em; } .ds-entry-list { margin: 14px 0 0; padding-left: 20px; max-width: 40em; list-style: disc; } .ds-entry-list li { margin: 6px 0; padding-left: 2px; } .ds-entry-list li::marker { color: var(--color-rule-2, #c5ccd5); } .ds-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; padding: 0; list-style: none; } .ds-tag { padding: 2px 9px; border: 1px solid var(--color-rule-2, #c5ccd5); border-radius: 6px; font-size: 15px; font-weight: 500; color: var(--color-ink-2, #4a5361); } .ds-entry-links { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 12px 0 0; font-size: 17px; } .ds-link { font-weight: 600; color: inherit; text-decoration: underline; text-decoration-color: var(--color-brand, #1d4ed8); text-decoration-thickness: 2px; text-underline-offset: 4px; transition: color .15s cubic-bezier(.4,0,.2,1); } .ds-link:hover { color: var(--color-brand, #1d4ed8); } .ds-link:focus-visible { outline: 2px solid var(--color-brand, #1d4ed8); outline-offset: 3px; border-radius: 4px; }"
+    },
+    {
+      "name": "Headline Figure",
+      "kind": "custom",
+      "description": "The article figures: a cobalt number under a 3px ink rule, a bold label and a slate note that states the source.",
+      "html": "<ul class=\"ds-stats\"><li class=\"ds-stat\"><strong>61</strong><span class=\"ds-stat-label\">published articles</span><span class=\"ds-stat-note\">40 on Search Labs and 21 on Observability Labs</span></li><li class=\"ds-stat\"><strong>No. 1</strong><span class=\"ds-stat-label\">by articles published on Search Labs</span><span class=\"ds-stat-note\">Among all the blog's authors</span></li></ul>",
+      "css": ".ds-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin: 0; padding: 0; list-style: none; font-family: var(--font-sans, 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif); color: var(--color-ink, #14181f); font-variant-numeric: tabular-nums; } .ds-stat { padding-top: 14px; border-top: 3px solid var(--color-ink, #14181f); } .ds-stat strong { display: block; font-size: 3.75rem; line-height: 1; font-weight: 800; letter-spacing: -0.03em; color: var(--color-brand, #1d4ed8); } .ds-stat-label { display: block; margin-top: 8px; font-size: 18.5px; line-height: 1.3; font-weight: 700; } .ds-stat-note { display: block; margin-top: 4px; font-size: 1rem; line-height: 1.4; color: var(--color-ink-2, #4a5361); }"
+    },
+    {
+      "name": "Podium",
+      "kind": "custom",
+      "refersTo": "podium-bar",
+      "description": "Top three authors on Elastic Search Labs in second, first, third order; column height follows the article count and the author's own column is cobalt.",
+      "html": "<figure class=\"ds-podium\"><figcaption>Authors with the most articles on Elastic Search Labs</figcaption><ol><li><span class=\"ds-podium-name\">Thomas Veasey</span><span class=\"ds-podium-count\">30 articles</span><div class=\"ds-podium-bar\" style=\"height:113px\">2</div></li><li><span class=\"ds-podium-avatar\"></span><span class=\"ds-podium-name ds-podium-me\">Jeffrey Rengifo</span><span class=\"ds-podium-count\">40 articles</span><div class=\"ds-podium-bar ds-podium-bar-own\" style=\"height:150px\">1</div></li><li><span class=\"ds-podium-name\">Benjamin Trent</span><span class=\"ds-podium-count\">28 articles</span><div class=\"ds-podium-bar\" style=\"height:105px\">3</div></li></ol></figure>",
+      "css": ".ds-podium { margin: 0; padding: 26px 20px 0; background: var(--color-paper, #ffffff); border: 1px solid var(--color-rule, #dfe3e8); border-radius: 14px; font-family: var(--font-sans, 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif); color: var(--color-ink, #14181f); font-variant-numeric: tabular-nums; } .ds-podium figcaption { font-size: 19px; line-height: 1.3; font-weight: 700; } .ds-podium ol { display: grid; grid-template-columns: repeat(3, 1fr); align-items: end; gap: 10px; max-width: 640px; margin: 22px auto 0; padding: 0; list-style: none; text-align: center; } .ds-podium-avatar { display: block; width: 64px; height: 64px; margin: 0 auto 10px; border: 3px solid var(--color-brand, #1d4ed8); border-radius: 9999px; background: var(--color-wash, #f4f6f8); box-sizing: border-box; } .ds-podium-name { display: block; font-size: 17.5px; line-height: 1.25; font-weight: 700; } .ds-podium-me { color: var(--color-brand, #1d4ed8); } .ds-podium-count { display: block; margin: 2px 0 12px; font-size: 1rem; color: var(--color-ink-2, #4a5361); } .ds-podium-bar { display: grid; place-items: start; justify-content: center; padding-top: 12px; border-radius: 8px 8px 0 0; background: var(--color-rule, #dfe3e8); color: var(--color-ink-2, #4a5361); font-size: 1.875rem; line-height: 1.2; font-weight: 800; box-sizing: border-box; } .ds-podium-bar-own { background: var(--color-brand, #1d4ed8); color: var(--color-paper, #ffffff); }"
+    },
+    {
+      "name": "Article Card",
+      "kind": "card",
+      "refersTo": "highlight",
+      "description": "An unframed link: 16:9 cover, a meta line led by the lab dot (cobalt for Search Labs, rust for Observability Labs) and a bold title with search matches marked.",
+      "html": "<a class=\"ds-article\" href=\"#\"><span class=\"ds-article-cover\"></span><span class=\"ds-article-meta\"><span class=\"ds-dot ds-dot-obs\"></span>Observability Labs, Nov 5, 2026</span><b class=\"ds-article-title\">AI agent observability: LLM tracing with <mark class=\"ds-mark\">OpenTelemetry</mark></b></a>",
+      "css": ".ds-article { display: block; max-width: 300px; font-family: var(--font-sans, 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif); color: var(--color-ink, #14181f); text-decoration: none; } .ds-article-cover { display: block; aspect-ratio: 16 / 9; width: 100%; border-radius: 10px; background: var(--color-rule, #dfe3e8); transition: opacity .15s cubic-bezier(.4,0,.2,1); } .ds-article:hover .ds-article-cover { opacity: .85; } .ds-article-meta { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 15.5px; color: var(--color-ink-2, #4a5361); font-variant-numeric: tabular-nums; } .ds-dot { flex: none; width: 9px; height: 9px; border-radius: 9999px; background: var(--color-brand, #1d4ed8); } .ds-dot-obs { background: var(--color-obs, #c2410c); } .ds-article-title { display: block; margin-top: 5px; font-size: 19px; line-height: 1.3; font-weight: 700; text-decoration-thickness: 2px; text-underline-offset: 4px; } .ds-article:hover .ds-article-title { text-decoration-line: underline; } .ds-mark { background: var(--color-hl, #fde58a); color: inherit; padding-inline: 2px; border-radius: 2px; } .ds-article:focus-visible { outline: 2px solid var(--color-brand, #1d4ed8); outline-offset: 3px; border-radius: 4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Searchable Résumé",
+    "overview": "The page is a well-set curriculum, and the only thing on it that behaves like a product is search. Everything else is deliberately ordinary: a white sheet and a cool grey wash that take turns section by section, near-black type, hairline rules, and a single cobalt that marks what is his and what is active. The North Star is a description, not a metaphor. Three themed directions (a transit map, a library catalog, assembly instructions) were shown and rejected as too creative, and the neon developer-portfolio template is the confirmed anti-reference.\n\nDensity is that of a document: a 1200px column, a 240px left rail that holds each section title while the content scrolls past it, text measures capped near 40em, and dates aligned in a 150px column. Hierarchy comes from size and weight inside one typeface, never from colour blocks, cards with glow, or imagery. The surface is flat: no cast shadows, no gradients, no entrance animation.\n\nThe two search fields carry the heaviest stroke on the page (1.5px ink, 60px tall). That weight is the one place the design raises its voice, and it is where the yellow highlight and the only overlay live.\n\nLight is the default and the normative theme. A secondary dark theme re-values the same twelve colour tokens and changes nothing else: same layout, same type, same strokes, no glow. It is opt-in, set from the top bar or the `/dark` and `/light` search commands, and remembered between visits.",
+    "keyCharacteristics": [
+      "Paper and wash alternate strictly by section; anything placed on wash is paper with a hairline border.",
+      "One typeface, Hanken Grotesk, at five weights (400 to 800); tabular figures everywhere.",
+      "One accent, cobalt, reserved for links, focus, the current section and the author's own numbers.",
+      "Rust and yellow are single-purpose signals: a 9px dot for Observability Labs, a highlighter for search matches.",
+      "Hairline rules and tonal alternation do the work that shadows and cards would do elsewhere.",
+      "Every colour is a token, so the light and dark themes are one design with two value sets.",
+      "Motion is limited to 150ms state changes and one 2.2s highlight flash."
+    ],
+    "rules": [
+      {
+        "name": "The Token-Only Rule",
+        "body": "Components never set a colour directly: no hex, no `white` or `black`, no per-theme colour utilities. Every colour is one of the twelve tokens, which is what keeps the two themes in step. The single exception is the white ground behind certificate images.",
+        "section": "colors"
+      },
+      {
+        "name": "The Alternation Rule",
+        "body": "Sections alternate paper and wash in page order, without exception. A surface placed on wash is paper with a 1px hairline border; there is no third background tint.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Cobalt Rule",
+        "body": "Cobalt marks what is his or what is active: a link, the focused control, the current section, his own figures and his podium column. Nothing decorative is cobalt.",
+        "section": "colors"
+      },
+      {
+        "name": "The Highlighter Rule",
+        "body": "Yellow means \"search found this\" and nothing else: match marks, the flash on arrival, and selection.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Every glyph is Hanken Grotesk. A new level of hierarchy is a change of weight or size, never a second typeface.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tightening Rule",
+        "body": "Negative tracking is tied to size: -0.01em at 22px, -0.02em at 28 to 30px, -0.03em at 60px and above. Text below 22px is never tracked.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "`font-variant-numeric: tabular-nums` is set on `body`, so dates, counts and figures align wherever they appear.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Cast Shadow Rule",
+        "body": "Nothing casts a blurred or offset shadow, in either theme. `box-shadow` is allowed only as a zero-blur spread ring for focus or highlight.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Ink Border Rule",
+        "body": "What must stand above the page is outlined in ink at 1.5px. Only the search field and its results panel use this stroke.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do set every colour with a token utility (`bg-paper`, `text-ink-2`, `border-rule`), and check new work in both themes.",
+      "Do alternate paper and wash for every new section, and put a 1px hairline (`rule`) at its top edge.",
+      "Do place new content in the section frame: title in the 240px rail, content in the fluid column, text capped near 40em.",
+      "Do build hierarchy from Hanken Grotesk's weights and the existing size roles before adding a new size.",
+      "Do keep cobalt for links, focus, the current section and the author's own numbers.",
+      "Do separate items with hairlines and spacing; reach for a bordered paper card only on a wash section.",
+      "Do give every control drawn with the control-grey border a visible label or icon, because that border alone is 1.6:1 on paper.",
+      "Do keep the global focus outline (2px cobalt, 3px offset) on every interactive element, and keep touch controls at 40px or taller below `wide`.",
+      "Do mark search matches with `<mark>` in highlighter yellow and reuse the flash to point at where a result led.",
+      "Do use the named breakpoints (`sm`, `md`, `wide`, `nav`) instead of literal widths."
+    ],
+    "donts": [
+      "Don't write a hex value, `white`, `black` or a `dark:` colour utility in a component; re-value the token in both theme blocks instead.",
+      "Don't treat the dark theme as a second design: no glow, no neon accent, no gradient, no layout or type change. It is the same sheet with different values.",
+      "Don't add cast shadows, glows or gradients to any surface.",
+      "Don't introduce a second accent colour, or use rust or yellow outside their single jobs.",
+      "Don't add a second typeface, including a monospace for commands or keyboard hints.",
+      "Don't give the page a governing metaphor or theme; the transit map, library catalog and assembly-instruction directions were rejected.",
+      "Don't add entrance or scroll animations; motion stays at 150ms state changes and the search flash.",
+      "Don't let search results transform the page; they stay in the panel under the field.",
+      "Don't use the 1.5px ink border for anything that is not search."
+    ]
+  }
+}

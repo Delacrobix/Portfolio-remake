@@ -1,0 +1,643 @@
+{
+  "lastUpdated": "2026-11-12",
+  "views": {
+    "total": 52646,
+    "retrievedAt": "2026-11-12"
+  },
+  "topAuthors": [
+    {
+      "author": "Jeffrey Rengifo",
+      "count": 40
+    },
+    {
+      "author": "Thomas Veasey",
+      "count": 30
+    },
+    {
+      "author": "Benjamin Trent",
+      "count": 28
+    }
+  ],
+  "search": [
+    {
+      "title": "Elasticsearch query language: can LLMs write correct ES|QL? | Elasticsearch Labs",
+      "description": "The best model wrote correct ES|QL 59% of the time. We scored 6,000 LLM-written queries and split every failure into four classes you can fix.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltb263614f6585fc21/6ab9e9d326c31b3764359b35/image1.png",
+      "link": "https://www.elastic.co/search-labs/blog/text-to-esql-benchmark",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo",
+        "Gustavo Llermaly"
+      ]
+    },
+    {
+      "title": "Elastic Workflows for human-in-the-loop LLM orchestration | Elasticsearch Labs",
+      "description": "Discover an Elastic workflow that splits an LLM pipeline across two model tiers, with human approval between schema discovery and full-corpus classification.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltdf42ed268fb6f953/6a87ef5c386ac3fab0adf4e2/image3.png",
+      "link": "https://www.elastic.co/search-labs/blog/llm-orchestration-elastic-workflows",
+      "publishedAt": "2026-08-21T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "BBQ vector quantization for Jina embeddings v5 | Elasticsearch Labs",
+      "description": "See how BBQ quantization shrinks Jina embeddings v5 vectors 29x in Elasticsearch while keeping recall above 98.9%.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt99fb16c79484a00f/6a54fb02600d7743b9e424d9/43df5ec915eae1b9f1534d3acaf2e58732733d9b-1280x720.png",
+      "link": "https://www.elastic.co/search-labs/blog/bbq-quantization-jina-embeddings-v5",
+      "publishedAt": "2026-07-10T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "HyDE in Elasticsearch: 50% better semantic search precision | Elasticsearch Labs",
+      "description": "HyDE improves semantic search precision and recall by 50% for short queries in Elasticsearch. Learn how to implement it with the Inference API.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt511f153758c061d3/6a55e6e62070381c0ff1f6f8/05696e94491651cfb4f3f868fb7bb5697e529002-1672x941.png",
+      "link": "https://www.elastic.co/search-labs/blog/hyde-semantic-search-elasticsearch",
+      "publishedAt": "2026-07-07T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "LLM-as-a-Judge in Elasticsearch Workflows: RAG evaluation | Elasticsearch Labs",
+      "description": "Evaluate your RAG agent on correctness, faithfulness and context relevance inside Elasticsearch Workflows, with no external eval framework needed.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt420e76521fda702d/6a55018c6ed7c01432c931d0/5a05c032e8cf540d254090bf91d539572f0cdd5b-1280x720.png",
+      "link": "https://www.elastic.co/search-labs/blog/rag-evaluation-elasticsearch-workflows",
+      "publishedAt": "2026-07-06T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Google ADK voice assistant for Elasticsearch | Elasticsearch Labs",
+      "description": "Connect Google ADK's real-time voice streaming to Elasticsearch via Agent Builder's built-in MCP server. No custom integration code required.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltf068be41fdc82677/6a4775b3ae1fcb6088986865/89279daeca340396b2fb7b5f8e05fc02443ffa64-1280x720.png",
+      "link": "https://www.elastic.co/search-labs/blog/elasticsearch-voice-assistant-google-adk-mcp",
+      "publishedAt": "2026-06-26T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "PDF data extraction with LlamaParse and Elastic Agent Builder | Elasticsearch Labs",
+      "description": "Use LlamaParse Extract and Elastic Agent Builder to pull structured data from PDF charts and tables, index it in Elasticsearch, and query it with ES|QL.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt6e5bb4d07bfc441e/6a4777ffcbd40e16f6f56f47/c812fc83eb8eed0e7d299eac74abd86358322e0b-1280x720.png",
+      "link": "https://www.elastic.co/search-labs/blog/elastic-agent-builder-llamaparse-pdf-extraction",
+      "publishedAt": "2026-06-17T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "LLM query routing in Elasticsearch with Elastic Workflows | Elasticsearch Labs",
+      "description": "Route LLM queries by complexity in Elasticsearch: Mistral Small for FAQ answers, Claude Sonnet for multi-source synthesis. Metadata-only routing.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt0702339226df637b/6a3e41f7fc23505b129f6865/436e55a3fcebd1e194fd855b2bde6b7a09e4953f-1280x720.png",
+      "link": "https://www.elastic.co/search-labs/blog/llm-query-routing-elastic-workflows",
+      "publishedAt": "2026-06-15T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Elastic & deep agents: Systematic research with LangChain's Deep Agents | Elasticsearch Labs",
+      "description": "Learn how to build a systematic research pipeline using LangChain's Deep Agents framework and Elasticsearch.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt238c520f5bd2a2d2/6a4674762a12a0f9dc50f7a4/6e72efca0112f92a68f2d16d67ce35a6a78eee1d-720x420.jpg",
+      "link": "https://www.elastic.co/search-labs/blog/deep-agents-langchain-elasticsearch-research-pipeline",
+      "publishedAt": "2026-06-12T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Vector search best practices for building a modern app | Elasticsearch Labs",
+      "description": "Six vector search tips for building modern AI search applications entirely on Elasticsearch, with an opinionated rationale at each architectural decision.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltbcbc396333f202b8/6a47761bde9777e82eca63af/c01e76cc6d27b39825aeab29baa7a5db73a3b43b-1999x1125.png",
+      "link": "https://www.elastic.co/search-labs/blog/vector-search-best-practices-elasticsearch",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Multilingual image search with Jina CLIP v2 & Elasticsearch | Elasticsearch Labs",
+      "description": "Learn how to build a multilingual image search system using Jina CLIP v2 and Elasticsearch through a practical example.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltd37f8a607b6cf7d9/6a4775ffcbd40e19cef56f25/269a4d468ec39377914be1c020d3221620268989-1536x1024.png",
+      "link": "https://www.elastic.co/search-labs/blog/image-search-multilingual-elasticsearch-jina-clip-v2",
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Elasticsearch relevance tuning: Measure & improve search recall | Elasticsearch Labs",
+      "description": "Get started with Elasticsearch relevance tuning. Learn how to measure and improve search recall using BM25 lexical search and Jina AI vector embeddings.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt37c9d2971b5a2db3/6a170a75cf4f254223b2d149/492c9b5432a2b9e40cebb3b60f0df019a8c7bf6d-1280x720.png",
+      "link": "https://www.elastic.co/search-labs/blog/elasticsearch-relevance-tuning-improve-recall",
+      "publishedAt": "2026-05-04T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Learning To Rank models and Elastic: From judgment lists to LTR | Elasticsearch Labs",
+      "description": "Learn how to transform judgment lists into training data for Learning To Rank (LTR), design effective features, and interpret what your model learned.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blte2d834c840f21943/6a17dd59faa91365f393c75d/b43ac8c8f6dd519b28a6ed2b89328b6e76c71e02-1999x1125.png",
+      "link": "https://www.elastic.co/search-labs/blog/learning-to-rank-models-judgment-lists",
+      "publishedAt": "2026-03-31T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Elasticsearch runtime fields to ES|QL: How & when to migrate | Elasticsearch Labs",
+      "description": "Learn how to migrate common Elasticsearch runtime field patterns to ES|QL equivalents, with code examples and guidance on when each approach makes sense.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt087dcbc58050f3f6/6a170a27964cea446908bb35/657ec44d182de78e6ddabb6632c6844b5a36774d-720x420.png",
+      "link": "https://www.elastic.co/search-labs/blog/elasticsearch-runtime-fields-to-esql",
+      "publishedAt": "2026-03-30T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Elastic MCP server: How to create an MCP server with TypeScript | Elasticsearch Labs",
+      "description": "Learn how to create an Elastic MCP server with TypeScript and Claude Desktop. We’ll also explore the benefits of building a custom Elastic MCP server.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt5600198cb47666a5/6a170c28509168ce3ae1bb18/0bb24c05fff391f42070c2883182ea6fe9cb9680-1280x720.png",
+      "link": "https://www.elastic.co/search-labs/blog/elastic-mcp-server-typescript-claude",
+      "publishedAt": "2026-03-27T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Using Elasticsearch Inference API along with Hugging Face models | Elasticsearch Labs",
+      "description": "Learn how to connect Elasticsearch to Hugging Face models using the inference API. Through an example, we'll show how to combine them to create a centralized system.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt5f961af4cb26ec97/6a170d767d8d6790c770e790/1417d6ff033712206c9bd4bcc22074ee3437ce96-1999x1125.png",
+      "link": "https://www.elastic.co/search-labs/blog/hugging-face-elasticsearch-inference-api",
+      "publishedAt": "2026-03-23T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "AI agent memory: Agentic AI memory management with Elasticsearch | Elasticsearch Labs",
+      "description": "Learn how to create smarter and more efficient AI agents by managing memory using Elasticsearch.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltafb5cafc0e5e2482/6a17dcd84202294da929f4de/e0172bf1bf25f10001de046531d7dfae816c1f80-1200x676.png",
+      "link": "https://www.elastic.co/search-labs/blog/ai-agent-memory-management-elasticsearch",
+      "publishedAt": "2026-03-18T00:00:00.000Z",
+      "authors": [
+        "Gustavo Llermaly",
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Human in the loop (HITL) AI Agents with LangGraph & Elastic | Elasticsearch Labs",
+      "description": "Learn what human in the loop (HITL) is and how to build an HITL system with LangGraph and Elasticsearch through a practical example.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltee6cb2904441f446/6a17dcf8ec0f8930795a64f4/322bd1a4faa03893d57c886b14b83b19712fd7bc-1600x901.png",
+      "link": "https://www.elastic.co/search-labs/blog/human-in-the-loop-hitllanggraph-elasticsearch",
+      "publishedAt": "2026-01-29T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Agent Builder: Elastic reference architecture and MCP guide | Elasticsearch Labs",
+      "description": "Explore an agentic reference architecture with Elastic Agent Builder, MCP, and semantic search to build a security agent for automated threat analysis.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt22bfbe4b04ea2e92/6a170beb60084b717d3c4597/33a57e3f61f9095c99b6d1499175a6edb0d5dfc5-4720x2560.png",
+      "link": "https://www.elastic.co/search-labs/blog/agent-builder-mcp-reference-architecture-elasticsearch",
+      "publishedAt": "2026-01-07T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Local RAG personal knowledge assistant: LocalAI and Elasticsearch | Elasticsearch Labs",
+      "description": "Learn how to create a private, offline local RAG personal knowledge assistant that can summarize meetings and internal reports using e5-small for embeddings and dolphin3.0-qwen2.5-0.5b for completions...",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt297a0b2fdac0fb9a/6a16f9dbe5ad1ea852682a8e/9441c88cb30945142184d9cfadc2a2ea4b9b709b-1600x906.png",
+      "link": "https://www.elastic.co/search-labs/blog/local-rag-personal-knowlege-assistant-localai-elasticsearch",
+      "publishedAt": "2025-12-18T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "LangGraph.js & Elasticsearch: Building dynamic AI search workflows for finance | Elasticsearch Labs",
+      "description": "Learn how to use LangGraph.js with Elasticsearch to build an AI-powered financial search workflow that turns natural language queries into dynamic, conditional filters for investment and market analys...",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt013eba5d152f11f3/6a1709892b835f6784f4b1a6/12b6057d84c6356267cd178a3c6c1a5c61123ece-2000x1256.png",
+      "link": "https://www.elastic.co/search-labs/blog/ai-agent-workflow-finance-langgraph-elasticsearch",
+      "publishedAt": "2025-12-05T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "LangExtract and Elasticsearch tutorial: Usage example | Elasticsearch Labs",
+      "description": "Learn to use LangExtract with Elasticsearch via an example. In this tutorial, we'll extract structured data from free-form text & store it as Elastic fields.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltd0b7c70ec4f67d90/6a17f08e63173005c2585b77/f80cdec3afeb13ce09e19eac5f5067b07dbf49f9-1000x628.png",
+      "link": "https://www.elastic.co/search-labs/blog/langextract-elasticsearch-tutorial-usage-example",
+      "publishedAt": "2025-09-11T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "FastAPI WebSockets & Elasticsearch: How to build a real-time app | Elasticsearch Labs",
+      "description": "Learn how to build a real-time application using FastAPI WebSockets and Elasticsearch.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltbdbf5c32a55d6c5b/6a16fa6666c4f95213f8be0c/e069957f3b8d4f07923b92246f959a63dac463a6-1200x628.png",
+      "link": "https://www.elastic.co/search-labs/blog/fastapi-websockets-elasticsearch",
+      "publishedAt": "2025-08-18T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Elasticsearch Reranker & LlamaIndex RankGPT: Usage & examples | Elasticsearch Labs",
+      "description": "Learn about the Elasticsearch Reranker & LlamaIndex RankGPTs, how to use them, and how to transition to the Elastic semantic reranker.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt33844609c8fa00bd/6a17f4f0420229b0a629f743/9375305a935dc1fb09b389994452aeab5a254f11-828x417.png",
+      "link": "https://www.elastic.co/search-labs/blog/elasticsearch-reranker-llamaindex-rankgpt",
+      "publishedAt": "2025-07-24T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Elasticsearch FastAPI: Building Elasticsearch APIs with FastAPI | Elasticsearch Labs",
+      "description": "Learn how to build an Elasticsearch API with FastAPI using Pydantic schemas and FastAPI background tasks, demonstrated with a practical example.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltb26b4f09f6017bcf/6a17e9d3be60864e080047a6/b69493f165b9caabb676dd5cbc50270ab3105a8a-1200x628.png",
+      "link": "https://www.elastic.co/search-labs/blog/elasticsearch-fastapi",
+      "publishedAt": "2025-07-22T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "AI-powered dashboards: From a vision to Kibana | Elasticsearch Labs",
+      "description": "Learn how to generate AI-powered dashboards. We’ll use an LLM to process an image and then turn it into a Kibana dashboard.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt41727cbee6155a68/6a1707dbb0367dd2fd72bc86/eb60ceb2fbc3941745b21ae3357cbb6ea8fab18c-1443x811.png",
+      "link": "https://www.elastic.co/search-labs/blog/ai-powered-dashboards",
+      "publishedAt": "2025-07-16T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo",
+        "Tomás Murúa"
+      ]
+    },
+    {
+      "title": "RAG vs long context model LLM | Elasticsearch Labs",
+      "description": "Comparing RAG with just sending everything to a long context model and letting the LLM analyze the context and answer a question.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltafa491cea5a194b0/6a1708b247d49c2d412d8952/418d98e63811a297df4020c39eb716f289b0022c-720x420.jpg",
+      "link": "https://www.elastic.co/search-labs/blog/rag-vs-long-context-model-llm",
+      "publishedAt": "2025-07-11T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo",
+        "Eduard Martin"
+      ]
+    },
+    {
+      "title": "Improving Copilot capabilities using Elasticsearch | Elasticsearch Labs",
+      "description": "Discover how to use Elasticsearch with Microsoft 365 Copilot Chat and Copilot in Microsoft Teams.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt9fe3709a73266b75/6a17de70148009de18b48657/7d5d7f8ac452d2b3ea6a0e5cc08389fa58d802ae-1200x628.png",
+      "link": "https://www.elastic.co/search-labs/blog/improve-microsoft-copilot-with-elasticsearch",
+      "publishedAt": "2025-06-17T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "ES|QL in JavaScript: Leveraging Apache Arrow helpers | Elasticsearch Labs",
+      "description": "Learn how to use ES|QL with JavaScript Apache Arrow client helpers to analyze large data sets efficiently.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltae7da10d922f2752/6a17de483e9e45771bba1378/6f38e9d796ca83ee56517f4ef011ba9270776c12-720x420.png",
+      "link": "https://www.elastic.co/search-labs/blog/esql-javascript-apache-arrow-helpers",
+      "publishedAt": "2025-06-09T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "How to use Elasticsearch in JavaScript | Elasticsearch Labs",
+      "description": "Learn about production best practices and how to run the Elasticsearch Node.js client in Serverless environments.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltc58be329ffebcd60/6a17043e47d49c0bc62d88ab/70fb0ff949f6db9ac9b8a28ecb4329ab915ebf46-720x420.png",
+      "link": "https://www.elastic.co/search-labs/blog/how-to-use-elasticsearch-in-javascript-part-ii",
+      "publishedAt": "2025-05-19T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "How to use Elasticsearch in JavaScript | Elasticsearch Labs",
+      "description": "Explaining how to create a production-ready Elasticsearch backend in JavaScript.  \n\nExplore how to use Elasticsearch with JavaScript to create a server with different search endpoints to query Elastic...",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt16d00c8a548b32e8/6a17e3d8fbc5f8c740491a19/72200540ed258779d87e53a72ea189f8a138540c-1600x901.png",
+      "link": "https://www.elastic.co/search-labs/blog/how-to-use-elasticsearch-in-javascript-part-i",
+      "publishedAt": "2025-05-15T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "AutoGen & Elasticsearch: Building a multi agent search tool | Elasticsearch Labs",
+      "description": "Learn how to integrate Microsoft's AutoGen framework with Elasticsearch and build a multi-agent system for semantic search through a practical job matching and candidate data retrieval example.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blta8bd0dfea1d0148c/6a17f29eec0f89d6e55a672c/a0a1eff1ac9e16a4f3535507675ed5e10c6a6299-1600x914.jpg",
+      "link": "https://www.elastic.co/search-labs/blog/using-autogen-with-elasticsearch",
+      "publishedAt": "2025-04-24T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "LlamaIndex Workflows: Autocorrecting Elasticsearch queries | Elasticsearch Labs",
+      "description": "Learn how to build a self-filtering Elasticsearch app using LlamaIndex Workflows with an LLM autocorrect loop and interchangeable models.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltea93463039bb0fa7/6a17e4031d1b839eb293e3d3/fb8501ff11232ac9b92b2017bb6b08ac25d107f7-1200x628.png",
+      "link": "https://www.elastic.co/search-labs/blog/llamaindex-workflows-with-elasticsearch",
+      "publishedAt": "2025-04-21T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "CrewAI & Elasticsearch: Vertex AI RAG engine setup | Elasticsearch Labs",
+      "description": "Learn how to create an Elasticsearch agent with CrewAI for your agent team and perform market research.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt5231901931773daa/6a17f9011480095d99b48932/8609df931737737a2e08f04c93d7069133c5d070-1600x914.jpg",
+      "link": "https://www.elastic.co/search-labs/blog/using-crewai-with-elasticsearch",
+      "publishedAt": "2025-04-08T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "BigQuery data ingestion: Index data from BigQuery to Elasticsearch | Elasticsearch Labs",
+      "description": "Exploring the BigQuery and Elasticsearch integration. Follow this step-by-step tutorial to index and search BigQuery data in Elasticsearch using Python.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt7f07e67a36ea2aff/6a17e23b3e03d7d52c4f2bb8/acde500d233cb61d858daa218d6274a316a8a34e-1200x628.png",
+      "link": "https://www.elastic.co/search-labs/blog/elasticsearch-bigquery-data-ingestion",
+      "publishedAt": "2025-03-07T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "OpenAI CLIP alternatives: JinaCLIP & Cohere Image Embeddings V3 | Elasticsearch Labs",
+      "description": "Learn about OpenAI’s CLIP, its configuration, and alternatives for image-to-image and text-to-image search like JinaCLIP & Cohere Image Embeddings V3.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt0a3b28509347bf02/6a1709710e2e4965c541a06c/e07920a776a499b1fb361714cfefdf89a30e851e-1150x628.png",
+      "link": "https://www.elastic.co/search-labs/blog/openai-clip-alternatives",
+      "publishedAt": "2025-02-18T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo",
+        "Tomás Murúa"
+      ]
+    },
+    {
+      "title": "Ollama & Elasticsearch: How to use Ollama with the Inference API | Elasticsearch Labs",
+      "description": "Learn how to integrate Ollama with Elasticsearch using the inference API.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltd9c8eb0fc946920e/6a17f3a46864a4b2fbb688f0/399b9ef527be633845fb6505b68132cc03bc9e09-1150x628.png",
+      "link": "https://www.elastic.co/search-labs/blog/ollama-with-inference-api",
+      "publishedAt": "2025-02-14T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Synonyms in RAG: Are synonyms important in a RAG app? | Elasticsearch Labs",
+      "description": "Exploring the functionality of Elasticsearch synonyms in a Retrieval Augmented Generation (RAG) application.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt4900e6667dd648f8/6a17de1563baff52c9741b50/a631acdeb867d80c3a404cd630148a1b95e26125-1200x628.png",
+      "link": "https://www.elastic.co/search-labs/blog/synonyms-in-rag-genai",
+      "publishedAt": "2025-02-11T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo",
+        "Tomás Murúa"
+      ]
+    },
+    {
+      "title": "Elastic connectors & Playground: How to chat with your data | Elasticsearch Labs",
+      "description": "Learn how to use Elastic connectors and Playground to chat with your data. We'll start by using connectors to search for information in different sources.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltcdd2167cf59722e9/6a17dd375772624ec11bcb11/ed423767d274aea1d6d884bcd92a2d8727065acc-1280x1280.png",
+      "link": "https://www.elastic.co/search-labs/blog/playground-connectors-data-chat",
+      "publishedAt": "2025-02-03T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo",
+        "Tomás Murúa"
+      ]
+    },
+    {
+      "title": "Indexing OneLake data into Elasticsearch with a custom connector | Elasticsearch Labs",
+      "description": "Learn to index & search OneLake data into Elastic with a custom connector. We’ll show you how to create a OneLake Elasticsearch connector to sync data.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltf04f3e25093102e1/6a17f84d577262b0591bcdbe/f4a3a10d8de5e7048c2e83f5e20b56ab74adb478-1200x628.png",
+      "link": "https://www.elastic.co/search-labs/blog/ingesting-data-with-onelake-part-ii",
+      "publishedAt": "2025-01-24T00:00:00.000Z",
+      "authors": [
+        "Gustavo Llermaly",
+        "Jeffrey Rengifo"
+      ]
+    }
+  ],
+  "obs": [
+    {
+      "title": "AI agent observability: LLM tracing with OpenTelemetry | Elastic Observability Labs",
+      "description": "Three model calls took 92% of a 10-second request. AI agent observability with LangChain traces, and whether a cheaper model actually helps.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt035b23b83082ba29/6aeaac17f12d1b2530a1f79c/image1.png",
+      "link": "https://www.elastic.co/observability-labs/blog/ai-agent-observability-opentelemetry",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Continuous profiling with OpenTelemetry: CPU flamegraphs | Elastic Observability Labs",
+      "description": "Continuous profiling samples an unmodified Java app with eBPF. No code changes, no restarts, and the profiles are queryable in Kibana with ES|QL.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltddbcf77d4d0e8d0e/6acef24c7963af730d6cd0d3/image2.png",
+      "link": "https://www.elastic.co/observability-labs/blog/continuous-profiling-opentelemetry",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Audit logging in Elasticsearch: Verify 365-day retention | Elastic Observability Labs",
+      "description": "Audit logging that works a year later: collect audit logs with the EDOT Collector and query snapshots with the same ES|QL query you’d run on live data.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blte2fed541b53cb56d/6acdf37498f3c875c1b79c99/image4.png",
+      "link": "https://www.elastic.co/observability-labs/blog/audit-logging-retention-elasticsearch",
+      "publishedAt": "2026-10-13T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Kubernetes node pressure alerts with Elastic anomaly detection | Elastic Observability Labs",
+      "description": "Catch Kubernetes node pressure 7 minutes before the kubelet evicts your pods. The per-node job, the rules that cover its blind spot, and the triage path.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt0c209e72a9ea2c83/6accc45f2b0ddf40a8870941/image11.png",
+      "link": "https://www.elastic.co/observability-labs/blog/kubernetes-node-pressure-anomaly-detection",
+      "publishedAt": "2026-10-12T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Kubernetes noisy neighbor: Find and fix it with ES|QL | Elastic Observability Labs",
+      "description": "A Kubernetes noisy neighbor cut requests under 500 ms from 99.6% to 59%, with every pod still Running. Find it on kubelet metrics, then cap it at 500m.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blte3f60163d90528bf/6ac86c25758e4e1b77e1580b/image7.png",
+      "link": "https://www.elastic.co/observability-labs/blog/kubernetes-noisy-neighbor-esql-slo",
+      "publishedAt": "2026-10-09T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Root cause analysis from logs: 4,688 records, one cause | Elastic Observability Labs",
+      "description": "The service logging 1,820 errors returned HTTP 200 to every request. See how root cause analysis from logs, using ES|QL and trace IDs, found the real one.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltb64035d9fee35ef3/6abb797e4f25ca928696798c/01-header.png",
+      "link": "https://www.elastic.co/observability-labs/blog/root-cause-analysis-logs-esql",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Alert noise reduction: query alert history with ES|QL | Elastic Observability Labs",
+      "description": "One bad deploy, 14 alerts, one incident. Fix the grouping key on a noisy Kibana alerting rule and prove the alert noise reduction worked in the same index.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt2306ef56ba70a634/6ab8cbb44d5742d665bc26fd/header.png",
+      "link": "https://www.elastic.co/observability-labs/blog/esql-alert-noise-reduction",
+      "publishedAt": "2026-09-29T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "AI root cause analysis with ES|QL tools in Agent Builder | Elastic Observability Labs",
+      "description": "See AI root cause analysis dismiss the deploy on a version split and a coincident failure on zero shared traces, with a document ID behind every claim.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blte526f338f22edd08/6aa25191346a4ba897409639/01-header.png",
+      "link": "https://www.elastic.co/observability-labs/blog/ai-root-cause-analysis-agent-builder",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Your AI agent needs an alibi: Observability & audit trails for Agent Builder in Elastic | Elastic Observability Labs",
+      "description": "AI agent observability in Elastic 9.5: read Agent Builder traces in your own cluster, then write an approval record the pipeline cannot rewrite.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt2c757a76a8a7504d/6a9553fe0897906e2aefb3e4/01-header.png",
+      "link": "https://www.elastic.co/observability-labs/blog/ai-agent-observability-audit-trail",
+      "publishedAt": "2026-08-31T15:13:52.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Kibana Discover search: KQL, Lucene query syntax, and ES|QL | Elastic Observability Labs",
+      "description": "Search metrics in Kibana Discover with data views and filter pills, use Lucene query syntax for regex, then enrich results with ES|QL LOOKUP JOIN.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt3d63a247bf43f8b7/6a903bbb386ac3e853ae147b/01-header.jpg",
+      "link": "https://www.elastic.co/observability-labs/blog/kibana-discover-search-kql-lucene-esql",
+      "publishedAt": "2026-08-28T15:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Human-in-the-loop automation for SRE incident response | Elastic Observability Labs",
+      "description": "Build a human-in-the-loop automation gate in Elastic Workflows that pauses before the action and gives the reviewer enough evidence to decide in seconds.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt0a01d1c6dcc3a9d6/6a90266fd62e111636e3638c/header.jpg",
+      "link": "https://www.elastic.co/observability-labs/blog/incident-response-automation-human-approval-gate",
+      "publishedAt": "2026-08-27T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Automated root cause analysis with Elastic Agent Builder | Elastic Observability Labs",
+      "description": "Correlate logs, traces and metrics, then open a reviewable case. The read-only automated root cause analysis pattern behind a 3 minute investigation.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltcd0b2a7ebf36b14d/6a8ea0ee73006e52f1d8d9b3/01-header.png",
+      "link": "https://www.elastic.co/observability-labs/blog/automated-root-cause-analysis-agent-builder",
+      "publishedAt": "2026-08-25T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Kibana observability dashboards as code with Terraform | Elastic Observability Labs",
+      "description": "Define Kibana dashboards in Terraform, share panels across teams, and update every dashboard in one PR. Includes drift detection and git rollback.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltdbc974846f9b410e/6a85cdc4342d69301d21b147/image1.jpg",
+      "link": "https://www.elastic.co/observability-labs/blog/kibana-observability-dashboards-terraform",
+      "publishedAt": "2026-08-03T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Alerting rule templates in Elastic integrations | Elastic Observability Labs",
+      "description": "Create Elasticsearch alert rules from pre-built templates, tune thresholds to your traffic, and catch silent data streams before they become outages.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt20e53c65a0321a28/6a85c997078290b06c321742/01-header.jpg",
+      "link": "https://www.elastic.co/observability-labs/blog/alerting-rule-templates-elastic-integrations",
+      "publishedAt": "2026-07-31T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Kubernetes monitoring with ES|QL: crash loops and memory | Elastic Observability Labs",
+      "description": "Explore ES|QL queries for Kubernetes monitoring in Elasticsearch: find crash loops, memory pressure and error spikes fast.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltd8fedad7d2a4e61e/6a85c854d6cf29b0cabb089c/cover.png",
+      "link": "https://www.elastic.co/observability-labs/blog/esql-kubernetes-monitoring",
+      "publishedAt": "2026-07-08T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "OpenTelemetry Python to Elastic in 2 environment variables | Elastic Observability Labs",
+      "description": "OpenTelemetry Python instrumentation for Elastic Cloud: ship traces, metrics and logs from a Flask API using 2 environment variables. No collector needed.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt6ae4241634b25d77/6a7f080833fa8a46ed2024ec/cover.png",
+      "link": "https://www.elastic.co/observability-labs/blog/elastic-managed-otlp-endpoint-python",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "MCP tools for Elastic Agent Builder | Elastic Observability Labs",
+      "description": "Build three MCP tools in Elastic Agent Builder that surface endpoint health, recent deploys and SLO burn rate, so developers never have to ping an SRE again.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt5c071b863a97c979/6a85c867abdc29d3a612248a/header.png",
+      "link": "https://www.elastic.co/observability-labs/blog/mcp-tools-elastic-agent-builder",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "ES|QL queries for debugging LLM latency, cost and GPU load | Elastic Observability Labs",
+      "description": "Use ES|QL to debug LLM latency spikes, token cost regressions and GPU saturation. Three query patterns against OpenTelemetry trace data in Elasticsearch.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt3241da3bae0d812d/6a7f0a96b6b7348360e48cfe/header.png",
+      "link": "https://www.elastic.co/observability-labs/blog/esql-llm-opentelemetry-debugging",
+      "publishedAt": "2026-05-20T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "How to trace MCP server tool calls with OpenTelemetry and Elastic APM | Elastic Observability Labs",
+      "description": "Add OpenTelemetry tracing to an MCP server, visualize tool call performance in Elastic APM, and query the trace data from Claude Desktop using the Agent Builder MCP.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt01a77347914d1229/6a7f0d57c2e9145f21016c0c/header_image.png",
+      "link": "https://www.elastic.co/observability-labs/blog/mcp-tracing-opentelemetry-elastic-apm",
+      "publishedAt": "2026-05-14T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "Connecting Cursor to Production Logs via the Elastic MCP Server | Elastic Observability Labs",
+      "description": "Learn how to connect Cursor to your Elastic APM data using the Elastic Agent Builder MCP server, so you can debug production errors and make UI decisions backed by real usage data without leaving your...",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt995e6ed7b699e8fa/6a7f08226c6eacad3ef13f31/header.png",
+      "link": "https://www.elastic.co/observability-labs/blog/elastic-mcp-server-cursor-production-logs",
+      "publishedAt": "2026-04-29T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    },
+    {
+      "title": "How to cut Elasticsearch log storage costs with LogsDB | Elastic Observability Labs",
+      "description": "Learn how to enable LogsDB index mode in Elasticsearch and measure real storage savings. We compare a standard index against a LogsDB index using Apache logs and show how much storage you can reclaim.",
+      "coverImage": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt99ec1c2ec2a7af55/6a7f09e23ce8e203b0cf5277/header.png",
+      "link": "https://www.elastic.co/observability-labs/blog/elasticsearch-logsdb-index-mode-storage-savings",
+      "publishedAt": "2026-04-09T00:00:00.000Z",
+      "authors": [
+        "Jeffrey Rengifo"
+      ]
+    }
+  ]
+}

@@ -1,160 +1,64 @@
-import { forwardRef } from "react";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Button,
-  Chip,
-} from "@heroui/react";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faRocket,
-  faUsers,
-  faChartLine,
-} from "@fortawesome/free-solid-svg-icons";
-import { v4 as uuidv4 } from "uuid";
+import Entry, { BulletList, EntryTitle } from "../components/Entry";
+import ExternalLink, { TEXT_LINK } from "../components/ExternalLink";
+import Section from "../components/Section";
+import darkScoreImage from "../assets/images/products/dark-score.webp";
 
-const Projects = forwardRef((__, ref) => {
+// Screenshots or cover images of the products that have one, by product id.
+const PRODUCT_IMAGES = { "dark-score": darkScoreImage };
+
+/** Client work, followed by the author's own products with their image and links. */
+export default function Projects() {
   const { t } = useTranslation();
-
   const projects = t("projects.list", { returnObjects: true });
-
-  const getImpactIcon = (type) => {
-    switch (type) {
-      case "productivity":
-        return <FontAwesomeIcon icon={faChartLine} className='text-primary' />;
-      case "users":
-        return <FontAwesomeIcon icon={faUsers} className='text-primary' />;
-      default:
-        return <FontAwesomeIcon icon={faRocket} className='text-primary' />;
-    }
-  };
+  const products = t("projects.products", { returnObjects: true });
 
   return (
-    <section
-      ref={ref}
-      className='py-16 px-6 md:px-12 lg:px-24 min-h-screen flex flex-col justify-center'>
-      <header className='text-center mb-12'>
-        <div className='flex justify-center items-center gap-3 mb-4'>
-          <FontAwesomeIcon
-            icon={faRocket}
-            className='text-4xl text-secondary'
-          />
-          <h2 className='font-comfortaa font-bold text-4xl'>
-            {t("projects.title")}
-          </h2>
-        </div>
-        <p className='font-comfortaa text-lg text-default-600 max-w-2xl mx-auto'>
-          {t("projects.description")}
-        </p>
-      </header>
+    <Section id='projects'>
+      {projects.map((project, index) => (
+        <Entry key={project.name} id={`project-${index}`} aside={project.period}>
+          <EntryTitle>{project.name}</EntryTitle>
+          <p className='mt-0.5 text-ink-2'>{project.client}</p>
+          {project.bullets && <BulletList items={project.bullets} />}
+          {project.text && <p className='mt-3 max-w-[40em]'>{project.text}</p>}
+        </Entry>
+      ))}
 
-      <div className={`grid gap-8 max-w-6xl mx-auto ${
-        Array.isArray(projects) && projects.length === 1
-          ? "grid-cols-1 max-w-2xl"
-          : "grid-cols-1 lg:grid-cols-2"
-      }`}>
-        {Array.isArray(projects) &&
-          projects.map((project) => (
-            <Card
-              key={uuidv4()}
-              className='hover:shadow-2xl transition-all duration-300'>
-              <CardHeader className='flex-col items-start gap-3 pb-0'>
-                <div className='w-full'>
-                  <h3 className='font-bold text-2xl font-comfortaa mb-2'>
-                    {project.name}
-                  </h3>
-                  <p className='text-default-500 text-sm'>{project.tagline}</p>
-                </div>
-              </CardHeader>
-
-              <CardBody className='py-4 space-y-4'>
-                <div className='space-y-3'>
-                  <div>
-                    <h4 className='font-semibold text-sm mb-2 text-default-700'>
-                      💡 {t("projects.problemLabel")}
-                    </h4>
-                    <p className='text-sm text-default-600'>
-                      {project.problem}
-                    </p>
-                  </div>
-
-                  <div>
-                    <h4 className='font-semibold text-sm mb-2 text-default-700'>
-                      ✨ {t("projects.solutionLabel")}
-                    </h4>
-                    <p className='text-sm text-default-600'>
-                      {project.solution}
-                    </p>
-                  </div>
-
-                  {project.impact && (
-                    <div className='bg-default-100 dark:bg-default-50 p-3 rounded-lg border border-default-200 dark:border-default-800'>
-                      <div className='flex items-start gap-2'>
-                        <span className='text-lg'>
-                          {getImpactIcon(project.impactType)}
-                        </span>
-                        <div>
-                          <h4 className='font-semibold text-sm mb-1 text-primary'>
-                            📈 {t("projects.impactLabel")}
-                          </h4>
-                          <p className='text-sm text-default-600 dark:text-default-400'>
-                            {project.impact}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
-
-                <div className='flex flex-wrap gap-2'>
-                  {project.tech &&
-                    project.tech.map((tech) => (
-                      <Chip
-                        key={uuidv4()}
-                        size='sm'
-                        variant='flat'
-                        color='primary'>
-                        {tech}
-                      </Chip>
-                    ))}
-                </div>
-              </CardBody>
-
-              <CardFooter className='gap-3 pt-0'>
-                {project.repo && (
-                  <Button
-                    as={Link}
-                    to={project.repo}
-                    target='_blank'
-                    variant='bordered'
-                    color='primary'
-                    size='sm'
-                    className='flex-1'>
-                    {t("projects.codeButton")}
-                  </Button>
-                )}
-                {project.demo && (
-                  <Button
-                    as={Link}
-                    to={project.demo}
-                    target='_blank'
-                    variant='solid'
-                    color='primary'
-                    size='sm'
-                    className='flex-1'>
-                    {t("projects.demoButton")}
-                  </Button>
-                )}
-              </CardFooter>
-            </Card>
-          ))}
-      </div>
-    </section>
+      <h3 className='mt-11 mb-[18px] text-[19px] leading-[1.3] font-bold'>{t("projects.productsTitle")}</h3>
+      {products.map((product, index) => (
+        <Entry
+          key={product.id}
+          id={`product-${index}`}
+          aside={
+            PRODUCT_IMAGES[product.id] && (
+              <img
+                src={PRODUCT_IMAGES[product.id]}
+                alt=''
+                loading='lazy'
+                width='300'
+                height='158'
+                className='aspect-[40/21] w-[150px] rounded-md bg-rule object-cover'
+              />
+            )
+          }>
+          <EntryTitle>{product.name}</EntryTitle>
+          <p className='mt-1 max-w-[40em] text-ink-2'>{product.text}</p>
+          {(product.url || product.repo) && (
+            <p className='mt-3 flex flex-wrap gap-x-[22px] gap-y-2 text-[17px]'>
+              {product.url && (
+                <ExternalLink href={product.url} className={TEXT_LINK}>
+                  {t("projects.liveApp")}
+                </ExternalLink>
+              )}
+              {product.repo && (
+                <ExternalLink href={product.repo} className={TEXT_LINK}>
+                  {t("projects.repo")}
+                </ExternalLink>
+              )}
+            </p>
+          )}
+        </Entry>
+      ))}
+    </Section>
   );
-});
-
-export default Projects;
+}

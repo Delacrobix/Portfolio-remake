@@ -1,0 +1,42 @@
+[
+  {
+    "title": "How to build an Ollama RAG app using Elasticsearch with Go",
+    "link": "https://www.youtube.com/watch?v=ceou_5H6TUs",
+    "thumbnail": "https://img.youtube.com/vi/ceou_5H6TUs/mqdefault.jpg"
+  },
+  {
+    "title": "How to Ingest Data into Elasticsearch via Kafka",
+    "link": "https://www.youtube.com/watch?v=63tFL8YIifA",
+    "thumbnail": "https://img.youtube.com/vi/63tFL8YIifA/mqdefault.jpg"
+  },
+  {
+    "title": "How to match CVs to jobs in Elasticsearch with semantic text & LLMs",
+    "link": "https://www.youtube.com/watch?v=kPcpgEyr6fk",
+    "thumbnail": "https://img.youtube.com/vi/kPcpgEyr6fk/mqdefault.jpg"
+  },
+  {
+    "title": "How to Use AutoGen Agents + Elasticsearch for Job Matching",
+    "link": "https://www.youtube.com/watch?v=AhNMOPKLLFg",
+    "thumbnail": "https://img.youtube.com/vi/AhNMOPKLLFg/mqdefault.jpg"
+  },
+  {
+    "title": "Spring AI & Elasticsearch: How to build a RAG system in Java",
+    "link": "https://www.youtube.com/watch?v=ms2xRO8B1YU",
+    "thumbnail": "https://img.youtube.com/vi/ms2xRO8B1YU/mqdefault.jpg"
+  },
+  {
+    "title": "Ollama & Elasticsearch: How to use Ollama with the Inference API",
+    "link": "https://www.youtube.com/watch?v=Iz7Ey3pVE7c",
+    "thumbnail": "https://img.youtube.com/vi/Iz7Ey3pVE7c/mqdefault.jpg"
+  },
+  {
+    "title": "How to use LlamaIndex Workflows with Elasticsearch",
+    "link": "https://www.youtube.com/watch?v=bkjmCfHiF5E",
+    "thumbnail": "https://img.youtube.com/vi/bkjmCfHiF5E/mqdefault.jpg"
+  },
+  {
+    "title": "How to Integrate Microsoft Copilot with Elasticsearch",
+    "link": "https://www.youtube.com/watch?v=p-fYjoeoM5M",
+    "thumbnail": "https://img.youtube.com/vi/p-fYjoeoM5M/mqdefault.jpg"
+  }
+]

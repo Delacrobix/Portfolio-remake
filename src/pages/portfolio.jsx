@@ -1,144 +1,61 @@
-import { useRef } from "react";
-import { I18nextProvider } from "react-i18next";
-
-import Intro from "../sections/intro";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import TopBar from "../components/TopBar";
-import DotNav from "../components/DotNav";
-import Footer from "../sections/footer";
-import AboutMe from "../sections/aboutMe";
-import Experience from "../sections/experience";
-import Projects from "../sections/projects";
+import videos from "../data/videos.json";
+import useLabsData from "../hooks/useLabsData";
+import useSiteCommands from "../hooks/useSiteCommands";
+import useSiteIndex from "../hooks/useSiteIndex";
+import Areas from "../sections/areas";
 import Articles from "../sections/articles";
-import ObservabilityArticles from "../sections/observabilityArticles";
-import Videos from "../sections/videos";
 import Awards from "../sections/awards";
 import Certifications from "../sections/certifications";
-import Tools from "../sections/tools";
-import i18n from "../config/languages";
 import Contact from "../sections/contact";
-
-function Divider() {
-  return (
-    <div className='px-[25%]'>
-      <hr className='border-t-[1.5px] border-black/30 dark:border-white/[0.404]' />
-    </div>
-  );
-}
+import Experience from "../sections/experience";
+import Footer from "../sections/footer";
+import Intro from "../sections/intro";
+import Projects from "../sections/projects";
+import Videos from "../sections/videos";
 
 export default function Portfolio() {
-  const contactRef = useRef(null);
-  const skillsRef = useRef(null);
-  const introRef = useRef(null);
-  const workRef = useRef(null);
-  const aboutMeRef = useRef(null);
-  const experienceRef = useRef(null);
-  const projectsRef = useRef(null);
-  const articlesRef = useRef(null);
-  const observabilityArticlesRef = useRef(null);
-  const videosRef = useRef(null);
-  const awardsRef = useRef(null);
-  const certificationsRef = useRef(null);
-  const toolsRef = useRef(null);
+  const { t } = useTranslation();
+  const { articles, views, topAuthors } = useLabsData();
+  const [articleQuery, setArticleQuery] = useState("");
+  const searchEntries = useSiteIndex(articles, videos);
+  const commands = useSiteCommands(articles, videos);
 
-  function scrollTo(section) {
-    if (section === "intro") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      return;
-    }
-
-    const refSwitch = {
-      skills: skillsRef,
-      contact: contactRef,
-      intro: introRef,
-      work: workRef,
-      aboutMe: aboutMeRef,
-      experience: experienceRef,
-      projects: projectsRef,
-      articles: articlesRef,
-      observabilityArticles: observabilityArticlesRef,
-      videos: videosRef,
-      awards: awardsRef,
-      certifications: certificationsRef,
-      tools: toolsRef,
-    };
-
-    refSwitch[section].current.scrollIntoView({ behavior: "smooth" });
-  }
-
-  const sectionRefs = {
-    intro: introRef,
-    aboutMe: aboutMeRef,
-    experience: experienceRef,
-    projects: projectsRef,
-    awards: awardsRef,
-    articles: articlesRef,
-    observabilityArticles: observabilityArticlesRef,
-    videos: videosRef,
-    certifications: certificationsRef,
-    tools: toolsRef,
-    contact: contactRef,
+  const searchCount = articles.filter((article) => article.lab === "search").length;
+  const counts = {
+    total: articles.length,
+    search: searchCount,
+    obs: articles.length - searchCount,
+    videos: videos.length,
   };
 
   return (
     <>
-      <TopBar scrollTo={scrollTo} />
-      <DotNav scrollTo={scrollTo} sectionRefs={sectionRefs} />
-      <Intro scrollTo={scrollTo} ref={introRef} />
-
-      <I18nextProvider i18n={i18n}>
-        <AboutMe ref={aboutMeRef} />
-      </I18nextProvider>
-
-      <Divider />
-
-      <I18nextProvider i18n={i18n}>
-        <Experience ref={experienceRef} />
-      </I18nextProvider>
-
-      <Divider />
-
-      <I18nextProvider i18n={i18n}>
-        <Projects ref={projectsRef} />
-      </I18nextProvider>
-
-      <I18nextProvider i18n={i18n}>
-        <Awards ref={awardsRef} />
-      </I18nextProvider>
-
-      <Divider />
-
-      <I18nextProvider i18n={i18n}>
-        <Articles ref={articlesRef} />
-      </I18nextProvider>
-
-      <Divider />
-
-      <I18nextProvider i18n={i18n}>
-        <ObservabilityArticles ref={observabilityArticlesRef} />
-      </I18nextProvider>
-
-      <Divider />
-
-      <I18nextProvider i18n={i18n}>
-        <Videos ref={videosRef} />
-      </I18nextProvider>
-
-      <Divider />
-
-      <I18nextProvider i18n={i18n}>
-        <Certifications ref={certificationsRef} />
-      </I18nextProvider>
-
-      <Divider />
-
-      <I18nextProvider i18n={i18n}>
-        <Tools ref={toolsRef} />
-      </I18nextProvider>
-
-      <Divider />
-      <Divider />
-
-      <Contact ref={contactRef} />
+      <a
+        href='#main'
+        className='sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-paper'>
+        {t("skip")}
+      </a>
+      <TopBar />
+      <main id='main'>
+        <Intro searchEntries={searchEntries} commands={commands} onFilterArticles={setArticleQuery} />
+        <Areas />
+        <Experience counts={counts} />
+        <Articles
+          articles={articles}
+          views={views}
+          topAuthors={topAuthors}
+          query={articleQuery}
+          onQueryChange={setArticleQuery}
+        />
+        <Awards />
+        <Certifications />
+        <Projects />
+        <Videos videos={videos} />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

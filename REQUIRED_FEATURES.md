@@ -86,6 +86,8 @@ Pueden reordenarse de más a menos relevante, pero cada una conserva su sección
 ## 8. Tono y estilo
 
 - Portafolio y hoja de vida neutral: expone el perfil, no vende.
+- **Idiomas:** la presentación lleva una línea aparte, «Idiomas: español nativo e inglés fluido», sin nivel del marco europeo. El nivel (B2, C1…) solo aparece en la hoja de vida.
+- **Sin ubicación en el sitio:** el perfil apunta a trabajo remoto, así que la presentación no menciona ciudad ni país.
 - Sobrio y profesional. Sin metáforas visuales ni temas (se probaron un plano de transporte, un fichero de biblioteca y unas instrucciones de armado, y se descartaron).
 - Nada que el perfil no respalde: sin cifras infladas ni adjetivos de autopromoción. Cada cifra lleva su fuente o su enlace.
 - Solo se publica contenido profesional verificable; las notas personales del autor quedan fuera del sitio.

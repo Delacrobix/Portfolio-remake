@@ -54,6 +54,9 @@ export default function Intro({ searchEntries, commands, onFilterArticles }) {
             }}
           />
         </p>
+        <p className='mt-2.5 max-w-[34em] text-xl text-ink-2'>
+          <span className='font-medium text-ink'>{t("intro.languagesLabel")}</span> {t("intro.languages")}
+        </p>
 
         <div className='mt-[26px] flex flex-wrap gap-2 wide:mt-[30px] wide:gap-3 print:hidden'>
           <ButtonLink variant='primary' external href={resumeUrl(i18n.language)} className='max-wide:px-3.5'>

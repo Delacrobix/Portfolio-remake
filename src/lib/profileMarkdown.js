@@ -13,7 +13,7 @@ export function buildProfileMarkdown({ t, language, articles, videos }) {
     obs: articles.filter((article) => article.lab === "obs").length,
     videos: videos.length,
   };
-  const lines = [`# ${SITE.name}`, "", t("intro.role"), "", stripTags(t("intro.lead")), ""];
+  const lines = [`# ${SITE.name}`, "", t("intro.role"), "", stripTags(t("intro.lead")), "", `${t("intro.languagesLabel")} ${t("intro.languages")}`, ""];
   const heading = (title) => lines.push(`## ${title}`, "");
   const bullets = (items) => lines.push(...items.map((item) => `- ${item}`), "");
 

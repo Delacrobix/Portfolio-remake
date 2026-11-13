@@ -24,7 +24,6 @@ const FONT_SIZES_PT = [10, 9.8, 9.6, 9.4, 9.2, 9];
 
 const AUTHOR = "Jeffrey Rengifo";
 const EMAIL = "jeffrey.rengifom@gmail.com";
-const LOCATION = "Medellín, Colombia";
 // Shown as "Label: text", with the text linked. The portfolio label is translated in LABELS.
 const LINKS = [
   { label: "portfolio", text: "jeffrm.com", url: "https://jeffrm.com" },
@@ -97,7 +96,6 @@ function buildHtml(language, t, cache, videoCount, fontSizePt) {
 
   const contact = [
     `<a class="email" href="mailto:${EMAIL}">${EMAIL}</a>`,
-    escapeHtml(LOCATION),
     ...LINKS.map(({ label, text, url }) => `${escapeHtml(labels[label] ?? label)}: ${link(url, text)}`),
   ].join('<span class="bar"> | </span>');
 
@@ -207,7 +205,7 @@ function buildHtml(language, t, cache, videoCount, fontSizePt) {
 <body>
   <header>
     <h1>${AUTHOR}</h1>
-    <p class="role">${escapeHtml(trimPeriod(t.intro.role.replace(/\s*Medellín, Colombia\.$/, "")))}</p>
+    <p class="role">${escapeHtml(trimPeriod(t.intro.role))}</p>
     <p class="contact">${contact}</p>
     <p class="summary">${escapeHtml(labels.summary)}</p>
   </header>

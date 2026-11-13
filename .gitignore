@@ -19,7 +19,6 @@ yarn-debug.log*
 yarn-error.log*
 .vscode/
 
-src/assets/css/styles.*
 
 # Logs
 logs/

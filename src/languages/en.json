@@ -5,7 +5,6 @@
     "menu": "Menu",
     "close": "Close",
     "language": "Language",
-    "home": "Home",
     "areas": "Areas of work",
     "experience": "Experience",
     "articles": "Articles",
@@ -18,8 +17,10 @@
     "themeLight": "Switch to light mode"
   },
   "intro": {
-    "role": "Software and Elastic Stack engineer. Medellín, Colombia.",
+    "role": "Software and Elastic Stack engineer.",
     "lead": "I work on search, observability and AI agents. I write <articles>technical articles</articles> for Elastic's official blogs, record <videos>video tutorials</videos> and work on <projects>Elasticsearch projects</projects> for clients.",
+    "languagesLabel": "Languages:",
+    "languages": "native Spanish speaker and fluent in English.",
     "cv": "Résumé (PDF)",
     "photoAlt": "Portrait of Jeffrey Rengifo",
     "cvShort": "Résumé"

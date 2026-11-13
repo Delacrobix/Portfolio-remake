@@ -12,15 +12,4 @@ export default defineConfig({
   build: {
     outDir: 'build',
   },
-  esbuild: {
-    loader: 'jsx',
-    include: /src\/.*\.jsx?$/,
-  },
-  optimizeDeps: {
-    esbuild: {
-      loader: {
-        '.js': 'jsx',
-      },
-    },
-  },
 });

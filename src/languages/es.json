@@ -5,7 +5,6 @@
     "menu": "Menú",
     "close": "Cerrar",
     "language": "Idioma",
-    "home": "Inicio",
     "areas": "Áreas de trabajo",
     "experience": "Experiencia",
     "articles": "Artículos",
@@ -18,8 +17,10 @@
     "themeLight": "Cambiar a modo claro"
   },
   "intro": {
-    "role": "Ingeniero de software y de Elastic Stack. Medellín, Colombia.",
+    "role": "Ingeniero de software y de Elastic Stack.",
     "lead": "Trabajo en búsqueda, observabilidad y agentes de IA. Escribo <articles>artículos técnicos</articles> para los blogs oficiales de Elastic, grabo <videos>videotutoriales</videos> y trabajo en <projects>proyectos con Elasticsearch</projects> para clientes.",
+    "languagesLabel": "Idiomas:",
+    "languages": "español nativo e inglés fluido.",
     "cv": "Hoja de vida (PDF)",
     "photoAlt": "Retrato de Jeffrey Rengifo",
     "cvShort": "Hoja de vida"

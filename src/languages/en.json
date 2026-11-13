@@ -306,6 +306,11 @@
         "text": "Converts sheet music to dark mode in the browser, without uploading files.",
         "url": "https://darkscore.app",
         "repo": "https://github.com/Delacrobix/dark-score"
+      },
+      {
+        "id": "facturai",
+        "name": "FacturAI",
+        "text": "App that extracts the data from invoices and bank transfer receipts in photos or PDFs, using OCR and a LangGraph flow. FastAPI and React. Not yet released."
       }
     ],
     "liveApp": "Live app",

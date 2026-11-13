@@ -306,6 +306,11 @@
         "text": "Convierte partituras a modo oscuro en el navegador, sin subir archivos.",
         "url": "https://darkscore.app",
         "repo": "https://github.com/Delacrobix/dark-score"
+      },
+      {
+        "id": "facturai",
+        "name": "FacturAI",
+        "text": "Aplicación que extrae los datos de facturas y comprobantes de transferencia a partir de fotos o PDF, con OCR y un flujo en LangGraph. FastAPI y React. Aún no publicada."
       }
     ],
     "liveApp": "App en vivo",

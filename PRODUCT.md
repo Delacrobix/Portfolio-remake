@@ -51,7 +51,7 @@ Ingeniero de software y de Elastic Stack (búsqueda, observabilidad e IA generat
 
 - Artículos: 40 en Elastic Search Labs (desde 2025-01) y 21 en Elastic Observability Labs (desde 2026-04), con portada, fecha y enlace vía API.
 - Autor número 1 por cantidad de artículos en Search Labs (endpoint `/top-authors`: 40, el siguiente tiene 30).
-- Vistas: 52.646 vistas de página sumando los 61 artículos (46.636 Search Labs, 6.010 Observability Labs), GA4, periodo 2025-01-01 a 2026-11-11. Fuente: `data/article_views.json` en el repo de la API.
+- Vistas: más de 52.000 vistas de página sumando los artículos; la cifra llega por la API de artículos y el sitio solo muestra el total redondeado.
 - 8 videotutoriales (lista en `src/languages/*.json`).
 - Contribuciones: 43 PRs fusionados en elastic/elastic-labs y 6 en elastic/observability-labs (verificado en GitHub el 2026-11-12). El sitio dice "más de 45".
 - Certificaciones: Elastic Certified Engineer (2025) y Elastic Certified Observability Engineer (2026), con credencial enlazable; cursos de Painless y observabilidad.
@@ -60,7 +60,7 @@ Ingeniero de software y de Elastic Stack (búsqueda, observabilidad e IA generat
 - Experiencia: ingeniero de Elastic Stack y escritor técnico en Kibernum, Elite Consulting Team (desde 2024-09); desarrollador web freelance (2022 a 2024).
 - Proyectos con clientes: migración Swiftype a Elasticsearch (2024-11) y migración App Search a Elasticsearch 9 (2026-06 en adelante), con detalle técnico en el perfil.
 - Proyectos para Elastic: participación en la reescritura de la documentación de Painless (2025) y artículos de referencia y SEO (2026-10 en adelante).
-- Productos propios desplegados: Vatio (PWA de energía para hogares colombianos; repositorio privado, URL pública e imagen pendientes), Dark Score (darkscore.app, repositorio público), la API de artículos, un bot de LinkedIn y un bot de gastos en Telegram. FacturAI no se lanzó.
+- Productos propios que muestra el sitio: Vatio (aplicación web de energía para hogares colombianos; por ahora sin enlaces ni imagen), Dark Score (darkscore.app, repositorio público) y FacturAI (extracción de datos de facturas con OCR y LangGraph; aún no publicada, sin enlaces ni imagen).
 - Habilidades, en el orden en que deben presentarse: agentes de IA y aplicaciones con LLM (RAG, MCP, LangChain, LangGraph, evaluación de LLMs); Elasticsearch, ES|QL, Elastic Observability, OpenTelemetry y migraciones de búsqueda; Python, FastAPI y TypeScript. React se menciona como herramienta de apoyo, no como habilidad principal.
 - Acreditaciones de Claude (Anthropic): Jeffrey indicó que las tiene y que deben aparecer. Pendiente: nombres exactos, fechas y enlaces de verificación. No inventarlas.
 - Recursos: foto de perfil (`src/assets/images/profile/me.jpg`), CV en PDF, miniaturas de certificados.
